@@ -6,12 +6,12 @@ public class Counter_Base : MonoBehaviour, IItemParent
 
     private Item_Base _baseItem;
 
-    public virtual void Interact(Player_Base _player)
+    public virtual void Interact(Player_Base _player) //needs to be overwritten
     {
         Debug.LogError("BaseCounter not overwritten"); // interact must always be overwritten depending on the countertype
     }
 
-    public virtual void InteractAlternate(Player_Base _player)
+    public virtual void InteractAlternate(Player_Base _player) // not all counters have an altinteract
     {
         // nothing happens
     }

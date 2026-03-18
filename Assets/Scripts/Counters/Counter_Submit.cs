@@ -11,8 +11,9 @@ public class Counter_Submit : Counter_Base
 
     public override void Interact(Player_Base _player)
     {
-        if (_player.HasItem() && HasRecipeWithInput(_player.GiveItem().GetItemData()))
+        if (_player.HasItem() && HasRecipeWithInput(_player.GiveItem().GetItemData())) // player has a final product item
         {
+
             Item_Data submittedItem = _player.GiveItem().GetItemData();
             _player.GiveItem().DestroySelf();
 
@@ -24,6 +25,7 @@ public class Counter_Submit : Counter_Base
 
             OnItemSubmit?.Invoke(this, EventArgs.Empty);
 
+            // submit table interact audio oneshot
             Debug.Log($"✅ Added {randomAmount}x {submittedItem._objectName} to inventory.");
         }
     }

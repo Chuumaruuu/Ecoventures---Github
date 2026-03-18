@@ -11,6 +11,7 @@ public class Counter_Empty : Counter_Base
             if (_player.HasItem()) // player has item
             {
                 _player.GiveItem().SetItemParent(this);
+                // player pickup audio oneshot
             }
             else // player has nothing
             {
@@ -24,18 +25,22 @@ public class Counter_Empty : Counter_Base
                 // if player's Item and counter's item are inputs to a combination recipe, destroy both to get the output
                 if (this.HasCombinationWithInput(this.GiveItem().GetItemData(), _player.GiveItem().GetItemData()))
                 {
+
                     Item_Data _outputItemData = GetOutputForInputs(this.GiveItem().GetItemData(), _player.GiveItem().GetItemData());
                     
                     _player.GiveItem().DestroySelf();
                     this.GiveItem().DestroySelf();
 
                     Item_Base.SpawnItem(_outputItemData, this);
+
+                    // player drop audio oneshot
                 }
                 
             }
             else // player has nothing 
             {
                 this.GiveItem().SetItemParent(_player);
+                // player pickup audio oneshot
             }
         }
     }

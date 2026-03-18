@@ -34,7 +34,6 @@ public class Counter_Progress : Counter_Base
     {
         if (HasItem()) // counter has item
         {
-            
             OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
             {
                 _progressTimerNormalized = (float)_progressTimer / _progressRecipeData._timerMax
@@ -48,9 +47,12 @@ public class Counter_Progress : Counter_Base
                 case ProgressState.Cooking:
                     StartSmeltingAnimations();
                     _progressTimer += Time.deltaTime;
+                    // cooking audio loop
 
                     if (_progressTimer > _progressRecipeData._timerMax) //item is done
                     {
+                        // cooking audio loop stop
+                        // burnt audio oneshot
                         Debug.Log("Smelting");
                         this.GiveItem().DestroySelf();
 
@@ -64,12 +66,14 @@ public class Counter_Progress : Counter_Base
                     }          
                     break;
                 case ProgressState.Burning:
+
+                    
                     StopSmeltingAnimations();
                     _burnTimer += Time.deltaTime;
 
                     if (_burnTimer > _progressRecipeData._timerMax) //item is burnt
                     {
-                        Debug.Log("burned");
+                        // burnt audio oneshot
                         this.GiveItem().DestroySelf();
 
                         Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
@@ -87,13 +91,13 @@ public class Counter_Progress : Counter_Base
     }
     public override void Interact(Player_Base _player)
     {
-        
         if (!HasItem()) //counter has nothing
         {
             if (_player.HasItem()) //player has an item
             {
                 if (HasRecipeWithInput(_player.GiveItem().GetItemData())) //player is carrying an item with a progress recipe
                 {
+                    // player drop item oneshot
                     _player.GiveItem().SetItemParent(this);
                     _progressRecipeData = GetProgressRecipeDataWithInput(this.GiveItem().GetItemData());
                     
@@ -103,7 +107,7 @@ public class Counter_Progress : Counter_Base
             }
             else
             {
-                //player has nothing
+                //player has nothing, counter has nothing
             }
         }
         else //counter has an item
@@ -116,6 +120,7 @@ public class Counter_Progress : Counter_Base
             {
                 _currentState = ProgressState.Idle;
 
+                // player pick up item audio oneshot
                 this.GiveItem().SetItemParent(_player);
             }
         }

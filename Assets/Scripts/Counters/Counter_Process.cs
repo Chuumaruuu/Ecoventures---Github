@@ -11,8 +11,9 @@ public class Counter_Process : Counter_Base
         public float _progressTimerNormalized;
     }
     [SerializeField] private ProcessRecipe_Data[] _processRecipeArray;
-
     private int _processTimer;
+
+
     public override void Interact(Player_Base _player)
     {
         if (!HasItem()) //counter has no item
@@ -22,6 +23,7 @@ public class Counter_Process : Counter_Base
                 if (HasRecipeWithInput(_player.GiveItem().GetItemData())) //player is carrying an item with a progress recipe
                 {
                     _player.GiveItem().SetItemParent(this);
+                    // player drop item audio oneshot
                     _processTimer = 0;
 
                     ProcessRecipe_Data _processRecipeData = GetProcessRecipeDataWithInput(this.GiveItem().GetItemData());
@@ -37,17 +39,16 @@ public class Counter_Process : Counter_Base
                 //player has nothing
             }
         }
-        else
+        else //counter has an item
         {
-            //there is an WorkshopObject here
-            if (_player.HasItem())
+            if (_player.HasItem()) //player is carrying something
             {
-                //player is carrying something
+                // nothing happens
             }
-            else
+            else // player has nothing 
             {
-                // player has nothing 
                 this.GiveItem().SetItemParent(_player);
+                // player pick up item audio oneshot
             }
         }
     }
@@ -70,7 +71,10 @@ public class Counter_Process : Counter_Base
 
                 Item_Base.SpawnItem(_outputItemData, this);
             }
+
             OnProcessCounterInteract?.Invoke(this, EventArgs.Empty);
+            // interact audio oneshot 
+
             OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
             {
                 _progressTimerNormalized = (float)_processTimer / _processRecipeData._progressMax
