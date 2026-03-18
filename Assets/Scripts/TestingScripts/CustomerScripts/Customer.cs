@@ -242,6 +242,8 @@ public class Customer : MonoBehaviour, IDropHandler
 
             CustomerTaskManager.Instance.RegisterServed();
 
+            //Play item received sound here
+
             LeaveHappy();
         }
     }
