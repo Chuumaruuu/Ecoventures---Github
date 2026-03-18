@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Counter_Bin : Counter_Base
 {
+
     public event EventHandler OnPlayerThrewObject;
     public override void Interact(Player_Base _player)
     {
@@ -10,6 +11,8 @@ public class Counter_Bin : Counter_Base
         {
             OnPlayerThrewObject?.Invoke(this, EventArgs.Empty);
             _player.GiveItem().DestroySelf();
+            
+            // bin interact audio oneshot
         }
     }
 }

@@ -24,6 +24,8 @@ public class DraggableItem : MonoBehaviour,
         startPos = transform.position;
         startParent = transform.parent;
         transform.SetParent(null);
+
+        //Add sfx when item is dragged
     }
 
     public void OnDrag(PointerEventData eventData)

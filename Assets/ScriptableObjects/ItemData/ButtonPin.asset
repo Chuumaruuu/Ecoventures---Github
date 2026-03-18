@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: ButtonPin
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 0a32a5922adb5b04e92c68095d849cde, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 5adfd90500cbcbe47afccdd888460338, type: 3}
   _objectName: ButtonPin
+  sellprice: 20
+  useCustomWorldScale: 1
+  customWorldScale: {x: 0.0015, y: 0.13, z: 0.003}

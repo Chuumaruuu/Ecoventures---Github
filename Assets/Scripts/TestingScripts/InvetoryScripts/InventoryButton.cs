@@ -32,6 +32,7 @@ public class InventoryButton : MonoBehaviour
             bool success = shopTable.PlaceItemOnTable(item);
             if (success)
             {
+                //add audio here when the product is clicked in the inventory to be placed in the table
                 Destroy(gameObject);
             }
             else
