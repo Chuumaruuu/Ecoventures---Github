@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Player_Base : MonoBehaviour, IItemParent
 {
+    //sex
     public static Player_Base Instance { get; private set; }
     
     public event EventHandler OnPlayerGrabbedObject;
