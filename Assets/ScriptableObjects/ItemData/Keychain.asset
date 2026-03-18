@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Keychain
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 4bfb47e8613b90c48be230c8cb02804f, type: 3}
-  _itemSprite: {fileID: 21300000, guid: dfba1d5882a2a99479f9b4811c414251, type: 3}
+  _itemSprite: {fileID: 21300000, guid: b44cb0b5890c5634499ac410d2d1cbb7, type: 3}
   _objectName: Keychain
   sellprice: 30
   useCustomWorldScale: 1
