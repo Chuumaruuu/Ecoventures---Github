@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Map_Player : MonoBehaviour
 {
-    //sex
     public static Map_Player Instance { get; private set; }
     
     public event EventHandler OnPlayerSelectedStage;
