@@ -1041,16 +1041,27 @@ MonoBehaviour:
   stuckCheckTime: 2
   minimumMoveDistance: 0.2
   roamPoints:
-  - {fileID: 280168828}
-  - {fileID: 1718109322}
-  - {fileID: 569607164}
-  - {fileID: 1115050810}
-  - {fileID: 219112516}
-  - {fileID: 2003179332}
-  - {fileID: 1666346678}
-  - {fileID: 1289215530}
-  - {fileID: 458225507}
-  - {fileID: 586146425}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  facingSpeed: 120
 --- !u!195 &220417272
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3913,6 +3924,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd21990b746f924a99ee5b87ecff673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1344747529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344747531}
+  - component: {fileID: 1344747530}
+  m_Layer: 0
+  m_Name: MusicPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1344747530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344747529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3edbcffa004374c864296afe96cb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundMusic
+  musicClip: {fileID: 8300000, guid: d80decfba15c71048af70a0c5196e2e9, type: 3}
+--- !u!4 &1344747531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344747529}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345219951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,16 +4786,27 @@ MonoBehaviour:
   stuckCheckTime: 2
   minimumMoveDistance: 0.2
   roamPoints:
-  - {fileID: 280168828}
-  - {fileID: 1718109322}
-  - {fileID: 569607164}
-  - {fileID: 1115050810}
-  - {fileID: 219112516}
-  - {fileID: 2003179332}
-  - {fileID: 1666346678}
-  - {fileID: 1289215530}
-  - {fileID: 458225507}
-  - {fileID: 586146425}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  - point: {fileID: 0}
+    vendorLookTarget: {fileID: 0}
+  facingSpeed: 120
 --- !u!195 &1533437093
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33252,3 +33319,4 @@ SceneRoots:
   - {fileID: 1811222037}
   - {fileID: 1266291810}
   - {fileID: 999414685}
+  - {fileID: 1344747531}

@@ -21,7 +21,6 @@ public class Counter_Container : Counter_Base
                     // player pick up item audio oneshot
                     SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
                     // container interact audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.containerInteractClip);
                 } 
                 else // counter has item
                 { 

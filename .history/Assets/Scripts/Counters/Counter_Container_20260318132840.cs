@@ -19,15 +19,12 @@ public class Counter_Container : Counter_Base
                     Item_Base.SpawnItem(_itemData, _player);
 
                     // player pick up item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
                     // container interact audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.containerInteractClip);
                 } 
                 else // counter has item
                 { 
                     this.GiveItem().SetItemParent(_player);
                     // player pick up item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
                 }
             }
             else // player has item
@@ -36,7 +33,6 @@ public class Counter_Container : Counter_Base
                 {
                     _player.GiveItem().SetItemParent(this);
                     // player drop item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
                 }
             }
         } 

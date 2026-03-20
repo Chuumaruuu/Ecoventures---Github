@@ -24,7 +24,6 @@ public class Counter_Process : Counter_Base
                 {
                     _player.GiveItem().SetItemParent(this);
                     // player drop item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
                     _processTimer = 0;
 
                     ProcessRecipe_Data _processRecipeData = GetProcessRecipeDataWithInput(this.GiveItem().GetItemData());
@@ -50,7 +49,6 @@ public class Counter_Process : Counter_Base
             {
                 this.GiveItem().SetItemParent(_player);
                 // player pick up item audio oneshot
-                SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
             }
         }
     }

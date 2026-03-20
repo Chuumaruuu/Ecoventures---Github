@@ -48,14 +48,11 @@ public class Counter_Progress : Counter_Base
                     StartSmeltingAnimations();
                     _progressTimer += Time.deltaTime;
                     // cooking audio loop
-                    SoundManager.Instance.PlayLoop(SoundManager.Instance.cookingLoopClip);
+
                     if (_progressTimer > _progressRecipeData._timerMax) //item is done
                     {
                         // cooking audio loop stop
                         // burnt audio oneshot
-                        // hindi ba to dapat good feedback oneshot? kasi may overcooked pa naman
-                        SoundManager.Instance.StopLoop();
-                        SoundManager.Instance.PlaySFX(SoundManager.Instance.goodFeedbackClip);
                         Debug.Log("Smelting");
                         this.GiveItem().DestroySelf();
 
@@ -77,7 +74,6 @@ public class Counter_Progress : Counter_Base
                     if (_burnTimer > _progressRecipeData._timerMax) //item is burnt
                     {
                         // burnt audio oneshot
-                        SoundManager.Instance.PlaySFX(SoundManager.Instance.burnClip);
                         this.GiveItem().DestroySelf();
 
                         Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
@@ -102,7 +98,6 @@ public class Counter_Progress : Counter_Base
                 if (HasRecipeWithInput(_player.GiveItem().GetItemData())) //player is carrying an item with a progress recipe
                 {
                     // player drop item oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
                     _player.GiveItem().SetItemParent(this);
                     _progressRecipeData = GetProgressRecipeDataWithInput(this.GiveItem().GetItemData());
                     
@@ -126,7 +121,6 @@ public class Counter_Progress : Counter_Base
                 _currentState = ProgressState.Idle;
 
                 // player pick up item audio oneshot
-                SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
                 this.GiveItem().SetItemParent(_player);
             }
         }

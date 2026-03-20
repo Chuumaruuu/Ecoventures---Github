@@ -4113,6 +4113,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1640281574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1640281577}
+  - component: {fileID: 1640281576}
+  m_Layer: 0
+  m_Name: Audio_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1640281576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640281574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958bd3979288bf345a71a2de8fbfb570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  pickupClip: {fileID: 8300000, guid: cae53763934a27549bbb03639e8209aa, type: 3}
+  dropClip: {fileID: 8300000, guid: 79d6927001582d24dba03a00b79cbca8, type: 3}
+  binInteractClip: {fileID: 8300000, guid: c40558b6c19677847834510c8e329b9e, type: 3}
+  containerInteractClip: {fileID: 8300000, guid: 4714691ec11070046b52182a648937c4, type: 3}
+  cookingLoopClip: {fileID: 8300000, guid: 4e7d846359f9c04408794283cc049d21, type: 3}
+  goodFeedbackClip: {fileID: 8300000, guid: cdd70d7ea9e4c4048b249596ef3b397b, type: 3}
+  burnClip: {fileID: 8300000, guid: 92fb077c338c5734da0a89f9cf5dcd64, type: 3}
+--- !u!4 &1640281577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640281574}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 976.4679, y: 0, z: -1961.6588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703231513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5708,6 +5759,7 @@ SceneRoots:
   - {fileID: 1281592473}
   - {fileID: 1534138978}
   - {fileID: 1117248837}
+  - {fileID: 1640281577}
   - {fileID: 331167279}
   - {fileID: 718492}
   - {fileID: 284956987}
