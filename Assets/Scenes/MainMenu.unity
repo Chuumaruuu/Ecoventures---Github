@@ -4146,6 +4146,9 @@ MonoBehaviour:
   dropClip: {fileID: 8300000, guid: 79d6927001582d24dba03a00b79cbca8, type: 3}
   binInteractClip: {fileID: 8300000, guid: c40558b6c19677847834510c8e329b9e, type: 3}
   containerInteractClip: {fileID: 8300000, guid: 4714691ec11070046b52182a648937c4, type: 3}
+  cookingLoopClip: {fileID: 8300000, guid: 4e7d846359f9c04408794283cc049d21, type: 3}
+  goodFeedbackClip: {fileID: 8300000, guid: cdd70d7ea9e4c4048b249596ef3b397b, type: 3}
+  burnClip: {fileID: 8300000, guid: 92fb077c338c5734da0a89f9cf5dcd64, type: 3}
 --- !u!4 &1640281577
 Transform:
   m_ObjectHideFlags: 0
