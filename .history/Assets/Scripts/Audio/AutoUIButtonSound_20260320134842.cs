@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class AutoUIButtonSound : MonoBehaviour
 {
-    private void Update()
+    private void Start()
     {
         Button[] buttons = FindObjectsByType<Button>(FindObjectsSortMode.None);
         foreach (Button btn in buttons)
