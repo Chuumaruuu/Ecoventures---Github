@@ -13,7 +13,6 @@ public class SoundManager : MonoBehaviour
     public AudioClip pickupClip;
     public AudioClip dropClip;
     // public AudioClip buttonClickClip;
-    public AudioClip binInteractClip;
 
     private void Awake()
     {

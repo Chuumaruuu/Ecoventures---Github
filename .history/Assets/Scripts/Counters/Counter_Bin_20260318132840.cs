@@ -13,7 +13,6 @@ public class Counter_Bin : Counter_Base
             _player.GiveItem().DestroySelf();
             
             // bin interact audio oneshot
-            SoundManager.Instance.PlaySFX(SoundManager.Instance.binInteractClip);
         }
     }
 }
