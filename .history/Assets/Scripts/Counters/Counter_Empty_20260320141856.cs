@@ -16,7 +16,7 @@ public class Counter_Empty : Counter_Base
             }
             else // player has nothing
             {
-                // No audio needed
+                
             }
         }
         else // counter has item
