@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2047552068557438421, guid: e4470f0fdd287ad4fbbf035f48dc37c7, type: 3}
+      propertyPath: _counterInteractSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e1933ae1ce795c41b65831f17cc4d1e, type: 3}
     - target: {fileID: 2845142879316317602, guid: e4470f0fdd287ad4fbbf035f48dc37c7, type: 3}
       propertyPath: _processCounter
       value: 
@@ -81,6 +85,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6189936333635271550, guid: e4470f0fdd287ad4fbbf035f48dc37c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7932425634269221302}
+    - targetCorrespondingSourceObject: {fileID: 6189936333635271550, guid: e4470f0fdd287ad4fbbf035f48dc37c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6250114651104758971}
   m_SourcePrefab: {fileID: 100100000, guid: e4470f0fdd287ad4fbbf035f48dc37c7, type: 3}
 --- !u!1 &4634158106507060824 stripped
 GameObject:
@@ -100,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Counter_Process
   _counterTop: {fileID: 4752304898174455050}
+  _counterAudio: {fileID: 6250114651104758971}
   _processRecipeArray:
   - {fileID: 11400000, guid: 445326ab6392a0b42bd833edc03872fe, type: 2}
   - {fileID: 11400000, guid: 89585b86fe33f9d40abee3787a65e606, type: 2}
@@ -108,6 +116,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ca0eb5d46b9d4344915faaa4d498830, type: 2}
   - {fileID: 11400000, guid: a89da790bd720c7499a8daf180fa804a, type: 2}
   - {fileID: 11400000, guid: 78f77d3250798804e8012f9197b4a327, type: 2}
+--- !u!114 &6250114651104758971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634158106507060824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87615e516bcbca5409698315e377ec47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Counter_Audio
+  _correctEntrySFX: {fileID: 0}
+  _wrongEntrySFX: {fileID: 0}
+  _counterInteractSFX: {fileID: 8300000, guid: 2e1933ae1ce795c41b65831f17cc4d1e, type: 3}
+  _cookingSFX: {fileID: 0}
+  _burningSFX: {fileID: 0}
+  _overcookedSFX: {fileID: 0}
 --- !u!4 &4752304898174455050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6078540436522995756, guid: e4470f0fdd287ad4fbbf035f48dc37c7, type: 3}

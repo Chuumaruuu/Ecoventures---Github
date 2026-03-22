@@ -472,6 +472,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4064584869449029172, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7804991282908791558}
+    - targetCorrespondingSourceObject: {fileID: 4064584869449029172, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5941227710523872559}
   m_SourcePrefab: {fileID: 100100000, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
 --- !u!1 &5915481492226970200 stripped
 GameObject:
@@ -491,12 +494,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Counter_Submit
   _counterTop: {fileID: 6027013728250509578}
-  _mainInventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+  _counterAudio: {fileID: 5941227710523872559}
   _finalProducts:
   - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
   - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
   - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
   - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  _minAmount: 1
+  _maxAmount: 3
 --- !u!114 &7804991282908791558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +514,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae733daa74fc4947b9ce31cb7d1eb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Submit_Manager
+--- !u!114 &5941227710523872559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5915481492226970200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87615e516bcbca5409698315e377ec47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Counter_Audio
+  _correctEntrySFX: {fileID: 8300000, guid: cdd70d7ea9e4c4048b249596ef3b397b, type: 3}
+  _wrongEntrySFX: {fileID: 8300000, guid: 92fb077c338c5734da0a89f9cf5dcd64, type: 3}
+  _counterInteractSFX: {fileID: 0}
+  _cookingSFX: {fileID: 0}
+  _burningSFX: {fileID: 0}
+  _overcookedSFX: {fileID: 0}
 --- !u!4 &6027013728250509578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4166969271835950438, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}

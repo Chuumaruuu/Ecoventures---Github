@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class ProcessCounter_Animation : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private const string INTERACT = "Interact";
+
+    [SerializeField] private Counter_Process _processCounter;
+
+    private Animator _containerAnimator;
+
+    private void Awake()
     {
-        
+        _containerAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        _processCounter.OnProcessCounterInteract += ProcessCounterOnInteractAlternate;
+    }
+
+    private void ProcessCounterOnInteractAlternate(object sender, System.EventArgs e)
+    {
+        _containerAnimator.SetTrigger(INTERACT);
     }
 }

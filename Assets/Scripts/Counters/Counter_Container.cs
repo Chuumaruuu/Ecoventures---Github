@@ -18,16 +18,11 @@ public class Counter_Container : Counter_Base
                     OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
                     Item_Base.SpawnItem(_itemData, _player);
 
-                    // player pick up item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
-                    // container interact audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.containerInteractClip);
+                    AudioManager.Instance.PlaySFX(_counterAudio._counterInteractSFX);
                 } 
                 else // counter has item
                 { 
                     this.GiveItem().SetItemParent(_player);
-                    // player pick up item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
                 }
             }
             else // player has item
@@ -35,8 +30,6 @@ public class Counter_Container : Counter_Base
                 if (!this.HasItem()) //counter does not have an item
                 {
                     _player.GiveItem().SetItemParent(this);
-                    // player drop item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
                 }
             }
         } 

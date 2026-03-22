@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class Counter_Process : Counter_Base
 {
@@ -23,10 +22,9 @@ public class Counter_Process : Counter_Base
                 if (HasRecipeWithInput(_player.GiveItem().GetItemData())) //player is carrying an item with a progress recipe
                 {
                     _player.GiveItem().SetItemParent(this);
-                    // player drop item audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
+                    
                     _processTimer = 0;
-
+                    
                     ProcessRecipe_Data _processRecipeData = GetProcessRecipeDataWithInput(this.GiveItem().GetItemData());
                     
                     OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
@@ -49,8 +47,6 @@ public class Counter_Process : Counter_Base
             else // player has nothing 
             {
                 this.GiveItem().SetItemParent(_player);
-                // player pick up item audio oneshot
-                SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
             }
         }
     }
@@ -81,6 +77,8 @@ public class Counter_Process : Counter_Base
             {
                 _progressTimerNormalized = (float)_processTimer / _processRecipeData._progressMax
             });
+
+            AudioManager.Instance.PlaySFX(_counterAudio._counterInteractSFX);
             
             
         }

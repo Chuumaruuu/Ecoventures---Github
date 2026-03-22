@@ -23,6 +23,7 @@ public class Counter_Progress : Counter_Base
     private ProgressState _currentState;
     private float _progressTimer;
     private float _burnTimer;
+    private AudioSource _progressSFXLoop;
     private ProgressRecipe_Data _progressRecipeData;
 
 
@@ -32,65 +33,65 @@ public class Counter_Progress : Counter_Base
     }
     private void Update()
     {
-        if (HasItem()) // counter has item
+        if (!HasItem()) return;
+
+        OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
         {
-            OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
-            {
-                _progressTimerNormalized = (float)_progressTimer / _progressRecipeData._timerMax
-            });
+            _progressTimerNormalized = _progressTimer / _progressRecipeData._timerMax
+        });
 
-            switch (_currentState)
-            {
-                case ProgressState.Idle:
-                    StopSmeltingAnimations();
-                    break;
-                case ProgressState.Cooking:
-                    StartSmeltingAnimations();
-                    _progressTimer += Time.deltaTime;
-                    // cooking audio loop
-                    SoundManager.Instance.PlayLoop(SoundManager.Instance.cookingLoopClip);
-                    if (_progressTimer > _progressRecipeData._timerMax) //item is done
-                    {
-                        // cooking audio loop stop
-                        // burnt audio oneshot
-                        // hindi ba to dapat good feedback oneshot? kasi may overcooked pa naman
-                        SoundManager.Instance.StopLoop();
-                        SoundManager.Instance.PlaySFX(SoundManager.Instance.goodFeedbackClip);
-                        Debug.Log("Smelting");
-                        this.GiveItem().DestroySelf();
+        switch (_currentState)
+        {
+            case ProgressState.Cooking:
+                StartSmeltingAnimations();
+                _progressTimer += Time.deltaTime;
 
-                        Item_Base.SpawnItem(_progressRecipeData._finishedItem, this);
-                        _currentState = ProgressState.Burning;
-                        _progressTimer = 0;
-                        OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
-                        {
-                            _progressTimerNormalized = (float)_progressTimer / _progressRecipeData._timerMax
-                        });
-                    }          
-                    break;
-                case ProgressState.Burning:
+                // Start cooking SFX only once
+                if (_progressSFXLoop == null)
+                    _progressSFXLoop = AudioManager.Instance.PlayLoopedSFX(_counterAudio._cookingSFX);
 
-                    
-                    StopSmeltingAnimations();
-                    _burnTimer += Time.deltaTime;
+                if (_progressTimer > _progressRecipeData._timerMax)
+                {
+                    // Stop loop
+                    AudioManager.Instance.StopLoopedSFX(_progressSFXLoop);
+                    _progressSFXLoop = null;
 
-                    if (_burnTimer > _progressRecipeData._timerMax) //item is burnt
-                    {
-                        // burnt audio oneshot
-                        SoundManager.Instance.PlaySFX(SoundManager.Instance.burnClip);
-                        this.GiveItem().DestroySelf();
+                    // Process finished item
+                    this.GiveItem().DestroySelf();
+                    Item_Base.SpawnItem(_progressRecipeData._finishedItem, this);
+                    _currentState = ProgressState.Burning;
+                    _progressTimer = 0;
+                }
+                break;
 
-                        Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
-                        _currentState = ProgressState.Overcooked;
-                    }
-                    break;
-                case ProgressState.Overcooked:
-                    StopSmeltingAnimations();
-                    _burnTimer = 0f;
-                    _currentState = ProgressState.Idle;
-                    break;
-            }
-            Debug.Log("State");
+            case ProgressState.Burning:
+                StopSmeltingAnimations();
+                _burnTimer += Time.deltaTime;
+
+                if (_progressSFXLoop == null)
+                    _progressSFXLoop = AudioManager.Instance.PlayLoopedSFX(_counterAudio._burningSFX);
+
+                if (_burnTimer > _progressRecipeData._timerMax)
+                {
+                    AudioManager.Instance.StopLoopedSFX(_progressSFXLoop);
+                    _progressSFXLoop = null;
+
+                    this.GiveItem().DestroySelf();
+                    Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
+                    _currentState = ProgressState.Overcooked;
+                }
+                break;
+
+            case ProgressState.Overcooked:
+                AudioManager.Instance.PlaySFX(_counterAudio._overcookedSFX);
+                StopSmeltingAnimations();
+                _burnTimer = 0f;
+                _currentState = ProgressState.Idle;
+                break;
+
+            case ProgressState.Idle:
+                StopSmeltingAnimations();
+                break;
         }
     }
     public override void Interact(Player_Base _player)
@@ -102,7 +103,7 @@ public class Counter_Progress : Counter_Base
                 if (HasRecipeWithInput(_player.GiveItem().GetItemData())) //player is carrying an item with a progress recipe
                 {
                     // player drop item oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
+
                     _player.GiveItem().SetItemParent(this);
                     _progressRecipeData = GetProgressRecipeDataWithInput(this.GiveItem().GetItemData());
                     
@@ -126,7 +127,7 @@ public class Counter_Progress : Counter_Base
                 _currentState = ProgressState.Idle;
 
                 // player pick up item audio oneshot
-                SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
+                
                 this.GiveItem().SetItemParent(_player);
             }
         }

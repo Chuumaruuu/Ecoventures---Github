@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class Player_Visuals : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class Player_Visuals : MonoBehaviour
     private void OnPlayerCarryingObject(object sender, System.EventArgs e)
     {
         _playerAnimator.SetBool(IS_CARRYING, _player.HasItem());
+    }
+
+    private void WalkStepInvoke()
+    {
+        
     }
 
 }

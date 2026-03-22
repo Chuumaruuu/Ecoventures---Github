@@ -124,6 +124,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5312342409899359003, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1327787373059218672}
+    - targetCorrespondingSourceObject: {fileID: 5312342409899359003, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8439051451875699776}
   m_SourcePrefab: {fileID: 100100000, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
 --- !u!1 &3505422920257988884 stripped
 GameObject:
@@ -143,6 +146,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Counter_Bin
   _counterTop: {fileID: 3538001421614793286}
+  _counterAudio: {fileID: -8439051451875699776}
+--- !u!114 &-8439051451875699776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3505422920257988884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87615e516bcbca5409698315e377ec47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Counter_Audio
+  _counterInteractSFX: {fileID: 8300000, guid: c40558b6c19677847834510c8e329b9e, type: 3}
 --- !u!4 &3538001421614793286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5189687566225051721, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}

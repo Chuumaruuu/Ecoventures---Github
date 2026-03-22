@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 9084968695207033664}
   - component: {fileID: 74726110090177707}
   - component: {fileID: 1713354782993916070}
+  - component: {fileID: 2362991363326508390}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -79,9 +80,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Base
   _moveSpeed: 9
   _playerInput: {fileID: 1713354782993916070}
+  _playerAudio: {fileID: 2362991363326508390}
   _countersLayerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
   _itemHolder: {fileID: 2599563816015939217}
 --- !u!114 &1713354782993916070
 MonoBehaviour:
@@ -95,6 +97,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56cddc8eb453b0f41abfbf57323516d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Input
+--- !u!114 &2362991363326508390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288300060769786692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3228d5bbdbc2ac74a86d31648dca6dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Audio
+  _footStepSFX: {fileID: 8300000, guid: 46454371d01ffa5458675dc5185796a6, type: 3}
+  _pickUpSFX: {fileID: 8300000, guid: cae53763934a27549bbb03639e8209aa, type: 3}
+  _dropSFX: {fileID: 8300000, guid: 79d6927001582d24dba03a00b79cbca8, type: 3}
+  _playerInput: {fileID: 1713354782993916070}
 --- !u!1001 &5647811202909562333
 PrefabInstance:
   m_ObjectHideFlags: 0

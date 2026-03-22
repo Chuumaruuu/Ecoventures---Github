@@ -11,8 +11,6 @@ public class Counter_Empty : Counter_Base
             if (_player.HasItem()) // player has item
             {
                 _player.GiveItem().SetItemParent(this);
-                // player pickup audio oneshot
-                SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
             }
             else // player has nothing
             {
@@ -33,17 +31,12 @@ public class Counter_Empty : Counter_Base
                     this.GiveItem().DestroySelf();
 
                     Item_Base.SpawnItem(_outputItemData, this);
-
-                    // player drop audio oneshot
-                    SoundManager.Instance.PlaySFX(SoundManager.Instance.dropClip);
                 }
                 
             }
             else // player has nothing 
             {
                 this.GiveItem().SetItemParent(_player);
-                // player pickup audio oneshot
-                SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupClip);
             }
         }
     }
