@@ -13,7 +13,7 @@ public class Counter_Submit : Counter_Base
     {
         if (_player.HasItem() && HasRecipeWithInput(_player.GiveItem().GetItemData())) // player has a final product item
         {
-
+            AudioManager.Instance.PlaySFX(_counterAudio._correctEntrySFX);
             Item_Data submittedItem = _player.GiveItem().GetItemData();
             _player.GiveItem().DestroySelf();
 
@@ -27,6 +27,10 @@ public class Counter_Submit : Counter_Base
 
             // submit table interact audio oneshot
             Debug.Log($"✅ Added {randomAmount}x {submittedItem._objectName} to inventory.");
+        }
+        else // wrong combination
+        {
+            AudioManager.Instance.PlaySFX(_counterAudio._wrongEntrySFX);
         }
     }
 

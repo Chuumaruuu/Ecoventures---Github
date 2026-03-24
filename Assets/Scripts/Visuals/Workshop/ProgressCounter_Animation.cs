@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class ProgressCounter_Animation : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private const string SMELTING = "Smelting";
+
+    [SerializeField] private Counter_Progress _progressCounter;
+
+    private Animator _containerAnimator;
+
+    private void Awake()
     {
-        
+        _containerAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        _progressCounter.OnProgressCooking += ProgressCounterOnChangeCookingState;
+    }
+
+    private void ProgressCounterOnChangeCookingState(object sender, System.EventArgs e)
+    {
+        _containerAnimator.SetBool(SMELTING, _progressCounter._isSmelting);
     }
 }

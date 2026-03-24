@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 14765101914357168, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
+      propertyPath: _counterInteractSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: e591c5f421281cf46a15b6bcb1884b5e, type: 3}
     - target: {fileID: 4924447882697683166, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -63,6 +67,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5312342409899359003, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2413284134309299828}
+    - targetCorrespondingSourceObject: {fileID: 5312342409899359003, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2169339361645808834}
   m_SourcePrefab: {fileID: 100100000, guid: c3dedd91799f13e4a91672311eb9916e, type: 3}
 --- !u!4 &1216135968191808981 stripped
 Transform:
@@ -87,4 +94,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Counter_Container
   _counterTop: {fileID: 1216135968191808981}
+  _counterAudio: {fileID: 2169339361645808834}
   _itemData: {fileID: 0}
+--- !u!114 &2169339361645808834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251111358166347399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87615e516bcbca5409698315e377ec47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Counter_Audio
+  _counterInteractSFX: {fileID: 8300000, guid: 4714691ec11070046b52182a648937c4, type: 3}

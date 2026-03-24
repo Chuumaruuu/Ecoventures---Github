@@ -15,10 +15,11 @@ public class Player_Base : MonoBehaviour, IItemParent
 
     [SerializeField] private float _moveSpeed = 7f;
     [SerializeField] private Player_Input _playerInput;
+    [SerializeField] private Player_Audio _playerAudio;
     [SerializeField] private LayerMask _countersLayerMask;
     [SerializeField] private Transform _itemHolder;
 
-    private bool _isWalking;
+    private bool _isWalking = false;
     private Vector3 _lastInteractDirection;
     private Counter_Base _selectedCounter;
     private Item_Base _productionItem;
@@ -40,7 +41,7 @@ public class Player_Base : MonoBehaviour, IItemParent
 
     private void PlayerOnInteractAction(object _sender, EventArgs e) //if the player detects a counter in front of it, call out that counter's Interact() and call out that the player has grabbed an object
     {
-        if (_selectedCounter != null) 
+        if (DetectsACounter()) 
         {
             _selectedCounter.Interact(this);
             OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
@@ -49,12 +50,14 @@ public class Player_Base : MonoBehaviour, IItemParent
 
     private void PlayerOnInteractAlternateAction(object _sender, EventArgs e) //
     {
-        if (_selectedCounter != null) 
+        if (DetectsACounter()) 
         {
             _selectedCounter.InteractAlternate(this);
             OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
         }
     }
+
+    
 
     private void Update() 
     {
@@ -176,6 +179,11 @@ public class Player_Base : MonoBehaviour, IItemParent
         return _productionItem;
     }
 
+    public Counter_Base SelectedCounter()
+    {
+        return _selectedCounter;
+    }
+
     public void ClearItem() // removes the item from player's posession
     {
         _productionItem = null;
@@ -184,5 +192,10 @@ public class Player_Base : MonoBehaviour, IItemParent
     public bool HasItem() // checks if player detects that an item is in their posession
     {
         return _productionItem != null;
+    }
+
+    public bool DetectsACounter()
+    {
+        return _selectedCounter != null;
     }
 }

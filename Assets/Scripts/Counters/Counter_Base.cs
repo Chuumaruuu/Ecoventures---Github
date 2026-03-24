@@ -3,6 +3,7 @@ using UnityEngine;
 public class Counter_Base : MonoBehaviour, IItemParent
 {
     [SerializeField] private Transform _counterTop;
+    [SerializeField] protected Counter_Audio _counterAudio;
 
     private Item_Base _baseItem;
 
