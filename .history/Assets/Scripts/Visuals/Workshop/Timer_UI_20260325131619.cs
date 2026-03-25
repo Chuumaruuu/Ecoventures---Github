@@ -8,6 +8,7 @@ public class Timer_UI : MonoBehaviour
 
     [SerializeField] private float _timerMax;
     [SerializeField] private Image timerImage;
+    [SerializeField, Range(0f, 0.5f)] private float transitionWidth = 0.1f;
 
     public enum TimerState
     {
@@ -59,17 +60,38 @@ public class Timer_UI : MonoBehaviour
         // For radial fill images, this drives the visible portion from full (1) to empty (0).
         timerImage.fillAmount = timeRatio;
 
-        if (timeRatio > (2f / 3f))
+        timerImage.color = GetSmoothTimerColor(timeRatio);
+    }
+
+    private Color GetSmoothTimerColor(float timeRatio)
+    {
+        float upperThreshold = 2f / 3f;
+        float lowerThreshold = 1f / 3f;
+        float halfWindow = transitionWidth * 0.5f;
+
+        // Blend near each threshold to avoid abrupt color changes.
+        if (timeRatio >= upperThreshold + halfWindow)
         {
-            timerImage.color = Color.green;
+            return Color.green;
         }
-        else if (timeRatio > (1f / 3f))
+
+        if (timeRatio > upperThreshold - halfWindow)
         {
-            timerImage.color = Color.yellow;
+            float t = Mathf.InverseLerp(upperThreshold - halfWindow, upperThreshold + halfWindow, timeRatio);
+            return Color.Lerp(Color.yellow, Color.green, t);
         }
-        else
+
+        if (timeRatio >= lowerThreshold + halfWindow)
         {
-            timerImage.color = Color.red;
+            return Color.yellow;
         }
+
+        if (timeRatio > lowerThreshold - halfWindow)
+        {
+            float t = Mathf.InverseLerp(lowerThreshold - halfWindow, lowerThreshold + halfWindow, timeRatio);
+            return Color.Lerp(Color.red, Color.yellow, t);
+        }
+
+        return Color.red;
     }
 }
