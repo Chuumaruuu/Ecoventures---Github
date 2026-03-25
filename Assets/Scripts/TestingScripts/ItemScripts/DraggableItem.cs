@@ -6,16 +6,17 @@ public class DraggableItem : MonoBehaviour,
 {
     [HideInInspector] public Item_Data itemData;
     [HideInInspector] public TableSlot sourceSlot;
-
     private Vector3 startPos;
     private Transform startParent;
     private Camera cam;
-
+    private AudioManager AudioSFX;
     [HideInInspector] public bool wasAccepted = false;
+    [SerializeField] private AudioClip dragClip;
 
     private void Awake()
     {
         cam = Camera.main;
+        AudioSFX = AudioManager.Instance;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -25,18 +26,17 @@ public class DraggableItem : MonoBehaviour,
         startParent = transform.parent;
         transform.SetParent(null);
 
-        //Add sfx when item is dragged
+        if (AudioSFX != null && dragClip != null)
+            AudioSFX.PlaySFX(dragClip);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Ray ray = cam.ScreenPointToRay(eventData.position);
-        // Use a horizontal plane at the item's original height
         Plane plane = new Plane(Vector3.up, new Vector3(0, startPos.y, 0));
         if (plane.Raycast(ray, out float dist))
         {
             Vector3 worldPos = ray.GetPoint(dist);
-            // Keep item slightly above the table surface
             transform.position = new Vector3(worldPos.x, startPos.y + 0.3f, worldPos.z);
         }
     }
@@ -45,11 +45,9 @@ public class DraggableItem : MonoBehaviour,
     {
         if (!wasAccepted)
         {
-            // Snap back to original slot
             transform.SetParent(startParent);
             transform.position = startPos;
 
-            // Re-register with source slot if it was cleared
             if (sourceSlot != null && sourceSlot.IsEmpty)
             {
                 sourceSlot.RestoreItem(this);
