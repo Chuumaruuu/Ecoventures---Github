@@ -169,9 +169,9 @@ MonoBehaviour:
   - {fileID: 8048393183909472052, guid: 552b8b43c7d70f9419c8c65a9b9c7006, type: 3}
   spawnInterval: 1
   maxCustomersInShop: 3
-  spawnFloor: {fileID: 2707633885198198344}
+  spawnFloor: {fileID: 43870678486502881}
   spawnHeight: 3
-  areaCenter: {x: 0, y: 0, z: -76.3}
+  areaCenter: {x: 0, y: 0, z: -89.1}
   areaSize: {x: 355, y: 0, z: 10}
   shopTable: {fileID: 6860917262536494809}
   exitPoint: {fileID: 1816043821}
@@ -370,6 +370,46 @@ PrefabInstance:
       objectReference: {fileID: 458225507}
     - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
       propertyPath: 'roamPoints.Array.data[9]'
+      value: 
+      objectReference: {fileID: 586146425}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 280168828}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 1718109322}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 569607164}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 1115050810}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 219112516}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 2003179332}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1666346678}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1289215530}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 458225507}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
       value: 
       objectReference: {fileID: 586146425}
     - target: {fileID: 5313993477490290514, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
@@ -1041,25 +1081,25 @@ MonoBehaviour:
   stuckCheckTime: 2
   minimumMoveDistance: 0.2
   roamPoints:
-  - point: {fileID: 0}
+  - point: {fileID: 280168828}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1718109322}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 569607164}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1115050810}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 219112516}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 2003179332}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1666346678}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1289215530}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 458225507}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 586146425}
     vendorLookTarget: {fileID: 0}
   facingSpeed: 120
 --- !u!195 &220417272
@@ -2147,7 +2187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e8b5d5d3ef45b4f991e0551a56a5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalCustomers: 2
+  totalCustomers: 20
   taskText: {fileID: 186265437}
   taskProgressPanel: {fileID: 391332088}
   taskCompletePanel: {fileID: 601378936}
@@ -3924,50 +3964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd21990b746f924a99ee5b87ecff673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1344747529
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1344747531}
-  - component: {fileID: 1344747530}
-  m_Layer: 0
-  m_Name: MusicPlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1344747530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344747529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3edbcffa004374c864296afe96cb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BackgroundMusic
---- !u!4 &1344747531
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344747529}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345219951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5027,25 +5023,25 @@ MonoBehaviour:
   stuckCheckTime: 2
   minimumMoveDistance: 0.2
   roamPoints:
-  - point: {fileID: 0}
+  - point: {fileID: 280168828}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1718109322}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 569607164}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1115050810}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 219112516}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 2003179332}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1666346678}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 1289215530}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 458225507}
     vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
+  - point: {fileID: 586146425}
     vendorLookTarget: {fileID: 0}
   facingSpeed: 120
 --- !u!195 &1533437093
@@ -5137,6 +5133,46 @@ PrefabInstance:
       objectReference: {fileID: 458225507}
     - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
       propertyPath: 'roamPoints.Array.data[9]'
+      value: 
+      objectReference: {fileID: 586146425}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 280168828}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 1718109322}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 569607164}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 1115050810}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 219112516}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 2003179332}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1666346678}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1289215530}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 458225507}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
       value: 
       objectReference: {fileID: 586146425}
     - target: {fileID: 5313993477490290514, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
@@ -5605,6 +5641,46 @@ PrefabInstance:
       propertyPath: 'roamPoints.Array.data[9]'
       value: 
       objectReference: {fileID: 586146425}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 280168828}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 1718109322}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 569607164}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 1115050810}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 219112516}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 2003179332}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1666346678}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1289215530}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 458225507}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
+      value: 
+      objectReference: {fileID: 586146425}
     - target: {fileID: 4098422716325577689, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 45.29856
@@ -5708,6 +5784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availableItems:
   - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
+  - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
 --- !u!1 &1666346677
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,6 +6148,46 @@ PrefabInstance:
       objectReference: {fileID: 458225507}
     - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
       propertyPath: 'roamPoints.Array.data[9]'
+      value: 
+      objectReference: {fileID: 586146425}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 280168828}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 1718109322}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 569607164}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 1115050810}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 219112516}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 2003179332}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1666346678}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1289215530}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 458225507}
+    - target: {fileID: 1820083811340281680, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
       value: 
       objectReference: {fileID: 586146425}
     - target: {fileID: 5313993477490290514, guid: 04122070ca8a3cb47834fbafa17e9c85, type: 3}
@@ -6545,6 +6662,46 @@ PrefabInstance:
       objectReference: {fileID: 458225507}
     - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
       propertyPath: 'roamPoints.Array.data[9]'
+      value: 
+      objectReference: {fileID: 586146425}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 280168828}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 1718109322}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 569607164}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 1115050810}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 219112516}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 1666346678}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1666346678}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1289215530}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 458225507}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
       value: 
       objectReference: {fileID: 586146425}
     - target: {fileID: 4098422716325577689, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
@@ -7512,6 +7669,7 @@ GameObject:
   - component: {fileID: 6704897895525780532}
   - component: {fileID: 5003863789795865720}
   - component: {fileID: 6704897895525780533}
+  - component: {fileID: 6704897895525780534}
   m_Layer: 0
   m_Name: FTIC_Floor
   m_TagString: Untagged
@@ -12821,6 +12979,7 @@ GameObject:
   - component: {fileID: 5783778233600750427}
   - component: {fileID: 5387039774442758460}
   - component: {fileID: 8043697253353934702}
+  - component: {fileID: 8043697253353934703}
   m_Layer: 0
   m_Name: Part_Sofa_2
   m_TagString: Untagged
@@ -14297,6 +14456,7 @@ GameObject:
   - component: {fileID: 2929691022059136676}
   - component: {fileID: 8993911518187335852}
   - component: {fileID: 7691780939738902755}
+  - component: {fileID: 8993911518187335853}
   m_Layer: 0
   m_Name: FTIC_Lounge_Table_8
   m_TagString: Untagged
@@ -14413,6 +14573,7 @@ GameObject:
   - component: {fileID: 7023151271323948126}
   - component: {fileID: 5864187281270550520}
   - component: {fileID: 8513873160225719259}
+  - component: {fileID: 8513873160225719260}
   m_Layer: 0
   m_Name: FTIC_Right_Wall
   m_TagString: Untagged
@@ -20944,6 +21105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2441033358210950137}
+  - component: {fileID: 2990955681631195009}
   m_Layer: 0
   m_Name: FTIC_Side_Sofa
   m_TagString: Untagged
@@ -20951,6 +21113,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2990955681631195009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2990955681631195008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2992850388319196151
 Transform:
   m_ObjectHideFlags: 0
@@ -23656,6 +23838,7 @@ GameObject:
   - component: {fileID: 4330633594212245291}
   - component: {fileID: 8322067744627400986}
   - component: {fileID: 1556926351653278501}
+  - component: {fileID: 8322067744627400987}
   m_Layer: 0
   m_Name: FTIC_Lounge_Table_9
   m_TagString: Untagged
@@ -27021,6 +27204,7 @@ GameObject:
   - component: {fileID: 7370562302241431232}
   - component: {fileID: 1291351594769503707}
   - component: {fileID: 3722251016381539550}
+  - component: {fileID: 7370562302241431233}
   m_Layer: 0
   m_Name: FTIC_Roof
   m_TagString: Untagged
@@ -29447,6 +29631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6922232107390653394}
+  - component: {fileID: 6922232107390653395}
   m_Layer: 0
   m_Name: FTIC_Wall_Colored
   m_TagString: Untagged
@@ -33872,6 +34057,7 @@ GameObject:
   - component: {fileID: 6958136343120759359}
   - component: {fileID: 1010408299322048007}
   - component: {fileID: 468173072300646682}
+  - component: {fileID: 6958136343120759360}
   m_Layer: 0
   m_Name: FTIC_Lounge_Table_11
   m_TagString: Untagged
@@ -34181,6 +34367,7 @@ GameObject:
   - component: {fileID: 402246761838795131}
   - component: {fileID: 2497594403584396287}
   - component: {fileID: 8048512423007049508}
+  - component: {fileID: 8048512423007049509}
   m_Layer: 0
   m_Name: FTIC_Lounge_Table_10
   m_TagString: Untagged
@@ -38137,7 +38324,7 @@ NavMeshObstacle:
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
-  m_Center: {x: 0.31, y: 0.05, z: 0}
+  m_Center: {x: -0.29, y: 0.05, z: 0}
   m_TimeToStationary: 0.5
 --- !u!1 &6619219531622567468
 GameObject:
@@ -38515,6 +38702,27 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 560a4bbf7dfe9534097401fd8a48debc, type: 2}
   m_BuildHeightMesh: 0
+--- !u!65 &6704897895525780534
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43870678486502881}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1497757, y: 0.0025001524, z: 1.0748879}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &6717591611589148912
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -39551,6 +39759,26 @@ Transform:
   - {fileID: 6831282215425602650}
   m_Father: {fileID: 3830411723185735501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6922232107390653395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760340605491451932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!33 &6922250541365400298
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -39790,6 +40018,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3830411723185735501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &6958136343120759360
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705528110729965642}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.034, y: 0.03, z: 0.045}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &6959159964096680675
 Transform:
   m_ObjectHideFlags: 0
@@ -41666,6 +41910,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3830411723185735501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7370562302241431233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204314140697709754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &7375574176875500199
 Transform:
   m_ObjectHideFlags: 0
@@ -44802,6 +45066,22 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &8043697253353934703
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292780068852555167}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.065000005, y: 0.02, z: 0.037}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!23 &8048512423007049508
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44852,6 +45132,22 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &8048512423007049509
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765014753487133566}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.033, y: 0.03, z: 0.045}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &8055306581056506517
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -46114,6 +46410,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3646912142272937454}
   m_Mesh: {fileID: -884494440536771277, guid: 7694a55a8a54709498634f97e84b78fb, type: 3}
+--- !u!208 &8322067744627400987
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646912142272937454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.059000004, y: 0.030000001, z: 0.060000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!33 &8323449774821516286
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -46186,11 +46498,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.2, y: 0.05, z: 0.1}
+  m_Extents: {x: 0.265, y: 0.05, z: 0.1}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
-  m_Center: {x: 0.3, y: 0.05, z: 0}
+  m_Center: {x: 0.27, y: 0.05, z: 0}
   m_TimeToStationary: 0.5
 --- !u!33 &8362963709500686236
 MeshFilter:
@@ -47098,6 +47410,26 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8513873160225719260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568852013428929891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &8516138918708549435
 Transform:
   m_ObjectHideFlags: 0
@@ -47826,11 +48158,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.095, y: 0.05, z: 0.075}
+  m_Extents: {x: 0.095, y: 0.05, z: 0.085}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -0.05}
   m_TimeToStationary: 0.5
 --- !u!4 &8678605556331851961
 Transform:
@@ -49249,6 +49581,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556338978077065842}
   m_Mesh: {fileID: -4643500612780063429, guid: 7694a55a8a54709498634f97e84b78fb, type: 3}
+--- !u!208 &8993911518187335853
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556338978077065842}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.059000004, y: 0.04, z: 0.060000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &9004525887704640410
 Transform:
   m_ObjectHideFlags: 0
@@ -50419,4 +50767,3 @@ SceneRoots:
   - {fileID: 1811222037}
   - {fileID: 1266291810}
   - {fileID: 999414685}
-  - {fileID: 1344747531}
