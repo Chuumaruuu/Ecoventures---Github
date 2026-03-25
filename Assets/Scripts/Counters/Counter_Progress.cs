@@ -126,7 +126,7 @@ public class Counter_Progress : Counter_Base
             {
                 _currentState = ProgressState.Idle;
 
-                // player pick up item audio oneshot
+                AudioManager.Instance.StopLoopedSFX(AudioManager.Instance.GetSFXSource());
                 
                 this.GiveItem().SetItemParent(_player);
             }
