@@ -1,4 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -27,12 +26,11 @@ public class AudioManager : MonoBehaviour
             return null;
         }
 
-        AudioSource source = gameObject.AddComponent<AudioSource>();
-        source.clip = _sfx;
-        source.loop = true;
-        source.Play();
+        _sfxSource.clip = _sfx;
+        _sfxSource.loop = true;
+        _sfxSource.Play();
 
-        return source;
+        return _sfxSource;
     }
 
     public void PlayMusic(AudioClip _music)
@@ -49,6 +47,15 @@ public class AudioManager : MonoBehaviour
         if (source == null) return;
 
         source.Stop();
-        Destroy(source); 
+    }
+
+    public AudioSource GetSFXSource()
+    {
+        return _sfxSource;
+    }
+
+    public AudioSource GetMusicSource()
+    {
+        return _musicSource;
     }
 }

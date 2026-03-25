@@ -126,7 +126,7 @@ public class Counter_Progress : Counter_Base
             {
                 _currentState = ProgressState.Idle;
 
-                AudioManager.Instance.StopLoopedSFX(_counterAudio);
+                AudioManager.Instance.StopLoopedSFX(AudioManager.Instance.GetSFXSource());
                 
                 this.GiveItem().SetItemParent(_player);
             }
