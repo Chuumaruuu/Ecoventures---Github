@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
+
+    // 🔥 GLOBAL STATE
+    public static bool IsInventoryOpen = false;
+
     [Header("References")]
     public GameInventory_Data inventoryData;
     public InventoryButton inventoryButtonPrefab;
@@ -17,10 +21,12 @@ public class InventoryManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
 #if UNITY_EDITOR
             if (inventoryData != null)
                 inventoryData.ClearInventory();
 #endif
+
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
@@ -45,6 +51,18 @@ public class InventoryManager : MonoBehaviour
         gridParent = newGrid;
     }
 
+    // 🔥 CALL THIS WHEN OPENING INVENTORY UI
+    public void OpenInventory()
+    {
+        IsInventoryOpen = true;
+    }
+
+    // 🔥 CALL THIS WHEN CLOSING INVENTORY UI
+    public void CloseInventory()
+    {
+        IsInventoryOpen = false;
+    }
+
     public void AddItemToInventory(Item_Data newItem)
     {
         if (inventoryData == null)
@@ -52,6 +70,7 @@ public class InventoryManager : MonoBehaviour
             Debug.LogError("InventoryData is not assigned!");
             return;
         }
+
         inventoryData.items.Add(newItem);
         Debug.Log("✅ Item added: " + newItem._objectName);
         PopulateInventoryUI();
@@ -74,6 +93,7 @@ public class InventoryManager : MonoBehaviour
             Debug.LogWarning("⚠️ gridParent is not assigned yet.");
             return;
         }
+
         if (inventoryButtonPrefab == null)
         {
             Debug.LogWarning("⚠️ inventoryButtonPrefab is not assigned!");
@@ -87,8 +107,10 @@ public class InventoryManager : MonoBehaviour
         {
             InventoryButton btn = Instantiate(inventoryButtonPrefab, gridParent);
             btn.item = item;
+
             if (shopTable != null)
                 btn.shopTable = shopTable;
+
             btn.UpdateUI();
         }
     }
@@ -97,6 +119,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (inventoryData == null)
             return;
+
         inventoryData.ClearInventory();
         Debug.Log("🗑️ Inventory cleared.");
         PopulateInventoryUI();
