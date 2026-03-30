@@ -3,7 +3,222 @@ guid: 1fdb4fccc2a0f8c458497847f7fef9bb
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_ENB_Pillar
+    second: {fileID: 2100000, guid: 8379905f2b57b0748b4a07b78c7fa7fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_ENB_Wood
+    second: {fileID: 2100000, guid: 184d4e7d385776547b4e7b13e350bc9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Dark_Grey
+    second: {fileID: 2100000, guid: fd8e283d98d163d48879f9bb38155657, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Grey
+    second: {fileID: 2100000, guid: d18e064091d08a447be5e380e72c1550, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Light_Grey
+    second: {fileID: 2100000, guid: a84442c9de74c7848826c96e44cfc650, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Logo
+    second: {fileID: 2100000, guid: ecf892b99a5d76f49950fa291026bb0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Roof
+    second: {fileID: 2100000, guid: c1f2ce109f047ed45b879519335604c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_White
+    second: {fileID: 2100000, guid: 200fc80892a78a843bdd518190586234, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Window
+    second: {fileID: 2100000, guid: 3e1cfbc6604688844bb9f73bba468564, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Yellow
+    second: {fileID: 2100000, guid: 0fb5e97e98973b94780f86515493ab7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Road1
+    second: {fileID: 2100000, guid: ca08fe1e5ccccec41b20ab4ac08cf297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight
+    second: {fileID: 2100000, guid: 979467a0e6f5f044089f42477cdc837b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight_Green
+    second: {fileID: 2100000, guid: b90ecb7f84c8cd945a9aa26b0f9ca5ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight_Red
+    second: {fileID: 2100000, guid: 37b97016d155fb340bf7b1f43fafc189, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight_Yellow
+    second: {fileID: 2100000, guid: ca836b9876ad069448e339fa326f30c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Streetlight
+    second: {fileID: 2100000, guid: 13b6d64394ebc894bbfdaf74bc569641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Brick_Fence
+    second: {fileID: 2100000, guid: 52ef6057b98dbef4382342dded928e7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Fence_Brick_Upper
+    second: {fileID: 2100000, guid: 5621d090d75cd534cb2f6bd1140a5a58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Floor
+    second: {fileID: 2100000, guid: 2b6549997b4c2d84bb023537099edb98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Metal_Fence
+    second: {fileID: 2100000, guid: a70a417d0e40fff46b563636e48fe22a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Stone_Path
+    second: {fileID: 2100000, guid: 344c5b8972360dc47a4e51ea2687e298, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Tree_Body
+    second: {fileID: 2100000, guid: be90640917696c141b76ca6d2e244f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Door_Handle
+    second: {fileID: 2100000, guid: bf742e8e4d54e1f4fbc50213e6233426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Gate1
+    second: {fileID: 2100000, guid: 82af636620abdae4197a83cce1785165, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Light_Grey
+    second: {fileID: 2100000, guid: 5c80b255d961426498a3a164e1e23bf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Roof_Items
+    second: {fileID: 2100000, guid: 08efa297750d8bc4ba43fae9c9c45a74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Wall
+    second: {fileID: 2100000, guid: 50644a219ff8b1949a7f3251e3f25f8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Wall_Blue
+    second: {fileID: 2100000, guid: 7cb437bd49daf4d47b3b8ef023f8a021, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Wall_Dark_Grey
+    second: {fileID: 2100000, guid: 31257c31aab1c6743a02acb6ad885d13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Window
+    second: {fileID: 2100000, guid: 00f97f3f80e7b8d4e987e13a0e3f1606, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_building
+    second: {fileID: 2100000, guid: d6dba23a1cd6e6448981f50550d06fab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_roof
+    second: {fileID: 2100000, guid: dc2869bd71d027140a7f8c3e1f7431ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue_building
+    second: {fileID: 2100000, guid: d457911e4ddff8f42b4a96c3753e36f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_blue
+    second: {fileID: 2100000, guid: ad17b11dfbb9978468bc8e78e08ef361, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_green
+    second: {fileID: 2100000, guid: bc6b2968b0c2cc34dbcabf3aaf11dee9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_red
+    second: {fileID: 2100000, guid: b7bb37b0535e4d4499c2a84196b77041, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_yellow
+    second: {fileID: 2100000, guid: 22c40469dc8a9f04d8d74d123f4ee94f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_building
+    second: {fileID: 2100000, guid: 1f3428d3246522e439b889ee38b8188c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_roof
+    second: {fileID: 2100000, guid: aaf1cd8583cc02b45835f8fec012942b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert18
+    second: {fileID: 2100000, guid: b176e7ce8f8b1e84faa8f38cceda00dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red_building
+    second: {fileID: 2100000, guid: d9a7c07a76e53de4d9d82e9ea903ff48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof_maroon
+    second: {fileID: 2100000, guid: 1833fbff84010bc4e9862c89da191be0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yellow_building
+    second: {fileID: 2100000, guid: 0d2f01f2cbd73cf4dbb7958cac3c1ca6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -91,7 +306,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.19999999
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
