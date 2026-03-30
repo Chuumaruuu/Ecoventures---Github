@@ -4,6 +4,7 @@ using UnityEngine;
 public class Dialogue_Data : ScriptableObject
 {
     public Dialogue[] _dialogues;
+    public Sender[] _senders;
 }
 
 
@@ -11,14 +12,20 @@ public class Dialogue_Data : ScriptableObject
 public class Dialogue
 {
     public string _dialogueTitle;
-    public DialogueLine[] _dialogueLines;
+    public Message[] _dialogueLines;
 }
 
 [System.Serializable]
-public class DialogueLine
+public class Message
 {
-    public string _sender;
-
+    public int _senderID;
     [TextArea]
     public string _message;
+}
+
+[System.Serializable]
+public class Sender
+{
+    public string _name;
+    public Sprite _senderSprite;
 }

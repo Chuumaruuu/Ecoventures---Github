@@ -9,7 +9,7 @@ public class Map_Player : MonoBehaviour
     public event EventHandler<OnSelectedStageChangedEventArgs> OnSelectedStageChanged;
     public class OnSelectedStageChangedEventArgs : EventArgs 
     {
-        public Map_Stage _selectedStage;
+        public Map_Manager _selectedStage;
     }
 
     [SerializeField] private float _moveSpeed = 7f;
@@ -17,7 +17,7 @@ public class Map_Player : MonoBehaviour
 
     private bool _isWalking;
     private Vector3 _lastInteractDirection;
-    private Map_Stage _selectedStage;
+    private Map_Manager _selectedStage;
 
     private void Awake() 
     {
@@ -66,7 +66,7 @@ public class Map_Player : MonoBehaviour
         float _interactDistance = 2f;
         if (Physics.Raycast(transform.position, _lastInteractDirection, out RaycastHit raycastHit, _interactDistance)) 
         {
-            if (raycastHit.transform.TryGetComponent(out Map_Stage _stage)) 
+            if (raycastHit.transform.TryGetComponent(out Map_Manager _stage)) 
             {
                 if (_stage != _selectedStage) 
                 {
@@ -137,7 +137,7 @@ public class Map_Player : MonoBehaviour
         transform.forward = Vector3.Slerp(transform.forward, _moveDirection, Time.deltaTime * _rotateSpeed);
     }
 
-    private void SetSelectedStage(Map_Stage _newStage) 
+    private void SetSelectedStage(Map_Manager _newStage) 
     {
         this._selectedStage = _newStage;
 
