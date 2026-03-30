@@ -1,30 +1,23 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class Dialogue_Manager : MonoBehaviour
 {
-    public Image _actorAvatar;
-    public TMP_Text _actorName;
-    public TMP_Text _messageText;
-    public GameObject _dialogueBox;
+    public static Dialogue_Manager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+    }
     
-    private Animator _dialogueBoxAnimator;
-
-    private void Start()
+    public void StartDialogue(Dialogue_Data dialogue_Data)
     {
-        _dialogueBoxAnimator = GetComponent<Animator>();
-    }
-
-    public void StartDialogue(string _dialogueID)
-    {
-        _dialogueBoxAnimator.SetBool("Active", true);
-    }
-
-    public void EndtDialogue(string _dialogueID)
-    {
-        _dialogueBoxAnimator.SetBool("Active", false);
+        Dialogue_UI.Instance.OpenDialogue(dialogue_Data._dialogues, dialogue_Data._actors);
     }
 }
-
 

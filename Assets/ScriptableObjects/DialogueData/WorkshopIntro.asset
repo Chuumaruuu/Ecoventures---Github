@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e698613d9ff527c4fb78e628064be24d, type: 3}
+  m_Name: WorkshopIntro
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Data
+  _dialogueTitle: WorkshopIntro
+  _dialogues:
+  - _actorID: 0
+    _message: Workshop
+  - _actorID: 1
+    _message: Intro
+  - _actorID: 2
+    _message: Yay
+  _actors:
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: 913df97d75044024e9266163f66e498a, type: 3}
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: c24dcde61c0450c40a33f80d9b8c990c, type: 3}
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: 1e78b2a17e0ea9d4c845fc1ffcdb919b, type: 3}
