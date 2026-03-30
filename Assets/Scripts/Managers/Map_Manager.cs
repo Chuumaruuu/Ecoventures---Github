@@ -1,7 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Map_Stage : MonoBehaviour
+public class Map_Manager : MonoBehaviour
 {
     [SerializeField] private string _stageName;
 
