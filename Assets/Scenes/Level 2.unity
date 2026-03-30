@@ -1232,6 +1232,7 @@ GameObject:
   - component: {fileID: 160000595}
   - component: {fileID: 160000594}
   - component: {fileID: 160000593}
+  - component: {fileID: 160000598}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -1366,13 +1367,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160000592}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13052559, y: 0.002857492, z: -0.00037620228, w: -0.99144083}
-  m_LocalPosition: {x: 907.59, y: 300.8, z: -279.71}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1377588723}
   m_LocalEulerAnglesHint: {x: 15, y: -360.33, z: 0}
+--- !u!114 &160000598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160000592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ac2a42117ca2d40ba17f37684f5d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraPanning
+  swipeSensitivity: 0.02
+  maxRotation: 60
+  enableMouseInput: 1
 --- !u!1001 &162898746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7298,6 +7314,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352002415}
   m_Mesh: {fileID: -8335536771110304430, guid: 4d645ee724f1f40498006ba8bb5bcdef, type: 3}
+--- !u!1 &1377588722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377588723}
+  m_Layer: 0
+  m_Name: CameraPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1377588723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377588722}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.0028797674, z: 0, w: 0.9999958}
+  m_LocalPosition: {x: 907.61, y: 299, z: -282.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 160000597}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.33, z: 0}
 --- !u!1 &1406513268
 GameObject:
   m_ObjectHideFlags: 0
@@ -24872,7 +24920,7 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 160000597}
+  - {fileID: 1377588723}
   - {fileID: 2025408502}
   - {fileID: 6699273792116056825}
   - {fileID: 100754742}

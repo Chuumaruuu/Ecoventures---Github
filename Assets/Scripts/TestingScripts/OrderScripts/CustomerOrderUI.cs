@@ -55,19 +55,39 @@ public class CustomerOrderUI : MonoBehaviour
             return;
         }
 
+        // 🔥 Hide UI when inventory is open
+        if (InventoryManager.IsInventoryOpen)
+        {
+            if (gameObject.activeSelf)
+                gameObject.SetActive(false);
+            return;
+        }
+        else
+        {
+            if (!gameObject.activeSelf)
+                gameObject.SetActive(true);
+        }
+
+        // ── Update patience UI ──
         if (patienceSlider != null && customer.state == CustomerState.Waiting)
         {
             patienceSlider.value = customer.waitTimer;
 
             float t = 1f - (customer.waitTimer / customer.maxWaitTime);
+
             if (t < 0.5f)
                 fillImage.color = Color.Lerp(fullColor, midColor, t * 2f);
             else
                 fillImage.color = Color.Lerp(midColor, emptyColor, (t - 0.5f) * 2f);
         }
 
+        // ── Follow customer ──
         Vector3 worldPos = customer.transform.position + Vector3.up * 2f;
         Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);
-        rectTransform.position = screenPos + new Vector3(screenOffset.x * canvas.scaleFactor, screenOffset.y * canvas.scaleFactor, 0);
+
+        rectTransform.position = screenPos +
+            new Vector3(screenOffset.x * canvas.scaleFactor,
+                        screenOffset.y * canvas.scaleFactor,
+                        0);
     }
 }

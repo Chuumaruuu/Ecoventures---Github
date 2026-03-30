@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9b37df811b45245addb89e0019d00b, type: 3}
   m_Name: Main_Inventory
   m_EditorClassIdentifier: Assembly-CSharp::GameInventory_Data
+  items: []
   _keyChains: 0
   _toteBags: 0
   _buttonPins: 0

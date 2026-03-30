@@ -45,19 +45,6 @@ public class Customer : MonoBehaviour, IDropHandler
     private float originalSpeed;
     private float originalRadius;
 
-    // ── Blocking detection ──────────────────────────────────────────────────
-    [Header("Block Detection")]
-    [Tooltip("Radius of the overlap sphere cast in front of this customer")]
-    public float blockCheckRadius = 0.5f;
-    [Tooltip("How far ahead to cast the check")]
-    public float blockCheckDistance = 0.9f;
-    [Tooltip("Seconds to wait before rechecking after being unblocked")]
-    public float resumeDelay = 0.15f;
-
-    private bool isBlocked = false;
-    private float resumeTimer = 0f;
-    // ───────────────────────────────────────────────────────────────────────
-
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -65,12 +52,13 @@ public class Customer : MonoBehaviour, IDropHandler
 
         agent.updateRotation = true;
         agent.stoppingDistance = 0.1f;
-        agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
+
+        // 🔥 DISABLE avoidance so customers DON'T dodge each other
+        agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+        agent.avoidancePriority = 50;
 
         originalSpeed = agent.speed;
         originalRadius = agent.radius;
-
-        agent.avoidancePriority = Random.Range(movingPriorityMin, movingPriorityMax);
 
         assignedSpot = CustomerQueue.Instance.RequestSpot(this);
 
@@ -89,11 +77,12 @@ public class Customer : MonoBehaviour, IDropHandler
         if (destination != null)
             agent.SetDestination(destination.position);
 
-        agent.radius *= 1.1f;
-        agent.height = 2f;
-        agent.baseOffset = 0f;
         agent.autoRepath = true;
-        agent.autoTraverseOffMeshLink = true;
+
+        // 🔥 OPTIONAL: allow physical pass-through
+        Collider col = GetComponent<Collider>();
+        if (col != null)
+            col.isTrigger = true;
     }
 
     private void Update()
@@ -101,7 +90,6 @@ public class Customer : MonoBehaviour, IDropHandler
         switch (state)
         {
             case CustomerState.Moving:
-                HandleBlockDetection();
                 CheckArrival();
                 break;
 
@@ -111,7 +99,6 @@ public class Customer : MonoBehaviour, IDropHandler
                 break;
 
             case CustomerState.Leaving:
-                HandleBlockDetection();
                 CheckArrival();
                 break;
         }
@@ -119,73 +106,8 @@ public class Customer : MonoBehaviour, IDropHandler
         HandleAnimation();
     }
 
-    // ── Block detection ─────────────────────────────────────────────────────
-
-    void HandleBlockDetection()
-    {
-        // Only check when the agent is supposed to be moving
-        if (agent.isStopped && !isBlocked) return;
-
-        bool blockerFound = CheckForBlocker();
-
-        if (blockerFound && !isBlocked)
-        {
-            // A customer is in the way — go idle
-            isBlocked = true;
-            agent.isStopped = true;
-            agent.velocity = Vector3.zero;
-        }
-        else if (!blockerFound && isBlocked)
-        {
-            // Path is clear — small delay then resume
-            resumeTimer += Time.deltaTime;
-            if (resumeTimer >= resumeDelay)
-            {
-                isBlocked = false;
-                resumeTimer = 0f;
-                agent.isStopped = false;
-
-                // Refresh destination so the agent re-paths cleanly
-                if (destination != null)
-                    agent.SetDestination(destination.position);
-            }
-        }
-    }
-
-    bool CheckForBlocker()
-    {
-        // Cast a sphere slightly ahead in the direction of travel
-        Vector3 moveDir = agent.desiredVelocity.sqrMagnitude > 0.01f
-            ? agent.desiredVelocity.normalized
-            : transform.forward;
-
-        Vector3 origin = transform.position + Vector3.up * 0.5f; // chest height
-        Vector3 center = origin + moveDir * blockCheckDistance;
-
-        Collider[] hits = Physics.OverlapSphere(center, blockCheckRadius);
-        foreach (Collider col in hits)
-        {
-            if (col.gameObject == gameObject) continue;           // skip self
-            Customer other = col.GetComponent<Customer>();
-            if (other == null) continue;                          // only care about customers
-
-            // Only be blocked by customers who are stationary (waiting or also blocked)
-            if (other.state == CustomerState.Waiting ||
-                other.isBlocked ||
-                other.agent.velocity.magnitude < 0.1f)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    // ───────────────────────────────────────────────────────────────────────
-
     void CheckArrival()
     {
-        if (isBlocked) return; // don't trigger arrival while standing still due to blocker
-
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
             if (state == CustomerState.Leaving)
@@ -197,9 +119,9 @@ public class Customer : MonoBehaviour, IDropHandler
 
     void Arrived()
     {
-        isBlocked = false;
         state = CustomerState.Waiting;
         waitTimer = maxWaitTime;
+
         agent.ResetPath();
         SetWaitingBehavior();
         ShowOrderUI();
@@ -208,6 +130,7 @@ public class Customer : MonoBehaviour, IDropHandler
     void HandleWaiting()
     {
         waitTimer -= Time.deltaTime;
+
         if (waitTimer <= 0f)
             LeaveAngry();
     }
@@ -215,9 +138,12 @@ public class Customer : MonoBehaviour, IDropHandler
     void FaceTable()
     {
         if (shopTable == null) return;
+
         Vector3 dir = shopTable.transform.position - transform.position;
         dir.y = 0f;
+
         if (dir == Vector3.zero) return;
+
         Quaternion rot = Quaternion.LookRotation(dir);
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, 5f * Time.deltaTime);
     }
@@ -242,8 +168,6 @@ public class Customer : MonoBehaviour, IDropHandler
 
             CustomerTaskManager.Instance.RegisterServed();
 
-            //Play item received sound here
-
             LeaveHappy();
         }
     }
@@ -253,7 +177,6 @@ public class Customer : MonoBehaviour, IDropHandler
 
     void BeginLeaving()
     {
-        isBlocked = false;
         CustomerQueue.Instance.ReleaseSpot(this);
 
         if (orderUI != null)
@@ -263,6 +186,7 @@ public class Customer : MonoBehaviour, IDropHandler
         SetLeavingBehavior();
 
         destination = exitPoint;
+
         if (destination != null)
             agent.SetDestination(destination.position);
     }
@@ -291,8 +215,8 @@ public class Customer : MonoBehaviour, IDropHandler
     {
         if (animator == null) return;
 
-        // Treat "blocked/idle" the same as standing still for animation
-        float speed = isBlocked ? 0f : agent.velocity.magnitude;
+        float speed = agent.velocity.magnitude;
+
         animator.SetBool("Walk", speed > 0.1f);
         animator.SetBool("Idle", speed <= 0.1f);
     }
@@ -302,7 +226,7 @@ public class Customer : MonoBehaviour, IDropHandler
         agent.isStopped = true;
         agent.speed = 0f;
         agent.avoidancePriority = waitingPriority;
-        agent.radius = originalRadius * 1.2f;
+        agent.radius = originalRadius;
     }
 
     void SetLeavingBehavior()
