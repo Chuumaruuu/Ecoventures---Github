@@ -1,31 +1,23 @@
-// using UnityEngine;
+using UnityEngine;
 
-// [CreateAssetMenu(fileName = "Dialogue_Data", menuName = "Scriptable Objects/Dialogue_Data")]
-// public class Dialogue_Data : ScriptableObject
-// {
-//     public Dialogue[] _dialogues;
-//     public Sender[] _senders;
-// }
+[CreateAssetMenu(fileName = "Dialogue_Data", menuName = "Scriptable Objects/Dialogue_Data")]
+public class Dialogue_Data : ScriptableObject
+{
+    public string _dialogueTitle;
+    public Dialogue[] _dialogues;
+    public Actor[] _actors;
+}
 
+[System.Serializable]
+public class Dialogue
+{
+    public int _actorID;
+    public string _message;
+}
 
-// [System.Serializable]
-// public class Dialogue
-// {
-//     public string _dialogueTitle;
-//     public Message[] _dialogueLines;
-// }
-
-// [System.Serializable]
-// public class Message
-// {
-//     public int _senderID;
-//     [TextArea]
-//     public string _message;
-// }
-
-// [System.Serializable]
-// public class Sender
-// {
-//     public string _name;
-//     public Sprite _senderSprite;
-//}
+[System.Serializable]
+public class Actor
+{
+    public string _actorName;
+    public Sprite _avatar;
+}
