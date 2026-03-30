@@ -322,6 +322,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
   _stageName: Level 2
+--- !u!65 &150427149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150427146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.2031074, y: 1, z: 1.4380444}
+  m_Center: {x: 0.01932553, y: 0, z: -0.5797653}
 --- !u!1001 &166189324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,18 +402,30 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -6335499192087355856, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1664713293}
+    - targetCorrespondingSourceObject: {fileID: -6335499192087355856, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1664713294}
     - targetCorrespondingSourceObject: {fileID: -7807946453673777314, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 150427148}
+    - targetCorrespondingSourceObject: {fileID: -7807946453673777314, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 150427149}
     - targetCorrespondingSourceObject: {fileID: 6891303803206840647, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1293001728}
+    - targetCorrespondingSourceObject: {fileID: 6891303803206840647, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1293001729}
     - targetCorrespondingSourceObject: {fileID: -8937571996426754396, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 328077286}
     - targetCorrespondingSourceObject: {fileID: 5035966614064914597, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1689058279}
+    - targetCorrespondingSourceObject: {fileID: 5035966614064914597, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1689058280}
   m_SourcePrefab: {fileID: 100100000, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
 --- !u!1 &275751289
 GameObject:
@@ -1276,6 +1309,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
   _stageName: Level 3
+--- !u!65 &1293001729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293001726}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.7175987, y: 1, z: 6.645589}
+  m_Center: {x: -1.5341289, y: 0, z: -1.5604262}
 --- !u!1 &1511159641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,6 +1787,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
   _stageName: Level 1
+--- !u!65 &1664713294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664713291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.7310128, z: 1.7799543}
+  m_Center: {x: -0, y: 0.36550638, z: -0.38997743}
 --- !u!1 &1689058277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5035966614064914597, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
@@ -1751,6 +1826,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
   _stageName: Workshop
+--- !u!65 &1689058280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689058277}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.6130264, y: 1, z: 1.6311833}
+  m_Center: {x: -0.017532747, y: 0, z: 0.64871687}
 --- !u!1 &1755319090
 GameObject:
   m_ObjectHideFlags: 0
