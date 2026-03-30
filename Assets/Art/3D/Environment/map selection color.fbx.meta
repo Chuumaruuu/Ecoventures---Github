@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: 0b257a0d99c37a54e98f1dc3c868f2de
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_ENB_Pillar
+    second: {fileID: 2100000, guid: c786e9982fcb9c0458bb6519dc0bce4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_ENB_Wood
+    second: {fileID: 2100000, guid: c496d646e4dbdcf45be290a824ccd0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Dark_Grey
+    second: {fileID: 2100000, guid: 8435387e1b6c52c4cb4595a8c3989490, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Grey
+    second: {fileID: 2100000, guid: 882d1b45715c1404eb09f6301d1c9277, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Light_Grey
+    second: {fileID: 2100000, guid: 6be61a8e8c7079243a78d58f5d695698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Logo
+    second: {fileID: 2100000, guid: 7900437ab4b512146b44929e81d7edfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Roof
+    second: {fileID: 2100000, guid: 41a7c69611f203b4787366f46665636e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_White
+    second: {fileID: 2100000, guid: bf74034191f4e6c4ea35b3dc4e4579bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Window
+    second: {fileID: 2100000, guid: fbe87ad5797d2dc4980e61f0ad16cd28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Tech_Yellow
+    second: {fileID: 2100000, guid: 2c6b3c966787dee4496297b5ae6e6a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Road1
+    second: {fileID: 2100000, guid: 67317cb9e25a6c640adc65e117cbcbbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight
+    second: {fileID: 2100000, guid: 56f77b0e9c8e6134dacab90a42067105, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight_Green
+    second: {fileID: 2100000, guid: c06fd567354bbf2439e92a77555dd4b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight_Red
+    second: {fileID: 2100000, guid: e114efc158c66864b892e200aeb9f8c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Stoplight_Yellow
+    second: {fileID: 2100000, guid: 27516ca37423e894d9ee9cf1a5d8e0c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Map_Streetlight
+    second: {fileID: 2100000, guid: 72adeb5661084174d83bd82e7fb1111a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Brick_Fence
+    second: {fileID: 2100000, guid: fdc8e2058f0326145835f4db4b3ac5b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Fence_Brick_Upper
+    second: {fileID: 2100000, guid: 17b3fe8af1996f84a9625a29de79d3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Floor
+    second: {fileID: 2100000, guid: f9ceb0719a081864f8d7cbcdc3efcbdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Metal_Fence
+    second: {fileID: 2100000, guid: 67c561305a1afd541b0439ecfb566d71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Stone_Path
+    second: {fileID: 2100000, guid: bbc73c81d98ad684e955c06544720ebd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaza_Tree_Body
+    second: {fileID: 2100000, guid: 9ef9b56f34b5c1d49b59488b144fda0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Door_Handle
+    second: {fileID: 2100000, guid: 58b84aed7c074f94dbde6a8c8602b08a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Gate1
+    second: {fileID: 2100000, guid: e98edeec82d5f684593228a626ba11ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Light_Grey
+    second: {fileID: 2100000, guid: 6c13c9c9cda4c39448d8fe97fae7a6dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Roof_Items
+    second: {fileID: 2100000, guid: 2d2fd16af39703c4ca2e6e8cd0cbb5a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Wall
+    second: {fileID: 2100000, guid: 6c1b2bb4f7d0bfb4a992826c71fb4dd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Wall_Blue
+    second: {fileID: 2100000, guid: ed1177c4d72d0ea45985537ab6c98780, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Wall_Dark_Grey
+    second: {fileID: 2100000, guid: 5fa6d1fecc5af9f48814348f65189727, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop_Window
+    second: {fileID: 2100000, guid: a355e2c14a4da7c4c8783fa6da16716b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_building
+    second: {fileID: 2100000, guid: ab29068d199bc864ba0c2a490f39e4c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_roof
+    second: {fileID: 2100000, guid: ceee664c206e1694dbd3323345d918c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue_building
+    second: {fileID: 2100000, guid: 76d0bc5a810e44849980ad0c24806c33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_blue
+    second: {fileID: 2100000, guid: 6e62a0452893a444ca8f6dde57fe49f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_green
+    second: {fileID: 2100000, guid: 258f7e6ce88dacf40a40520c5be77db9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_red
+    second: {fileID: 2100000, guid: d5ea6e17eb65b8840aace4e9ddd05dd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker_yellow
+    second: {fileID: 2100000, guid: 733abe0917c451e4e88bc543474f876d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_building
+    second: {fileID: 2100000, guid: c669b787317197443b99b965272bcf4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_roof
+    second: {fileID: 2100000, guid: fc2d8904cd9e1a649b2ff7e672e8d1c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert18
+    second: {fileID: 2100000, guid: ed547741d0f6d2742bc4368c5d59bf80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red_building
+    second: {fileID: 2100000, guid: cbb2ade5644930e47ab3915a97457b05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof_maroon
+    second: {fileID: 2100000, guid: e9dc3e5203d22b343a99904641f50637, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yellow_building
+    second: {fileID: 2100000, guid: 51f53aca642dbc3429b4bade0bb19034, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Map-Road-BumpMap
+    second: {fileID: 2800000, guid: 63019595aa045444eba08b3a04446752, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Map-Road-ColorMap
+    second: {fileID: 2800000, guid: e8c5bd9d36f9aac4e929ed8faae29af8, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.19999999
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
