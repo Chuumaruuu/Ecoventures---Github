@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Timer_UI : MonoBehaviour
@@ -37,7 +36,7 @@ public class Timer_UI : MonoBehaviour
     {
         if (_awaitingMapSceneInput)
         {
-            if (IsEnterPressedThisFrame())
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
             {
                 TransitionToMapScene();
             }
@@ -82,17 +81,6 @@ public class Timer_UI : MonoBehaviour
     {
         _awaitingMapSceneInput = true;
         Debug.Log("Timer ended. Press Enter to proceed to the map scene.");
-    }
-
-    private bool IsEnterPressedThisFrame()
-    {
-        if (Keyboard.current == null)
-        {
-            return false;
-        }
-
-        return Keyboard.current.enterKey.wasPressedThisFrame ||
-               Keyboard.current.numpadEnterKey.wasPressedThisFrame;
     }
 
     private void TransitionToMapScene()

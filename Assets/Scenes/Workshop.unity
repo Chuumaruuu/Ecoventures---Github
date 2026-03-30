@@ -3280,7 +3280,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer_UI
   _timerMax: 180
-  timerImage: {fileID: 0}
+  timerImage: {fileID: 1342820266}
+  _sceneManager: {fileID: 1321932376}
+  _mapSceneIndex: 2
 --- !u!114 &1342820266
 MonoBehaviour:
   m_ObjectHideFlags: 0
