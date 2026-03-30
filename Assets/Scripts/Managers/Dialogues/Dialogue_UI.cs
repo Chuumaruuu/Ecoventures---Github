@@ -10,6 +10,7 @@ public class Dialogue_UI : MonoBehaviour
     public TextMeshProUGUI _actorName;
     public TextMeshProUGUI _messageText;
     public Animator _dialogueBoxAnimator;
+    public GameObject[] _otherUI;
 
     private Dialogue[] _currentMessageArray;
     private Actor[] _currentActorArray;
@@ -34,6 +35,11 @@ public class Dialogue_UI : MonoBehaviour
 
         Debug.Log("Starting Conversation: " + messages.Length);
         _dialogueBoxAnimator.SetBool("Active", true);
+
+        foreach (GameObject i in _otherUI)
+        {
+            i.SetActive(false);
+        }
         Time.timeScale = 0; //pause
     }
 
@@ -58,6 +64,10 @@ public class Dialogue_UI : MonoBehaviour
         {
             _dialogueBoxAnimator.SetBool("Active", false);
             Time.timeScale = 1;
+            foreach (GameObject i in _otherUI)
+            {
+                i.SetActive(true);
+            }
         }
     }
 }
