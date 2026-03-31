@@ -15,10 +15,10 @@ MonoBehaviour:
   _dialogueTitle: WorkshopIntro
   _dialogues:
   - _actorID: 0
-    _message: Workshop
+    _message: Sup Boss Jed
   - _actorID: 1
     _message: Intro
-  - _actorID: 2
+  - _actorID: 0
     _message: Yay
   _actors:
   - _actorName: Tammy
