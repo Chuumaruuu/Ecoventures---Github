@@ -10,14 +10,9 @@ public class Map_Manager : MonoBehaviour
     public void Start()
     {
         // trigger MapIntro dialogue only when this is the first time the player enters the map scene
-        if (!_dialogueProgress._mapIntroDone)
+        if (SceneManager.GetActiveScene().name == "MapScene")
         {
-            Dialogue_Data dialogueData = GetDialogueData("MapIntro");
-            if (dialogueData != null)
-            {
-                Dialogue_Manager.Instance.StartDialogue(dialogueData);
-                _dialogueProgress._mapIntroDone = true;
-            }
+            WorkshopDialogue_Manager.Instance.Level1Intro();
         }
     }
     public virtual void Interact(Map_Player _player)

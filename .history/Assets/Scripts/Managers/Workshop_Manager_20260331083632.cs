@@ -31,6 +31,18 @@ public class WorkshopDialogue_Manager : MonoBehaviour
                 _dialogueProgress._workshopIntroDone = true;
             }
         }
+
+        // trigger BasicTutorial dialogue only when WorkshopIntro is finished (turo mo lang kay player ano ginagawa ng each button tas turo mo nalang saan yung guidebook. yaan mo na sya mag figure out ng recipes)
+    }
+
+    public void WorkshopTimerDone()
+    {
+        // trigger WorkshopOutro only when this is the first time the workshop timer has finished
+    }
+
+    public void Level1Intro()
+    {
+        // trigger Level1Intro only when this is the first time the player starts level 1 (pwede mo rin naman i trigger sya sa WorkshopTimerDone, depende sa flow na gusto mo)
     }
 
     public Dialogue_Data GetDialogueData(string title)

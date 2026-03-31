@@ -22,15 +22,12 @@ public class WorkshopDialogue_Manager : MonoBehaviour
     private void Start()
     {
         // trigger WorkshopIntro dialogue only when this is the first time loading this scene (pwede ka gumawa ng bools sa Dialogue_Progress na script. mag ccarry over data non kahit after runtime)
-        if (!_dialogueProgress._workshopIntroDone)
-        {
-            Dialogue_Data dialogueData = GetDialogueData("WorkshopIntro");
-            if (dialogueData != null)
-            {
-                CallDialogue(dialogueData);
-                _dialogueProgress._workshopIntroDone = true;
-            }
-        }
+        // trigger BasicTutorial dialogue only when WorkshopIntro is finished (turo mo lang kay player ano ginagawa ng each button tas turo mo nalang saan yung guidebook. yaan mo na sya mag figure out ng recipes)
+    }
+
+    public void WorkshopTimerDone()
+    {
+        // trigger WorkshopOutro only when this is the first time the workshop timer has finished
     }
 
     public Dialogue_Data GetDialogueData(string title)

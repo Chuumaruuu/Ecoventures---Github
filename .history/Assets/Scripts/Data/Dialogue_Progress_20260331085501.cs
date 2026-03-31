@@ -5,7 +5,7 @@ public class Dialogue_Progress : ScriptableObject
 {
     // workshop
     public bool _workshopIntroDone;
-    // public bool _basicTutorialDone;
-    public bool _mapIntroDone;
+    public bool _basicTutorialDone;
+    public bool _workshopOutroDone;
     public bool _level1IntroDone;
 }
