@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Scene_Manager : MonoBehaviour
 {
-    public static Scene_Manager Instance { get; private set; }
     [SerializeField] private Animator _fadeAnimator;
-    public event System.Action OnSceneFadeComplete;
+    public event Action OnSceneFadeComplete;
     private int _levelToLoad;
-    
+    public static Scene_Manager Instance { get; private set; }
 
     private void Awake()
     {
@@ -31,12 +31,9 @@ public class Scene_Manager : MonoBehaviour
         _levelToLoad = _sceneIndex;
     }
 
-    public void OnFadeInComplete()
+    public void OnFadeComplete()
     {
         OnSceneFadeComplete?.Invoke();
-    }
-    public void OnFadeOutComplete()
-    {
         SceneManager.LoadScene(_levelToLoad);
     }
 

@@ -1201,9 +1201,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4168549486150679709, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4968953924577431932, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918350282928540116, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3373,7 +3381,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 32ccfe4b4d32ef94fb9898bf5ddbd823, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 2
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -3454,7 +3462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76014bc1a1530774086a520963e844de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer_UI
-  _timerMax: 180
+  _timerMax: 15
   timerImage: {fileID: 1342820266}
   _sceneManager: {fileID: 1321932376}
   _mapSceneIndex: 2
@@ -4075,7 +4083,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &1599550408
 GameObject:
