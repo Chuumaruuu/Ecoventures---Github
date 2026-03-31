@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e698613d9ff527c4fb78e628064be24d, type: 3}
+  m_Name: Level1Intro
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Data
+  _dialogueTitle: Level1Intro
+  _dialogues:
+  - _actorID: 6
+    _message: We're here! I already handled the permissions to use this place for
+      you, so you can just focus on selling your products!
+  - _actorID: 7
+    _message: Are you ready Jed?
+  - _actorID: 1
+    _message: I'm getting nervous, Tammy.
+  - _actorID: 7
+    _message: 'Don''t worry, Jed. That''s normal.  '
+  - _actorID: 8
+    _message: All journeys start somewhere, and getting nervous is okay. The important
+      thing is to keep moving forward!
+  - _actorID: 1
+    _message: 'Thank you Tammy. '
+  - _actorID: 0
+    _message: What should I do now?
+  - _actorID: 7
+    _message: Now that we're here, it's time to start selling!
+  - _actorID: 6
+    _message: "To begin with, let\u2019s first prepare our booth and the products
+      you created. "
+  - _actorID: 7
+    _message: Tap the bag icon to open your inventory, and place your products on
+      our booth by clicking the items you created earlier.
+  - _actorID: 6
+    _message: Once you've prepared your wares, you can start selling!
+  - _actorID: 8
+    _message: Customers will start swarming your stall so it's important you dont
+      get nervous.
+  - _actorID: 8
+    _message: Customers will start swarming your stall and request items.
+  - _actorID: 7
+    _message: It's important to not let their patience run dry
+  - _actorID: 9
+    _message: because we don't want our customers to be disappointed on us.
+  - _actorID: 6
+    _message: Satisfy them by giving them the items they desire before their patience
+      run out!
+  - _actorID: 7
+    _message: I think you're ready to start now. Good luck, Jed!
+  _actors:
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: eb053782377759045aceacb51dbd4c9c, type: 3}
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: a1de40e0597b2bc42abb4702f636f5ee, type: 3}
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: a64bde4c23241c148bf35d5624bbd6d4, type: 3}
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: b9a6c80d06545b443aefe4ca7cbc2462, type: 3}
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: c24dcde61c0450c40a33f80d9b8c990c, type: 3}
+  - _actorName: Jed
+    _avatar: {fileID: 21300000, guid: f587d57366bbc8e4cb48dfea66ffdfcd, type: 3}
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: 1e78b2a17e0ea9d4c845fc1ffcdb919b, type: 3}
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: cb768eec4ca5a8e44a165b64e875a47f, type: 3}
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: 913df97d75044024e9266163f66e498a, type: 3}
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: f0a56911a7e170642afae22507e8c95b, type: 3}
+  - _actorName: Tammy
+    _avatar: {fileID: 21300000, guid: cd85e6933328ac543b5bd227489ce446, type: 3}
