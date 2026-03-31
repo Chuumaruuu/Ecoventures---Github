@@ -6,6 +6,7 @@ public class WorkshopDialogue_Manager : MonoBehaviour
 
     [SerializeField] private Dialogue_Data[] _workshopDialogues;
     [SerializeField] private Dialogue_Progress _dialogueProgress;
+    
 
     private void Awake()
     {
@@ -21,20 +22,27 @@ public class WorkshopDialogue_Manager : MonoBehaviour
     private void Start()
     {
         // trigger WorkshopIntro dialogue only when this is the first time loading this scene (pwede ka gumawa ng bools sa Dialogue_Progress na script. mag ccarry over data non kahit after runtime)
-        Scene_Manager.Instance.OnSceneFadeComplete += IntroDialogue;
-    }
-
-    private void IntroDialogue()
-    {
         if (!_dialogueProgress._workshopIntroDone)
         {
             Dialogue_Data dialogueData = GetDialogueData("WorkshopIntro");
             if (dialogueData != null)
             {
-                _dialogueProgress._workshopIntroDone = true;
                 CallDialogue(dialogueData);
+                _dialogueProgress._workshopIntroDone = true;
             }
         }
+
+        // trigger BasicTutorial dialogue only when WorkshopIntro is finished (turo mo lang kay player ano ginagawa ng each button tas turo mo nalang saan yung guidebook. yaan mo na sya mag figure out ng recipes)
+    }
+
+    public void WorkshopTimerDone()
+    {
+        // trigger WorkshopOutro only when this is the first time the workshop timer has finished
+    }
+
+    public void Level1Intro()
+    {
+        // trigger Level1Intro only when this is the first time the player starts level 1 (pwede mo rin naman i trigger sya sa WorkshopTimerDone, depende sa flow na gusto mo)
     }
 
     public Dialogue_Data GetDialogueData(string title)

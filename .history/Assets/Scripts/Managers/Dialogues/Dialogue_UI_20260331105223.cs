@@ -41,9 +41,7 @@ public class Dialogue_UI : MonoBehaviour
             i.SetActive(false);
         }
         Time.timeScale = 0; //pause
-        _messageText.text = "";
-        _actorAvatar.sprite = null;
-        _actorName.text = "";
+        -_messageText.text = "";
     }
 
     public void DisplayMessage()

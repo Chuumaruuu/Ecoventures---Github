@@ -6,9 +6,15 @@ public class WorkshopDialogue_Manager : MonoBehaviour
 
     [SerializeField] private Dialogue_Data[] _workshopDialogues;
     [SerializeField] private Dialogue_Progress _dialogueProgress;
+    
+    private void OnEnable()
+    {
+        Scene_Manager.Instance.OnSceneFadeComplete += IntroDialogue;
+    }
 
     private void Awake()
     {
+        OnSceneFadeComplete() += IntroDialogue;
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -20,8 +26,8 @@ public class WorkshopDialogue_Manager : MonoBehaviour
 
     private void Start()
     {
+
         // trigger WorkshopIntro dialogue only when this is the first time loading this scene (pwede ka gumawa ng bools sa Dialogue_Progress na script. mag ccarry over data non kahit after runtime)
-        Scene_Manager.Instance.OnSceneFadeComplete += IntroDialogue;
     }
 
     private void IntroDialogue()

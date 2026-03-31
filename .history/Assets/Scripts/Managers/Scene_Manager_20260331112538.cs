@@ -4,10 +4,6 @@ using UnityEngine.SceneManagement;
 public class Scene_Manager : MonoBehaviour
 {
     public static Scene_Manager Instance { get; private set; }
-    [SerializeField] private Animator _fadeAnimator;
-    public event System.Action OnSceneFadeComplete;
-    private int _levelToLoad;
-    
 
     private void Awake()
     {
@@ -19,7 +15,10 @@ public class Scene_Manager : MonoBehaviour
 
         Instance = this;
     }
-    
+    [SerializeField] private Animator _fadeAnimator;
+    public event System.Action OnSceneFadeComplete;
+
+    private int _levelToLoad;
     private void Start()
     {
         _fadeAnimator.SetTrigger("Fade");
@@ -31,12 +30,9 @@ public class Scene_Manager : MonoBehaviour
         _levelToLoad = _sceneIndex;
     }
 
-    public void OnFadeInComplete()
+    public void OnFadeComplete()
     {
         OnSceneFadeComplete?.Invoke();
-    }
-    public void OnFadeOutComplete()
-    {
         SceneManager.LoadScene(_levelToLoad);
     }
 

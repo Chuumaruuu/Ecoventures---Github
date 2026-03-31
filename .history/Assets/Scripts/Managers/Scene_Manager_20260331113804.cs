@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Scene_Manager : MonoBehaviour
 {
     public static Scene_Manager Instance { get; private set; }
     [SerializeField] private Animator _fadeAnimator;
-    public event System.Action OnSceneFadeComplete;
+    public event Action OnSceneFadeComplete;
     private int _levelToLoad;
     
 

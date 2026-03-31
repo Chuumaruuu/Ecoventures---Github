@@ -10,44 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e698613d9ff527c4fb78e628064be24d, type: 3}
-  m_Name: WorkshopIntro
+  m_Name: MapIntro
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Data
-  _dialogueTitle: WorkshopIntro
+  _dialogueTitle: MapIntro
   _dialogues:
   - _actorID: 8
-    _message: Hello Jed! What are you up to?
-  - _actorID: 0
-    _message: 'Hi Tammy! '
-  - _actorID: 4
-    _message: I just thought of a good startup idea. I will use what I learned from
-      my experience in FTIC to create products following the Zero Waste, Infinite
-      Solutions (ZWIS) initiative.
-  - _actorID: 3
-    _message: What do you think, Tammy?
-  - _actorID: 6
-    _message: That sounds like a great idea! Do you know how to start, and what you
-      should be doing next?
-  - _actorID: 2
-    _message: "Unfortunately, I don\u2019t. I\u2019m afraid to start because of this."
-  - _actorID: 8
-    _message: "Don\u2019t worry, friend. I\u2019ll guide you through your journey.
-      Come on! Let\u2019s start this Ecoventures!"
-  - _actorID: 5
-    _message: Woah! Where are we?
+    _message: You did well in creating your first products!
   - _actorID: 7
-    _message: 'This is the workshop. This is where you process your materials and
-      create your products. '
-  - _actorID: 4
-    _message: How do I process the materials?
+    _message: " I think you\u2019re ready to sell them now. "
   - _actorID: 6
-    _message: ' First, use the joystick to move towards a facility.'
-  - _actorID: 7
-    _message: Use the grab button to grab items, and the interact button to interact
-      with a facility.
+    _message: " Let\u2019s start somewhere near to not overwhelm you. It\u2019s important
+      for us to start with what we can, and improve as we go along the way. "
+  - _actorID: 6
+    _message: 'Use the joystick to move the Tam Bus towards your desired level! '
+  - _actorID: 10
+    _message: Remember to be careful with your driving!
   - _actorID: 8
-    _message: Some facilities require your power, while some require time. Your time
-      in the workshop is limited so do your best to manage your time properly and
-      make the best use of it!
+    _message: A responsible tam is a responsible driver.
+  - _actorID: 6
+    _message: Once we're in front of the desired building, click the interact button
+      to start the level!
+  - _actorID: 8
+    _message: Let's go to FTIC!
+  - _actorID: 8
+    _message: It's the building on the left side of the map.
   _actors:
   - _actorName: Jed
     _avatar: {fileID: 21300000, guid: eb053782377759045aceacb51dbd4c9c, type: 3}
