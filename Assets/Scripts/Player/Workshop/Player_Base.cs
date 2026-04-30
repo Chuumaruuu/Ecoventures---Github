@@ -109,7 +109,7 @@ public class Player_Base : MonoBehaviour, IItemParent
         float _moveDistance = _moveSpeed * Time.deltaTime;
         float _playerRadius = .7f;
         float _playerHeight = 2f;
-        bool _canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * _playerHeight, _playerRadius, _moveDirection, _moveDistance);
+        bool _canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * _playerHeight, _playerRadius, _moveDirection, _moveDistance, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
 
         if (!_canMove) 
         {
@@ -117,7 +117,7 @@ public class Player_Base : MonoBehaviour, IItemParent
 
             // Attempt only X movement
             Vector3 _moveDirectionX = new Vector3(_moveDirection.x, 0, 0).normalized;
-            _canMove = _moveDirection.x != 0 && !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * _playerHeight, _playerRadius, _moveDirectionX, _moveDistance);
+            _canMove = _moveDirection.x != 0 && !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * _playerHeight, _playerRadius, _moveDirectionX, _moveDistance, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
 
             if (_canMove) 
             {
@@ -130,7 +130,7 @@ public class Player_Base : MonoBehaviour, IItemParent
 
                 // Attempt only Z movement
                 Vector3 _moveDirectionZ = new Vector3(0, 0, _moveDirection.z).normalized;
-                _canMove = _moveDirection.z != 0 && !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * _playerHeight, _playerRadius, _moveDirectionZ, _moveDistance);
+                _canMove = _moveDirection.z != 0 && !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * _playerHeight, _playerRadius, _moveDirectionZ, _moveDistance, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
 
                 if (_canMove) 
                 {
