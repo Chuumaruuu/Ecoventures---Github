@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - InventoryGrid
+  - Triggers
   layers:
   - Default
   - TransparentFX
