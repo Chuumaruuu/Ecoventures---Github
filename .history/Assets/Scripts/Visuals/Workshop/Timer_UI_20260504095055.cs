@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer_UI : MonoBehaviour
 {
     private float _remainingTime;
     private bool _hasTimerEnded;
-    private bool _awaitingMapSceneInput;
-    private bool _hasStartedSceneTransition;
 
     [SerializeField] private float _timerMax;
     [SerializeField] private Image timerImage;
+    [SerializeField] private TextMeshProUGUI timerTxt;
     [SerializeField] private Scene_Manager _sceneManager;
     [SerializeField] private int _mapSceneIndex = 2;
 
@@ -34,16 +34,6 @@ public class Timer_UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_awaitingMapSceneInput)
-        {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
-            {
-                TransitionToMapScene();
-            }
-
-            return;
-        }
-
         if (_timerMax <= 0f)
         {
             return;
@@ -79,34 +69,7 @@ public class Timer_UI : MonoBehaviour
 
     private void ShowMapTransitionNotification()
     {
-        _awaitingMapSceneInput = true;
-        Debug.Log("Timer ended. Press Enter to proceed to the map scene.");
-    }
-
-    private void TransitionToMapScene()
-    {
-        if (_hasStartedSceneTransition)
-        {
-            return;
-        }
-
-        _hasStartedSceneTransition = true;
-        _awaitingMapSceneInput = false;
-
-        if (_sceneManager == null)
-        {
-            _sceneManager = FindFirstObjectByType<Scene_Manager>();
-        }
-
-        if (_sceneManager == null)
-        {
-            Debug.LogError("Scene_Manager reference is missing. Cannot transition to map scene.");
-            _hasStartedSceneTransition = false;
-            _awaitingMapSceneInput = true;
-            return;
-        }
-
-        _sceneManager.FadeToScene(_mapSceneIndex);
+        Debug.Log("Timer ended.");
     }
 
     private void UpdateVisuals()
@@ -133,5 +96,19 @@ public class Timer_UI : MonoBehaviour
         {
             timerImage.color = Color.red;
         }
+
+        UpdateTimerText();
+    }
+
+    private void UpdateTimerText()
+    {
+        if (timerTxt == null)
+        {
+            return;
+        }
+
+        int minutes = Mathf.FloorToInt(_remainingTime / 60f);
+        int seconds = Mathf.FloorToInt(_remainingTime % 60f);
+        timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
