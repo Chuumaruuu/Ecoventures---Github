@@ -2954,6 +2954,10 @@ PrefabInstance:
       value: GameUI
       objectReference: {fileID: 0}
     - target: {fileID: 5281536874704254048, guid: 6679557e1b2fa354690d371ec29edb64, type: 3}
+      propertyPath: _timerMax
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281536874704254048, guid: 6679557e1b2fa354690d371ec29edb64, type: 3}
       propertyPath: _sceneManager
       value: 
       objectReference: {fileID: 1321932376}
