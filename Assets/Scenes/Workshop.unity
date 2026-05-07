@@ -181,8 +181,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7804991282908791558, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -235,6 +234,7 @@ Transform:
   - {fileID: 1776515262}
   - {fileID: 1655762742}
   - {fileID: 837273270}
+  - {fileID: 1784342375}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &218041544 stripped
@@ -885,11 +885,6 @@ Transform:
   - {fileID: 113209345}
   m_Father: {fileID: 171784514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &637058315 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8837371116207649452, guid: 6679557e1b2fa354690d371ec29edb64, type: 3}
-  m_PrefabInstance: {fileID: 6355220936704415099}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &650437432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,8 +1372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763416504647cd240a6dbd41b4a1a24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pause_Manager
-  pauseMenu: {fileID: 637058315}
-  UIs: {fileID: 291694983}
+  _pauseMenu: {fileID: 0}
+  _gameUI: {fileID: 0}
 --- !u!4 &829335961
 Transform:
   m_ObjectHideFlags: 0
@@ -2643,6 +2638,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7986574231118308772, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
   m_PrefabInstance: {fileID: 223279630}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1784342375 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+  m_PrefabInstance: {fileID: 4366505858625453356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1921416922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2933,6 +2933,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06988a1d877046a4ba5b0ebf90b4b387, type: 3}
+--- !u!1001 &4366505858625453356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 171784514}
+    m_Modifications:
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861932591799306, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003480182912309199, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
+      propertyPath: m_Name
+      value: ProcessCounter_SewingMachine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ca8f0aab906e1e44b110fc2f7dcb542, type: 3}
 --- !u!1001 &6355220936704415099
 PrefabInstance:
   m_ObjectHideFlags: 0
