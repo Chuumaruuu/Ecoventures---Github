@@ -3,18 +3,18 @@ using UnityEngine;
 
 public class Pause_Manager : MonoBehaviour
 {
-    [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private GameObject UIs;
+    [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _gameUI;
     public void Pause()
     {
         Time.timeScale = 0f;
-        pauseMenu.SetActive(true);
-        UIs.SetActive(false);
+        _pauseMenu.SetActive(true);
+        _gameUI.SetActive(false);
     }
     public void Resume()
     {
         Time.timeScale = 1f;
-        pauseMenu.SetActive(false);
-        UIs.SetActive(true);
+        _pauseMenu.SetActive(false);
+        _gameUI.SetActive(true);
     }
 }
