@@ -1,16 +1,15 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer_UI : MonoBehaviour
 {
     private float _remainingTime;
     private bool _hasTimerEnded;
-    private bool _awaitingMapSceneInput;
-    private bool _hasStartedSceneTransition;
 
     [SerializeField] private float _timerMax;
     [SerializeField] private Image timerImage;
+    [SerializeField] private TextMeshProUGUI timerTxt;
     [SerializeField] private Scene_Manager _sceneManager;
     [SerializeField] private int _mapSceneIndex = 2;
 
@@ -35,16 +34,6 @@ public class Timer_UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_awaitingMapSceneInput)
-        {
-            if (IsEnterPressedThisFrame())
-            {
-                TransitionToMapScene();
-            }
-
-            return;
-        }
-
         if (_timerMax <= 0f)
         {
             return;
@@ -75,36 +64,11 @@ public class Timer_UI : MonoBehaviour
         }
 
         _hasTimerEnded = true;
-        ShowMapTransitionNotification();
-    }
-
-    private void ShowMapTransitionNotification()
-    {
-        _awaitingMapSceneInput = true;
-        Debug.Log("Timer ended. Press Enter to proceed to the map scene.");
-    }
-
-    private bool IsEnterPressedThisFrame()
-    {
-        if (Keyboard.current == null)
-        {
-            return false;
-        }
-
-        return Keyboard.current.enterKey.wasPressedThisFrame ||
-               Keyboard.current.numpadEnterKey.wasPressedThisFrame;
+        TransitionToMapScene();
     }
 
     private void TransitionToMapScene()
     {
-        if (_hasStartedSceneTransition)
-        {
-            return;
-        }
-
-        _hasStartedSceneTransition = true;
-        _awaitingMapSceneInput = false;
-
         if (_sceneManager == null)
         {
             _sceneManager = FindFirstObjectByType<Scene_Manager>();
@@ -113,8 +77,6 @@ public class Timer_UI : MonoBehaviour
         if (_sceneManager == null)
         {
             Debug.LogError("Scene_Manager reference is missing. Cannot transition to map scene.");
-            _hasStartedSceneTransition = false;
-            _awaitingMapSceneInput = true;
             return;
         }
 
@@ -145,5 +107,19 @@ public class Timer_UI : MonoBehaviour
         {
             timerImage.color = Color.red;
         }
+
+        UpdateTimerText();
+    }
+
+    private void UpdateTimerText()
+    {
+        if (timerTxt == null)
+        {
+            return;
+        }
+
+        int minutes = Mathf.FloorToInt(_remainingTime / 60f);
+        int seconds = Mathf.FloorToInt(_remainingTime % 60f);
+        timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
