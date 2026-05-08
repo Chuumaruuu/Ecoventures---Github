@@ -136,6 +136,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: _combinationRecipeArray.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 57de4d971c8fa6a46ae2d6e823f6c820, type: 2}
     - target: {fileID: 6106424629716042041, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3

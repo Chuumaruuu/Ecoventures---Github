@@ -430,7 +430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3856860719915621873, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3856860719915621873, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
       propertyPath: m_LocalRotation.y
@@ -438,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3856860719915621873, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3856860719915621873, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -471,9 +471,6 @@ PrefabInstance:
       addedObject: {fileID: 4810630809911892038}
     - targetCorrespondingSourceObject: {fileID: 4064584869449029172, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7804991282908791558}
-    - targetCorrespondingSourceObject: {fileID: 4064584869449029172, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5941227710523872559}
   m_SourcePrefab: {fileID: 100100000, guid: 985e7975bf9fefd43b2a8244ddc4d9cf, type: 3}
 --- !u!1 &5915481492226970200 stripped
@@ -500,20 +497,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
   - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
   - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
   _minAmount: 1
   _maxAmount: 3
---- !u!114 &7804991282908791558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5915481492226970200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae733daa74fc4947b9ce31cb7d1eb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Submit_Manager
 --- !u!114 &5941227710523872559
 MonoBehaviour:
   m_ObjectHideFlags: 0

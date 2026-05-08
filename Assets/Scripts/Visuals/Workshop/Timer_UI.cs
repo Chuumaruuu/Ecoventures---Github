@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Timer_UI : MonoBehaviour
@@ -25,6 +26,11 @@ public class Timer_UI : MonoBehaviour
         if (timerImage == null)
         {
             timerImage = GetComponent<Image>();
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            _mapSceneIndex = 1;
         }
 
         _remainingTime = _timerMax;
