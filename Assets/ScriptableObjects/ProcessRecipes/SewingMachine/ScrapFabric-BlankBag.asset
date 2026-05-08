@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71f04bb6c4939fe40aeb24d5cbcaa555, type: 3}
-  m_Name: ScrapFabric-PreppedFabric
+  m_Name: ScrapFabric-BlankBag
   m_EditorClassIdentifier: Assembly-CSharp::ProcessRecipe_Data
   _inputItem: {fileID: 11400000, guid: 85c842e590f49434b92f96ad37bd4bbf, type: 2}
-  _outputItem: {fileID: 11400000, guid: 2d45946c70d6b1246befa2f43b0bbc10, type: 2}
+  _outputItem: {fileID: 11400000, guid: ce44297be91ac694da549ac78af857fc, type: 2}
   _progressMax: 5
