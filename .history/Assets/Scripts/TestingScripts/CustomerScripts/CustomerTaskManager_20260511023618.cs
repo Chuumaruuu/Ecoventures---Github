@@ -13,7 +13,7 @@ public class CustomerTaskManager : MonoBehaviour
     private int spawnedCount = 0;
     private int servedCount = 0;
     private int activeCustomers = 0;
-    private int nextSceneIndex = 1;
+    private int nextSceneIndex = 2;
 
     [Header("UI")]
     public TextMeshProUGUI taskText;
@@ -22,7 +22,7 @@ public class CustomerTaskManager : MonoBehaviour
     public TextMeshProUGUI resultText;
 
     [Header("Button")]
-    // [SerializeField] private Button btnConTryAgain;
+    [SerializeField] private Button btnConTryAgain;
     [SerializeField] private TextMeshProUGUI btnText;
     // public GameObject continueButton;
     // public GameObject tryAgainButton;
@@ -128,19 +128,16 @@ public class CustomerTaskManager : MonoBehaviour
         }
     }
 
-    public void PressButton()
+    public void ContinueGame()
     {
-        if (!taskEnded) return;
+        Time.timeScale = 1f;
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _sceneManager.FadeToScene(nextSceneIndex);
+    }
 
-        if (btnText.text == "Continue")
-        {
-            Time.timeScale = 1f;
-            _sceneManager.FadeToScene(nextSceneIndex);
-        }
-        else
-        {
-            Time.timeScale = 1f;
-            _sceneManager.FadeToScene(nextSceneIndex);
-        }
+    public void TryAgain()
+    {
+        Time.timeScale = 1f;
+        _sceneManager.FadeToScene(nextSceneIndex - 1);
     }
 }

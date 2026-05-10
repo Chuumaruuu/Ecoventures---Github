@@ -140,7 +140,7 @@ public class CustomerTaskManager : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
-            _sceneManager.FadeToScene(nextSceneIndex);
+            _sceneManager.FadeToScene(nextSceneIndex - 1);
         }
     }
 }

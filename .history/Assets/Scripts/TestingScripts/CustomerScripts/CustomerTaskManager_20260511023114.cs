@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class CustomerTaskManager : MonoBehaviour
 {
@@ -13,7 +12,6 @@ public class CustomerTaskManager : MonoBehaviour
     private int spawnedCount = 0;
     private int servedCount = 0;
     private int activeCustomers = 0;
-    private int nextSceneIndex = 1;
 
     [Header("UI")]
     public TextMeshProUGUI taskText;
@@ -21,14 +19,11 @@ public class CustomerTaskManager : MonoBehaviour
     public GameObject taskCompletePanel;
     public TextMeshProUGUI resultText;
 
-    [Header("Button")]
-    // [SerializeField] private Button btnConTryAgain;
-    [SerializeField] private TextMeshProUGUI btnText;
+    [Header("Button Text")]
+    [SerializeField] public TextMeshProUGUI btnText;
     // public GameObject continueButton;
     // public GameObject tryAgainButton;
 
-    [Header("Scene Management")]
-    [SerializeField] private Scene_Manager _sceneManager;
     private bool taskEnded = false;
 
     private void Awake()
@@ -128,19 +123,16 @@ public class CustomerTaskManager : MonoBehaviour
         }
     }
 
-    public void PressButton()
+    public void ContinueGame()
     {
-        if (!taskEnded) return;
+        Time.timeScale = 1f;
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+    }
 
-        if (btnText.text == "Continue")
-        {
-            Time.timeScale = 1f;
-            _sceneManager.FadeToScene(nextSceneIndex);
-        }
-        else
-        {
-            Time.timeScale = 1f;
-            _sceneManager.FadeToScene(nextSceneIndex);
-        }
+    public void TryAgain()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
