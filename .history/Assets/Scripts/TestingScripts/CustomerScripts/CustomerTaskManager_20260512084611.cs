@@ -9,7 +9,7 @@ public class CustomerTaskManager : MonoBehaviour
 
     [Header("Task Settings")]
     public int maximumCustomers = 10;
-    public int maxServed = 5;
+    public int maxServed = 15;
 
     private int spawnedCount = 0;
     private int servedCount = 0;
@@ -23,7 +23,10 @@ public class CustomerTaskManager : MonoBehaviour
     public TextMeshProUGUI resultText;
 
     [Header("Button")]
+    // [SerializeField] private Button btnConTryAgain;
     [SerializeField] private TextMeshProUGUI btnText;
+    // public GameObject continueButton;
+    // public GameObject tryAgainButton;
 
     [Header("Scene Management")]
     [SerializeField] private Scene_Manager _sceneManager;
@@ -57,7 +60,6 @@ public class CustomerTaskManager : MonoBehaviour
     public void RegisterSpawn()
     {
         spawnedCount++;
-        Debug.Log("Total Spawned: " + spawnedCount);
         activeCustomers++;
     }
 
@@ -90,17 +92,12 @@ public class CustomerTaskManager : MonoBehaviour
             Time.timeScale = 0f;
             ShowResult(true);   // SUCCESS
         }
-        else
-        {
-            Time.timeScale = 0f;
-            ShowResult(false);  // FAILURE
-        }
     }
 
     void UpdateTaskUI()
     {
         if (taskText != null)
-            taskText.text = "Served: " + servedCount + " / " + maxServed;
+            taskText.text = "Served: " + servedCount + " / " + maxServed + " | Spawned: " + spawnedCount + " / " + maximumCustomers;
     }
 
     void ShowResult(bool isSuccess)
@@ -116,11 +113,15 @@ public class CustomerTaskManager : MonoBehaviour
         {
             resultText.text = "TASK COMPLETE!";
             btnText.text = "Continue";
+            // continueButton.SetActive(true);
+            // tryAgainButton.SetActive(false);
         }
         else
         {
             resultText.text = "TRY AGAIN!";
             btnText.text = "Try Again";
+            // continueButton.SetActive(false);
+            // tryAgainButton.SetActive(true);
         }
     }
 

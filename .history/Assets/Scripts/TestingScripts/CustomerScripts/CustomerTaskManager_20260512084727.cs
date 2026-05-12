@@ -57,7 +57,6 @@ public class CustomerTaskManager : MonoBehaviour
     public void RegisterSpawn()
     {
         spawnedCount++;
-        Debug.Log("Total Spawned: " + spawnedCount);
         activeCustomers++;
     }
 
@@ -89,11 +88,6 @@ public class CustomerTaskManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             ShowResult(true);   // SUCCESS
-        }
-        else
-        {
-            Time.timeScale = 0f;
-            ShowResult(false);  // FAILURE
         }
     }
 

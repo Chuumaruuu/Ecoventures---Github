@@ -90,11 +90,6 @@ public class CustomerTaskManager : MonoBehaviour
             Time.timeScale = 0f;
             ShowResult(true);   // SUCCESS
         }
-        else
-        {
-            Time.timeScale = 0f;
-            ShowResult(false);  // FAILURE
-        }
     }
 
     void UpdateTaskUI()
