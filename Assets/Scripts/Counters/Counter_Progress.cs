@@ -35,10 +35,7 @@ public class Counter_Progress : Counter_Base
     {
         if (!HasItem()) return;
 
-        OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
-        {
-            _progressTimerNormalized = _progressTimer / _progressRecipeData._timerMax
-        });
+        
 
         switch (_currentState)
         {
@@ -62,6 +59,11 @@ public class Counter_Progress : Counter_Base
                     _currentState = ProgressState.Burning;
                     _progressTimer = 0;
                 }
+
+                OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                {
+                    _progressTimerNormalized = _progressTimer / _progressRecipeData._timerMax
+                });
                 break;
 
             case ProgressState.Burning:
@@ -80,6 +82,10 @@ public class Counter_Progress : Counter_Base
                     Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
                     _currentState = ProgressState.Overcooked;
                 }
+                OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                {
+                    _progressTimerNormalized = _burnTimer / _progressRecipeData._timerMax
+                });
                 break;
 
             case ProgressState.Overcooked:
@@ -132,7 +138,11 @@ public class Counter_Progress : Counter_Base
             }
         }
     }
-
+    public bool isBurning()
+    {
+        return _currentState == ProgressState.Burning;
+    }
+    
     private bool HasRecipeWithInput(Item_Data _inputItemData)
     {
         ProgressRecipe_Data _progressRecipeData = GetProgressRecipeDataWithInput(_inputItemData);

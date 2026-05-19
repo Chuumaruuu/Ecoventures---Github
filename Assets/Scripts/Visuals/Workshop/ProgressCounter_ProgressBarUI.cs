@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressCounter_UI : MonoBehaviour
+public class ProgressCounter_ProgressBarUI : MonoBehaviour
 {
     [SerializeField] private Counter_Progress _progressCounter;
     [SerializeField] private Image _barImage;
+    [SerializeField] private Image _barBackground;
 
     private void Start()
     {
@@ -16,12 +17,20 @@ public class ProgressCounter_UI : MonoBehaviour
     private void LateUpdate()
     {
         transform.forward = Camera.main.transform.forward;
+
+        if (_progressCounter.HasItem())
+        {
+            return;
+        }
+        else
+        {
+            HideUI();
+        }
     }
 
     private void CounterOnProgressChanged(object sender, Counter_Progress.OnProgressChangedEventArgs e) 
     {
         _barImage.fillAmount = e._progressTimerNormalized;
-
         if (e._progressTimerNormalized == 0f || e._progressTimerNormalized == 1f)
         {
             HideUI();
@@ -30,6 +39,13 @@ public class ProgressCounter_UI : MonoBehaviour
         {
             ShowUI();
         }
+
+        while (_progressCounter.isBurning())
+        {
+            _barImage.color = Color.red;
+            _barBackground.color = Color.lightPink;
+        }
+        
     }
 
     private void ShowUI()
