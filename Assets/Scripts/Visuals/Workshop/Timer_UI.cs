@@ -12,7 +12,7 @@ public class Timer_UI : MonoBehaviour
     [SerializeField] private Image timerImage;
     [SerializeField] private TextMeshProUGUI timerTxt;
     [SerializeField] private Scene_Manager _sceneManager;
-    [SerializeField] private int _mapSceneIndex = 2;
+    private int _mapSceneIndex = 2;
 
     public enum TimerState
     {

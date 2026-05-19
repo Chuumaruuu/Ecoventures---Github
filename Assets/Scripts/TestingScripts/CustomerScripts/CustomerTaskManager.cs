@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CustomerTaskManager : MonoBehaviour
 {
     public static CustomerTaskManager Instance;
 
     [Header("Task Settings")]
-    public int totalCustomers = 20;
+    public int maximumCustomers = 10;
+    public int maxServed = 5;
 
     private int spawnedCount = 0;
     private int servedCount = 0;
     private int activeCustomers = 0;
+    private int nextSceneIndex = 1;
 
     [Header("UI")]
     public TextMeshProUGUI taskText;
@@ -19,10 +22,11 @@ public class CustomerTaskManager : MonoBehaviour
     public GameObject taskCompletePanel;
     public TextMeshProUGUI resultText;
 
-    [Header("Buttons")]
-    public GameObject continueButton;
-    public GameObject tryAgainButton;
+    [Header("Button")]
+    [SerializeField] private TextMeshProUGUI btnText;
 
+    [Header("Scene Management")]
+    [SerializeField] private Scene_Manager _sceneManager;
     private bool taskEnded = false;
 
     private void Awake()
@@ -47,12 +51,13 @@ public class CustomerTaskManager : MonoBehaviour
     // CUSTOMER TRACKING
     public bool CanSpawn()
     {
-        return spawnedCount < totalCustomers;
+        return spawnedCount < maximumCustomers && servedCount < maxServed;
     }
 
     public void RegisterSpawn()
     {
         spawnedCount++;
+        Debug.Log("Total Spawned: " + spawnedCount);
         activeCustomers++;
     }
 
@@ -79,22 +84,23 @@ public class CustomerTaskManager : MonoBehaviour
     {
         if (taskEnded) return;
 
-        // Wait until ALL customers have spawned AND shop is empty
-        if (spawnedCount >= totalCustomers && activeCustomers <= 0)
+        // Task ends when either spawned count reaches maximumCustomers OR served count reaches maxServed
+        if (spawnedCount >= maximumCustomers || servedCount >= maxServed)
         {
             Time.timeScale = 0f;
-
-            if (servedCount >= totalCustomers)
-                ShowResult(true);   // SUCCESS
-            else
-                ShowResult(false);  // FAIL
+            ShowResult(true);   // SUCCESS
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            ShowResult(false);  // FAILURE
         }
     }
 
     void UpdateTaskUI()
     {
         if (taskText != null)
-            taskText.text = "Serve Customers: " + servedCount + " / " + totalCustomers;
+            taskText.text = "Served: " + servedCount + " / " + maxServed;
     }
 
     void ShowResult(bool isSuccess)
@@ -109,26 +115,28 @@ public class CustomerTaskManager : MonoBehaviour
         if (isSuccess)
         {
             resultText.text = "TASK COMPLETE!";
-            continueButton.SetActive(true);
-            tryAgainButton.SetActive(false);
+            btnText.text = "Continue";
         }
         else
         {
             resultText.text = "TRY AGAIN!";
-            continueButton.SetActive(false);
-            tryAgainButton.SetActive(true);
+            btnText.text = "Try Again";
         }
     }
 
-    public void ContinueGame()
+    public void PressButton()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+        if (!taskEnded) return;
 
-    public void TryAgain()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        if (btnText.text == "Continue")
+        {
+            Time.timeScale = 1f;
+            _sceneManager.FadeToScene(nextSceneIndex);
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            _sceneManager.FadeToScene(nextSceneIndex);
+        }
     }
 }
