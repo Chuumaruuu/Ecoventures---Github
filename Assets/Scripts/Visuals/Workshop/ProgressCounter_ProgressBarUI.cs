@@ -18,7 +18,7 @@ public class ProgressCounter_ProgressBarUI : MonoBehaviour
     {
         transform.forward = Camera.main.transform.forward;
 
-        if (_progressCounter.HasItem())
+        if (_progressCounter.HasItem() && !_progressCounter.isBurnt())
         {
             return;
         }
@@ -40,12 +40,17 @@ public class ProgressCounter_ProgressBarUI : MonoBehaviour
             ShowUI();
         }
 
-        while (_progressCounter.isBurning())
+        if (_progressCounter.isBurning())
         {
             _barImage.color = Color.red;
-            _barBackground.color = Color.lightPink;
+            _barBackground.color = Color.deepPink;
+        } 
+        else
+        {
+            _barImage.color = Color.yellow;
+            _barBackground.color = Color.limeGreen;
         }
-        
+
     }
 
     private void ShowUI()

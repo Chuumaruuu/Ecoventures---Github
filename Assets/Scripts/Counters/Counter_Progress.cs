@@ -81,7 +81,9 @@ public class Counter_Progress : Counter_Base
                     this.GiveItem().DestroySelf();
                     Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
                     _currentState = ProgressState.Overcooked;
+                    _burnTimer = 0f;
                 }
+
                 OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
                 {
                     _progressTimerNormalized = _burnTimer / _progressRecipeData._timerMax
@@ -91,7 +93,6 @@ public class Counter_Progress : Counter_Base
             case ProgressState.Overcooked:
                 AudioManager.Instance.PlaySFX(_counterAudio._overcookedSFX);
                 StopSmeltingAnimations();
-                _burnTimer = 0f;
                 _currentState = ProgressState.Idle;
                 break;
 
@@ -138,11 +139,17 @@ public class Counter_Progress : Counter_Base
             }
         }
     }
+
     public bool isBurning()
     {
         return _currentState == ProgressState.Burning;
     }
-    
+
+    public bool isBurnt()
+    {
+        return _currentState == ProgressState.Overcooked;
+    }
+
     private bool HasRecipeWithInput(Item_Data _inputItemData)
     {
         ProgressRecipe_Data _progressRecipeData = GetProgressRecipeDataWithInput(_inputItemData);
