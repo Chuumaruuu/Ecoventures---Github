@@ -4,14 +4,18 @@ using System;
 public class BoothOpenerScript : MonoBehaviour
 {
 
-    bool isPlayerInside;    
+    bool isPlayerInside;  
+    bool isAlreadyAnswered;
+    bool isAlreadyAnswered2;
+    bool isAlreadyAnswered3;
     [SerializeField] private GameObject SellingCamera;
     [SerializeField] private GameObject BoothUI;
     [SerializeField] private GameObject Booth2UI;
     [SerializeField] private GameObject Booth3UI;
     [SerializeField] private GameObject ExploreCamera;
-    [SerializeField] private GameObject SellingUI;
     [SerializeField] private GameObject ExploreUI;
+    [SerializeField] private GameObject CorrectPanel;
+    [SerializeField] private GameObject WrongPanel;
 
     void Start()
     {
@@ -20,6 +24,10 @@ public class BoothOpenerScript : MonoBehaviour
         {
             playerInput.OnInteractAlternateAction += PlayerInput_OnInteractAlternateAction;
         }
+
+        isAlreadyAnswered = false;
+        isAlreadyAnswered2 = false;
+        isAlreadyAnswered3 = false;
     }
 
     private void PlayerInput_OnInteractAlternateAction(object sender, EventArgs e) 
@@ -79,11 +87,24 @@ public class BoothOpenerScript : MonoBehaviour
     public void ExplorePhase()
     {
         SellingCamera.SetActive(false);
-        SellingUI.SetActive(false);
         BoothUI.SetActive(false);
         Booth2UI.SetActive(false);
         Booth3UI.SetActive(false);
+        CorrectPanel.SetActive(false);
+        WrongPanel.SetActive(false);
         ExploreCamera.SetActive(true);
         ExploreUI.SetActive(true);
+    }
+
+    public void CheckAnswer(GameObject clickedButton)
+    {
+        if (clickedButton.CompareTag("CorrectAnswer"))
+        {
+            CorrectPanel.SetActive(true);
+        }
+        else
+        {
+            WrongPanel.SetActive(true);
+        }
     }
 }
