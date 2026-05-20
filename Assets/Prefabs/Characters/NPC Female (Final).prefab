@@ -8,6 +8,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: acceleration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: waitTimeAtPoint
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: stoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: roamPoints.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[4]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[5]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[6]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[7]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[8]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
+      propertyPath: 'roamPoints.Array.data[9]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -72,66 +132,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: moveSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: acceleration
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: waitTimeAtPoint
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: stoppingDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: roamPoints.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[1]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[2]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[3]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[4]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[5]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[6]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[7]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[8]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023354500048927281, guid: d0cd4ca049fc8564db9559e945fb9b3c, type: 3}
-      propertyPath: 'roamPoints.Array.data[9]'
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -185,9 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc840aecb594f845b4002dd8a127562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeAtPoint: 5
-  moveSpeed: 5
-  acceleration: 5
+  waitTimeAtPoint: 3
+  moveSpeed: 8
+  acceleration: 10
   stoppingDistance: 1
   stuckCheckTime: 2
   minimumMoveDistance: 0.2
@@ -222,7 +222,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472455185476437580}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 191880b174d88b74db04231c0345bbac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

@@ -51,8 +51,6 @@ public class RoamingNPC : MonoBehaviour
 
     private int currentPointIndex = -1;
 
-    private bool isInQueue = false;
-
     private Vector3 lastPosition;
     private float stuckTimer;
 
@@ -236,25 +234,6 @@ public class RoamingNPC : MonoBehaviour
         SetDestination(chosen);
     }
 
-    public void ResumeRoaming()
-    {
-        if (agent == null)
-            agent = GetComponent<NavMeshAgent>();
-
-        enabled = true;
-        isInQueue = false;
-        isWaiting = false;
-        isFacingTarget = false;
-
-        if (agent != null)
-        {
-            agent.isStopped = false;
-            agent.updateRotation = true;
-        }
-
-        MoveToNextPoint();
-    }
-
     void SetDestination(int index)
     {
         ReleaseCurrentPoint();
@@ -292,23 +271,6 @@ public class RoamingNPC : MonoBehaviour
         bool isVendorPoint = GetCurrentLookTarget() != null;
         if (isVendorPoint)
         {
-            CustomerOrder customerOrder = GetComponent<CustomerOrder>();
-            if (CustomerQueue.Instance != null && customerOrder != null && CustomerQueue.Instance.CanJoinQueue())
-            {
-                CustomerQueue.Instance.AddCustomer(customerOrder);
-
-                // mark as queued, release vendor reservation so others can use it,
-                // and allow the agent to start moving to the assigned queue destination
-                isInQueue = true;
-                ReleaseCurrentPoint();
-                agent.isStopped = false;
-
-                // stop roaming behavior for this NPC to avoid overriding queue destination
-                enabled = false;
-
-                yield break; // exit coroutine - NPC is now handled by queue logic
-            }
-
             agent.updateRotation = false;
             isFacingTarget = true;
         }
