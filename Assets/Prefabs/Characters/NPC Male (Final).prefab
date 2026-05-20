@@ -125,9 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc840aecb594f845b4002dd8a127562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeAtPoint: 3
-  moveSpeed: 8
-  acceleration: 10
+  waitTimeAtPoint: 5
+  moveSpeed: 5
+  acceleration: 5
   stoppingDistance: 1
   stuckCheckTime: 2
   minimumMoveDistance: 0.2
@@ -162,7 +162,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133128219161265350}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
   m_Controller: {fileID: 9100000, guid: 191880b174d88b74db04231c0345bbac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
