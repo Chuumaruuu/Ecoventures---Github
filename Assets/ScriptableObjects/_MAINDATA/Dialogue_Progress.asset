@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Dialogue_Progress
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Progress
   _workshopIntroDone: 1
-  _mapIntroDone: 1
+  _mapIntroDone: 0
   _level1IntroDone: 0
