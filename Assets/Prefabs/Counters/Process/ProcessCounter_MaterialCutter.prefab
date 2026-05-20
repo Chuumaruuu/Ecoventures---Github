@@ -109,13 +109,12 @@ MonoBehaviour:
   _counterTop: {fileID: 4752304898174455050}
   _counterAudio: {fileID: 6250114651104758971}
   _processRecipeArray:
-  - {fileID: 11400000, guid: 445326ab6392a0b42bd833edc03872fe, type: 2}
-  - {fileID: 11400000, guid: 89585b86fe33f9d40abee3787a65e606, type: 2}
-  - {fileID: 11400000, guid: 1e3b257ecd912fa408d1763d00ebf826, type: 2}
-  - {fileID: 11400000, guid: 5da2c27a45da58f49bc8c9dc0899a04c, type: 2}
-  - {fileID: 11400000, guid: 7ca0eb5d46b9d4344915faaa4d498830, type: 2}
-  - {fileID: 11400000, guid: a89da790bd720c7499a8daf180fa804a, type: 2}
-  - {fileID: 11400000, guid: 78f77d3250798804e8012f9197b4a327, type: 2}
+  - {fileID: 11400000, guid: 262c2a005aeb1f54883360c2a649ff0a, type: 2}
+  - {fileID: 11400000, guid: 4f667497c36df1945883914746ada34f, type: 2}
+  - {fileID: 11400000, guid: 33115d3b0f6eb404f97e3e5200671be2, type: 2}
+  - {fileID: 11400000, guid: 7a9158bf1cfa89b498e896f4c852b211, type: 2}
+  - {fileID: 11400000, guid: 83121db8eaa235246a4e7e38d7722df3, type: 2}
+  - {fileID: 11400000, guid: 26bcc1cfcee66654b97a6c6ceb7dc1f1, type: 2}
 --- !u!114 &6250114651104758971
 MonoBehaviour:
   m_ObjectHideFlags: 0

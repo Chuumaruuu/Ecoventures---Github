@@ -138,12 +138,68 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
       propertyPath: _combinationRecipeArray.Array.size
-      value: 9
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6cb2f706f40c64b4ebea33f5e51f78bf, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d98e1871b6459b74b9e440e3cb9c74f7, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 543ebd86df20e8148a4f73d6ed86e4e3, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 373aed860e808a14282a35ed93724bfd, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8817e7829f3d46c48b73154234a81ed1, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b4fdca9d9b596da4498895872c54f02d, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 04db017bed843924a9049fe773a6895c, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b7dd39f6f4becb4cb7206c90cdd103a, type: 2}
     - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
       propertyPath: '_combinationRecipeArray.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: 57de4d971c8fa6a46ae2d6e823f6c820, type: 2}
+      objectReference: {fileID: 11400000, guid: 55648aab5497f1449a0aae2fe0111d24, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9de2a9604b00f7f4ebcf8db69db5ead2, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7fb7985d24f35ac4d90b98dd52d77467, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 308c81adceaf0cb49a4886796892cee9, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[12]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ac3ad2dc45c897742b6fc1fbd03ce4fe, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[13]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d3f49040ba3e71e44bfce48d44fac48b, type: 2}
+    - target: {fileID: 4681715282458319515, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[14]'
+      value: 
+      objectReference: {fileID: 11400000, guid: edb47a4f6dbc3fd46a688cadacd277b2, type: 2}
     - target: {fileID: 6106424629716042041, guid: 33ecec228e3031b42a7c9883be372165, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3

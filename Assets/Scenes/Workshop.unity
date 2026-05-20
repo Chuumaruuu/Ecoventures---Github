@@ -137,6 +137,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171784514}
     m_Modifications:
+    - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+      propertyPath: _maxAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+      propertyPath: _minAmount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+      propertyPath: _finalProducts.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+      propertyPath: '_finalProducts.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
+    - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+      propertyPath: '_finalProducts.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+    - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
+      propertyPath: '_finalProducts.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
     - target: {fileID: 5915481492226970200, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: m_Name
       value: SubmitCounter_V1
@@ -3592,9 +3616,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
+      propertyPath: _processRecipeArray.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 262c2a005aeb1f54883360c2a649ff0a, type: 2}
+    - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f667497c36df1945883914746ada34f, type: 2}
+    - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
       propertyPath: '_processRecipeArray.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 37a7d88b2a39ac84d993816dcefdc9d1, type: 2}
+      objectReference: {fileID: 11400000, guid: 33115d3b0f6eb404f97e3e5200671be2, type: 2}
+    - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a9158bf1cfa89b498e896f4c852b211, type: 2}
+    - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 83121db8eaa235246a4e7e38d7722df3, type: 2}
+    - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 26bcc1cfcee66654b97a6c6ceb7dc1f1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7862,7 +7910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90.28772, y: -13.323822}
+  m_AnchoredPosition: {x: -90.2876, y: -13.323853}
   m_SizeDelta: {x: -220.5753, y: -128.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8367294423291323649
@@ -8306,12 +8354,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
       propertyPath: _processRecipeArray.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: be35e4a7b16e46a43a1b132b5ed435c8, type: 2}
+    - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 39c70f8f01f3c0d4eb43ca8c6b262113, type: 2}
     - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
       propertyPath: '_processRecipeArray.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 27438a4ecaff56541a04cd10e81c7b8e, type: 2}
+    - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3eb8d583d4764d44da4497d9993a6723, type: 2}
+    - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: aac6b3f28775f234cb6ac4274331e780, type: 2}
+    - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
+      propertyPath: '_processRecipeArray.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 120aea220cf94274fa4d4316d9335124, type: 2}
     - target: {fileID: 4634158106507060824, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
       propertyPath: m_Name
       value: ProcessCounter_AssemblyTable

@@ -81,7 +81,7 @@ public class Counter_Progress : Counter_Base
                     this.GiveItem().DestroySelf();
                     Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
                     _currentState = ProgressState.Overcooked;
-                    _burnTimer = 0f;
+                    
                 }
 
                 OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
@@ -116,6 +116,7 @@ public class Counter_Progress : Counter_Base
                     
                     _currentState = ProgressState.Cooking;
                     _progressTimer = 0f;
+                    _burnTimer = 0f;
                 }
             }
             else
