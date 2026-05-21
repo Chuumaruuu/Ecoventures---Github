@@ -13118,15 +13118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5fea33c076cd348bc806a2db0a16bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CustomerQueue
-  queuePoints:
-  - {fileID: 759344939}
-  - {fileID: 1949622318}
-  - {fileID: 154299052}
-  queuePointImages:
-  - {fileID: 631846196}
-  - {fileID: 171352645}
-  - {fileID: 331985640}
-  vendorLookTarget: {fileID: 1635761876}
+  queuePoints: []
+  queuePointImages: []
+  vendorLookTarget: {fileID: 0}
 --- !u!4 &960873635
 Transform:
   m_ObjectHideFlags: 0
