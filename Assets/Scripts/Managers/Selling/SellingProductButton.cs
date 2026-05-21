@@ -4,7 +4,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class SellingProductButton : MonoBehaviour
 {
-    //ForSellingButtons
     [SerializeField] private Item_Data product;
     [SerializeField] private Image iconImage;
 
