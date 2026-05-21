@@ -61,6 +61,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9088781206549753515, guid: 79e9cf486e157ea4fa45c2aef187d30c, type: 3}
+      propertyPath: _barBackground
+      value: 
+      objectReference: {fileID: 938465478393828832}
+    - target: {fileID: 9088781206549753515, guid: 79e9cf486e157ea4fa45c2aef187d30c, type: 3}
       propertyPath: _progressCounter
       value: 
       objectReference: {fileID: 5380295908423287920}
@@ -81,6 +85,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8495083997580359575}
   m_SourcePrefab: {fileID: 100100000, guid: 79e9cf486e157ea4fa45c2aef187d30c, type: 3}
+--- !u!114 &938465478393828832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 402856731126333397, guid: 79e9cf486e157ea4fa45c2aef187d30c, type: 3}
+  m_PrefabInstance: {fileID: 617315792857950773}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!4 &4911189407013552250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5528495990337514063, guid: 79e9cf486e157ea4fa45c2aef187d30c, type: 3}
@@ -112,8 +127,9 @@ MonoBehaviour:
   _counterAudio: {fileID: 8495083997580359575}
   _isSmelting: 0
   _progressRecipeArray:
-  - {fileID: 11400000, guid: 96686dc3bbfeae04db79ef1cb3bc7be9, type: 2}
-  - {fileID: 11400000, guid: d18235e642229094782a5430173e50fe, type: 2}
+  - {fileID: 11400000, guid: 4fd613b3c0815ec4ea72e6f72c50471c, type: 2}
+  - {fileID: 11400000, guid: 27bef2d835fa1a5499783099ead0e534, type: 2}
+  - {fileID: 11400000, guid: f348b3a57ba1c0c479960489924a02d6, type: 2}
 --- !u!114 &8495083997580359575
 MonoBehaviour:
   m_ObjectHideFlags: 0

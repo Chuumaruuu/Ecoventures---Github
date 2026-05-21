@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Input : MonoBehaviour 
 {
@@ -33,6 +34,11 @@ public class Player_Input : MonoBehaviour
     {
         Vector2 inputVector = _playerInputActions.Player.Move.ReadValue<Vector2>();
         inputVector = inputVector.normalized;
+        if(SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().name == "Level 1 new")
+        {
+            inputVector = -inputVector.normalized;
+        }
+        
         return inputVector;
     }
 

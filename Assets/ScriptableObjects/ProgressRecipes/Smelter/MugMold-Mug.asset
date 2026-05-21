@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49097f2a329d7064092d615475ed4e9e, type: 3}
+  m_Name: MugMold-Mug
+  m_EditorClassIdentifier: Assembly-CSharp::ProgressRecipe_Data
+  _unfinishedItem: {fileID: 11400000, guid: 960174c336af85d4bb255b6186fa83a0, type: 2}
+  _finishedItem: {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
+  _overcookedItem: {fileID: 11400000, guid: 66eb5c4a84b91f94b92359f4c122dbd5, type: 2}
+  _timerMax: 5

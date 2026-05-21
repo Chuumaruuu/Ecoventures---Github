@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 61c5e58da94ee004a85d8fca9164be2d
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Chair_Legs
+    second: {fileID: 2100000, guid: 2e17e102ed8865d45b947224eb2e1bbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Floor1
+    second: {fileID: 2100000, guid: 643bde41d0e39d446a62f30dfec18a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Glass
+    second: {fileID: 2100000, guid: 70469cbf73c06364a8c8fd41b08697b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lights_Black
+    second: {fileID: 2100000, guid: b2449cb14c86d1141bda0167d3e1f01d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lights_Brown
+    second: {fileID: 2100000, guid: 20e872fb3a6f28849820e0ede4bc21bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Chair_V1
+    second: {fileID: 2100000, guid: d4764569fbdb88a4f896ddf9a1f82ec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Chair_V2_Foam
+    second: {fileID: 2100000, guid: bd9d614c6c903f140a83a7f664c708ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Mat
+    second: {fileID: 2100000, guid: a89c2bcf5ba57624aa750e3364a97a7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Wall_Blue
+    second: {fileID: 2100000, guid: 5f4dca74cde5ad1498ae0de4df8e9626, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Wall_Grey
+    second: {fileID: 2100000, guid: 7ca72d07fbb82cf4cbb07e1df22e3971, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Wall_Red
+    second: {fileID: 2100000, guid: fc248d87562436845b3d936f3a31b04e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Wall_Sides
+    second: {fileID: 2100000, guid: f5ef2ee4365d925478bc3fe3bef965f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Wall_Yellow
+    second: {fileID: 2100000, guid: ada73c34e2ad9df4f80a7cfbdc5b55d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Main_Sofa
+    second: {fileID: 2100000, guid: 00838fa04e8f03c459bc5f4f740787ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Part_Sofa
+    second: {fileID: 2100000, guid: 8f16622958b771d4cb58aabe2316a42d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Pillar
+    second: {fileID: 2100000, guid: bd2f8285a77053741aad99a50e148b15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Poster_1
+    second: {fileID: 2100000, guid: bc7a6f64d314730428651b14613ee49f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Poster_2
+    second: {fileID: 2100000, guid: ddae760e382dcdd49bf1560f3b12fce2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Ribbon_Dark_Green
+    second: {fileID: 2100000, guid: 9fcedef3c8472394eb907bff9cef4416, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Ribbon_Light_Green
+    second: {fileID: 2100000, guid: 6b8ef87d3589bc74580c7ff1adb54d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Ribbon_Magenta
+    second: {fileID: 2100000, guid: 8056a3f6407b55e41a5c1712eb98be84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Ribbon_Yellow
+    second: {fileID: 2100000, guid: 5304588d98ec41f408d08c79938c4127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Wall_Bottom_Part
+    second: {fileID: 2100000, guid: f6d9cba7df28fa640b85e81188ab9dea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Wall_White
+    second: {fileID: 2100000, guid: 69eb002268491ab44b837fb5c6bcd2f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Window_Frame
+    second: {fileID: 2100000, guid: 3aaed89fb0022c1418967799af649789, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 88eeba1f8b7f64e48bec49c575ab1fcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert15
+    second: {fileID: 2100000, guid: 2b3caf26bc95a5141bb5f87aadb7ac79, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FTIC Poster - Main
+    second: {fileID: 2800000, guid: 131a578c63ba1814098eb57ef2c1125c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FTIC_Lounge_Floor
+    second: {fileID: 2800000, guid: 2b2673aa80581b249aa09243f583b069, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: p13
+    second: {fileID: 2800000, guid: 1fc84b7d48b301643a17c323a82c88c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: p14
+    second: {fileID: 2800000, guid: a44a50f4a5d1abc47a5d71d92c748a68, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.19999999
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

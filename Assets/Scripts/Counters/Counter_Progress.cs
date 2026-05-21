@@ -35,10 +35,7 @@ public class Counter_Progress : Counter_Base
     {
         if (!HasItem()) return;
 
-        OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
-        {
-            _progressTimerNormalized = _progressTimer / _progressRecipeData._timerMax
-        });
+        
 
         switch (_currentState)
         {
@@ -62,6 +59,11 @@ public class Counter_Progress : Counter_Base
                     _currentState = ProgressState.Burning;
                     _progressTimer = 0;
                 }
+
+                OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                {
+                    _progressTimerNormalized = _progressTimer / _progressRecipeData._timerMax
+                });
                 break;
 
             case ProgressState.Burning:
@@ -79,13 +81,18 @@ public class Counter_Progress : Counter_Base
                     this.GiveItem().DestroySelf();
                     Item_Base.SpawnItem(_progressRecipeData._overcookedItem, this);
                     _currentState = ProgressState.Overcooked;
+                    
                 }
+
+                OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                {
+                    _progressTimerNormalized = _burnTimer / _progressRecipeData._timerMax
+                });
                 break;
 
             case ProgressState.Overcooked:
                 AudioManager.Instance.PlaySFX(_counterAudio._overcookedSFX);
                 StopSmeltingAnimations();
-                _burnTimer = 0f;
                 _currentState = ProgressState.Idle;
                 break;
 
@@ -109,6 +116,7 @@ public class Counter_Progress : Counter_Base
                     
                     _currentState = ProgressState.Cooking;
                     _progressTimer = 0f;
+                    _burnTimer = 0f;
                 }
             }
             else
@@ -131,6 +139,16 @@ public class Counter_Progress : Counter_Base
                 this.GiveItem().SetItemParent(_player);
             }
         }
+    }
+
+    public bool isBurning()
+    {
+        return _currentState == ProgressState.Burning;
+    }
+
+    public bool isBurnt()
+    {
+        return _currentState == ProgressState.Overcooked;
     }
 
     private bool HasRecipeWithInput(Item_Data _inputItemData)

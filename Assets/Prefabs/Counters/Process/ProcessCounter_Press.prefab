@@ -229,8 +229,9 @@ MonoBehaviour:
   _counterTop: {fileID: 4752304898174455050}
   _counterAudio: {fileID: 2415639649207704042}
   _processRecipeArray:
-  - {fileID: 11400000, guid: 285de6159e0b8484ca17287d6c94c3e5, type: 2}
-  - {fileID: 11400000, guid: 50553592d72a0d04b81096bfac7ce8e7, type: 2}
+  - {fileID: 11400000, guid: f7bdf3d4a54da9a4eaeee2669dc968b4, type: 2}
+  - {fileID: 11400000, guid: be95b0feb2cd2c0408e16b159d373472, type: 2}
+  - {fileID: 11400000, guid: d6391f43e2274494c9743cb935945f6e, type: 2}
 --- !u!114 &2415639649207704042
 MonoBehaviour:
   m_ObjectHideFlags: 0
