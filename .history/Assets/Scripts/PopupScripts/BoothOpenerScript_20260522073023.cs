@@ -87,8 +87,6 @@ public class BoothOpenerScript : MonoBehaviour
         Booth3UI.SetActive(false);
         ExploreCamera.SetActive(true);
         ExploreUI.SetActive(true);
-        RightAnswerUI.SetActive(false);
-        WrongAnswerUI.SetActive(false);
     }
 
     public void RightAnswer()

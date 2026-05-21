@@ -87,19 +87,21 @@ public class BoothOpenerScript : MonoBehaviour
         Booth3UI.SetActive(false);
         ExploreCamera.SetActive(true);
         ExploreUI.SetActive(true);
-        RightAnswerUI.SetActive(false);
-        WrongAnswerUI.SetActive(false);
     }
 
-    public void RightAnswer()
+    public bool Answer(bool ans)
     {
-        RightAnswerUI.SetActive(true);
-        WrongAnswerUI.SetActive(false);
-    }
-
-    public void WrongAnswer()
-    {
-        RightAnswerUI.SetActive(false);
-        WrongAnswerUI.SetActive(true);
+        if(ans == true)
+        {
+            RightAnswerUI.SetActive(true);
+            WrongAnswerUI.SetActive(false);
+            return true;
+        }
+        else
+        {
+            RightAnswerUI.SetActive(false);
+            WrongAnswerUI.SetActive(true);
+            return false;
+        }
     }
 }
