@@ -12,9 +12,6 @@ public class BoothOpenerScript : MonoBehaviour
     [SerializeField] private GameObject ExploreCamera;
     [SerializeField] private GameObject SellingUI;
     [SerializeField] private GameObject ExploreUI;
-    [SerializeField] private GameObject RightAnswerUI;
-    [SerializeField] private GameObject WrongAnswerUI;
-    [SerializeField] private GameObject ContinuePanel;
 
     void Start()
     {
@@ -88,25 +85,5 @@ public class BoothOpenerScript : MonoBehaviour
         Booth3UI.SetActive(false);
         ExploreCamera.SetActive(true);
         ExploreUI.SetActive(true);
-        RightAnswerUI.SetActive(false);
-        WrongAnswerUI.SetActive(false);
-        ContinuePanel.SetActive(false);
-    }
-
-    public void RightAnswer()
-    {
-        RightAnswerUI.SetActive(true);
-        WrongAnswerUI.SetActive(false);
-    }
-
-    public void WrongAnswer()
-    {
-        RightAnswerUI.SetActive(false);
-        WrongAnswerUI.SetActive(true);
-    }
-
-    public void ContinueToWarehouse()
-    {
-        ContinuePanel.SetActive(true);
     }
 }

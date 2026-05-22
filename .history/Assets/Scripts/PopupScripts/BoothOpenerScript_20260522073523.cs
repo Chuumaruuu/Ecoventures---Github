@@ -14,7 +14,6 @@ public class BoothOpenerScript : MonoBehaviour
     [SerializeField] private GameObject ExploreUI;
     [SerializeField] private GameObject RightAnswerUI;
     [SerializeField] private GameObject WrongAnswerUI;
-    [SerializeField] private GameObject ContinuePanel;
 
     void Start()
     {
@@ -90,7 +89,6 @@ public class BoothOpenerScript : MonoBehaviour
         ExploreUI.SetActive(true);
         RightAnswerUI.SetActive(false);
         WrongAnswerUI.SetActive(false);
-        ContinuePanel.SetActive(false);
     }
 
     public void RightAnswer()
@@ -103,10 +101,5 @@ public class BoothOpenerScript : MonoBehaviour
     {
         RightAnswerUI.SetActive(false);
         WrongAnswerUI.SetActive(true);
-    }
-
-    public void ContinueToWarehouse()
-    {
-        ContinuePanel.SetActive(true);
     }
 }
