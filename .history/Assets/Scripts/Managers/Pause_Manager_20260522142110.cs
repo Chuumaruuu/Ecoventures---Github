@@ -19,11 +19,4 @@ public class Pause_Manager : MonoBehaviour
         _gameUI.SetActive(true);
         _guideUI.SetActive(false);
     }
-
-    public void OpenGuide()
-    {
-        _guideUI.SetActive(true);
-        _pauseMenu.SetActive(false);
-        _gameUI.SetActive(false);
-    }
 }
