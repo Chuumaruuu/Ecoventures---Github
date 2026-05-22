@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pause_Manager
   _pauseMenu: {fileID: 9018544449921029946}
   _gameUI: {fileID: 9018544449921029947}
+  _guideUI: {fileID: 0}
 --- !u!4 &25341303
 Transform:
   m_ObjectHideFlags: 0
@@ -29193,6 +29194,14 @@ PrefabInstance:
     - target: {fileID: 1999580646397636994, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5.0317
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520673882163648409, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 25341302}
+    - target: {fileID: 2520673882163648409, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
       objectReference: {fileID: 0}
     - target: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: iconImage
