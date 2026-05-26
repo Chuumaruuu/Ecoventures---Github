@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716e1de1bf4d24646ab820afc940f47a, type: 3}
+  m_Name: '[1] ToteBag_Recipe'
+  m_EditorClassIdentifier: Assembly-CSharp::Recipe_Data
+  recipeName: ToteBag_Recipe
+  recipeID: 1
+  isUnlocked: 1
+  recipeSprites:
+  - {fileID: 21300000, guid: 531f05f1be59d4a41988dc82341ff335, type: 3}
+  - {fileID: 21300000, guid: 8520883e07f64b64f912b9682f90a05a, type: 3}
+  - {fileID: 21300000, guid: b0441cc90df90b44089f7e4738a916a4, type: 3}
