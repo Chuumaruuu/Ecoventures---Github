@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
-  m_Name: Figurine
+  m_Name: Cap
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 4589428500890972953, guid: 70e075e8046ed484fa07c40c633d9dee, type: 3}
-  _itemSprite: {fileID: 21300000, guid: bf7ab4e3003ed7247940c1f7f656a8be, type: 3}
-  _objectName: Figurine
-  sellprice: 90
-  useCustomWorldScale: 1
-  customWorldScale: {x: 0.0015, y: 0.13, z: 0.003}
+  _itemPrefab: {fileID: 4589428500890972953, guid: efe8ff72184e13441a41494660e0cd30, type: 3}
+  _itemSprite: {fileID: 21300000, guid: 8a11916d0c1454a41ae65ff334a701aa, type: 3}
+  _objectName: Cap
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

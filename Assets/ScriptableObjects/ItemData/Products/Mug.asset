@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
-  m_Name: Bracelet
+  m_Name: Mug
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 4589428500890972953, guid: 79b58289f03db6646ad08e23d7a86423, type: 3}
-  _itemSprite: {fileID: 21300000, guid: d402b07f897405e45a55e5d82fe67a64, type: 3}
-  _objectName: Bracelet
+  _itemPrefab: {fileID: 4589428500890972953, guid: 9ce7f8f10fc71a749b9362d29c265fef, type: 3}
+  _itemSprite: {fileID: 21300000, guid: 513d858df447517489c8150f8dfdc6b6, type: 3}
+  _objectName: Mug
   sellprice: 0
   useCustomWorldScale: 0
   customWorldScale: {x: 1, y: 1, z: 1}
