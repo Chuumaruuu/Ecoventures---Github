@@ -43,15 +43,15 @@ public class GameTracker : MonoBehaviour
             return;
         }
 
-        if (inventory.items == null)
+        if (inventory._finalProducts == null)
         {
             Debug.LogWarning("Inventory items list is null");
             return;
         }
 
-        if (inventory.items.Contains(item))
+        if (inventory._finalProducts.Contains(item))
         {
-            inventory.items.Remove(item);
+            inventory._finalProducts.Remove(item);
             totalSales++;
             totalCoins += Mathf.Max(0, item.sellprice);
 

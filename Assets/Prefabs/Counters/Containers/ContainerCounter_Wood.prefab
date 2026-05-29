@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: _itemData
       value: 
       objectReference: {fileID: 11400000, guid: e1db9510a5e38294f85830d756b381c3, type: 2}
+    - target: {fileID: 2413284134309299828, guid: 5a7576e7495b7314aa50611150a3d81a, type: 3}
+      propertyPath: _mainData
+      value: 
+      objectReference: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+    - target: {fileID: 2413284134309299828, guid: 5a7576e7495b7314aa50611150a3d81a, type: 3}
+      propertyPath: _itemPrice
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

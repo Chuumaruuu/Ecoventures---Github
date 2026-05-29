@@ -124,5 +124,4 @@ public class HintsOpenerScript : MonoBehaviour
         Hint22.SetActive(false);
         Hint23.SetActive(false);
     }
-
 }

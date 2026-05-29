@@ -15,7 +15,7 @@ public class BoothOpenerScript : MonoBehaviour
     [SerializeField] private GameObject RightAnswerUI;
     [SerializeField] private GameObject WrongAnswerUI;
     [SerializeField] private GameObject ContinuePanel;
-
+    [SerializeField] private Item_Data unlockableItemData;
     void Start()
     {
          Player_Input playerInput = FindFirstObjectByType<Player_Input>();
@@ -97,12 +97,25 @@ public class BoothOpenerScript : MonoBehaviour
     {
         RightAnswerUI.SetActive(true);
         WrongAnswerUI.SetActive(false);
+
+        // Unlock the item tied to this booth
+        if (unlockableItemData != null)
+        {
+            unlockableItemData.isUnlocked = true;
+        }
+        this.gameObject.SetActive(false);
     }
 
     public void WrongAnswer()
     {
         RightAnswerUI.SetActive(false);
         WrongAnswerUI.SetActive(true);
+
+        if (unlockableItemData != null)
+        {
+            unlockableItemData.isUnlocked = false;
+        }
+        this.gameObject.SetActive(false);
     }
 
     public void ContinueToWarehouse()
