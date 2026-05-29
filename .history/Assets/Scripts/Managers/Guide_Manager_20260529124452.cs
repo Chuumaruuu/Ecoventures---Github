@@ -11,7 +11,7 @@ public class Guide_Manager : MonoBehaviour
 
     [SerializeField] private MainPageGroup[] _mainPages;
     private int _currentMainPageIndex = -1;
-    private int _currentRecipePageIndex = -1;
+    private int _currentRecipePageIndex = ;
 
     private void Start()
     {
@@ -43,11 +43,6 @@ public class Guide_Manager : MonoBehaviour
 
         _currentMainPageIndex = index;
         _currentRecipePageIndex = -1;
-
-        if (_mainPages[index].recipePages != null && _mainPages[index].recipePages.Length > 0)
-        {
-            setCurrentRecipePage(0);
-        }
     }
 
     public void setCurrentRecipePage(int index)

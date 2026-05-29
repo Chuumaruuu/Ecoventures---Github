@@ -43,11 +43,6 @@ public class Guide_Manager : MonoBehaviour
 
         _currentMainPageIndex = index;
         _currentRecipePageIndex = -1;
-
-        if (_mainPages[index].recipePages != null && _mainPages[index].recipePages.Length > 0)
-        {
-            setCurrentRecipePage(0);
-        }
     }
 
     public void setCurrentRecipePage(int index)
