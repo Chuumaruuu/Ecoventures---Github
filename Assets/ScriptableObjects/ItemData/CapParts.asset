@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CapParts
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: a89081f2f6757c643ac6766896c9ae80, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 632fc6eed5ef65a46956e2d4ff7e4889, type: 3}
   _objectName: CapParts
   sellprice: 0
   useCustomWorldScale: 0

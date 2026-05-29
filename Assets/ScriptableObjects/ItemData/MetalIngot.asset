@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: MetalIngot
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 53d1814537887cf4bbe9310fb7553a01, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 757c93639b5baa740a162b7c00eb08d2, type: 3}
   _objectName: MetalIngot
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}
