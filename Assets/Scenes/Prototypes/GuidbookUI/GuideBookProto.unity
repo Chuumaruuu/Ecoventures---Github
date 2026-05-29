@@ -4407,6 +4407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649106898}
   - component: {fileID: 649106897}
+  - component: {fileID: 649106899}
   m_Layer: 0
   m_Name: GuideBookManager
   m_TagString: Untagged
@@ -4452,6 +4453,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649106899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649106896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eaa7505c1b9ef84796125f752707b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Guide_Buttons
+  _recipeButtons:
+  - {fileID: 13307879}
+  - {fileID: 690540352}
+  - {fileID: 735350727}
+  _recipeButtonImages:
+  - {fileID: 973406701}
+  - {fileID: 346910671}
+  - {fileID: 57555931}
+  _recipeData:
+  - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
+  - {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+  - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
 --- !u!1 &656651792
 GameObject:
   m_ObjectHideFlags: 0
