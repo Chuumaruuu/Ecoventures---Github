@@ -492,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Counter_Submit
   _counterTop: {fileID: 6027013728250509578}
   _counterAudio: {fileID: 5941227710523872559}
+  _mainInventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
   _finalProducts:
   - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
   - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
