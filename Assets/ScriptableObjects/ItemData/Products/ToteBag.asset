@@ -15,6 +15,7 @@ MonoBehaviour:
   _itemPrefab: {fileID: 4589428500890972953, guid: 5639ba8a546ccab49985101aff1a2fea, type: 3}
   _itemSprite: {fileID: 21300000, guid: b04dd4a2d59738246b139c9fc42ae7de, type: 3}
   _objectName: ToteBag
+  isUnlocked: 1
   sellprice: 50
   useCustomWorldScale: 1
   customWorldScale: {x: 0.0015, y: 0.13, z: 0.003}
