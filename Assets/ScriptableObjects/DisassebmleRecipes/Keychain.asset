@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e3f1d1d2d651c43aadc06a1d8e6359, type: 3}
   m_Name: Keychain
   m_EditorClassIdentifier: Assembly-CSharp::ItemDisassemblyRecipe_Data
-  _inputItem: {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+  _inputItem: {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
   _outputItems:
-  - {fileID: 11400000, guid: e1db9510a5e38294f85830d756b381c3, type: 2}
-  - {fileID: 11400000, guid: 85c842e590f49434b92f96ad37bd4bbf, type: 2}
+  - {fileID: 11400000, guid: b8dbb78a2da580a4a9a225944a055152, type: 2}
+  - {fileID: 11400000, guid: 555397766a849bc4684cb64ab094cb5b, type: 2}
+  - {fileID: 11400000, guid: 6496d657ec861de4bb206ea07a3dfe8e, type: 2}

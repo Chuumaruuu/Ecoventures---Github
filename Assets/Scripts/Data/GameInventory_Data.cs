@@ -21,7 +21,7 @@ public class GameInventory_Data : ScriptableObject
 
     public void AddProducts(Item_Data _item)
     {
-        _finalProducts.Add(_item);
+                _finalProducts.Add(_item);
     }
 
     public void AddRecycledMaterials(Item_Data _item)
@@ -38,4 +38,20 @@ public class GameInventory_Data : ScriptableObject
     {
         _recycledProducts.Remove(_item);
     }
+
+    public void AddMoney(int _value)
+    {
+        _playerMoney += _value;
+    }
+
+    public void SubtractMoney(int _value)
+    {
+        _playerMoney -= _value;
+    }
+
+    public bool HasRecycledItem(Item_Data _item)
+    {
+        return _recycledProducts.Contains(_item);
+    }
+
 }

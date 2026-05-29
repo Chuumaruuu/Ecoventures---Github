@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e3f1d1d2d651c43aadc06a1d8e6359, type: 3}
   m_Name: Totebag
   m_EditorClassIdentifier: Assembly-CSharp::ItemDisassemblyRecipe_Data
-  _inputItem: {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+  _inputItem: {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
   _outputItems:
-  - {fileID: 11400000, guid: e1db9510a5e38294f85830d756b381c3, type: 2}
   - {fileID: 11400000, guid: 85c842e590f49434b92f96ad37bd4bbf, type: 2}

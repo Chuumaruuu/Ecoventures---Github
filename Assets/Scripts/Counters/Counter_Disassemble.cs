@@ -30,7 +30,7 @@ public class Counter_Disassemble : Counter_Base
         }
         else // wrong combination
         {
-            AudioManager.Instance.PlaySFX(_counterAudio._wrongEntrySFX);
+            // nothing happens
         }
     }
 
