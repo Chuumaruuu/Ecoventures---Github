@@ -6,6 +6,10 @@ public class GameInventory_Data : ScriptableObject
 {
     [Header("Final Products Inventory")]
     public List<Item_Data> items = new List<Item_Data>();
+    public int _keyChains = 0;
+    public int _toteBags = 0;
+    public int _buttonPins = 0;
+    public int _figurines = 0;
 
     [Header("Extra Materials Inventory")]
     public int _scrapMetal = 0;
