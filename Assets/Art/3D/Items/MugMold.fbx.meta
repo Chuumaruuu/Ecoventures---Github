@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 0a006144c743ced49937991c392e73d2
+guid: 79b869450f632ff49965433b8e94bc4d
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mug_Mold_Icon
+    second: {fileID: 2100000, guid: 9be1b2d3e2247ad47811069fbdf33196, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_Bucket
+    second: {fileID: 2100000, guid: 4d095fdb3054b704a83218bde8a8072a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Mug
+    second: {fileID: 2800000, guid: 0fd6d3b5067451748a7f5de96451f6cd, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

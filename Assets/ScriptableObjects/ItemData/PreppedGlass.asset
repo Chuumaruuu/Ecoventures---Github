@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: PreppedGlass
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 4c21753c522b77041ac25f67d8496ed0, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 1c1269173a8c68e49a7828e89e892ec0, type: 3}
   _objectName: PreppedGlass
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: BlankFigurineParts
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 4589428500890972953, guid: 8928c60db8739e4489a0fd5d8fdc1014, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemPrefab: {fileID: 4589428500890972953, guid: b5507ea0750d01e49b4a7e35dce8c65e, type: 3}
+  _itemSprite: {fileID: 21300000, guid: 1425273f081fc2540bfc156470c95ba1, type: 3}
   _objectName: BlankFigurineParts
   sellprice: 0
   useCustomWorldScale: 0

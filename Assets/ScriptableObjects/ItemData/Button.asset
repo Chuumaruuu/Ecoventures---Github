@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Button
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 9a38b09dbb5bc8841a91fb6ac109309a, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 0cbad9d6327bb734b917bb79e669d028, type: 3}
   _objectName: Button
   sellprice: 0
   useCustomWorldScale: 0

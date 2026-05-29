@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: BlankBag
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: b635242fb23876b4a90261420095ad8e, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 883e23a0fd52b4d48a13311dd43d38af, type: 3}
   _objectName: BlankBag
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}
