@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Chain
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 333d29b3f741cfd45a1d7edb80059961, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: e0ac65f5928242344b0fe79fd9e2427b, type: 3}
   _objectName: Chain
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BlankShirt
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 7549471359754358677, guid: 313143e91c68751449a6e84b692a36a1, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 699f0719f63b26e4e97b7ed4195d71f8, type: 3}
   _objectName: BlankShirt
   sellprice: 0
   useCustomWorldScale: 0

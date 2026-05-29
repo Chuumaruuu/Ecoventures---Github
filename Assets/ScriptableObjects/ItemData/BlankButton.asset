@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BlankButton
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 49db189b58fc31e4498840151e88515f, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 89e59e0895c5df046b5eb2b540bab9b0, type: 3}
   _objectName: BlankButton
   sellprice: 0
   useCustomWorldScale: 0

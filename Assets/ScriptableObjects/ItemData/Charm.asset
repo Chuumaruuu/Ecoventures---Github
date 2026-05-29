@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Charm
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 4f84329fa63bdba4bab5bb66be6160c7, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 47abce4f8463af24db77b83ba87bbc80, type: 3}
   _objectName: Charm
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Pin
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 740aaeba4cdfff84aa2bb64fb4447b37, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: c8533695285c4624cb4e94f6336fcfed, type: 3}
   _objectName: Pin
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: MetalFiber
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 2b950a6e9ef3dec4babce33cc4e373d1, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: c8339396317f5eb49bfab2b46c437bd1, type: 3}
   _objectName: MetalFiber
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}
