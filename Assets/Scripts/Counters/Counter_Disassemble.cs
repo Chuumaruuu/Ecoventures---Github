@@ -13,13 +13,13 @@ public class Counter_Disassemble : Counter_Base
     {
         if (_player.HasItem() && HasRecipeWithInput(_player.GiveItem().GetItemData())) // player has a final product item that can be disassembled
         {
-            AudioManager.Instance.PlaySFX(_counterAudio._correctEntrySFX);
+            AudioManager.Instance.PlaySFX(_counterAudio._counterInteractSFX);
             
             ItemDisassemblyRecipe_Data _currentRecipe = CheckIfDisassemblyRecipeExists(_player.GiveItem().GetItemData());
 
             foreach (Item_Data output in _currentRecipe._outputItems)
             {
-                // add the outputs to the main inventory
+                _mainData.AddRecycledMaterials(output);
             }
             _player.GiveItem().DestroySelf();
 

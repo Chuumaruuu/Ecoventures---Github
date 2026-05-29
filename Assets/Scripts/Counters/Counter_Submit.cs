@@ -5,6 +5,7 @@ public class Counter_Submit : Counter_Base
 {
     public event EventHandler OnItemSubmit;
 
+    [SerializeField] private GameInventory_Data _mainInventory;
     [SerializeField] private Item_Data[] _finalProducts;
     [SerializeField] private int _minAmount = 1;
     [SerializeField] private int _maxAmount = 3;
@@ -20,7 +21,7 @@ public class Counter_Submit : Counter_Base
             int randomAmount = UnityEngine.Random.Range(_minAmount, _maxAmount + 1);
             for (int i = 0; i < randomAmount; i++)
             {
-                InventoryManager.Instance.AddItemToInventory(submittedItem);
+                _mainInventory.AddProducts(submittedItem);
             }
 
             OnItemSubmit?.Invoke(this, EventArgs.Empty);

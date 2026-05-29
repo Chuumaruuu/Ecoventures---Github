@@ -5,6 +5,5 @@ public class ItemDisassemblyRecipe_Data : ScriptableObject
 {
     public Item_Data _inputItem;
     public Item_Data[] _outputItems;
-    public float _progressMax = 5;
 }
 
