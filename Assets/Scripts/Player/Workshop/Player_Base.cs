@@ -7,6 +7,9 @@ public class Player_Base : MonoBehaviour, IItemParent
     public static Player_Base Instance { get; private set; }
     
     public event EventHandler OnPlayerGrabbedObject;
+    public event EventHandler OnObjectPickup;
+    public event EventHandler OnObjectDrop;
+    
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
     public class OnSelectedCounterChangedEventArgs : EventArgs 
     {
@@ -45,6 +48,15 @@ public class Player_Base : MonoBehaviour, IItemParent
         {
             _selectedCounter.Interact(this);
             OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
+
+            if (HasItem())
+            {
+                OnObjectPickup?.Invoke(this, EventArgs.Empty);
+            }
+            else
+            {
+                OnObjectDrop?.Invoke(this, EventArgs.Empty);
+            }
         }
     }
 
@@ -189,7 +201,7 @@ public class Player_Base : MonoBehaviour, IItemParent
         _productionItem = null;
     }
 
-    public bool HasItem() // checks if player detects that an item is in their posession
+    public bool HasItem() // checks if player has an item on their hand
     {
         return _productionItem != null;
     }
