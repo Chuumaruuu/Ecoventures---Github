@@ -71,16 +71,16 @@ public class InventoryManager : MonoBehaviour
             return;
         }
 
-        inventoryData.items.Add(newItem);
+        inventoryData._finalProducts.Add(newItem);
         Debug.Log("✅ Item added: " + newItem._objectName);
         PopulateInventoryUI();
     }
 
     public void RemoveItemFromInventory(Item_Data itemToRemove)
     {
-        if (inventoryData.items.Contains(itemToRemove))
+        if (inventoryData._finalProducts.Contains(itemToRemove))
         {
-            inventoryData.items.Remove(itemToRemove);
+            inventoryData._finalProducts.Remove(itemToRemove);
             Debug.Log("🗑️ Item removed: " + itemToRemove._objectName);
             PopulateInventoryUI();
         }
@@ -103,7 +103,7 @@ public class InventoryManager : MonoBehaviour
         foreach (Transform child in gridParent)
             Destroy(child.gameObject);
 
-        foreach (Item_Data item in inventoryData.items)
+        foreach (Item_Data item in inventoryData._finalProducts)
         {
             InventoryButton btn = Instantiate(inventoryButtonPrefab, gridParent);
             btn.item = item;

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e3f1d1d2d651c43aadc06a1d8e6359, type: 3}
+  m_Name: TShirt
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDisassemblyRecipe_Data
+  _inputItem: {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
+  _outputItems:
+  - {fileID: 11400000, guid: 85c842e590f49434b92f96ad37bd4bbf, type: 2}
+  - {fileID: 11400000, guid: b8dbb78a2da580a4a9a225944a055152, type: 2}
