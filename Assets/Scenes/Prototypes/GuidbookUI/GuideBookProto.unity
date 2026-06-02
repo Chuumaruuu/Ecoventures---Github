@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -2244,7 +2244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -4162,7 +4162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &613294991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4407,6 +4407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649106898}
   - component: {fileID: 649106897}
+  - component: {fileID: 649106899}
   m_Layer: 0
   m_Name: GuideBookManager
   m_TagString: Untagged
@@ -4452,6 +4453,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649106899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649106896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eaa7505c1b9ef84796125f752707b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Guide_Buttons
+  _recipeButtons:
+  - {fileID: 13307879}
+  - {fileID: 690540352}
+  - {fileID: 735350727}
+  _recipeButtonImages:
+  - {fileID: 973406701}
+  - {fileID: 346910671}
+  - {fileID: 57555931}
+  _recipeData:
+  - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
+  - {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+  - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
 --- !u!1 &656651792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,7 +4750,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 690540353}
   m_OnClick:
     m_PersistentCalls:
@@ -5132,7 +5157,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 735350728}
   m_OnClick:
     m_PersistentCalls:
@@ -5603,7 +5628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c282970b5e793f40a425aaf1990ca4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 950409c59853c5b44b8ad3faac8724ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6409,7 +6434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &889246086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12118,7 +12143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 72b3020b1d9991b4b95042db39d7cf53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d07bd587ffb41a42ba61436b3cb2018, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
