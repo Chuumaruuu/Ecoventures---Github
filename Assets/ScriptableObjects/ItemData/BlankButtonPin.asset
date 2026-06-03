@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: BlankButtonPin
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: ea7875a6c64777443ba5f2d7af26abe4, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 3150aef01d63e484896caa54c7c3e901, type: 3}
   _objectName: UnpaintedButtonPin
+  isUnlocked: 0
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}
