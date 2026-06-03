@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: MugMold
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: 0a35298cb70ad8e46a1ac7e566d0cdad, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: 9d01f40c721ef2242816590ec14897f8, type: 3}
   _objectName: MugMold
+  isUnlocked: 0
   sellprice: 0
   useCustomWorldScale: 0
   customWorldScale: {x: 1, y: 1, z: 1}
