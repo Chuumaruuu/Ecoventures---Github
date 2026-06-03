@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Thread
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: e9fa25ea47737f345a44b5c37f0e5cbb, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: f586a8844e581d4429a60474dac0aa52, type: 3}
   _objectName: Thread
+  isUnlocked: 0
   sellprice: 0
   useCustomWorldScale: 0
   customWorldScale: {x: 1, y: 1, z: 1}

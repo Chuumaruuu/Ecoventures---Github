@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: ScrapWood
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 7549471359754358677, guid: 15b84c9b6b45b2c4986b3934cd2c40a1, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: d402b07f897405e45a55e5d82fe67a64, type: 3}
   _objectName: ScrapWood
+  isUnlocked: 0
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}
