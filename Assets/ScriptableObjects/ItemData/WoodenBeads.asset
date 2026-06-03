@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: WoodenBeads
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4589428500890972953, guid: f8c9f8e9dd1e42340aa4fcfe2969d594, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: f97cba5955d0317408d1721f5bdd9b11, type: 3}
   _objectName: WoodenBeads
+  isUnlocked: 0
   sellprice: 0
   useCustomWorldScale: 0
   customWorldScale: {x: 1, y: 1, z: 1}

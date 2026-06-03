@@ -1,16 +1,26 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OnHandIndicator_UI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject _onHandIndicatorUI;
+    [SerializeField] private Image _heldItemSprite;
+
+    private Item_Data _heldItem;
     void Start()
     {
-        
+        Player_Base.Instance.OnObjectPickup+= SetIndicatorSprite;
+        Player_Base.Instance.OnObjectDrop+= SetIndicatorSprite;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SetIndicatorSprite(object sender, System.EventArgs e)
     {
-        
+        if (Player_Base.Instance.HasItem())
+        {
+            _heldItem = Player_Base.Instance.GiveItem().GetItemData();
+            _heldItemSprite.sprite = _heldItem._itemSprite;
+        }
+
+        _onHandIndicatorUI.SetActive(Player_Base.Instance.HasItem());
     }
 }

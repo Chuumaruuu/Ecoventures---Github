@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: WoodenPlanks
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 7549471359754358677, guid: b9e0456e91af86e4aa71e555da783a84, type: 3}
-  _itemSprite: {fileID: 0}
+  _itemSprite: {fileID: 21300000, guid: b553c15b1c763364794bc7971d1efabc, type: 3}
   _objectName: WoodenPlanks
+  isUnlocked: 0
+  sellprice: 0
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

@@ -1,11 +1,26 @@
+using System;
 using UnityEngine;
 
 public class Office_Animation : MonoBehaviour
 {
-    [SerializeField] private Animator _officeAnimator;
+    [SerializeField] private Scene_Manager _sceneManager;
+    [SerializeField] private Animator _targetAnimator;
 
-    public void TriggerOfficeAnimation()
+    [SerializeField] private GameObject _optionsBox;
+
+    public void TriggerAnimation(string _triggerName)
     {
-        _officeAnimator.SetTrigger("Transition");
+        _targetAnimator.SetTrigger(_triggerName);
     }
+
+    private void SetActive()
+    {
+        _optionsBox.SetActive(false);
+    }
+
+    public void SwitchToWorkshop()
+    {
+        _sceneManager.FadeToScene(1);
+    }
+
 }
