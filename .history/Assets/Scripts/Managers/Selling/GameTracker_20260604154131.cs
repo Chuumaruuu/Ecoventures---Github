@@ -17,6 +17,9 @@ public class GameTracker : MonoBehaviour
     [Header("Currency")]
     [SerializeField] private TextMeshProUGUI moneyText;
 
+    [Header("Progression")]
+    [SerializeField] private GameObject continueButton;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -27,6 +30,9 @@ public class GameTracker : MonoBehaviour
     {
         UpdateTaskUI();
         UpdateMoneyUI();
+
+        if (continueButton != null)
+            continueButton.SetActive(totalSales >= salesGoal);
     }
 
     public void RegisterSale(Item_Data item)
@@ -51,6 +57,9 @@ public class GameTracker : MonoBehaviour
 
             UpdateTaskUI();
             UpdateMoneyUI();
+
+            if (continueButton != null && totalSales >= salesGoal)
+                continueButton.SetActive(true);
 
             Debug.Log("Sold: " + item.name + " | Total Sales: " + totalSales);
         }
