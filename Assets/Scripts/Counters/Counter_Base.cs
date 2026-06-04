@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Counter_Base : MonoBehaviour, IItemParent
 {
     [SerializeField] private Transform _counterTop;
+    [SerializeField] private Sprite _counterSprite;
     [SerializeField] protected Counter_Audio _counterAudio;
+
 
     private Item_Base _baseItem;
 
@@ -17,6 +20,10 @@ public class Counter_Base : MonoBehaviour, IItemParent
         // nothing happens
     }
     
+    public Sprite GetSprite()
+    {
+        return _counterSprite;
+    }
     public Transform GetItemFollowTransform() 
     {
         return _counterTop;
