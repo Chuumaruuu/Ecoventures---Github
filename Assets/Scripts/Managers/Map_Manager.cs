@@ -10,6 +10,7 @@ public class Map_Manager : MonoBehaviour
     {
         // SceneManager.LoadScene(_stageName);
         _sceneManager.FadeToScene(_stageNum);
+        GetComponent<AllowedProducts_Manager>().SetItems();
     }
 
     public virtual void InteractAlternate(Map_Player _player)

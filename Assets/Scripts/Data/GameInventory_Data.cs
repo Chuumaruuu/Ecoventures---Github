@@ -21,7 +21,7 @@ public class GameInventory_Data : ScriptableObject
 
     public void AddProducts(Item_Data _item)
     {
-                _finalProducts.Add(_item);
+        _finalProducts.Add(_item);
     }
 
     public void AddRecycledMaterials(Item_Data _item)
