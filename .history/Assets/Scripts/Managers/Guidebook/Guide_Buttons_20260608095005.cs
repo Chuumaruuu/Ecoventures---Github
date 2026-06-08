@@ -28,7 +28,7 @@ public class Guide_Buttons : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            Item_Data itemData = _itemData[i];
+            Item_Data itemData = _recipeData[i];
 
             // Update the image sprite from the item data first
             if (_recipeButtonImages[i] != null && itemData != null && itemData._itemSprite != null)

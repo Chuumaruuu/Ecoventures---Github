@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 13307880}
   - component: {fileID: 13307879}
   m_Layer: 5
-  m_Name: P1Btn
+  m_Name: P2.1Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 57555932}
   - component: {fileID: 57555931}
   m_Layer: 5
-  m_Name: P3
+  m_Name: P2.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bracelet Recipe
+  m_text: Lanyard Recipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1419,7 +1419,7 @@ GameObject:
   - component: {fileID: 257322145}
   - component: {fileID: 257322144}
   m_Layer: 5
-  m_Name: P1Btn
+  m_Name: P4.1Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 257322145}
   m_OnClick:
     m_PersistentCalls:
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 326214541}
   - component: {fileID: 326214540}
   m_Layer: 5
-  m_Name: P1
+  m_Name: P3.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1870,14 +1870,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b04dd4a2d59738246b139c9fc42ae7de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a11916d0c1454a41ae65ff334a701aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1991,7 +1991,7 @@ GameObject:
   - component: {fileID: 346910672}
   - component: {fileID: 346910671}
   m_Layer: 5
-  m_Name: P2
+  m_Name: P2.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2826,7 +2826,7 @@ GameObject:
   - component: {fileID: 457377950}
   - component: {fileID: 457377949}
   m_Layer: 5
-  m_Name: P1
+  m_Name: P4.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2864,14 +2864,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0cbad9d6327bb734b917bb79e669d028, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c905dc03c415bd45956e85292543d35, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3654,7 +3654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &613294991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3960,17 +3960,32 @@ MonoBehaviour:
   - {fileID: 13307879}
   - {fileID: 690540352}
   - {fileID: 735350727}
+  - {fileID: 1929042677}
+  - {fileID: 1524341125}
+  - {fileID: 783444524}
   - {fileID: 257322144}
+  - {fileID: 2045448073}
+  - {fileID: 1156744785}
   _recipeButtonImages:
   - {fileID: 973406701}
   - {fileID: 346910671}
   - {fileID: 57555931}
+  - {fileID: 326214540}
+  - {fileID: 968914789}
+  - {fileID: 1490905239}
   - {fileID: 457377949}
-  _recipeData:
+  - {fileID: 1590424912}
+  - {fileID: 1178944194}
+  _itemData:
   - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
   - {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
   - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
+  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
   - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
+  - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
+  - {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
 --- !u!1 &656651792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,7 +4195,7 @@ GameObject:
   - component: {fileID: 690540353}
   - component: {fileID: 690540352}
   m_Layer: 5
-  m_Name: P2Btn
+  m_Name: P2.2Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4356,7 +4371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tote Bag Recipe
+  m_text: Cap Recipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4524,7 +4539,7 @@ GameObject:
   - component: {fileID: 735350728}
   - component: {fileID: 735350727}
   m_Layer: 5
-  m_Name: P3Btn
+  m_Name: P2.3Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4588,7 +4603,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 735350728}
   m_OnClick:
     m_PersistentCalls:
@@ -4831,7 +4846,7 @@ GameObject:
   - component: {fileID: 783444525}
   - component: {fileID: 783444524}
   m_Layer: 5
-  m_Name: P3Btn
+  m_Name: P3.3Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4895,7 +4910,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 783444525}
   m_OnClick:
     m_PersistentCalls:
@@ -5471,7 +5486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bracelet Recipe
+  m_text: Keychain Recipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5725,7 +5740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &889246086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6186,7 +6201,7 @@ GameObject:
   - component: {fileID: 968914790}
   - component: {fileID: 968914789}
   m_Layer: 5
-  m_Name: P2
+  m_Name: P3.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6224,14 +6239,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ef9d5e1c252516488939b809bd57887, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a11916d0c1454a41ae65ff334a701aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6297,7 +6312,7 @@ GameObject:
   - component: {fileID: 973406702}
   - component: {fileID: 973406701}
   m_Layer: 5
-  m_Name: P1
+  m_Name: P2.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7310,7 +7325,7 @@ GameObject:
   - component: {fileID: 1156744786}
   - component: {fileID: 1156744785}
   m_Layer: 5
-  m_Name: P3Btn
+  m_Name: P4.3Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7374,7 +7389,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1156744786}
   m_OnClick:
     m_PersistentCalls:
@@ -7467,7 +7482,7 @@ GameObject:
   - component: {fileID: 1178944195}
   - component: {fileID: 1178944194}
   m_Layer: 5
-  m_Name: P3
+  m_Name: P4.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7505,14 +7520,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8a5d12dd04b32c444b00c06e2e43aff7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 513d858df447517489c8150f8dfdc6b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7968,7 +7983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shirt Recipe
+  m_text: Figurine Recipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9375,7 +9390,7 @@ GameObject:
   - component: {fileID: 1490905240}
   - component: {fileID: 1490905239}
   m_Layer: 5
-  m_Name: P3
+  m_Name: P3.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9413,14 +9428,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8a5d12dd04b32c444b00c06e2e43aff7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 324924ebdb4bd064799e3aceea9b0789, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9725,7 +9740,7 @@ GameObject:
   - component: {fileID: 1524341126}
   - component: {fileID: 1524341125}
   m_Layer: 5
-  m_Name: P2Btn
+  m_Name: P3.2Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9789,7 +9804,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1524341126}
   m_OnClick:
     m_PersistentCalls:
@@ -9976,7 +9991,7 @@ GameObject:
   - component: {fileID: 1590424913}
   - component: {fileID: 1590424912}
   m_Layer: 5
-  m_Name: P2
+  m_Name: P4.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10014,14 +10029,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ef9d5e1c252516488939b809bd57887, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df285291c43ea59499ef24be506d8a0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10653,7 +10668,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shirt Recipe
+  m_text: Figurine Recipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12612,7 +12627,7 @@ GameObject:
   - component: {fileID: 1929042678}
   - component: {fileID: 1929042677}
   m_Layer: 5
-  m_Name: P1Btn
+  m_Name: P3.1Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12676,7 +12691,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1929042678}
   m_OnClick:
     m_PersistentCalls:
@@ -13187,7 +13202,7 @@ GameObject:
   - component: {fileID: 2045448074}
   - component: {fileID: 2045448073}
   m_Layer: 5
-  m_Name: P2Btn
+  m_Name: P4.2Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13251,7 +13266,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2045448074}
   m_OnClick:
     m_PersistentCalls:

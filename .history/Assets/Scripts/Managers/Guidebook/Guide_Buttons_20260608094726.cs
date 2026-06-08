@@ -29,13 +29,6 @@ public class Guide_Buttons : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Item_Data itemData = _itemData[i];
-
-            // Update the image sprite from the item data first
-            if (_recipeButtonImages[i] != null && itemData != null && itemData._itemSprite != null)
-            {
-                _recipeButtonImages[i].sprite = itemData._itemSprite;
-            }
-
             bool isUnlocked = itemData != null && itemData.isUnlocked;
 
             if (_recipeButtons[i] != null)
@@ -49,7 +42,7 @@ public class Guide_Buttons : MonoBehaviour
             }
         }
 
-        if (_recipeButtons.Length != _recipeButtonImages.Length || _recipeButtons.Length != _itemData.Length)
+        if (_recipeButtons.Length != _recipeButtonImages.Length || _recipeButtons.Length != _recipeData.Length)
         {
             Debug.LogWarning("Guide_Buttons arrays should have matching lengths.", this);
         }

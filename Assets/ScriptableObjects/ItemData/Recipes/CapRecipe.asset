@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12f87a69b94a98a4faeb0cf4f228f667, type: 3}
-  m_Name: BraceletRecipe
+  m_Name: CapRecipe
   m_EditorClassIdentifier: Assembly-CSharp::Recipe_Data
   _recipeSprite:
-  - {fileID: 21300000, guid: 0a68d0ce8222d60468a9d351b9367fcc, type: 3}
-  - {fileID: 21300000, guid: 5fa51a4ae042ec24090673580197816d, type: 3}
+  - {fileID: 21300000, guid: 0dd6650532872d948bf7cb03b05f68db, type: 3}
+  - {fileID: 21300000, guid: 1291ba759a68a044ea2ece37bb5d0a57, type: 3}

@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12f87a69b94a98a4faeb0cf4f228f667, type: 3}
-  m_Name: BraceletRecipe
+  m_Name: MugRecipe
   m_EditorClassIdentifier: Assembly-CSharp::Recipe_Data
   _recipeSprite:
-  - {fileID: 21300000, guid: 0a68d0ce8222d60468a9d351b9367fcc, type: 3}
-  - {fileID: 21300000, guid: 5fa51a4ae042ec24090673580197816d, type: 3}
+  - {fileID: 21300000, guid: aeb143b106b30ff459c6d5bde8071353, type: 3}
+  - {fileID: 21300000, guid: c5d889d3176f5a049a35a9c3d2064c47, type: 3}
+  - {fileID: 21300000, guid: e56c246ed24a7a74bb9bd95681d22b3f, type: 3}
