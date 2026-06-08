@@ -8531,7 +8531,7 @@ GameObject:
   - component: {fileID: 1384660154}
   - component: {fileID: 1384660155}
   m_Layer: 0
-  m_Name: GuideBookManager
+  m_Name: GuideBook_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17579,7 +17579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90.2876, y: -13.323822}
+  m_AnchoredPosition: {x: -90.2876, y: -13.323853}
   m_SizeDelta: {x: -220.5753, y: -128.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8367294423291323649
@@ -18512,5 +18512,5 @@ SceneRoots:
   - {fileID: 474885808632723900}
   - {fileID: 444987077}
   - {fileID: 1185001412}
-  - {fileID: 8573808328412089642}
   - {fileID: 171784514}
+  - {fileID: 8573808328412089642}
