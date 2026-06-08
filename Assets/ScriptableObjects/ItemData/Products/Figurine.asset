@@ -15,6 +15,7 @@ MonoBehaviour:
   _itemPrefab: {fileID: 4589428500890972953, guid: 70e075e8046ed484fa07c40c633d9dee, type: 3}
   _itemSprite: {fileID: 21300000, guid: 324924ebdb4bd064799e3aceea9b0789, type: 3}
   _objectName: Figurine
+  isUnlocked: 0
   sellprice: 90
   useCustomWorldScale: 1
   customWorldScale: {x: 0.0015, y: 0.13, z: 0.003}

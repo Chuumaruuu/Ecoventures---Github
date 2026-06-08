@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f87a69b94a98a4faeb0cf4f228f667, type: 3}
+  m_Name: ButtonPinRecipe
+  m_EditorClassIdentifier: Assembly-CSharp::Recipe_Data
+  _recipeSprite:
+  - {fileID: 21300000, guid: 9367359296f45cb47930afafe33ac11c, type: 3}
+  - {fileID: 21300000, guid: 6d9638d76dd8ddd438119662ad259071, type: 3}
+  - {fileID: 21300000, guid: 03c7429d9b86412428f7c96cdb6ee55c, type: 3}
+  - {fileID: 21300000, guid: 07aaaafb9f68e9b42bbe359d3e4e75cd, type: 3}
