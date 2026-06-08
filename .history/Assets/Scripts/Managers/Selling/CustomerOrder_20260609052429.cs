@@ -168,13 +168,14 @@ public class CustomerOrder : MonoBehaviour
             Debug.LogWarning("GameTracker instance missing when completing order");
         }
 
-        Image currentOrderImage = orderImageUI;
+        if (orderImageUI != null)
+        {
+            orderImageUI.gameObject.SetActive(false);
+            orderImageUI = null;
+        }
 
         if (CustomerQueue.Instance != null)
             CustomerQueue.Instance.RemoveCustomer(this);
-
-        if (currentOrderImage != null)
-            currentOrderImage.gameObject.SetActive(false);
 
         RoamingNPC roamingNpc = GetComponent<RoamingNPC>();
         if (roamingNpc != null)
@@ -197,13 +198,14 @@ public class CustomerOrder : MonoBehaviour
 
     private void LeaveQueueWithoutOrder()
     {
-        Image currentOrderImage = orderImageUI;
+        if (orderImageUI != null)
+        {
+            orderImageUI.gameObject.SetActive(false);
+            orderImageUI = null;
+        }
 
         if (CustomerQueue.Instance != null)
             CustomerQueue.Instance.RemoveCustomer(this);
-
-        if (currentOrderImage != null)
-            currentOrderImage.gameObject.SetActive(false);
 
         RoamingNPC roamingNpc = GetComponent<RoamingNPC>();
         if (roamingNpc != null)
