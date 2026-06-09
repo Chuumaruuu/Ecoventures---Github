@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: Cap
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 3347966583986915611, guid: 4a9694c74b598f34f8d430c7ac66e103, type: 3}
   _itemPrefab: {fileID: 4589428500890972953, guid: efe8ff72184e13441a41494660e0cd30, type: 3}
   _itemSprite: {fileID: 21300000, guid: 8a11916d0c1454a41ae65ff334a701aa, type: 3}
   _objectName: Cap
+  isUnlocked: 0
   sellprice: 0
   useCustomWorldScale: 0
   customWorldScale: {x: 1, y: 1, z: 1}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: Bracelet
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 6552891994809772193, guid: f80bf5d1c8a0ed046bb8fd6a4b138bed, type: 3}
   _itemPrefab: {fileID: 4589428500890972953, guid: 79b58289f03db6646ad08e23d7a86423, type: 3}
   _itemSprite: {fileID: 21300000, guid: 1ef9d5e1c252516488939b809bd57887, type: 3}
   _objectName: Bracelet
