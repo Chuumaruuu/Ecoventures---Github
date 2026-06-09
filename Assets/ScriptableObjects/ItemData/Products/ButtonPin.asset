@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: ButtonPin
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 9122489997403122058, guid: bf48ae673d2d2d64c80deeb82f3fdd1d, type: 3}
   _itemPrefab: {fileID: -8679921383154817045, guid: b996db75e68c2ce49a490bddb54f7cd0, type: 3}
   _itemSprite: {fileID: 21300000, guid: 6c905dc03c415bd45956e85292543d35, type: 3}
   _objectName: ButtonPin
