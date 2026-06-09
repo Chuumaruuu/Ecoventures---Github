@@ -344,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29573658}
   - component: {fileID: 29573657}
+  - component: {fileID: 29573659}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -365,7 +366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameTracker
   inventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
   totalSales: 0
-  totalCoins: 0
   salesGoal: 10
   tasksText: {fileID: 1280397415}
   moneyText: {fileID: 1280397416}
@@ -384,6 +384,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29573659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29573656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229176036d106974a9d2c7f91916001c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductsUIManager
+  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
+  sellingButtons:
+  - {fileID: 1011315512}
+  - {fileID: 601247715}
+  - {fileID: 743554130}
 --- !u!1 &50498831
 GameObject:
   m_ObjectHideFlags: 0
@@ -18534,6 +18551,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &601247715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8398199358574047211, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 1280397407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf03ed3510c1243bf6ed2072b65404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductButton
 --- !u!1 &611206327
 GameObject:
   m_ObjectHideFlags: 0
@@ -19809,6 +19837,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 992392602742234358, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
   m_PrefabInstance: {fileID: 728951908}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &743554130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1357372198062264499, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 1280397407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf03ed3510c1243bf6ed2072b65404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductButton
 --- !u!1 &747878157
 GameObject:
   m_ObjectHideFlags: 0
@@ -26119,7 +26158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2650c90a74a104ca136bacf7514d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OrderGenerator
-  _randomizerData: {fileID: 0}
+  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
 --- !u!4 &955959072
 Transform:
   m_ObjectHideFlags: 0
@@ -26373,6 +26412,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8989792, y: 0.9318609, z: 1.4323641}
   m_Center: {x: -0.7792077, y: 0.44363755, z: 0.042891443}
+--- !u!114 &1011315512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 1280397407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf03ed3510c1243bf6ed2072b65404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductButton
 --- !u!1 &1019751980
 GameObject:
   m_ObjectHideFlags: 0
@@ -27882,7 +27932,7 @@ PrefabInstance:
     - target: {fileID: 1357372198062264499, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: product
       value: 
-      objectReference: {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1562272373419965483, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -27946,6 +27996,10 @@ PrefabInstance:
     - target: {fileID: 2520673882163648409, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: product
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: iconImage
@@ -28306,6 +28360,10 @@ PrefabInstance:
     - target: {fileID: 8323586670946045930, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398199358574047211, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: product
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8398199358574047211, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: iconImage
