@@ -366,7 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameTracker
   inventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
   totalSales: 0
-  salesGoal: 10
+  salesGoal: 20
   tasksText: {fileID: 1280397415}
   moneyText: {fileID: 1280397416}
 --- !u!4 &29573658
