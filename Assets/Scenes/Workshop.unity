@@ -558,7 +558,7 @@ PrefabInstance:
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: '_finalProducts.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+      objectReference: {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: '_finalProducts.Array.data[7]'
       value: 
@@ -2843,7 +2843,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 440905980}
   m_OnClick:
     m_PersistentCalls:
@@ -9151,7 +9151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
