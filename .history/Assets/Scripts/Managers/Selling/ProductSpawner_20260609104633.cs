@@ -43,6 +43,11 @@ public class ProductSpawner : MonoBehaviour
             Transform spawnedGroup = Instantiate(itemData._productGroupPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
             spawnedGroup.localPosition = Vector3.zero;
             spawnedGroup.localRotation = Quaternion.identity;
+
+            if (itemData.useCustomWorldScale)
+                spawnedGroup.localScale = itemData.customWorldScale;
+            else
+                spawnedGroup.localScale = Vector3.one;
         }
     }
 }
