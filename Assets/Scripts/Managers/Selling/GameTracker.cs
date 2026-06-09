@@ -8,7 +8,6 @@ public class GameTracker : MonoBehaviour
     public GameInventory_Data inventory;
     private Item_Data selectedProduct;
     public int totalSales = 0;
-    public int totalCoins = 0;
 
     [Header("Task")]
     [SerializeField] private int salesGoal = 10;
@@ -47,7 +46,7 @@ public class GameTracker : MonoBehaviour
         {
             inventory._finalProducts.Remove(item);
             totalSales++;
-            totalCoins += Mathf.Max(0, item.sellprice);
+            inventory.AddMoney(Mathf.Max(0, item.sellprice));
 
             UpdateTaskUI();
             UpdateMoneyUI();
@@ -98,6 +97,7 @@ public class GameTracker : MonoBehaviour
         if (moneyText == null)
             return;
 
-        moneyText.text = totalCoins.ToString("N0");
+        int playerMoney = inventory != null ? inventory._playerMoney : 0;
+        moneyText.text = playerMoney.ToString("N0");
     }
 }

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: ToteBag
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 3549349074905119444, guid: bfdf1e37754861d4ea3fb25c92ea6b06, type: 3}
   _itemPrefab: {fileID: 4589428500890972953, guid: 5639ba8a546ccab49985101aff1a2fea, type: 3}
   _itemSprite: {fileID: 21300000, guid: b04dd4a2d59738246b139c9fc42ae7de, type: 3}
   _objectName: ToteBag
   isUnlocked: 1
   sellprice: 50
-  useCustomWorldScale: 1
-  customWorldScale: {x: 0.0015, y: 0.13, z: 0.003}
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

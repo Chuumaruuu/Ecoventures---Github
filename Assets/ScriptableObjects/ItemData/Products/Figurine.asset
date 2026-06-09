@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: Figurine
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 1126749424427397225, guid: 9649b17dde1c48e43b1124c25942f510, type: 3}
   _itemPrefab: {fileID: 4589428500890972953, guid: 70e075e8046ed484fa07c40c633d9dee, type: 3}
   _itemSprite: {fileID: 21300000, guid: 324924ebdb4bd064799e3aceea9b0789, type: 3}
   _objectName: Figurine
   isUnlocked: 0
   sellprice: 90
-  useCustomWorldScale: 1
-  customWorldScale: {x: 0.0015, y: 0.13, z: 0.003}
+  useCustomWorldScale: 0
+  customWorldScale: {x: 1, y: 1, z: 1}

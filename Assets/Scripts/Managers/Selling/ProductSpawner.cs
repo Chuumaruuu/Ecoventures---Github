@@ -37,17 +37,12 @@ public class ProductSpawner : MonoBehaviour
             Transform spawnPoint = _spawnPoints[i];
             Item_Data itemData = _randomizerData._allowedItems[i];
 
-            if (spawnPoint == null || itemData == null || itemData._itemPrefab == null)
+            if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null)
                 continue;
 
-            Transform spawnedItem = Instantiate(itemData._itemPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
-            spawnedItem.localPosition = Vector3.zero;
-            spawnedItem.localRotation = Quaternion.identity;
-
-            if (itemData.useCustomWorldScale)
-                spawnedItem.localScale = itemData.customWorldScale;
-            else
-                spawnedItem.localScale = Vector3.one;
+            Transform spawnedGroup = Instantiate(itemData._productGroupPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
+            spawnedGroup.localPosition = Vector3.zero;
+            spawnedGroup.localRotation = Quaternion.identity;
         }
     }
 }

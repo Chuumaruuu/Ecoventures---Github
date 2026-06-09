@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: TShirt
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 6768736126478648757, guid: be1a3a3a9c16c9b4ca7215cd356a6951, type: 3}
   _itemPrefab: {fileID: 7549471359754358677, guid: 36f29e2f9fc882741a4dbe9934e93018, type: 3}
   _itemSprite: {fileID: 21300000, guid: 8a5d12dd04b32c444b00c06e2e43aff7, type: 3}
   _objectName: TShirt
