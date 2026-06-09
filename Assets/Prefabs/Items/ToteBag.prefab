@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4589428500890972953}
   - component: {fileID: -2317455459783181991}
-  - component: {fileID: -5341620486854679494}
-  - component: {fileID: 2733656511968889315}
   m_Layer: 0
   m_Name: ToteBag
   m_TagString: Untagged
@@ -48,43 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemData: {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
---- !u!114 &-5341620486854679494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8735605479477065887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a742dd9dcea51b4d9e4a59fe9d06bf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
-  itemData: {fileID: 0}
-  sourceSlot: {fileID: 0}
-  wasAccepted: 0
-  dragClip: {fileID: 8300000, guid: cae53763934a27549bbb03639e8209aa, type: 3}
---- !u!65 &2733656511968889315
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8735605479477065887}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.9, z: 0.27}
-  m_Center: {x: 0, y: 0.62, z: 0}
 --- !u!1001 &6258824115768537939
 PrefabInstance:
   m_ObjectHideFlags: 0
