@@ -1468,6 +1468,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: _combinationRecipeArray.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[15]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a1fbebf3739ddd649b33e2a5f64c9585, type: 2}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[16]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 73d30a746e4fa524a8f0ce57b895ef6a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2310,6 +2322,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: _combinationRecipeArray.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[15]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a1fbebf3739ddd649b33e2a5f64c9585, type: 2}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[16]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 73d30a746e4fa524a8f0ce57b895ef6a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2367,6 +2391,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: _combinationRecipeArray.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[15]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a1fbebf3739ddd649b33e2a5f64c9585, type: 2}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[16]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 73d30a746e4fa524a8f0ce57b895ef6a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5065,8 +5101,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.693, y: 0.53614}
-  m_SizeDelta: {x: 167.26, y: 50}
+  m_AnchoredPosition: {x: 28.693, y: -4.311}
+  m_SizeDelta: {x: 167.26, y: 59.6944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709666458
 MonoBehaviour:
@@ -5115,15 +5151,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72.71
+  m_fontSize: 65.85
   m_fontSizeBase: 72.71
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -5805,6 +5841,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 5827339f3fa3c4147bd5ad5ce47d286a, type: 3}
+      propertyPath: _combinationRecipeArray.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 5827339f3fa3c4147bd5ad5ce47d286a, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[15]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a1fbebf3739ddd649b33e2a5f64c9585, type: 2}
+    - target: {fileID: 8831744775750270470, guid: 5827339f3fa3c4147bd5ad5ce47d286a, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[16]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 73d30a746e4fa524a8f0ce57b895ef6a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18522,6 +18570,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: _combinationRecipeArray.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[15]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a1fbebf3739ddd649b33e2a5f64c9585, type: 2}
+    - target: {fileID: 8831744775750270470, guid: 7507d1113a301e74c9e544c872b2dd14, type: 3}
+      propertyPath: '_combinationRecipeArray.Array.data[16]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 73d30a746e4fa524a8f0ce57b895ef6a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
