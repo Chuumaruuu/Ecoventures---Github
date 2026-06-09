@@ -1,9 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameInventory_Data", menuName = "Scriptable Objects/GameInventory_Data")]
 public class GameInventory_Data : ScriptableObject
 {
+    public static event Action OnMoneyValueChanged;
+
     [Header("Final Products Inventory")]
     public List<Item_Data> _finalProducts = new List<Item_Data>();
 
@@ -42,11 +45,13 @@ public class GameInventory_Data : ScriptableObject
     public void AddMoney(int _value)
     {
         _playerMoney += _value;
+        OnMoneyValueChanged.Invoke();
     }
 
     public void SubtractMoney(int _value)
     {
         _playerMoney -= _value;
+        OnMoneyValueChanged.Invoke();
     }
 
     public bool HasRecycledItem(Item_Data _item)
