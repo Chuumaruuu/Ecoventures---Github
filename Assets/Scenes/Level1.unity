@@ -650,11 +650,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1027418655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &106120635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 472455185476437580, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-  m_PrefabInstance: {fileID: 1142772749}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &106850871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Male (Final) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2907335821812511891, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -1225,10 +1224,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2133128219161265350, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1777293084}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
 --- !u!4 &164837325 stripped
 Transform:
@@ -13225,6 +13221,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520949634}
   m_CullTransparentMesh: 1
+--- !u!114 &522236924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 9018544449921029945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf03ed3510c1243bf6ed2072b65404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductButton
 --- !u!1 &525209680
 GameObject:
   m_ObjectHideFlags: 0
@@ -18220,11 +18227,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &538619513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 472455185476437580, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-  m_PrefabInstance: {fileID: 612675653}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &546210182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23621,6 +23623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
       propertyPath: roamPoints.Array.data[0].point
       value: 
@@ -23676,28 +23682,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 472455185476437580, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 612675658}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
 --- !u!4 &612675654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 992392602742234358, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
   m_PrefabInstance: {fileID: 612675653}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &612675658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538619513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
 --- !u!1 &614784100
 GameObject:
   m_ObjectHideFlags: 0
@@ -24180,6 +24171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Male (Final)
       objectReference: {fileID: 0}
+    - target: {fileID: 2907335821812511891, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8175614862143915393, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
       propertyPath: roamPoints.Array.data[0].point
       value: 
@@ -24235,10 +24230,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2133128219161265350, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2144122605}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
 --- !u!4 &642203107 stripped
 Transform:
@@ -24305,6 +24297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Male (Final) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2907335821812511891, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -24364,10 +24360,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2133128219161265350, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2000745969}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
 --- !u!4 &666937288 stripped
 Transform:
@@ -36813,6 +36806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
       propertyPath: roamPoints.Array.data[0].point
       value: 
@@ -36868,28 +36865,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 472455185476437580, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1142772754}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
 --- !u!4 &1142772750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 992392602742234358, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
   m_PrefabInstance: {fileID: 1142772749}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1142772754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106120635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
 --- !u!1 &1146709975
 GameObject:
   m_ObjectHideFlags: 0
@@ -42635,6 +42617,17 @@ Transform:
   - {fileID: 282891280}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292065231 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1357372198062264499, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 9018544449921029945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf03ed3510c1243bf6ed2072b65404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductButton
 --- !u!1001 &1297946375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43143,6 +43136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1395563905}
   - component: {fileID: 1395563904}
+  - component: {fileID: 1395563906}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -43183,6 +43177,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395563906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395563903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229176036d106974a9d2c7f91916001c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductsUIManager
+  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
+  sellingButtons:
+  - {fileID: 522236924}
+  - {fileID: 1621354315}
+  - {fileID: 1292065231}
 --- !u!1 &1398076459
 GameObject:
   m_ObjectHideFlags: 0
@@ -43657,6 +43668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
       propertyPath: roamPoints.Array.data[0].point
       value: 
@@ -43712,10 +43727,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 472455185476437580, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1820871245}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
 --- !u!4 &1444747629 stripped
 Transform:
@@ -44741,10 +44753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2650c90a74a104ca136bacf7514d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OrderGenerator
-  availableItems:
-  - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
-  - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
-  - {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
 --- !u!4 &1587191761
 Transform:
   m_ObjectHideFlags: 0
@@ -45000,6 +45009,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 992392602742234358, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
   m_PrefabInstance: {fileID: 1614868668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1621354315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8398199358574047211, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 9018544449921029945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf03ed3510c1243bf6ed2072b65404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductButton
 --- !u!1 &1639145367
 GameObject:
   m_ObjectHideFlags: 0
@@ -46091,23 +46111,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3953944450861132698, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
   m_PrefabInstance: {fileID: 9018544449921029945}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1777293080 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2133128219161265350, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-  m_PrefabInstance: {fileID: 164837324}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1777293084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777293080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
 --- !u!1 &1777906816
 GameObject:
   m_ObjectHideFlags: 0
@@ -46388,23 +46391,6 @@ MonoBehaviour:
   WrongAnswerUI: {fileID: 335379653}
   ContinuePanel: {fileID: 0}
   unlockableItemData: {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
---- !u!1 &1820871241 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 472455185476437580, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-  m_PrefabInstance: {fileID: 1444747628}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1820871245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820871241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
 --- !u!114 &1845503829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52509,23 +52495,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998952594}
   m_CullTransparentMesh: 1
---- !u!1 &2000745965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2133128219161265350, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-  m_PrefabInstance: {fileID: 666937287}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2000745969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000745965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
 --- !u!1 &2006251569
 GameObject:
   m_ObjectHideFlags: 0
@@ -63081,23 +63050,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!1 &2144122601 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2133128219161265350, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-  m_PrefabInstance: {fileID: 642203106}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2144122605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144122601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
 --- !u!1001 &179730024448528568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64103,7 +64055,7 @@ PrefabInstance:
     - target: {fileID: 1357372198062264499, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: product
       value: 
-      objectReference: {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1562272373419965483, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -64167,6 +64119,10 @@ PrefabInstance:
     - target: {fileID: 2520673882163648409, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: product
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2878514203503617884, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: iconImage
@@ -64527,6 +64483,10 @@ PrefabInstance:
     - target: {fileID: 8323586670946045930, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398199358574047211, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: product
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8398199358574047211, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: iconImage
