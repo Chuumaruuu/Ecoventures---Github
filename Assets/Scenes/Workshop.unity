@@ -4875,19 +4875,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4895,7 +4895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7731799064741204411, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6832,7 +6832,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 410240547870279285, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_Name
-      value: DisassemblyTable
+      value: RecyclingTable
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6874,61 +6874,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: _counterAudio
-      value: 
-      objectReference: {fileID: 1131538105}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: _disassemblyRecipeArray.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 728b3e4232a15464c80cbcce272052d8, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 3425fdaf6e7acec4cb25d74976c75ae2, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 9e13267fedbe6334f88afcb38f4d5723, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[3]'
-      value: 
-      objectReference: {fileID: 11400000, guid: a4eb300d31f0bee4299903f9434e67f7, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[4]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 30eca63fca840064d9487ebb4701a5d2, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[5]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 0a44ccd7ff35e694c99bc6d022dd7b60, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[6]'
-      value: 
-      objectReference: {fileID: 11400000, guid: fe0a4e6fe5372624eafb832fd44565a1, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[7]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 27f338f7261008e438bae908e64d7456, type: 2}
-    - target: {fileID: 1535368445156038657, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: '_disassemblyRecipeArray.Array.data[8]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 640b23813f424044284d40f0c076bed0, type: 2}
-    - target: {fileID: 6008642540373128692, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 47bd759a6edb8574ab3e1ed2c5d9ddab, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 410240547870279285, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1131538105}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
 --- !u!4 &960767575 stripped
 Transform:
@@ -7272,34 +7221,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108097459}
   m_CullTransparentMesh: 1
---- !u!1 &1131538101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 410240547870279285, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
-  m_PrefabInstance: {fileID: 960133973}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1131538104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
   m_PrefabInstance: {fileID: 960133973}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1131538105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131538101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87615e516bcbca5409698315e377ec47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Counter_Audio
-  _correctEntrySFX: {fileID: 0}
-  _wrongEntrySFX: {fileID: 0}
-  _counterInteractSFX: {fileID: 8300000, guid: ac10878ab95a8ca49b8d77e27298ca53, type: 3}
-  _cookingSFX: {fileID: 0}
-  _burningSFX: {fileID: 0}
-  _overcookedSFX: {fileID: 0}
 --- !u!1 &1146545229
 GameObject:
   m_ObjectHideFlags: 0

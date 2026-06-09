@@ -147,8 +147,8 @@ MonoBehaviour:
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5f5c43d84138eab45b2099513a21afc6, type: 2}
-  m_sharedMaterial: {fileID: -5365241397333206606, guid: 5f5c43d84138eab45b2099513a21afc6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fbd68dcd64446f74590ea352acd4c417, type: 2}
+  m_sharedMaterial: {fileID: -4536268060690173585, guid: fbd68dcd64446f74590ea352acd4c417, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -172,10 +172,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 29.5
+  m_fontSizeBase: 35.63
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
