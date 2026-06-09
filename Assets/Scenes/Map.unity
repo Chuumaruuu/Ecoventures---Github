@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a90420cc49c73418c6796431ec2303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
-  _stageNum: 3
+  _stageNum: 4
   _sceneManager: {fileID: 1253243891}
 --- !u!114 &150427152
 MonoBehaviour:
