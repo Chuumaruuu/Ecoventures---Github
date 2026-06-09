@@ -23407,9 +23407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f874c1859a5d4d7418c36a089179bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HintsOpenerScript
-  Hint11: {fileID: 0}
-  Hint12: {fileID: 0}
-  Hint13: {fileID: 0}
+  Hint11: {fileID: 1424551931}
+  Hint12: {fileID: 869878062}
+  Hint13: {fileID: 1288931023}
   Hint21: {fileID: 0}
   Hint22: {fileID: 0}
   Hint23: {fileID: 0}
@@ -23588,9 +23588,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f874c1859a5d4d7418c36a089179bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HintsOpenerScript
-  Hint11: {fileID: 0}
-  Hint12: {fileID: 0}
-  Hint13: {fileID: 0}
+  Hint11: {fileID: 1424551931}
+  Hint12: {fileID: 869878062}
+  Hint13: {fileID: 1288931023}
   Hint21: {fileID: 0}
   Hint22: {fileID: 0}
   Hint23: {fileID: 0}
@@ -41371,7 +41371,7 @@ MonoBehaviour:
   RightAnswerUI: {fileID: 1146709975}
   WrongAnswerUI: {fileID: 335379653}
   ContinuePanel: {fileID: 0}
-  unlockableItemData: {fileID: 0}
+  unlockableItemData: {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
 --- !u!1001 &1519947551
 PrefabInstance:
   m_ObjectHideFlags: 0
