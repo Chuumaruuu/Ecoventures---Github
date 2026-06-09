@@ -5831,9 +5831,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f874c1859a5d4d7418c36a089179bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HintsOpenerScript
-  Hint11: {fileID: 1284466387}
-  Hint12: {fileID: 1902901076}
-  Hint13: {fileID: 670450913}
+  Hint11: {fileID: 119046620}
+  Hint12: {fileID: 1215215356}
+  Hint13: {fileID: 802860469}
   Hint21: {fileID: 119046620}
   Hint22: {fileID: 1215215356}
   Hint23: {fileID: 802860469}
@@ -17629,11 +17629,6 @@ Transform:
   - {fileID: 795527291}
   m_Father: {fileID: 1291505094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &670450913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8342460708373821163, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
-  m_PrefabInstance: {fileID: 1280397407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &694696071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23873,9 +23868,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f874c1859a5d4d7418c36a089179bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HintsOpenerScript
-  Hint11: {fileID: 1284466387}
-  Hint12: {fileID: 1902901076}
-  Hint13: {fileID: 670450913}
+  Hint11: {fileID: 119046620}
+  Hint12: {fileID: 1215215356}
+  Hint13: {fileID: 802860469}
   Hint21: {fileID: 119046620}
   Hint22: {fileID: 1215215356}
   Hint23: {fileID: 802860469}
@@ -25278,6 +25273,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2094880565}
+    - target: {fileID: 282360902898923215, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1546468668}
+    - target: {fileID: 282360902898923215, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExploringPhase
+      objectReference: {fileID: 0}
+    - target: {fileID: 282360902898923215, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HintsOpenerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 458325909289084881, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -25358,6 +25365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 819162813611720381, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 928111929579148965, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25390,6 +25401,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542002020}
+    - target: {fileID: 3263332517435951461, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 237662375}
+    - target: {fileID: 3263332517435951461, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExploringPhase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263332517435951461, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HintsOpenerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267573674824541343, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 887161339}
+    - target: {fileID: 3267573674824541343, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExploringPhase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267573674824541343, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HintsOpenerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3719019810876663973, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25442,6 +25477,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2094880565}
+    - target: {fileID: 7235682793756141231, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7325636851270173342, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25451,7 +25490,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1793274514}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8342460708373821163, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+    - {fileID: 5880080981864058407, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+    - {fileID: 6501809226879492761, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
@@ -25548,11 +25590,6 @@ GameObject:
 --- !u!1 &1280397422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2991499204292540104, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
-  m_PrefabInstance: {fileID: 1280397407}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1284466387 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5880080981864058407, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
   m_PrefabInstance: {fileID: 1280397407}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1291505093
@@ -26350,7 +26387,7 @@ MonoBehaviour:
   RightAnswerUI: {fileID: 1088126800}
   WrongAnswerUI: {fileID: 570612354}
   ContinuePanel: {fileID: 0}
-  unlockableItemData: {fileID: 0}
+  unlockableItemData: {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
 --- !u!54 &1542002021
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26521,9 +26558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f874c1859a5d4d7418c36a089179bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HintsOpenerScript
-  Hint11: {fileID: 1284466387}
-  Hint12: {fileID: 1902901076}
-  Hint13: {fileID: 670450913}
+  Hint11: {fileID: 119046620}
+  Hint12: {fileID: 1215215356}
+  Hint13: {fileID: 802860469}
   Hint21: {fileID: 119046620}
   Hint22: {fileID: 1215215356}
   Hint23: {fileID: 802860469}
@@ -32546,7 +32583,7 @@ MonoBehaviour:
   RightAnswerUI: {fileID: 1088126800}
   WrongAnswerUI: {fileID: 570612354}
   ContinuePanel: {fileID: 0}
-  unlockableItemData: {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  unlockableItemData: {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
 --- !u!54 &1793274515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37777,11 +37814,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &1902901076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6501809226879492761, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
-  m_PrefabInstance: {fileID: 1280397407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908874804
 GameObject:
   m_ObjectHideFlags: 0
@@ -42720,7 +42752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2076377397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42956,7 +42988,7 @@ MonoBehaviour:
   RightAnswerUI: {fileID: 1088126800}
   WrongAnswerUI: {fileID: 570612354}
   ContinuePanel: {fileID: 1738172717}
-  unlockableItemData: {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  unlockableItemData: {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
 --- !u!4 &2094880566
 Transform:
   m_ObjectHideFlags: 0
@@ -42966,7 +42998,7 @@ Transform:
   m_GameObject: {fileID: 2094880564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.52, y: -1.0762, z: 10.65}
+  m_LocalPosition: {x: -0.52, y: -1.0762, z: 12.2}
   m_LocalScale: {x: 2.5786262, y: 0.42590168, z: 1.8305181}
   m_ConstrainProportionsScale: 0
   m_Children:
