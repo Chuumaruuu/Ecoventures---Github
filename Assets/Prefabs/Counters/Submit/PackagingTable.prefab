@@ -491,13 +491,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Counter_Submit
   _counterTop: {fileID: 6027013728250509578}
+  _counterSprite: {fileID: 0}
   _counterAudio: {fileID: 5941227710523872559}
   _mainInventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
   _finalProducts:
-  - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
+  - {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
   - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
-  - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
+  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
   - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
+  - {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
+  - {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
+  - {fileID: 11400000, guid: c6137b3169d91564e8171165c182f800, type: 2}
   - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
   _minAmount: 1
   _maxAmount: 3

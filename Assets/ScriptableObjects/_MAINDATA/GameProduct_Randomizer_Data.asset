@@ -12,7 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0692ffbe52430684fb1aa8295d55ef81, type: 3}
   m_Name: GameProduct_Randomizer_Data
   m_EditorClassIdentifier: Assembly-CSharp::GameProduct_Randomizer_Data
-  _allowedItems:
-  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
-  - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
-  - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
+  _allowedItems: []

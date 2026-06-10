@@ -18,5 +18,3 @@ MonoBehaviour:
   _objectName: Figurine
   isUnlocked: 0
   sellprice: 90
-  useCustomWorldScale: 0
-  customWorldScale: {x: 1, y: 1, z: 1}
