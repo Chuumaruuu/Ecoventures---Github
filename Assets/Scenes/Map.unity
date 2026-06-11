@@ -4588,7 +4588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1631709233
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5724,7 +5724,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2104704791}
-  - component: {fileID: 2104704790}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -5732,18 +5731,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2104704790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104704789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3edbcffa004374c864296afe96cb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BackgroundMusic
 --- !u!4 &2104704791
 Transform:
   m_ObjectHideFlags: 0

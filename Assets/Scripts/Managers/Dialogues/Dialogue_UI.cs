@@ -5,11 +5,11 @@ using UnityEngine.UI;
 public class Dialogue_UI : MonoBehaviour
 {
     public static Dialogue_UI Instance { get; private set; }
-
+    
+    private Animator _dialogueBoxAnimator;
     public Image _actorAvatar;
     public TextMeshProUGUI _actorName;
     public TextMeshProUGUI _messageText;
-    public Animator _dialogueBoxAnimator;
     public GameObject[] _otherUI;
 
     private Dialogue[] _currentMessageArray;
@@ -27,27 +27,35 @@ public class Dialogue_UI : MonoBehaviour
         Instance = this;
     }
 
-    public void OpenDialogue(Dialogue[] messages, Actor[] actors)
+    void Start()
     {
-        _currentMessageArray = messages;
-        _currentActorArray = actors;
+        _dialogueBoxAnimator = GetComponent<Animator>();
+    }
+
+    public void OpenDialogue(Dialogue_Data _dialogueData)
+    {
+        _currentMessageArray = _dialogueData._messages;
+        _currentActorArray = _dialogueData._actors;
         _activeMessage = 0;
-
-        Debug.Log("Starting Conversation: " + messages.Length);
-        _dialogueBoxAnimator.SetBool("Active", true);
-
+        
+        _messageText.text = "";
+        _actorName.text = "";
+        _actorAvatar.color = new Color(0,0,0,0);
         foreach (GameObject i in _otherUI)
         {
             i.SetActive(false);
         }
-        Time.timeScale = 0; //pause
-        _messageText.text = "";
-        _actorAvatar.sprite = null;
-        _actorName.text = "";
+
+        Debug.Log("Starting Conversation: " + _dialogueData);
+        _dialogueBoxAnimator.SetBool("Active", true);
+
+        
     }
 
     public void DisplayMessage()
     {
+        Time.timeScale = 0; //pause
+        _actorAvatar.color = new Color(255,255,255,255);
         Dialogue _messageToDisplay = _currentMessageArray[_activeMessage];
         Actor _actorToDisplay = _currentActorArray[_messageToDisplay._actorID];
 
@@ -65,8 +73,8 @@ public class Dialogue_UI : MonoBehaviour
         }
         else
         {
-            _dialogueBoxAnimator.SetBool("Active", false);
             Time.timeScale = 1;
+            _dialogueBoxAnimator.SetBool("Active", false);
             foreach (GameObject i in _otherUI)
             {
                 i.SetActive(true);

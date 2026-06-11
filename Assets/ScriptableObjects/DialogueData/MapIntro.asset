@@ -13,27 +13,15 @@ MonoBehaviour:
   m_Name: MapIntro
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Data
   _dialogueTitle: MapIntro
-  _dialogues:
-  - _actorID: 8
-    _message: You did well in creating your first products!
+  _messages:
   - _actorID: 7
-    _message: " I think you\u2019re ready to sell them now. "
-  - _actorID: 6
-    _message: " Let\u2019s start somewhere near to not overwhelm you. It\u2019s important
-      for us to start with what we can, and improve as we go along the way. "
-  - _actorID: 6
-    _message: 'Use the joystick to move the Tam Bus towards your desired level! '
-  - _actorID: 10
-    _message: Remember to be careful with your driving!
+    _message: "You did well in creating your first products! I think you\u2019re
+      ready to sell them now. Let\u2019s start somewhere near to not overwhelm you.
+      It\u2019s important for us to start with what we can, and improve as we go
+      along the way. "
   - _actorID: 8
-    _message: A responsible tam is a responsible driver.
-  - _actorID: 6
-    _message: Once we're in front of the desired building, click the interact button
-      to start the level!
-  - _actorID: 8
-    _message: Let's go to FTIC!
-  - _actorID: 8
-    _message: It's the building on the left side of the map.
+    _message: "Click the map icon to reveal the map, then click the place you wish
+      to go to. Let\u2019s go to FTIC! "
   _actors:
   - _actorName: Jed
     _avatar: {fileID: 21300000, guid: f6f200b99936a6b4896bdcc6dee24e50, type: 3}

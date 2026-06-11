@@ -47,7 +47,6 @@ public class AllowedProducts_Manager : MonoBehaviour
         }
 
         _finalAllowedItems.Add(_allowedItem1[_randomItemIndex]);
-        Debug.Log(_allowedItem1[_randomItemIndex]+" Added");
 
         if (!_allowedItem1[_randomItemIndex].isUnlocked)
         {
@@ -67,7 +66,6 @@ public class AllowedProducts_Manager : MonoBehaviour
         }
 
         _finalAllowedItems.Add(_allowedItem2[_randomItemIndex]);
-        Debug.Log(_allowedItem2[_randomItemIndex]+" Added");
 
         if (!_allowedItem2[_randomItemIndex].isUnlocked)
         {
@@ -87,7 +85,6 @@ public class AllowedProducts_Manager : MonoBehaviour
         }
 
         _finalAllowedItems.Add(_allowedItem3[_randomItemIndex]);
-        Debug.Log(_allowedItem3[_randomItemIndex]+" Added");
 
         if (!_allowedItem3[_randomItemIndex].isUnlocked)
         {
