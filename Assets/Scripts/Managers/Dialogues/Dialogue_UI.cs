@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,6 +6,7 @@ using UnityEngine.UI;
 public class Dialogue_UI : MonoBehaviour
 {
     public static Dialogue_UI Instance { get; private set; }
+    public event Action OnDialogueEnd;
     
     private Animator _dialogueBoxAnimator;
     public Image _actorAvatar;
@@ -80,6 +82,11 @@ public class Dialogue_UI : MonoBehaviour
                 i.SetActive(true);
             }
         }
+    }
+
+    public void EndDialogue()
+    {
+        OnDialogueEnd?.Invoke();
     }
 }
 

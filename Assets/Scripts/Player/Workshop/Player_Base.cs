@@ -9,7 +9,7 @@ public class Player_Base : MonoBehaviour, IItemParent
     public event EventHandler OnPlayerGrabbedObject;
     public event EventHandler OnObjectPickup;
     public event EventHandler OnObjectDrop;
-    
+    public event Action OnContainerCounterSelected;
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
     public class OnSelectedCounterChangedEventArgs : EventArgs 
     {
@@ -105,6 +105,11 @@ public class Player_Base : MonoBehaviour, IItemParent
                 if (_baseCounter != _selectedCounter) 
                 {
                     SetSelectedCounter(_baseCounter);
+
+                    if (_baseCounter.GetComponent<Counter_Container>())
+                    {
+                        OnContainerCounterSelected?.Invoke();
+                    }
                 }
             } 
             else 
@@ -174,11 +179,13 @@ public class Player_Base : MonoBehaviour, IItemParent
     private void SetSelectedCounter(Counter_Base _newSelectedCounter) 
     {
         this._selectedCounter = _newSelectedCounter;
-
+        
+        Debug.Log("Selected Counter Changed to " + _newSelectedCounter);
         OnSelectedCounterChanged?.Invoke(this, new OnSelectedCounterChangedEventArgs 
         {
             _selectedCounter = _newSelectedCounter
         });
+        
     }
 
     public Transform GetItemFollowTransform() // 

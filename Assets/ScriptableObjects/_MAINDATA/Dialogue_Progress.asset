@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca386a4901c2444ab0018884bf51fc4, type: 3}
   m_Name: Dialogue_Progress
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Progress
-  _workshopIntroDone: 0
+  _workshopIntroDone: 1
   _mapIntroDone: 1
-  _level1IntroDone: 0
+  _level1IntroDone: 1

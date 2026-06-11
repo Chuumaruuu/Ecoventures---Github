@@ -14501,6 +14501,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4728920561626631842, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
   m_PrefabInstance: {fileID: 9018544449921029945}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1075942796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075942794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8419a4f4a60294fa1a2720364a7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyData_UI
+  _mainInventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+  _moneyText: {fileID: 1214844931}
 --- !u!1 &1087391941
 GameObject:
   m_ObjectHideFlags: 0
@@ -45199,7 +45213,10 @@ PrefabInstance:
     - {fileID: 8417661897523191883, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4728920561626631842, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075942796}
   m_SourcePrefab: {fileID: 100100000, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
 --- !u!1 &9018544449921029946 stripped
 GameObject:
@@ -45246,6 +45263,7 @@ SceneRoots:
   - {fileID: 642129046}
   - {fileID: 1944710640}
   - {fileID: 210331293}
+  - {fileID: 267853583}
   - {fileID: 22526663}
   - {fileID: 2058099358}
   - {fileID: 1587191761}
@@ -45265,7 +45283,6 @@ SceneRoots:
   - {fileID: 1087391942}
   - {fileID: 110153170}
   - {fileID: 1290877734}
-  - {fileID: 267853583}
   - {fileID: 1977535425}
   - {fileID: 9018544449921029945}
   - {fileID: 1888421759}

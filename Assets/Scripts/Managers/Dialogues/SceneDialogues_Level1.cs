@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Dialogue_Level1Manager : MonoBehaviour
+public class SceneDialogues_Level1 : MonoBehaviour
 {
     [SerializeField] private Dialogue_Progress _dialogueProgress;
     [SerializeField] private Dialogue_Data[] _level1Dialogues;

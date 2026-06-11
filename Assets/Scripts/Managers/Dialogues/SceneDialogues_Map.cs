@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Dialogue_MapManager : MonoBehaviour
+public class SceneDialogues_Map : MonoBehaviour
 {
     [SerializeField] private Dialogue_Progress _dialogueProgress;
     [SerializeField] private Dialogue_Data[] _mapDialogues;

@@ -5,6 +5,8 @@ public class Counter_Selected : MonoBehaviour
     [SerializeField] private Counter_Base _baseCounter;
     [SerializeField] private GameObject[] _visualGameObjects;
 
+
+
     private void Start() 
     {
         Player_Base.Instance.OnSelectedCounterChanged += Player_OnSelectedCounterChanged;
@@ -18,6 +20,7 @@ public class Counter_Selected : MonoBehaviour
         } else {
             Hide();
         }
+
     }
 
     private void Show() 

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,6 +45,5 @@ public class Counter_Base : MonoBehaviour, IItemParent
     {
         return _baseItem != null;
     }
-
     
 }
