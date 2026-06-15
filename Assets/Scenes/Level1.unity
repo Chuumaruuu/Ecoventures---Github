@@ -1752,6 +1752,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (5)
@@ -1796,14 +1804,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     m_RemovedComponents:
     - {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
     - {fileID: 6642558938067353488, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -6977,6 +6977,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_Name
+      value: NPC Male (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 8396676471091887701, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.51
@@ -7017,18 +7029,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
-      propertyPath: m_Name
-      value: NPC Male (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 9101496583525672910, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Controller
       value: 
@@ -7087,6 +7087,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_Name
+      value: NPC Male (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 8396676471091887701, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.95
@@ -7127,18 +7139,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
-      propertyPath: m_Name
-      value: NPC Male (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 9101496583525672910, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Controller
       value: 
@@ -7255,6 +7255,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (4)
@@ -7299,14 +7307,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     m_RemovedComponents:
     - {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
     - {fileID: 6642558938067353488, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -7330,6 +7330,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_Name
+      value: NPC Male (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 8396676471091887701, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.52
@@ -7370,18 +7382,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
-      propertyPath: m_Name
-      value: NPC Male (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 9101496583525672910, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Controller
       value: 
@@ -8118,6 +8118,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_Name
+      value: NPC Male (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 8396676471091887701, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.59
@@ -8158,18 +8170,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
-      propertyPath: m_Name
-      value: NPC Male (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 9101496583525672910, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Controller
       value: 
@@ -8499,6 +8499,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female
@@ -8543,14 +8551,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     m_RemovedComponents:
     - {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
     - {fileID: 6642558938067353488, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -9410,6 +9410,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (1)
@@ -9454,14 +9462,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     m_RemovedComponents:
     - {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
     - {fileID: 6642558938067353488, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -20025,6 +20025,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_Name
+      value: NPC Male
+      objectReference: {fileID: 0}
     - target: {fileID: 8396676471091887701, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.7
@@ -20065,18 +20077,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
-      propertyPath: m_Name
-      value: NPC Male
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 4617036866683670840, guid: d6bdad3345a634c47af2bba7cb788107, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 9101496583525672910, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Controller
       value: 
@@ -25279,7 +25279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1323334192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26681,6 +26681,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (3)
@@ -26725,14 +26733,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     m_RemovedComponents:
     - {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
     - {fileID: 6642558938067353488, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -38716,6 +38716,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
+    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (2)
@@ -38760,14 +38768,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-    - target: {fileID: 2571941731146687046, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
     m_RemovedComponents:
     - {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
     - {fileID: 6642558938067353488, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -45468,6 +45468,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4796480918019551803, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022668604649213248, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
