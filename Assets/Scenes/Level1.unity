@@ -7440,62 +7440,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
-    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: customerWaitTime
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[0].point
-      value: 
-      objectReference: {fileID: 49626053}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[1].point
-      value: 
-      objectReference: {fileID: 101246562}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[2].point
-      value: 
-      objectReference: {fileID: 2109489575}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[3].point
-      value: 
-      objectReference: {fileID: 407172707}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[4].point
-      value: 
-      objectReference: {fileID: 2111780049}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[5].point
-      value: 
-      objectReference: {fileID: 1639145368}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[6].point
-      value: 
-      objectReference: {fileID: 1972503014}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[7].point
-      value: 
-      objectReference: {fileID: 1162553191}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[8].point
-      value: 
-      objectReference: {fileID: 306688945}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[9].point
-      value: 
-      objectReference: {fileID: 597823689}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[6].vendorLookTarget
-      value: 
-      objectReference: {fileID: 1525146427}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[7].vendorLookTarget
-      value: 
-      objectReference: {fileID: 1985764662}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[8].vendorLookTarget
-      value: 
-      objectReference: {fileID: 1724854155}
     - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
@@ -7608,6 +7552,62 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 49626053}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 101246562}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 2109489575}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 407172707}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 2111780049}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 1639145368}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1972503014}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1162553191}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 306688945}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
+      value: 
+      objectReference: {fileID: 597823689}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[6].vendorLookTarget
+      value: 
+      objectReference: {fileID: 1525146427}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[7].vendorLookTarget
+      value: 
+      objectReference: {fileID: 1985764662}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[8].vendorLookTarget
+      value: 
+      objectReference: {fileID: 1724854155}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19526,62 +19526,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
-    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: customerWaitTime
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[0].point
-      value: 
-      objectReference: {fileID: 49626053}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[1].point
-      value: 
-      objectReference: {fileID: 101246562}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[2].point
-      value: 
-      objectReference: {fileID: 2109489575}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[3].point
-      value: 
-      objectReference: {fileID: 407172707}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[4].point
-      value: 
-      objectReference: {fileID: 2111780049}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[5].point
-      value: 
-      objectReference: {fileID: 1639145368}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[6].point
-      value: 
-      objectReference: {fileID: 1972503014}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[7].point
-      value: 
-      objectReference: {fileID: 1162553191}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[8].point
-      value: 
-      objectReference: {fileID: 306688945}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[9].point
-      value: 
-      objectReference: {fileID: 597823689}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[6].vendorLookTarget
-      value: 
-      objectReference: {fileID: 1525146427}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[7].vendorLookTarget
-      value: 
-      objectReference: {fileID: 1985764662}
-    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
-      propertyPath: roamPoints.Array.data[8].vendorLookTarget
-      value: 
-      objectReference: {fileID: 1724854155}
     - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
@@ -19694,6 +19638,62 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593694627151378040, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: customerWaitTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[0].point
+      value: 
+      objectReference: {fileID: 49626053}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[1].point
+      value: 
+      objectReference: {fileID: 101246562}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[2].point
+      value: 
+      objectReference: {fileID: 2109489575}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[3].point
+      value: 
+      objectReference: {fileID: 407172707}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[4].point
+      value: 
+      objectReference: {fileID: 2111780049}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[5].point
+      value: 
+      objectReference: {fileID: 1639145368}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[6].point
+      value: 
+      objectReference: {fileID: 1972503014}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[7].point
+      value: 
+      objectReference: {fileID: 1162553191}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[8].point
+      value: 
+      objectReference: {fileID: 306688945}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[9].point
+      value: 
+      objectReference: {fileID: 597823689}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[6].vendorLookTarget
+      value: 
+      objectReference: {fileID: 1525146427}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[7].vendorLookTarget
+      value: 
+      objectReference: {fileID: 1985764662}
+    - target: {fileID: 6731919901532075812, guid: 44f6ece90e31f5a4283d1320d69f6450, type: 3}
+      propertyPath: roamPoints.Array.data[8].vendorLookTarget
+      value: 
+      objectReference: {fileID: 1724854155}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25279,7 +25279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1323334192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27424,10 +27424,8 @@ MonoBehaviour:
   exploreUI: {fileID: 1281179019}
   sellingCamera: {fileID: 1323334191}
   sellingUI: {fileID: 1075942794}
-  hintPanels:
-  - {fileID: 9018544449921029951}
-  boothPanels:
-  - {fileID: 9018544449921029952}
+  hintPanels: {fileID: 9018544449921029951}
+  boothPanels: {fileID: 9018544449921029952}
   rightAnswerUI: {fileID: 9018544449921029950}
   wrongAnswerUI: {fileID: 9018544449921029949}
   continuePanel: {fileID: 267004787}
