@@ -4,7 +4,7 @@ using UnityEngine;
 public class Dialogue_Data : ScriptableObject
 {
     public string _dialogueTitle;
-    public Dialogue[] _dialogues;
+    public Dialogue[] _messages;
     public Actor[] _actors;
 }
 

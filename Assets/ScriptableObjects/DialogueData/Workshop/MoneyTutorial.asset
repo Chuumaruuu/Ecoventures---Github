@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e698613d9ff527c4fb78e628064be24d, type: 3}
-  m_Name: MapIntro
+  m_Name: MoneyTutorial
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Data
-  _dialogueTitle: MapIntro
+  _dialogueTitle: MoneyTutorial
   _messages:
   - _actorID: 7
-    _message: "You did well in creating your first products! I think you\u2019re
-      ready to sell them now. Let\u2019s start somewhere near to not overwhelm you.
-      It\u2019s important for us to start with what we can, and improve as we go
-      along the way. "
+    _message: 'See how picking up an item costs money? Make sure you only pick up
+      the resources that you need. '
   - _actorID: 8
-    _message: "Click the map icon to reveal the map, then click the place you wish
-      to go to. Let\u2019s go to FTIC! "
+    _message: Click the guide book icon to see what recipes are available for you
+      to process.
   _actors:
   - _actorName: Jed
     _avatar: {fileID: 21300000, guid: f6f200b99936a6b4896bdcc6dee24e50, type: 3}

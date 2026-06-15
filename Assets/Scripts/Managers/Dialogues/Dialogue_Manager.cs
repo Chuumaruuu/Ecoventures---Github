@@ -15,9 +15,9 @@ public class Dialogue_Manager : MonoBehaviour
         Instance = this;
     }
     
-    public void StartDialogue(Dialogue_Data dialogue_Data)
+    public void StartDialogue(Dialogue_Data _dialogueData)
     {
-        Dialogue_UI.Instance.OpenDialogue(dialogue_Data._dialogues, dialogue_Data._actors);
+        Dialogue_UI.Instance.OpenDialogue(_dialogueData);
     }
 }
 

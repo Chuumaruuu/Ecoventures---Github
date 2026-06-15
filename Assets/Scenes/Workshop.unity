@@ -562,7 +562,7 @@ PrefabInstance:
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: '_finalProducts.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+      objectReference: {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: '_finalProducts.Array.data[8]'
       value: 
@@ -2028,6 +2028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 266461049}
   - component: {fileID: 266461048}
+  - component: {fileID: 266461050}
   m_Layer: 0
   m_Name: Dialogue_Manager
   m_TagString: Untagged
@@ -2062,6 +2063,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &266461050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266461047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae733daa74fc4947b9ce31cb7d1eb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager_Workshop
+  _workshopDialogues:
+  - {fileID: 11400000, guid: 61d89392ca904f448919fbf429dd2c65, type: 2}
+  - {fileID: 11400000, guid: 50e7e95a52c208b489e3daf1426850ee, type: 2}
+  - {fileID: 11400000, guid: 2d46b6ab3502af847b7ba01f0cf6790e, type: 2}
+  - {fileID: 11400000, guid: f57a84af0b80cd241a5ef6b2895dd3f8, type: 2}
+  - {fileID: 11400000, guid: 5d485cb841452f041aaf8b8260f2d176, type: 2}
+  - {fileID: 11400000, guid: 7c804fe0d5e809d4db5947c097857cd5, type: 2}
+  - {fileID: 11400000, guid: a3528a63c17f1ef49bd1b3a07a84cb5b, type: 2}
+  _dialogueProgress: {fileID: 11400000, guid: b21a13ad1bb8f2e44b767ce8f9fc719d, type: 2}
+  _tutorialProgress: {fileID: 11400000, guid: f905316e04a45ff4eac325593aaddb26, type: 2}
 --- !u!1 &330092202
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,53 +6487,6 @@ Transform:
   - {fileID: 134927552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &880254341
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 880254342}
-  - component: {fileID: 880254343}
-  m_Layer: 0
-  m_Name: Workshop_Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &880254342
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880254341}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880254343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880254341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae733daa74fc4947b9ce31cb7d1eb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WorkshopDialogue_Manager
-  _workshopDialogues:
-  - {fileID: 11400000, guid: 61d89392ca904f448919fbf429dd2c65, type: 2}
-  _dialogueProgress: {fileID: 11400000, guid: b21a13ad1bb8f2e44b767ce8f9fc719d, type: 2}
 --- !u!1 &895835501
 GameObject:
   m_ObjectHideFlags: 0
@@ -13774,7 +13750,7 @@ PrefabInstance:
     - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
       propertyPath: '_processRecipeArray.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: 83121db8eaa235246a4e7e38d7722df3, type: 2}
+      objectReference: {fileID: 11400000, guid: 120aea220cf94274fa4d4316d9335124, type: 2}
     - target: {fileID: 7932425634269221302, guid: df816b2cc34b30a4da407bdf7c54f82a, type: 3}
       propertyPath: '_processRecipeArray.Array.data[5]'
       value: 
@@ -18459,7 +18435,7 @@ PrefabInstance:
     - target: {fileID: 520799034978680416, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
       propertyPath: '_processRecipeArray.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: 120aea220cf94274fa4d4316d9335124, type: 2}
+      objectReference: {fileID: 11400000, guid: 83121db8eaa235246a4e7e38d7722df3, type: 2}
     - target: {fileID: 4634158106507060824, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
       propertyPath: m_Name
       value: ProcessCounter_AssemblyTable
@@ -18926,7 +18902,6 @@ SceneRoots:
   - {fileID: 499253373}
   - {fileID: 1095384064}
   - {fileID: 875598694}
-  - {fileID: 880254342}
   - {fileID: 650437434}
   - {fileID: 266461049}
   - {fileID: 829335961}

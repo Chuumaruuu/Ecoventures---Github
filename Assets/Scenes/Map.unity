@@ -1087,9 +1087,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -6335499192087355856, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1664713293}
-    - targetCorrespondingSourceObject: {fileID: -6335499192087355856, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1664713294}
     - targetCorrespondingSourceObject: {fileID: -6335499192087355856, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
@@ -1126,10 +1123,10 @@ PrefabInstance:
       addedObject: {fileID: 328077286}
     - targetCorrespondingSourceObject: {fileID: 5035966614064914597, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1689058279}
+      addedObject: {fileID: 1689058280}
     - targetCorrespondingSourceObject: {fileID: 5035966614064914597, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1689058280}
+      addedObject: {fileID: 1689058279}
   m_SourcePrefab: {fileID: 100100000, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
 --- !u!1 &184356699
 GameObject:
@@ -4588,7 +4585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1631709233
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4655,9 +4652,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1644509794}
+  - component: {fileID: 1644509797}
   - component: {fileID: 1644509796}
   - component: {fileID: 1644509795}
-  - component: {fileID: 1644509797}
   m_Layer: 0
   m_Name: MapPlayer
   m_TagString: Untagged
@@ -4976,20 +4973,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -6335499192087355856, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
   m_PrefabInstance: {fileID: 166189324}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1664713293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664713291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a90420cc49c73418c6796431ec2303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
-  _stageNum: 3
-  _sceneManager: {fileID: 1253243891}
 --- !u!65 &1664713294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5084,8 +5067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a90420cc49c73418c6796431ec2303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
-  _stageNum: 0
-  _sceneManager: {fileID: 0}
+  _stageNum: 1
+  _sceneManager: {fileID: 1253243891}
 --- !u!65 &1689058280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5724,7 +5707,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2104704791}
-  - component: {fileID: 2104704790}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -5732,18 +5714,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2104704790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104704789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3edbcffa004374c864296afe96cb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BackgroundMusic
 --- !u!4 &2104704791
 Transform:
   m_ObjectHideFlags: 0

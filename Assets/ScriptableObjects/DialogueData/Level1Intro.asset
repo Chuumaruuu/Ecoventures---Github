@@ -13,47 +13,9 @@ MonoBehaviour:
   m_Name: Level1Intro
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Data
   _dialogueTitle: Level1Intro
-  _dialogues:
-  - _actorID: 6
-    _message: We're here! I already handled the permissions to use this place for
-      you, so you can just focus on selling your products!
-  - _actorID: 7
-    _message: Are you ready Jed?
-  - _actorID: 1
-    _message: I'm getting nervous, Tammy.
-  - _actorID: 7
-    _message: 'Don''t worry, Jed. That''s normal.  '
-  - _actorID: 8
-    _message: All journeys start somewhere, and getting nervous is okay. The important
-      thing is to keep moving forward!
-  - _actorID: 1
-    _message: 'Thank you Tammy. '
-  - _actorID: 0
-    _message: What should I do now?
-  - _actorID: 7
-    _message: Now that we're here, it's time to start selling!
-  - _actorID: 6
-    _message: "To begin with, let\u2019s first prepare our booth and the products
-      you created. "
-  - _actorID: 7
-    _message: Tap the bag icon to open your inventory, and place your products on
-      our booth by clicking the items you created earlier.
-  - _actorID: 6
-    _message: Once you've prepared your wares, you can start selling!
-  - _actorID: 8
-    _message: Customers will start swarming your stall so it's important you dont
-      get nervous.
-  - _actorID: 8
-    _message: Customers will start swarming your stall and request items.
-  - _actorID: 7
-    _message: It's important to not let their patience run dry
-  - _actorID: 9
-    _message: because we don't want our customers to be disappointed on us.
-  - _actorID: 6
-    _message: Satisfy them by giving them the items they desire before their patience
-      run out!
-  - _actorID: 7
-    _message: I think you're ready to start now. Good luck, Jed!
+  _messages:
+  - _actorID: 2
+    _message: FUUUUUUUUUUUUUUUUH
   _actors:
   - _actorName: Jed
     _avatar: {fileID: 21300000, guid: f6f200b99936a6b4896bdcc6dee24e50, type: 3}
