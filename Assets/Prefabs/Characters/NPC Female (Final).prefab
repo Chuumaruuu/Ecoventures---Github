@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
       propertyPath: m_LocalRotation.w
@@ -141,13 +141,7 @@ PrefabInstance:
       addedObject: {fileID: 886757252263306754}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6731919901532075812}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5524379671636828779}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2593694627151378040}
   m_SourcePrefab: {fileID: 100100000, guid: f1d1e30c9e2cb184fb65d0ee24422991, type: 3}
 --- !u!1 &472455185476437580 stripped
 GameObject:
@@ -176,54 +170,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6731919901532075812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472455185476437580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc840aecb594f845b4002dd8a127562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTimeAtPoint: 3
-  moveSpeed: 8
-  acceleration: 10
-  stoppingDistance: 1
-  stuckCheckTime: 2
-  minimumMoveDistance: 0.2
-  roamPoints:
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  facingSpeed: 120
 --- !u!95 &5524379671636828779
 Animator:
   serializedVersion: 7
@@ -246,15 +192,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2593694627151378040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472455185476437580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder

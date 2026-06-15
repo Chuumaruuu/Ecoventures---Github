@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4699998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
       propertyPath: m_LocalRotation.w
@@ -79,15 +79,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2128064592859543810}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8175614862143915393}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4617036866683670840}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2907335821812511891}
   m_SourcePrefab: {fileID: 100100000, guid: c6eb8844950a14743a9bb843b53afe82, type: 3}
 --- !u!1 &2133128219161265350 stripped
 GameObject:
@@ -116,85 +107,3 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8175614862143915393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133128219161265350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc840aecb594f845b4002dd8a127562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTimeAtPoint: 5
-  moveSpeed: 8
-  acceleration: 5
-  stoppingDistance: 1
-  stuckCheckTime: 2
-  minimumMoveDistance: 0.2
-  roamPoints:
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  - point: {fileID: 0}
-    vendorLookTarget: {fileID: 0}
-  facingSpeed: 120
---- !u!95 &4617036866683670840
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133128219161265350}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 191880b174d88b74db04231c0345bbac, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2907335821812511891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133128219161265350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
