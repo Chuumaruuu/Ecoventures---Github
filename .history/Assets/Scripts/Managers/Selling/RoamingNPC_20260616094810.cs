@@ -65,7 +65,6 @@ public class RoamingNPC : MonoBehaviour
 
     void Start()
     {
-        GetComponent<CustomerOrder>().OnCustomerQueued += CustomerWaiting;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
@@ -96,11 +95,7 @@ public class RoamingNPC : MonoBehaviour
                 StartCoroutine(WaitAndMove());
         }
     }
-    private void CustomerWaiting()
-    {
-        isWaiting = true;
-        HandleAnimation();
-    }
+
     void OnDestroy()
     {
         ReleaseCurrentPoint();

@@ -13,8 +13,8 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject sellingUI;
 
     [Header("Popup Panels")]
-    [SerializeField] private GameObject[] hintPanels;
-    [SerializeField] private GameObject[] boothPanels;
+    [SerializeField] private GameObject hintPanels;
+    [SerializeField] private GameObject boothPanels;
     [SerializeField] private GameObject rightAnswerUI;
     [SerializeField] private GameObject wrongAnswerUI;
     [SerializeField] private GameObject continuePanel;

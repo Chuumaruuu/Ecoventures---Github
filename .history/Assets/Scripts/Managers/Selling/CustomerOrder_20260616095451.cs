@@ -10,12 +10,8 @@ public class CustomerOrder : MonoBehaviour
     private UnityEngine.AI.NavMeshAgent agent;
     private Transform vendorLookTarget;
     private bool hasOrdered = false;
-    public bool isFacingVendor;
-    private bool wasFacingVendor = false;
+    private bool isFacingVendor = false;
     private float waitTimer;
-
-    public event System.Action OnCustomerQueued;
-    public event System.Action OnFacingVendor;
 
     private void Awake()
     {
@@ -45,13 +41,7 @@ public class CustomerOrder : MonoBehaviour
         }
 
         isFacingVendor = true;
-        if (!wasFacingVendor)
-        {
-            wasFacingVendor = true;
-            OnFacingVendor?.Invoke();
-        }
         FaceVendorTarget();
-        OnCustomerQueued?.Invoke();
     }
 
     public void MoveToQueue(Vector3 targetPosition, Transform lookTarget = null)
@@ -61,7 +51,6 @@ public class CustomerOrder : MonoBehaviour
 
         vendorLookTarget = lookTarget;
         isFacingVendor = false;
-        wasFacingVendor = false;
 
         if (agent != null)
         {
@@ -202,7 +191,6 @@ public class CustomerOrder : MonoBehaviour
         waitTimer = 0f;
         vendorLookTarget = null;
         isFacingVendor = false;
-        wasFacingVendor = false;
 
         return true;
     }
@@ -228,7 +216,6 @@ public class CustomerOrder : MonoBehaviour
         waitTimer = 0f;
         vendorLookTarget = null;
         isFacingVendor = false;
-        wasFacingVendor = false;
     }
 
     public void CompleteOrder()
