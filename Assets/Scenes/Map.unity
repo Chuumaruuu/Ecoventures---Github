@@ -5048,7 +5048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a90420cc49c73418c6796431ec2303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Manager
-  _stageNum: 2
+  _stageNum: 3
   _sceneManager: {fileID: 1253243891}
 --- !u!1 &1689058277 stripped
 GameObject:

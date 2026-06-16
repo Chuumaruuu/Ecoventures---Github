@@ -541,11 +541,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: _maxAmount
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: _minAmount
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4810630809911892038, guid: 830161a8100adcb47b383b1ec43d1963, type: 3}
       propertyPath: _finalProducts.Array.size
@@ -1921,7 +1921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -496.5, y: 358.73}
+  m_AnchoredPosition: {x: -632, y: 358.73}
   m_SizeDelta: {x: 140.18, y: 30.075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264271140
@@ -5460,7 +5460,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 742246591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1384660154}
+        m_TargetAssemblyTypeName: Guide_Manager, Assembly-CSharp
+        m_MethodName: setCurrentRecipe
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f815863381ce3854e8926d59c9a6ee33, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Recipe_Data, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &742246591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6031,6 +6043,7 @@ MonoBehaviour:
   _pauseMenu: {fileID: 2492427866596108247}
   _gameUI: {fileID: 8604850966644329943}
   _guideUI: {fileID: 1682614027}
+  _moneyUI: {fileID: 535519147}
 --- !u!4 &829335961
 Transform:
   m_ObjectHideFlags: 0
@@ -8982,7 +8995,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 34f0eae8988f4bd43b7906ac23dd2ed4, type: 2}
   - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
   - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
-  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  - {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
   - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
   - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
   - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
@@ -9238,7 +9251,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1537729235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1384660154}
+        m_TargetAssemblyTypeName: Guide_Manager, Assembly-CSharp
+        m_MethodName: setCurrentRecipe
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 01bd630165013fd4cb8fa7dd74c1aaf6, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Recipe_Data, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1537729235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10629,7 +10654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8a11916d0c1454a41ae65ff334a701aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eac8883923c92d5479f31c71b09bfd51, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11535,7 +11560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1846048654}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1384660154}
+        m_TargetAssemblyTypeName: Guide_Manager, Assembly-CSharp
+        m_MethodName: setCurrentRecipe
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 03c234ac710bd7545966af97d5db0ad5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Recipe_Data, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1846048654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17966,7 +18003,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90.2876, y: -13.323853}
+  m_AnchoredPosition: {x: -90.2876, y: -13.323822}
   m_SizeDelta: {x: -220.5753, y: -128.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8367294423291323649
@@ -18134,7 +18171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &8573808328412089642
 PrefabInstance:
   m_ObjectHideFlags: 0

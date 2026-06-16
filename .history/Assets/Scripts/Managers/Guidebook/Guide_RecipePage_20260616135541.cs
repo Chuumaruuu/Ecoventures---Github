@@ -11,14 +11,13 @@ public class Guide_RecipePage : MonoBehaviour
     private Recipe_Data _currentRecipeData;
     private int _currentSpriteIndex;
 
-    // private void Awake()
-    // {
-    //     ClearRecipe();
-    // }
+    private void Awake()
+    {
+        ClearRecipe();
+    }
 
     public void ShowRecipe(Recipe_Data recipeData)
     {
-        Debug.Log("Attempting to show recipe: " + (recipeData != null ? recipeData.name : "null"));
         _currentRecipeData = recipeData;
         _currentSpriteIndex = 0;
 

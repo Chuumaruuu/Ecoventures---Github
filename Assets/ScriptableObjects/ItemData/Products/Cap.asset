@@ -17,4 +17,4 @@ MonoBehaviour:
   _itemSprite: {fileID: 21300000, guid: 8a11916d0c1454a41ae65ff334a701aa, type: 3}
   _objectName: Cap
   isUnlocked: 0
-  sellprice: 0
+  sellprice: 30

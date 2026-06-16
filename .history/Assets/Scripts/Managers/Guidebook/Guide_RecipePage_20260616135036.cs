@@ -11,31 +11,29 @@ public class Guide_RecipePage : MonoBehaviour
     private Recipe_Data _currentRecipeData;
     private int _currentSpriteIndex;
 
-    // private void Awake()
-    // {
-    //     ClearRecipe();
-    // }
+    private void Awake()
+    {
+        ClearRecipe();
+    }
 
     public void ShowRecipe(Recipe_Data recipeData)
     {
-        Debug.Log("Attempting to show recipe: " + (recipeData != null ? recipeData.name : "null"));
         _currentRecipeData = recipeData;
         _currentSpriteIndex = 0;
 
         if (_currentRecipeData == null || _currentRecipeData._recipeSprite == null || _currentRecipeData._recipeSprite.Length == 0)
         {
+            Debug.Log("Guide_RecipePage: No recipe data or sprites available to display.");
             ClearRecipe();
             return;
         }
 
         gameObject.SetActive(true);
         RefreshPage();
-        Debug.Log("Showing recipe: " + recipeData.name);
     }
 
     public void ClearRecipe()
     {
-        Debug.Log("Clearing recipe page.");
         _currentRecipeData = null;
         _currentSpriteIndex = 0;
 
