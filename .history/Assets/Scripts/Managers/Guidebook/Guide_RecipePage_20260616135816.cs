@@ -11,10 +11,10 @@ public class Guide_RecipePage : MonoBehaviour
     private Recipe_Data _currentRecipeData;
     private int _currentSpriteIndex;
 
-    // private void Awake()
-    // {
-    //     ClearRecipe();
-    // }
+    private void Awake()
+    {
+        ClearRecipe();
+    }
 
     public void ShowRecipe(Recipe_Data recipeData)
     {
@@ -22,11 +22,11 @@ public class Guide_RecipePage : MonoBehaviour
         _currentRecipeData = recipeData;
         _currentSpriteIndex = 0;
 
-        if (_currentRecipeData == null || _currentRecipeData._recipeSprite == null || _currentRecipeData._recipeSprite.Length == 0)
-        {
-            ClearRecipe();
-            return;
-        }
+        // if (_currentRecipeData == null || _currentRecipeData._recipeSprite == null || _currentRecipeData._recipeSprite.Length == 0)
+        // {
+        //     ClearRecipe();
+        //     return;
+        // }
 
         gameObject.SetActive(true);
         RefreshPage();
