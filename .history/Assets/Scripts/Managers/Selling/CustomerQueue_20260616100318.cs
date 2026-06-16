@@ -35,12 +35,11 @@ public class CustomerQueue : MonoBehaviour
             ? queuePointImages[index]
             : null;
 
-        // Move NPC to queue point and make it face the vendor when it arrives.
-        // SetOrderImage is deferred: the bubble only appears once the customer
-        // has arrived and is actually facing the vendor.
-        customer.MoveToQueue(queuePoints[index].position, vendorLookTarget);
+        // Assign the correct UI image from the queue point
+        customer.SetOrderImage(queueImage);
 
-        customer.OnFacingVendor += () => customer.SetOrderImage(queueImage);
+        // Move NPC to queue point and make it face the vendor when it arrives
+        customer.MoveToQueue(queuePoints[index].position, vendorLookTarget);
     }
 
     public void RemoveCustomer(CustomerOrder customer)

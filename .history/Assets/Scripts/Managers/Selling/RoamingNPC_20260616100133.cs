@@ -99,7 +99,7 @@ public class RoamingNPC : MonoBehaviour
     private void CustomerWaiting()
     {
         isWaiting = true;
-        HandleAnimation();
+        // HandleAnimation();
     }
     void OnDestroy()
     {

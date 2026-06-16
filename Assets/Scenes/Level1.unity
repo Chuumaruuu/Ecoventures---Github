@@ -717,6 +717,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -7441,6 +7445,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
     - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -7999,6 +8007,10 @@ PrefabInstance:
     - target: {fileID: 5295000874224255823, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: moveSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: roamPoints.Array.size
@@ -19526,6 +19538,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
+    - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
@@ -44630,6 +44646,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1724854155}
     - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506793729806281770, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -44799,6 +44819,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: roamPoints.Array.size
       value: 10
@@ -45471,7 +45495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5022668604649213248, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5120095465600850977, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
