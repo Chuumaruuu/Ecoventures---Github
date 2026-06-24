@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
   customerWaitTime: 15
+  isFacingVendor: 0
 --- !u!1001 &7094928528866607381
 PrefabInstance:
   m_ObjectHideFlags: 0
