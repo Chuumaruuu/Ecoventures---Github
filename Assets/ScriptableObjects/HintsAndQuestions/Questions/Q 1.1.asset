@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004c375f479b7984f8eaa3ef7649dbf2, type: 3}
   m_Name: Q 1.1
   m_EditorClassIdentifier: Assembly-CSharp::Questions_Data
-  _questionBody: Question 1.1. This is a trial question to see if the new logic implemented
-    as well as the questions are implemented properly.
-  _rightAnswer: RA 1.1
-  _wrongAnswer1: WA 1.1
-  _wrongAnswer2: WA 1.1
-  _wrongAnswer3: WA 1.1
+  _questionBody: "The Zero Waste, Infinite Solutions (ZWIS) is FEU Institute of Technology\u2019s
+    campus-wide campaign dedicated to __________ and promoting responsible and sustainable
+    practices."
+  _rightAnswer: Minimizing Waste
+  _wrongAnswer1: Creating Products
+  _wrongAnswer2: Planting More trees
+  _wrongAnswer3: Cleaning The Environment
+  _NPCSprite: {fileID: 21300000, guid: 440ba02a352d6d74d92ad675226073ab, type: 3}

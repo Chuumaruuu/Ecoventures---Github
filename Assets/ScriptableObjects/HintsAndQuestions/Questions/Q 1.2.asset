@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004c375f479b7984f8eaa3ef7649dbf2, type: 3}
   m_Name: Q 1.2
   m_EditorClassIdentifier: Assembly-CSharp::Questions_Data
-  _questionBody: Q 1.2
-  _rightAnswer: RA 1.2
-  _wrongAnswer1: WA 1.2
-  _wrongAnswer2: WA 1.2
-  _wrongAnswer3: WA 1.2
+  _questionBody: How do the SDGs differ from the MDGs?
+  _rightAnswer: SDGs are broader and universal
+  _wrongAnswer1: SDGs apply only to developing countries
+  _wrongAnswer2: SDGs are fewer in number
+  _wrongAnswer3: SDGs focus only on the environment
+  _NPCSprite: {fileID: 21300000, guid: 492cec60413a3ea4eacb58af48adb050, type: 3}
