@@ -9,6 +9,18 @@ public class SceneDialogues_Workshop : MonoBehaviour
     [SerializeField] private Dialogue_Progress _dialogueProgress;
     [SerializeField] private Tutorial_Progress _tutorialProgress;
 
+    // DIALOGUE TITLES
+    private const string WORKSHOP_INTRO = "WorkshopIntro";
+    private const string TUTORIAL_MOVE = "MoveTutorial";
+    private const string TUTORIAL_GRAB = "GrabTutorial";
+    private const string TUTORIAL_MONEY = "MoneyTutorial";
+    private const string TUTORIAL_GUIDEBOOK = "GuidebookTutorial";
+    private const string TUTORIAL_INTERACT = "InteractTutorial";
+    private const string TUTORIAL_SUBMIT = "SubmitTutorial";
+
+
+    
+
 
     private void Awake()
     {
@@ -35,7 +47,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         if (!_dialogueProgress._workshopIntroDone)
         {
-            Dialogue_Data dialogueData = GetDialogueData("WorkshopIntro");
+            Dialogue_Data dialogueData = GetDialogueData(WORKSHOP_INTRO);
             if (dialogueData != null)
             {
                 _dialogueProgress._workshopIntroDone = true;
@@ -49,7 +61,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         if (_dialogueProgress._workshopIntroDone && !_tutorialProgress._moveTutorialDone)
         {
-            Dialogue_Data dialogueData = GetDialogueData("MoveTutorial");
+            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_MOVE);
             if (dialogueData != null)
             {
                 _tutorialProgress._moveTutorialDone = true;
@@ -63,7 +75,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         if (_dialogueProgress._workshopIntroDone && _tutorialProgress._moveTutorialDone && !_tutorialProgress._grabTutorialDone)
             {
-                Dialogue_Data dialogueData = GetDialogueData("GrabTutorial");
+                Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_GRAB);
                 if (dialogueData != null)
                 {
                     _tutorialProgress._grabTutorialDone = true;
@@ -77,7 +89,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         if (!_tutorialProgress._moneyTutorialDone)
         {
-            Dialogue_Data dialogueData = GetDialogueData("MoneyTutorial");
+            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_MONEY);
             if (dialogueData != null)
             {
                 _tutorialProgress._moneyTutorialDone = true;
@@ -91,7 +103,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         if (!_tutorialProgress._interactTutorialDone)
         {
-            Dialogue_Data dialogueData = GetDialogueData("InteractTutorial");
+            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_INTERACT);
             if (dialogueData != null)
             {
                 _tutorialProgress._interactTutorialDone = true;
@@ -105,7 +117,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         if (!_tutorialProgress._guidebookTutorialDone)
         {
-            Dialogue_Data dialogueData = GetDialogueData("GuidebookTutorial");
+            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_GUIDEBOOK);
             if (dialogueData != null)
             {
                 _tutorialProgress._guidebookTutorialDone = true;
