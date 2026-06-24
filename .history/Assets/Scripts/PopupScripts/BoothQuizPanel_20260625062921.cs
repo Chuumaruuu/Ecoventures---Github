@@ -45,6 +45,12 @@ public class BoothQuizPanel : MonoBehaviour
             itemSpriteImage.enabled = itemSpriteImage.sprite != null;
         }
 
+        if (NPCSpriteImage != null)
+        {
+            NPCSpriteImage.sprite = currentQuestionData != null ? currentQuestionData._NPCSprite : null;
+            NPCSpriteImage.enabled = NPCSpriteImage.sprite != null;
+        }
+
         BuildAnswerOptions();
         RefreshAnswerButtons();
         SetNPCSprite();
@@ -138,13 +144,11 @@ public class BoothQuizPanel : MonoBehaviour
 
     private void SetNPCSprite()
     {
-        if (NPCSpriteImage == null || currentQuestionData == null)
+        if (NPCSpriteImage == null)
         {
             return;
         }
-
-        NPCSpriteImage.sprite = currentQuestionData._NPCSprite;
-        NPCSpriteImage.enabled = NPCSpriteImage.sprite != null;
+        
     }
 
     private void HandleAnswerSelected(int index)
