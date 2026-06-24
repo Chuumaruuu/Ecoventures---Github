@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Guide_Manager : MonoBehaviour
 {
@@ -12,7 +11,6 @@ public class Guide_Manager : MonoBehaviour
 
     [SerializeField] private MainPageGroup[] _mainPages;
     [SerializeField] private Guide_RecipePage _recipePage;
-    [SerializeField] private Toggle[] _mainPageToggles;
 
     private int _currentMainPageIndex = -1;
 
@@ -23,11 +21,6 @@ public class Guide_Manager : MonoBehaviour
 
     public void ResetToFirstPage()
     {
-        if (_mainPageToggles != null && _mainPageToggles.Length > 0 && _mainPageToggles[0] != null)
-        {
-            _mainPageToggles[0].isOn = true; // Toggle Group handles turning the rest off
-        }
-
         setCurrentMainPage(0);
     }
 
