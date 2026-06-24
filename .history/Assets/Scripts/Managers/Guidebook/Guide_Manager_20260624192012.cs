@@ -13,7 +13,6 @@ public class Guide_Manager : MonoBehaviour
     [SerializeField] private MainPageGroup[] _mainPages;
     [SerializeField] private Guide_RecipePage _recipePage;
     [SerializeField] private Toggle[] _mainPageToggles;
-    [SerializeField] private GameObject _backBtn;
 
     private int _currentMainPageIndex = -1;
 
@@ -30,40 +29,6 @@ public class Guide_Manager : MonoBehaviour
         }
 
         setCurrentMainPage(0);
-    }
-
-    public void GoBack()
-    {
-        if (_currentMainPageIndex < 0 || _currentMainPageIndex >= _mainPages.Length)
-        {
-            return;
-        }
-
-        // Restore the main page
-        SetMainPagesActive(false);
-        _mainPages[_currentMainPageIndex].mainPage.SetActive(true);
-
-        // Restore the toggle
-        if (_mainPageToggles != null && _currentMainPageIndex < _mainPageToggles.Length && _mainPageToggles[_currentMainPageIndex] != null)
-        {
-            _mainPageToggles[_currentMainPageIndex].isOn = true;
-        }
-
-        // Hide recipe page and back button
-        if (_recipePage != null)
-        {
-            _recipePage.ClearRecipe();
-        }
-
-        SetBackButtonActive(false);
-    }
-
-    private void SetBackButtonActive(bool isActive)
-    {
-        if (_backBtn != null)
-        {
-            _backBtn.SetActive(isActive);
-        }
     }
 
     public void setCurrentPage(int index)
@@ -100,8 +65,6 @@ public class Guide_Manager : MonoBehaviour
         {
             setCurrentRecipePage(0);
         }
-
-        SetBackButtonActive(false);
     }
 
     public void setCurrentRecipePage(int index)
@@ -134,7 +97,6 @@ public class Guide_Manager : MonoBehaviour
 
         SetMainPagesActive(false);
         _recipePage.ShowRecipe(recipeData[index]);
-        SetBackButtonActive(true);
     }
 
     public void setCurrentRecipe(Recipe_Data recipeData)
@@ -147,7 +109,6 @@ public class Guide_Manager : MonoBehaviour
 
         SetMainPagesActive(false);
         _recipePage.ShowRecipe(recipeData);
-        SetBackButtonActive(true);
     }
 
     private void SetMainPagesActive(bool isActive)

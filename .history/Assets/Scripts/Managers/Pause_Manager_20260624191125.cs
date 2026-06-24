@@ -7,7 +7,6 @@ public class Pause_Manager : MonoBehaviour
     [SerializeField] private GameObject _gameUI;
     [SerializeField] private GameObject _guideUI;
     [SerializeField] private GameObject _moneyUI;
-    [SerializeField] private Guide_Manager _guideManager;
     public void Pause()
     {
         Time.timeScale = 0f;
@@ -29,6 +28,6 @@ public class Pause_Manager : MonoBehaviour
         _pauseMenu.SetActive(false);
         _gameUI.SetActive(false);
         _moneyUI.SetActive(false);
-        _guideManager.ResetToFirstPage();
+        _guideUI.GetComponent<Guide_Manager>().ResetToFirstPage();
     }
 }
