@@ -4172,7 +4172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &535519148
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18305,7 +18305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90.2876, y: -13.323853}
+  m_AnchoredPosition: {x: -90.2876, y: -13.323822}
   m_SizeDelta: {x: -220.5753, y: -128.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8367294423291323649
@@ -18485,10 +18485,6 @@ PrefabInstance:
     - target: {fileID: 3359161558847360875, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5478222358690202889, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: _moveSpeed
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8511688545274569942, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
       propertyPath: m_LocalPosition.x
