@@ -38280,6 +38280,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2270499669111564408, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478222358690202889, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
+      propertyPath: _moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447970755437980803, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447970755437980803, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659508476238047085, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
+      propertyPath: _dropSFX
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659508476238047085, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
+      propertyPath: _pickUpSFX
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 32439069068403675, guid: 76a31293fc88ece41b460af9479a35d5, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -38515,30 +38539,6 @@ PrefabInstance:
     - target: {fileID: 9203813368709888808, guid: 76a31293fc88ece41b460af9479a35d5, type: 3}
       propertyPath: m_Layer
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2270499669111564408, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5478222358690202889, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: _moveSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447970755437980803, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447970755437980803, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659508476238047085, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: _dropSFX
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659508476238047085, guid: 1c9dd49e53787334a9b135f936f0ac1a, type: 3}
-      propertyPath: _pickUpSFX
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45778,6 +45778,10 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: -1.9909496
       objectReference: {fileID: 0}
+    - target: {fileID: 6515731297765436541, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_text
+      value: Wrong Answer. Try Again Later!
+      objectReference: {fileID: 0}
     - target: {fileID: 6553935387860771164, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 156.7269
@@ -45805,6 +45809,10 @@ PrefabInstance:
     - target: {fileID: 6868300440684708463, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: HintsOpenerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961099096606709723, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_text
+      value: That's Correct!  Good Job!
       objectReference: {fileID: 0}
     - target: {fileID: 7055624238018352880, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

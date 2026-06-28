@@ -573,6 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb266bc08a7a49429f7a7cfc2614aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Intro_Animation
+  _videoCanvas: {fileID: 1144553900}
   _videoPlayer: {fileID: 1547178234}
 --- !u!95 &224598908
 Animator:
