@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject rightAnswerUI;
     [SerializeField] private GameObject wrongAnswerUI;
     [SerializeField] private GameObject continuePanel;
+
+    private Image _activeCorrectAnswerImage;
 
     private void Awake()
     {
@@ -42,6 +45,21 @@ public class UI_Manager : MonoBehaviour
         SetActiveSafe(rightAnswerUI, false);
         SetActiveSafe(wrongAnswerUI, false);
         SetActiveSafe(continuePanel, false);
+        HideAndClearCorrectAnswerImage();
+    }
+
+    public void RegisterCorrectAnswerImage(Image image)
+    {
+        _activeCorrectAnswerImage = image;
+    }
+
+    private void HideAndClearCorrectAnswerImage()
+    {
+        if (_activeCorrectAnswerImage != null)
+        {
+            _activeCorrectAnswerImage.gameObject.SetActive(false);
+            _activeCorrectAnswerImage = null;
+        }
     }
 
     public void EnterSellingMode()
