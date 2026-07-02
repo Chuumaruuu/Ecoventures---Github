@@ -16,7 +16,7 @@ public class Player_Base : MonoBehaviour, IItemParent
         public Counter_Base _selectedCounter;
     }
 
-    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _moveSpeed = 7f;
     [SerializeField] private Player_Input _playerInput;
     [SerializeField] private Player_Audio _playerAudio;
     [SerializeField] private LayerMask _countersLayerMask;
