@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: Lanyard
   m_EditorClassIdentifier: 
-  _productGroupPrefab: {fileID: 0}
+  _productGroupPrefab: {fileID: 8883861367734820328, guid: e8c48c6169d12dc41951bb4ab706a4f3, type: 3}
   _itemPrefab: {fileID: 4589428500890972953, guid: 5f3312ae7293aa443ac100ee1f24c072, type: 3}
   _itemSprite: {fileID: 21300000, guid: eac8883923c92d5479f31c71b09bfd51, type: 3}
   _objectName: Lanyard
