@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004c375f479b7984f8eaa3ef7649dbf2, type: 3}
+  m_Name: Q 3.2
+  m_EditorClassIdentifier: Assembly-CSharp::Questions_Data
+  _questionBody: The three most common waste management actions are Reduce, Reuse,
+    and _____.
+  _rightAnswer: Recycle
+  _wrongAnswer1: Recover
+  _wrongAnswer2: Repair
+  _wrongAnswer3: Refuse
+  _NPCSprite: {fileID: 0}

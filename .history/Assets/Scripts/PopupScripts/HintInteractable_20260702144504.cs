@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HintInteractable : MonoBehaviour, IInteractable
@@ -10,19 +9,9 @@ public class HintInteractable : MonoBehaviour, IInteractable
     private bool isOpen;
     private Sprite selectedHintSprite;
 
-    private static readonly Dictionary<Hints_Data, Queue<Sprite>> shuffledSpritePools = new Dictionary<Hints_Data, Queue<Sprite>>();
-
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-    private static void ResetPools()
-    {
-        // Ensures pools don't carry over stale state between play sessions
-        // when domain reload is disabled in the editor.
-        shuffledSpritePools.Clear();
-    }
-
     private void Awake()
     {
-        selectedHintSprite = GetNextSprite(hintData);
+        selectedHintSprite = PickRandomSprite(hintData);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -119,33 +108,14 @@ public class HintInteractable : MonoBehaviour, IInteractable
         return null;
     }
 
-    private static Sprite GetNextSprite(Hints_Data data)
+    private Sprite PickRandomSprite(Hints_Data data)
     {
         if (data == null || data._hintSprites == null || data._hintSprites.Length == 0)
         {
             return null;
         }
 
-        if (!shuffledSpritePools.TryGetValue(data, out Queue<Sprite> pool) || pool.Count == 0)
-        {
-            pool = BuildShuffledQueue(data._hintSprites);
-            shuffledSpritePools[data] = pool;
-        }
-
-        return pool.Dequeue();
-    }
-
-    private static Queue<Sprite> BuildShuffledQueue(Sprite[] sprites)
-    {
-        List<Sprite> list = new List<Sprite>(sprites);
-
-        // Fisher-Yates shuffle
-        for (int i = list.Count - 1; i > 0; i--)
-        {
-            int j = Random.Range(0, i + 1);
-            (list[i], list[j]) = (list[j], list[i]);
-        }
-
-        return new Queue<Sprite>(list);
+        int index = Random.Range(0, data._hintSprites.Length);
+        return data._hintSprites[index];
     }
 }
