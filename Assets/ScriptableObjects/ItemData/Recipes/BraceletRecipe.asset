@@ -14,4 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Recipe_Data
   _recipeSprite:
   - {fileID: 21300000, guid: 0a68d0ce8222d60468a9d351b9367fcc, type: 3}
-  - {fileID: 21300000, guid: 5fa51a4ae042ec24090673580197816d, type: 3}
