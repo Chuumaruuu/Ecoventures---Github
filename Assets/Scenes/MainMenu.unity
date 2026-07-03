@@ -573,6 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb266bc08a7a49429f7a7cfc2614aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Intro_Animation
+  _videoCanvas: {fileID: 1144553900}
   _videoPlayer: {fileID: 1547178234}
 --- !u!95 &224598908
 Animator:
@@ -4519,7 +4520,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547178232}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d378ed0e505ba6d44bb9bad4f1800eb7, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 35c4769748fd30b40827385c0748fb51, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

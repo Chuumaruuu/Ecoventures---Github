@@ -3015,7 +3015,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 440905980}
   m_OnClick:
     m_PersistentCalls:
@@ -5617,7 +5617,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 742246591}
   m_OnClick:
     m_PersistentCalls:
@@ -7763,7 +7763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -9441,7 +9441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -13589,7 +13589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76014bc1a1530774086a520963e844de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer_UI
-  _timerMax: 90
+  _timerMax: 150
   timerImage: {fileID: 8754725214583508678}
   timerTxt: {fileID: 2767423169123838174}
   _sceneManager: {fileID: 0}
