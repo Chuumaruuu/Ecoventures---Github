@@ -1849,6 +1849,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (5)
@@ -7384,6 +7388,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (4)
@@ -7653,6 +7661,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (2)
@@ -7789,8 +7801,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -8700,6 +8714,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female
@@ -9655,6 +9673,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (1)
@@ -19855,6 +19877,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (1)
@@ -19991,8 +20017,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -27075,6 +27103,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (3)
@@ -39217,6 +39249,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fbab7e3297863747ae7c3ae07c547fb, type: 2}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (2)
@@ -45216,6 +45252,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female
@@ -45284,8 +45324,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
