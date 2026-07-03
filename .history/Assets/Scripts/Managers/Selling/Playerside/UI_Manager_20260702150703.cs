@@ -73,7 +73,6 @@ public class UI_Manager : MonoBehaviour
         SetActiveSafe(sellingUI, true);
         SetAllHintPanels(false);
         SetAllBoothPanels(false);
-        SetActiveSafe(continueButton, true);
         SetActiveSafe(rightAnswerUI, false);
         SetActiveSafe(wrongAnswerUI, false);
         SetActiveSafe(continuePanel, false);

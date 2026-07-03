@@ -19,7 +19,6 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject rightAnswerUI;
     [SerializeField] private GameObject wrongAnswerUI;
     [SerializeField] private GameObject continuePanel;
-    [SerializeField] private GameObject continueButton;
 
     private Image _activeCorrectAnswerImage;
 
@@ -39,7 +38,6 @@ public class UI_Manager : MonoBehaviour
         Time.timeScale = 1f;
         SetActiveSafe(exploreCamera, true);
         SetActiveSafe(exploreUI, true);
-        SetActiveSafe(continueButton, true);
         SetActiveSafe(sellingCamera, false);
         SetActiveSafe(sellingUI, false);
         SetAllHintPanels(false);
@@ -73,7 +71,6 @@ public class UI_Manager : MonoBehaviour
         SetActiveSafe(sellingUI, true);
         SetAllHintPanels(false);
         SetAllBoothPanels(false);
-        SetActiveSafe(continueButton, true);
         SetActiveSafe(rightAnswerUI, false);
         SetActiveSafe(wrongAnswerUI, false);
         SetActiveSafe(continuePanel, false);
@@ -89,7 +86,6 @@ public class UI_Manager : MonoBehaviour
         SetActiveSafe(rightAnswerUI, false);
         SetActiveSafe(wrongAnswerUI, false);
         SetActiveSafe(continuePanel, false);
-        SetActiveSafe(continueButton, false);
         SetActiveSafe(hintPanel, true);
     }
 
@@ -107,7 +103,6 @@ public class UI_Manager : MonoBehaviour
         SetActiveSafe(rightAnswerUI, false);
         SetActiveSafe(wrongAnswerUI, false);
         SetActiveSafe(continuePanel, false);
-        SetActiveSafe(continueButton, false);
     }
 
     public void CloseBooth()
@@ -131,7 +126,6 @@ public class UI_Manager : MonoBehaviour
     public void HideContinuePanel()
     {
         Time.timeScale = 1f;
-        SetActiveSafe(continueButton, true);
         SetActiveSafe(continuePanel, false);
     }
 
