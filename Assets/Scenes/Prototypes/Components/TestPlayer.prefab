@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd852f9d66b71d47a37f191bbdea258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Base
-  _moveSpeed: 9
+  _moveSpeed: 6.5
   _playerInput: {fileID: 5799857204710562091}
   _playerAudio: {fileID: 7659508476238047085}
   _countersLayerMask:

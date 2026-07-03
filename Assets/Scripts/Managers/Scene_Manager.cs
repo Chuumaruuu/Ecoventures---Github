@@ -39,6 +39,6 @@ public class Scene_Manager : MonoBehaviour
     public void OnFadeOutComplete()
     {
         SceneManager.LoadScene(_levelToLoad);
-    }
+    } 
 
 }
