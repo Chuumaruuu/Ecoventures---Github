@@ -546,7 +546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 137b3d367c6c49d4795859f4f11d6a15, type: 2}
+  m_Texture: {fileID: 8400000, guid: f70ebd29900a10d43ba1606aac4c1934, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -570,11 +570,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 224598903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cb266bc08a7a49429f7a7cfc2614aa1, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f0c1858e8db7c24dbd0f627abdd7c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Intro_Animation
-  _videoCanvas: {fileID: 1144553900}
-  _videoPlayer: {fileID: 1547178234}
+  _cutsceneCanvas: {fileID: 1144553900}
+  _cutsceneVideoPlayer: {fileID: 1547178234}
 --- !u!95 &224598908
 Animator:
   serializedVersion: 7
@@ -4524,7 +4524,7 @@ VideoPlayer:
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 137b3d367c6c49d4795859f4f11d6a15, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: f70ebd29900a10d43ba1606aac4c1934, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>

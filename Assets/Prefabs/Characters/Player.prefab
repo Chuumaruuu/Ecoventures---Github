@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd852f9d66b71d47a37f191bbdea258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Base
-  _moveSpeed: 9
+  _moveSpeed: 6.5
   _playerInput: {fileID: 1713354782993916070}
   _playerAudio: {fileID: 2362991363326508390}
   _countersLayerMask:
@@ -109,10 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3228d5bbdbc2ac74a86d31648dca6dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Audio
+  _playerInput: {fileID: 1713354782993916070}
   _footStepSFX: {fileID: 8300000, guid: 46454371d01ffa5458675dc5185796a6, type: 3}
   _pickUpSFX: {fileID: 8300000, guid: cae53763934a27549bbb03639e8209aa, type: 3}
   _dropSFX: {fileID: 8300000, guid: 79d6927001582d24dba03a00b79cbca8, type: 3}
-  _playerInput: {fileID: 1713354782993916070}
 --- !u!1001 &5647811202909562333
 PrefabInstance:
   m_ObjectHideFlags: 0
