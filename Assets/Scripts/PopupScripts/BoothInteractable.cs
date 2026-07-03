@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoothInteractable : MonoBehaviour, IInteractable
 {
@@ -6,6 +7,7 @@ public class BoothInteractable : MonoBehaviour, IInteractable
     [SerializeField] private BoothQuizPanel boothQuizPanel;
     [SerializeField] private Questions_Data questionData;
     [SerializeField] private Item_Data unlockableItemData;
+    [SerializeField] private Image unlockedItemImage;
 
     private bool isOpen;
 
@@ -85,6 +87,12 @@ public class BoothInteractable : MonoBehaviour, IInteractable
             Unlock_Manager.Instance.Unlock(unlockableItemData);
         }
 
+        if (unlockedItemImage != null && UI_Manager.Instance != null)
+        {
+            unlockedItemImage.gameObject.SetActive(true);
+            UI_Manager.Instance.RegisterCorrectAnswerImage(unlockedItemImage);
+        }
+
         isOpen = false;
 
         if (boothQuizPanel != null)
@@ -110,6 +118,11 @@ public class BoothInteractable : MonoBehaviour, IInteractable
         if (Unlock_Manager.Instance != null)
         {
             Unlock_Manager.Instance.Lock(unlockableItemData);
+        }
+
+        if (unlockedItemImage != null)
+        {
+            unlockedItemImage.gameObject.SetActive(false);
         }
 
         isOpen = false;
@@ -145,6 +158,11 @@ public class BoothInteractable : MonoBehaviour, IInteractable
         if (UI_Manager.Instance != null)
         {
             UI_Manager.Instance.CloseBooth();
+        }
+
+        if (unlockedItemImage != null)
+        {
+            unlockedItemImage.gameObject.SetActive(false);
         }
 
         isOpen = false;

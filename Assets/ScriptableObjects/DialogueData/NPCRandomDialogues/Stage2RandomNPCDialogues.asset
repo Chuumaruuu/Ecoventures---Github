@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57786e9d350d324f8c327c4237c5b79, type: 3}
+  m_Name: Stage2RandomNPCDialogues
+  m_EditorClassIdentifier: Assembly-CSharp::RandomNPCDialogue_Data
+  _stageID: 2
+  _randomDialogues:
+  - I'm late, I'm late, I'm late!!!
+  - What floor is the library?
+  - Wow! What a fun event!
+  - 'Recycled materials to products? '
+  - ZWIS? What's that?
+  - I heard this was recycled materials!
+  - This is so fun!
+  - I lost my wallet ~,~
+  - Wait, I know this one! It's ZWIS!
+  - The water from that stall is too expensive
