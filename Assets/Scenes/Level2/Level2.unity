@@ -301,7 +301,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -5594,6 +5596,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1303972591}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &172998010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2334466646560128165, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 1280397407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &237662373
 GameObject:
   m_ObjectHideFlags: 0
@@ -10842,6 +10855,7 @@ MonoBehaviour:
   rightAnswerUI: {fileID: 1088126800}
   wrongAnswerUI: {fileID: 570612354}
   continuePanel: {fileID: 1738172717}
+  continueButton: {fileID: 253756488}
 --- !u!4 &288609496
 Transform:
   m_ObjectHideFlags: 0
@@ -17623,7 +17637,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -18234,8 +18250,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -25022,6 +25040,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1000510738695718832, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000510738695718832, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9be29efd04f9b5c40a4b444ae172d857, type: 3}
     - target: {fileID: 1087178101216241283, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.64
@@ -26352,9 +26378,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoothInteractable
   boothPanelRoot: {fileID: 1280397411}
   boothQuizPanel: {fileID: 1280397412}
-  questionData: {fileID: 11400000, guid: 751928766f7336a4c9a0c90226f56c06, type: 2}
+  questionData: {fileID: 11400000, guid: 6e0603860f69939438c264dd650e3824, type: 2}
   unlockableItemData: {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
-  unlockedItemImage: {fileID: 0}
+  unlockedItemImage: {fileID: 172998010}
 --- !u!1 &1546468666
 GameObject:
   m_ObjectHideFlags: 0
@@ -32587,9 +32613,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoothInteractable
   boothPanelRoot: {fileID: 1280397411}
   boothQuizPanel: {fileID: 1280397412}
-  questionData: {fileID: 11400000, guid: 751928766f7336a4c9a0c90226f56c06, type: 2}
+  questionData: {fileID: 11400000, guid: 0178a21a5f2eaf146ad9bd382ae3967f, type: 2}
   unlockableItemData: {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
-  unlockedItemImage: {fileID: 0}
+  unlockedItemImage: {fileID: 172998010}
 --- !u!1 &1816210512
 GameObject:
   m_ObjectHideFlags: 0
@@ -33028,7 +33054,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
@@ -43479,9 +43507,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoothInteractable
   boothPanelRoot: {fileID: 1280397411}
   boothQuizPanel: {fileID: 1280397412}
-  questionData: {fileID: 11400000, guid: 751928766f7336a4c9a0c90226f56c06, type: 2}
+  questionData: {fileID: 11400000, guid: c2a76547e80412d4eb5b82771e9fcdea, type: 2}
   unlockableItemData: {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
-  unlockedItemImage: {fileID: 0}
+  unlockedItemImage: {fileID: 172998010}
 --- !u!1 &2121092950
 GameObject:
   m_ObjectHideFlags: 0
