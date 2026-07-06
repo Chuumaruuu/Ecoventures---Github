@@ -2668,7 +2668,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 5
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2718,7 +2718,6 @@ GameObject:
   - component: {fileID: 4663538118040487900}
   - component: {fileID: 6778911148287067641}
   - component: {fileID: 7788560909575528024}
-  - component: {fileID: 8417661897523191883}
   m_Layer: 5
   m_Name: SellingPhaseUI
   m_TagString: Untagged
@@ -2810,21 +2809,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8417661897523191883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2991499204292540104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e726fd86bdf2b1b48b24218b79f82e7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player_UI
-  _player: {fileID: 0}
-  _dropButton: {fileID: 0}
-  _pickupButton: {fileID: 0}
 --- !u!1 &3105903309600720707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,7 +5382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -583.99994, y: 269.73682}
+  m_AnchoredPosition: {x: -551, y: 309}
   m_SizeDelta: {x: 155.15, y: 155.1499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4912081069294348292
@@ -5772,6 +5756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513515889591289020}
+  - component: {fileID: 9024745084756754999}
   m_Layer: 5
   m_Name: Selling
   m_TagString: Untagged
@@ -5802,6 +5787,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &9024745084756754999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728920561626631842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8419a4f4a60294fa1a2720364a7a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyData_UI
+  _mainInventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+  _moneyText: {fileID: 449987923208465429}
 --- !u!1 &4789335622054480584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9229,15 +9228,15 @@ RectTransform:
   m_GameObject: {fileID: 8274358265286434754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0617017, y: 1.0617017, z: 1.0617017}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5453357174977929308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 173.05011, y: -290.14996}
-  m_SizeDelta: {x: 155.15, y: 155.1499}
+  m_AnchoredPosition: {x: 359, y: -96}
+  m_SizeDelta: {x: 102.3898, y: 102.3898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7069966270520023635
 CanvasRenderer:
@@ -9260,14 +9259,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee56b7769f8078542b4f93d537d6decd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 165bd2b9df2f44d46916fec76b4d5339, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
