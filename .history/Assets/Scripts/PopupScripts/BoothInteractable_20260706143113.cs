@@ -16,7 +16,6 @@ public class BoothInteractable : MonoBehaviour, IInteractable
         if (unlockableItemData.isUnlocked)
         {
             gameObject.SetActive(false);
-            return;
         }
     }
 

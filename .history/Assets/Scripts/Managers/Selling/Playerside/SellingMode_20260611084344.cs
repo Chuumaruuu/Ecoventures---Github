@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SellingModeIntera : MonoBehaviour, IInteractable
 {
+    [SerializeField] private GameObject sellingModeUI;
     private UI_Manager uiManager;
 
     private void OnTriggerEnter(Collider other)
@@ -42,7 +43,7 @@ public class SellingModeIntera : MonoBehaviour, IInteractable
             uiManager = FindFirstObjectByType<UI_Manager>();
         }
 
-        if (uiManager != null)
+        if (uiManager != null && sellingModeUI != null)
         {
             uiManager.EnterSellingMode();
         }

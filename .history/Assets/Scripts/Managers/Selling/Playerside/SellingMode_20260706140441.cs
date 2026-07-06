@@ -42,7 +42,7 @@ public class SellingModeIntera : MonoBehaviour, IInteractable
             uiManager = FindFirstObjectByType<UI_Manager>();
         }
 
-        if (uiManager != null)
+        if (uiManager != null && sellingModeUI != null)
         {
             uiManager.EnterSellingMode();
         }
