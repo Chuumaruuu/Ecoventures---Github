@@ -48,7 +48,7 @@ public class BoothQuizPanel : MonoBehaviour
 
         if (itemSpriteImage2 != null)
         {
-            itemSpriteImage2.sprite = currentUnlockableItem != null ? currentUnlockableItem._itemSprite : null;
+            itemSpriteImage2.sprite = currentUnlockableItem != null ? currentUnlockableItem._itemSprite2 : null;
             itemSpriteImage2.enabled = itemSpriteImage2.sprite != null;
         }
 
