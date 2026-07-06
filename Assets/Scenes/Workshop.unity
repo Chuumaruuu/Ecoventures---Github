@@ -2454,10 +2454,10 @@ RectTransform:
   - {fileID: 47774052}
   m_Father: {fileID: 6367664632893897805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -632, y: 358.73}
-  m_SizeDelta: {x: 140.18, y: 30.075}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 328, y: -128.26999}
+  m_SizeDelta: {x: 140.18, y: 30.075012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264271140
 MonoBehaviour:
@@ -3583,6 +3583,10 @@ PrefabInstance:
     - target: {fileID: 4968953924577431932, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
       propertyPath: m_Name
       value: Dialogue_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 4968953924577431932, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043216685236275367, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
       propertyPath: m_Sprite
@@ -13869,7 +13873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200.63, y: -96.002}
+  m_AnchoredPosition: {x: 200.63, y: -129}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &187319855729102102
