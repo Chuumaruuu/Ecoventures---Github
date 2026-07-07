@@ -134,10 +134,10 @@ public class CustomerOrder : MonoBehaviour
                 if (bubbleButton != null)
                     bubbleButton.SetCustomer(this);
             }
-            // else
-            // {
-            //     orderImageUI.gameObject.SetActive(false);
-            // }
+            else
+            {
+                orderImageUI.gameObject.SetActive(false);
+            }
         }
     }
 

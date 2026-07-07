@@ -85,9 +85,6 @@ public class CustomerOrder : MonoBehaviour
             OrderBubbleButton previousButton = orderImageUI.GetComponent<OrderBubbleButton>();
             if (previousButton != null)
                 previousButton.SetCustomer(null);
-
-            // Clear the previous order image
-            orderImageUI.gameObject.SetActive(false);
         }
 
         orderImageUI = image;
@@ -104,10 +101,6 @@ public class CustomerOrder : MonoBehaviour
             {
                 orderImageUI.sprite = requestedItem._itemSprite;
                 orderImageUI.gameObject.SetActive(true);
-            }
-            else
-            {
-                orderImageUI.gameObject.SetActive(false);
             }
         }
     }
@@ -134,10 +127,6 @@ public class CustomerOrder : MonoBehaviour
                 if (bubbleButton != null)
                     bubbleButton.SetCustomer(this);
             }
-            // else
-            // {
-            //     orderImageUI.gameObject.SetActive(false);
-            // }
         }
     }
 
