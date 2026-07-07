@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42f96f68719d0344a40bbf765bb8d95, type: 3}
+  m_Name: EcoVentured
+  m_EditorClassIdentifier: Assembly-CSharp::Achievement_Data
+  _achievementTitle: EcoVentured
+  _achievementImage: {fileID: 21300000, guid: 82111b5f87a664748825d72fce1a3474, type: 3}
