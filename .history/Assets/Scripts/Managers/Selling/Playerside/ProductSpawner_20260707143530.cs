@@ -50,11 +50,11 @@ public class ProductSpawner : MonoBehaviour
             if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null 
             || itemData.isUnlocked == false || countInInventory == 0)
             {
-                // Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
+                Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
                 Debug.Log("Spawn Point: " + (spawnPoint != null ? spawnPoint.name : "null"));
                 Debug.Log("Item Data: " + (itemData != null ? itemData.name : "null"));
                 Debug.Log("Count in Inventory: " + countInInventory);
-                continue;
+                return;
             }
 
             Debug.Log($"Spawning product: {itemData.name} at spawn point: {spawnPoint.name}");

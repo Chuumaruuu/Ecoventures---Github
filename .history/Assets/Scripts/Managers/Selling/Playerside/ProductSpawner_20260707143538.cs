@@ -54,7 +54,7 @@ public class ProductSpawner : MonoBehaviour
                 Debug.Log("Spawn Point: " + (spawnPoint != null ? spawnPoint.name : "null"));
                 Debug.Log("Item Data: " + (itemData != null ? itemData.name : "null"));
                 Debug.Log("Count in Inventory: " + countInInventory);
-                continue;
+                return;
             }
 
             Debug.Log($"Spawning product: {itemData.name} at spawn point: {spawnPoint.name}");
