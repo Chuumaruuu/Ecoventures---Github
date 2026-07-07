@@ -4,7 +4,6 @@ public class ProductSpawner : MonoBehaviour
 {
     [SerializeField] private GameProduct_Randomizer_Data _randomizerData;
     [SerializeField] private Transform[] _spawnPoints = new Transform[3];
-    [SerializeField] private GameInventory_Data _inventoryData;
 
     private void Start()
     {
@@ -25,6 +24,12 @@ public class ProductSpawner : MonoBehaviour
             return;
         }
 
+        if (_randomizerData.itemData.IsUnlocked == false)
+        {
+            Debug.LogWarning("ProductSpawner found that the main item is not unlocked.");
+            return;
+        }
+
         if (_spawnPoints == null || _spawnPoints.Length == 0)
         {
             Debug.LogWarning("ProductSpawner has no spawn points assigned.");
@@ -38,11 +43,8 @@ public class ProductSpawner : MonoBehaviour
             Transform spawnPoint = _spawnPoints[i];
             Item_Data itemData = _randomizerData._allowedItems[i];
 
-            if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null || itemData.isUnlocked == false || _inventoryData._finalProducts == null)
-            {
-                Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
-                return;
-            }
+            if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null || itemData.isUnlocked == false)
+                continue;
 
             Transform spawnedGroup = Instantiate(itemData._productGroupPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
             spawnedGroup.localPosition = Vector3.zero;

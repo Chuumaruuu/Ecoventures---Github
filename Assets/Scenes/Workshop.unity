@@ -731,11 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
---- !u!1 &202157405 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 327242730014726495, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
-  m_PrefabInstance: {fileID: 8108202632354098096}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &211670211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8046015364536867726, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
@@ -4488,8 +4483,6 @@ MonoBehaviour:
   - mainPage: {fileID: 744224416}
     recipeData: []
   - mainPage: {fileID: 859462919}
-    recipeData: []
-  - mainPage: {fileID: 202157405}
     recipeData: []
   _recipePage: {fileID: 1624295365}
   _mainPageToggles:
@@ -11033,12 +11026,48 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1384660154}
     - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1384660154}
     - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1384660154}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: setCurrentPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: setCurrentRecipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Guide_Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ded2e60caa50cf4a9a85d25c4554cad, type: 2}
+    - target: {fileID: 1218587648470161563, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Recipe_Data, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1745059017219172425, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11229,7 +11258,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1384660154}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 327242730014726495, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}

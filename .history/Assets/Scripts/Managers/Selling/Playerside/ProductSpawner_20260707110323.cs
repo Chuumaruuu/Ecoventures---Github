@@ -4,7 +4,6 @@ public class ProductSpawner : MonoBehaviour
 {
     [SerializeField] private GameProduct_Randomizer_Data _randomizerData;
     [SerializeField] private Transform[] _spawnPoints = new Transform[3];
-    [SerializeField] private GameInventory_Data _inventoryData;
 
     private void Start()
     {
@@ -38,7 +37,7 @@ public class ProductSpawner : MonoBehaviour
             Transform spawnPoint = _spawnPoints[i];
             Item_Data itemData = _randomizerData._allowedItems[i];
 
-            if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null || itemData.isUnlocked == false || _inventoryData._finalProducts == null)
+            if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null || itemData.isUnlocked == false)
             {
                 Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
                 return;
