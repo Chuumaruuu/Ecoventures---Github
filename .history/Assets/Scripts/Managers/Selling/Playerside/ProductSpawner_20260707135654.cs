@@ -1,22 +1,14 @@
 using UnityEngine;
-using System.Linq;
-using TMPro;
 
 public class ProductSpawner : MonoBehaviour
 {
     [SerializeField] private GameProduct_Randomizer_Data _randomizerData;
     [SerializeField] private Transform[] _spawnPoints = new Transform[3];
     [SerializeField] private GameInventory_Data _inventoryData;
-    [SerializeField] private TextMeshProUGUI[] _productCountTexts;
 
     private void Start()
     {
         SpawnProducts();
-    }
-
-    private void Update()
-    {
-        UpdateProductCountTexts();
     }
 
     public void SpawnProducts()
@@ -45,44 +37,17 @@ public class ProductSpawner : MonoBehaviour
         {
             Transform spawnPoint = _spawnPoints[i];
             Item_Data itemData = _randomizerData._allowedItems[i];
-            int countInInventory = _inventoryData._finalProducts.Count(item => item == itemData);
 
             if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null 
-            || itemData.isUnlocked == false || countInInventory == 0)
+            || itemData.isUnlocked == false || _inventoryData._finalProducts[i].Count == 0)
             {
-                // Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
-                Debug.Log("Spawn Point: " + (spawnPoint != null ? spawnPoint.name : "null"));
-                Debug.Log("Item Data: " + (itemData != null ? itemData.name : "null"));
-                Debug.Log("Count in Inventory: " + countInInventory);
-                continue;
+                Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
+                return;
             }
 
-            Debug.Log($"Spawning product: {itemData.name} at spawn point: {spawnPoint.name}");
             Transform spawnedGroup = Instantiate(itemData._productGroupPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
             spawnedGroup.localPosition = Vector3.zero;
             spawnedGroup.localRotation = Quaternion.identity;
-        }
-    }
-
-    private void UpdateProductCountTexts()
-    {
-        if (_productCountTexts == null || _productCountTexts.Length == 0)
-        {
-            Debug.LogWarning("ProductSpawner has no product count texts assigned.");
-            return;
-        }
-
-        for (int i = 0; i < _productCountTexts.Length; i++)
-        {
-            if (i >= _randomizerData._allowedItems.Count)
-            {
-                _productCountTexts[i].text = "0";
-                continue;
-            }
-
-            Item_Data itemData = _randomizerData._allowedItems[i];
-            int countInInventory = _inventoryData._finalProducts.Count(item => item == itemData);
-            _productCountTexts[i].text = countInInventory.ToString();
         }
     }
 }
