@@ -634,6 +634,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 5295000874224255823, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -702,6 +714,30 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male (1)
@@ -822,8 +858,12 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    - {fileID: 3415882029365561527, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    - {fileID: 6385171002213077436, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4973518636264852325, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
@@ -7019,6 +7059,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male (1)
@@ -7129,6 +7205,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male (4)
@@ -7408,6 +7520,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male (2)
@@ -7728,6 +7876,8 @@ PrefabInstance:
       objectReference: {fileID: 1724854155}
     m_RemovedComponents:
     - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    - {fileID: 3560833638529958193, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    - {fileID: 2250370234398196653, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
@@ -7757,7 +7907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &614784101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7902,7 +8052,7 @@ Transform:
   m_GameObject: {fileID: 614784100}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.9009635, z: 0.43389496, w: 0}
-  m_LocalPosition: {x: 0, y: 2.68, z: 4.77}
+  m_LocalPosition: {x: -1.56, y: 2.68, z: 7.834691}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8030,7 +8180,7 @@ Transform:
   m_GameObject: {fileID: 642129041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.9009635, z: 0.43389496, w: 0}
-  m_LocalPosition: {x: 0, y: 2.68, z: 4.77}
+  m_LocalPosition: {x: -1.56, y: 2.68, z: 9.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8044,6 +8194,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 5295000874224255823, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -8112,6 +8274,30 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male (2)
@@ -8224,8 +8410,12 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    - {fileID: 3415882029365561527, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    - {fileID: 6385171002213077436, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4973518636264852325, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
@@ -8242,6 +8432,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male (3)
@@ -19919,6 +20145,8 @@ PrefabInstance:
       objectReference: {fileID: 1724854155}
     m_RemovedComponents:
     - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    - {fileID: 3560833638529958193, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    - {fileID: 2250370234398196653, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
@@ -20249,6 +20477,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868657615}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male
@@ -25508,7 +25772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1323334192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38720,7 +38984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9084968695207033664, guid: 76a31293fc88ece41b460af9479a35d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 9084968695207033664, guid: 76a31293fc88ece41b460af9479a35d5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38728,7 +38992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9084968695207033664, guid: 76a31293fc88ece41b460af9479a35d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.66
+      value: 6.8
       objectReference: {fileID: 0}
     - target: {fileID: 9084968695207033664, guid: 76a31293fc88ece41b460af9479a35d5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38809,8 +39073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56cddc8eb453b0f41abfbf57323516d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Input
---- !u!65 &2018845165
-BoxCollider:
+--- !u!136 &2018845165
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -38827,9 +39091,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 2.57335, z: 1}
-  m_Center: {x: 0, y: 0.786675, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 3.12
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.74, z: 0}
 --- !u!1001 &2032062338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45013,6 +45279,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1724854155}
     - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+      propertyPath: dialoguePanelRoot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: randomNPCDialogueData
       value: 
       objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
@@ -45084,7 +45358,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3560833638529958193, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    - {fileID: 2250370234398196653, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
+    - {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6658017126734644976, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
     m_AddedGameObjects: []
@@ -45103,6 +45380,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 571731311}
     m_Modifications:
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 973427894682739736, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3377617428790073522, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: roamPoints.Array.data[0].point
       value: 
@@ -45155,6 +45440,10 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[8].vendorLookTarget
       value: 
       objectReference: {fileID: 1724854155}
+    - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: randomNPCDialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
     - target: {fileID: 5532572466630200205, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: moveSpeed
       value: 3
@@ -45243,6 +45532,30 @@ PrefabInstance:
       propertyPath: roamPoints.Array.data[12].vendorLookTarget
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386970100047200926, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_Name
       value: NPC Male
@@ -45287,8 +45600,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    - {fileID: 3415882029365561527, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    - {fileID: 6385171002213077436, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4973518636264852325, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
@@ -45305,6 +45622,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 288216279735354022, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 458325909289084881, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -45413,6 +45734,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1749659647}
+    - target: {fileID: 4728920561626631842, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5600079536243846524, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -45429,6 +45754,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1749659647}
+    - target: {fileID: 8274358265286434754, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8525856243658375139, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
