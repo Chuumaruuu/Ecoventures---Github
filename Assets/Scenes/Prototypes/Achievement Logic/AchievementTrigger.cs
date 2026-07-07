@@ -1,39 +1,30 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AchievementTrigger : MonoBehaviour
+public class Achievement_Manager : MonoBehaviour
 {
-    [SerializeField] private Image achievementImage;
+    [SerializeField] private List<Achievement_Data> _achievementsList;
+    [SerializeField] private Image _achievementBoxImage;
+    [SerializeField] private Animator _achievementBoxAnimator;
 
-    void Start()
+    public void ShowAchievement(Achievement_Data _achievement)
     {
-        if (achievementImage != null)
-        {
-            achievementImage.color = new Color(0f, 0f, 0f, achievementImage.color.a);
-        }
+        _achievementBoxImage.sprite = _achievement._achievementImage;
+        _achievementBoxAnimator.SetTrigger("PopUp");
     }
 
-    private void OnTriggerEnter(Collider other)
+    public Achievement_Data GetAchievement(string _title)
     {
-        if (other.CompareTag("Player"))
+        foreach (Achievement_Data i in _achievementsList)
         {
-            SetImageColorToWhite();
+            if (_title == i.GetTitle())
+            {
+                return i;
+            }
         }
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SetImageColorToWhite();
-        }
-    }
-
-    private void SetImageColorToWhite()
-    {
-        if (achievementImage != null)
-        {
-            achievementImage.color = new Color(1f, 1f, 1f, achievementImage.color.a);
-        }
+        Debug.LogError("Achievement with name " + _title + " does not exist");
+        return null;
     }
 }

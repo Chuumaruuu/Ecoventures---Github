@@ -175,6 +175,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate_Icon
       objectReference: {fileID: 0}
+    - target: {fileID: -2441426214558973957, guid: 9fd54e0cb04ab9e4db855d6dc66dad09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.6027145
+      objectReference: {fileID: 0}
+    - target: {fileID: -2441426214558973957, guid: 9fd54e0cb04ab9e4db855d6dc66dad09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.210536
+      objectReference: {fileID: 0}
+    - target: {fileID: -2441426214558973957, guid: 9fd54e0cb04ab9e4db855d6dc66dad09, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.6027145
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9fd54e0cb04ab9e4db855d6dc66dad09, type: 3}
       propertyPath: m_Name
       value: Workshop - Container
