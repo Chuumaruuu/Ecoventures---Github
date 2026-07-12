@@ -20,6 +20,35 @@ public class BoothInteractable : MonoBehaviour, IInteractable
         }
     }
 
+    private void OnEnable()
+    {
+        if (Unlock_Manager.Instance != null)
+        {
+            Unlock_Manager.Instance.OnUnlockStateChanged += HandleUnlockStateChanged;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (Unlock_Manager.Instance != null)
+        {
+            Unlock_Manager.Instance.OnUnlockStateChanged -= HandleUnlockStateChanged;
+        }
+    }
+
+    // Fires once GameTracker's objectives are met and a previously-pending
+    // correct answer finally unlocks. Lets the booth catch up even if the
+    // player has already walked away and re-entered explore mode.
+    private void HandleUnlockStateChanged(Item_Data item, bool unlocked)
+    {
+        if (item != unlockableItemData || !unlocked)
+        {
+            return;
+        }
+
+        FinalizeUnlockedVisuals();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player"))
@@ -91,17 +120,6 @@ public class BoothInteractable : MonoBehaviour, IInteractable
             UI_Manager.Instance.ShowBoothResult(true);
         }
 
-        if (Unlock_Manager.Instance != null)
-        {
-            Unlock_Manager.Instance.Unlock(unlockableItemData);
-        }
-
-        if (unlockedItemImage != null && UI_Manager.Instance != null)
-        {
-            unlockedItemImage.gameObject.SetActive(true);
-            UI_Manager.Instance.RegisterCorrectAnswerImage(unlockedItemImage);
-        }
-
         isOpen = false;
 
         if (boothQuizPanel != null)
@@ -114,7 +132,38 @@ public class BoothInteractable : MonoBehaviour, IInteractable
             boothPanelRoot.SetActive(false);
         }
 
+        if (Unlock_Manager.Instance != null)
+        {
+            // Answering correctly is necessary but no longer sufficient.
+            // RequestUnlock only grants the item immediately if GameTracker's
+            // objectives (e.g. the sales goal) are already met; otherwise it
+            // queues the item and HandleUnlockStateChanged will finish the
+            // job later, once the objective is completed.
+            Unlock_Manager.Instance.RequestUnlock(unlockableItemData);
+
+            if (Unlock_Manager.Instance.IsUnlocked(unlockableItemData))
+            {
+                FinalizeUnlockedVisuals();
+                return;
+            }
+        }
         gameObject.SetActive(false);
+
+        // Objective not met yet: correct answer is registered, item stays
+        // locked, and the booth remains active so the player can come back
+        // (or the unlock will resolve automatically via the event above).
+        Debug.Log(unlockableItemData != null
+            ? unlockableItemData.name + " answered correctly, but is pending until sales objective is met."
+            : "Booth answered correctly, but is pending until sales objective is met.");
+    }
+
+    private void FinalizeUnlockedVisuals()
+    {
+        if (unlockedItemImage != null && UI_Manager.Instance != null)
+        {
+            unlockedItemImage.gameObject.SetActive(true);
+            UI_Manager.Instance.RegisterCorrectAnswerImage(unlockedItemImage);
+        }
     }
 
     public void WrongAnswer()
