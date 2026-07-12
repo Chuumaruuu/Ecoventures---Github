@@ -44,4 +44,16 @@ public class Tutorial_Progress : ScriptableObject
     {
         return false; //to be implemented
     }
+
+    public void SetTutorialDialoguesFalse()
+    {
+        _workshopTutorialDone=  
+        _moveTutorialDone= 
+        _grabTutorialDone= 
+        _moneyTutorialDone= 
+        _guidebookTutorialDone= 
+        _interactTutorialDone= 
+        
+        false;
+    }
 }
