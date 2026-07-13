@@ -45,7 +45,7 @@ public class Tutorial_Progress : ScriptableObject
         return false; //to be implemented
     }
 
-    public void SetTutorialDialoguesFalse()
+    public void Reset()
     {
         _workshopTutorialDone=  
         _moveTutorialDone= 
