@@ -17,7 +17,7 @@ public class Dialogue_Manager : MonoBehaviour
     
     public void StartDialogue(Dialogue_Data _dialogueData)
     {
-        Dialogue_UI.Instance.OpenDialogue(_dialogueData);
+        Dialogue_UI.Instance.SetDialogue(_dialogueData);
     }
 }
 

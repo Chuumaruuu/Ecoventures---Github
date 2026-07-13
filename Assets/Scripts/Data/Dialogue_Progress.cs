@@ -8,4 +8,14 @@ public class Dialogue_Progress : ScriptableObject
     // public bool _basicTutorialDone;
     public bool _mapIntroDone;
     public bool _level1IntroDone;
+
+    public void Reset()
+    {
+        _workshopIntroDone = 
+        _mapIntroDone =
+        _level1IntroDone = 
+        
+        
+        false;
+    }
 }

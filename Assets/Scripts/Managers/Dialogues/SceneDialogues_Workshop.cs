@@ -18,8 +18,6 @@ public class SceneDialogues_Workshop : MonoBehaviour
     private const string TUTORIAL_SUBMIT = "SubmitTutorial";
 
 
-    
-
 
     private void Awake()
     {
@@ -28,7 +26,6 @@ public class SceneDialogues_Workshop : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
     }
 
@@ -40,6 +37,12 @@ public class SceneDialogues_Workshop : MonoBehaviour
         Player_Base.Instance.OnPlayerGrabbedObject += MoneyTutorial;
         Player_Base.Instance.OnObjectDrop += InteractTutorial;
         //submit
+
+
+        if (!Game_Manager.Instance.DebugModeOn())
+        {
+            ResetDialogues();
+        }
     }
 
     private void IntroDialogue() // trigger WorkshopIntro dialogue when this is the first time loading this scene
@@ -144,4 +147,9 @@ public class SceneDialogues_Workshop : MonoBehaviour
         Dialogue_Manager.Instance.StartDialogue(dialogue_Data);
     }
 
+    private void ResetDialogues()
+    {
+        _dialogueProgress.Reset();
+        _tutorialProgress.Reset();
+    }
 }

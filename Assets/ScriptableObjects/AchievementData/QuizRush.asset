@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42f96f68719d0344a40bbf765bb8d95, type: 3}
   m_Name: QuizRush
   m_EditorClassIdentifier: Assembly-CSharp::Achievement_Data
-  _achievementTitle: 
-  _achievementImage: {fileID: 0}
+  _achievementTitle: QuizRush
+  _achievementImage: {fileID: 21300000, guid: 6983d43e4cb1d144aaf639ac548a7020, type: 3}
