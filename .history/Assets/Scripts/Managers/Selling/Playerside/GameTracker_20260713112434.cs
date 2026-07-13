@@ -6,7 +6,7 @@ using TMPro;
 public class GameTracker : MonoBehaviour
 {
     public static GameTracker Instance;
-    public InventoryManager inventoryManager;
+    public InventoryManager inventory;
     private Item_Data selectedProduct;
     public int totalSales = 0;
 
@@ -34,34 +34,27 @@ public class GameTracker : MonoBehaviour
     {
         UpdateTaskUI();
         UpdateMoneyUI();
-        inventoryManager = InventoryManager.Instance;
     }
 
     public void RegisterSale(Item_Data item)
     {
-        if (inventoryManager == null)
-        {
-            Debug.LogWarning("GameTracker has no InventoryManager assigned");
-            return;
-        }
-        
-        if (inventoryManager.gameInventoryData == null)
+        if (inventory == null)
         {
             Debug.LogWarning("GameTracker has no inventory assigned");
             return;
         }
 
-        if (inventoryManager.gameInventoryData._finalProducts == null)
+        if (inventory._finalProducts == null)
         {
             Debug.LogWarning("Inventory items list is null");
             return;
         }
 
-        if (inventoryManager.gameInventoryData._finalProducts.Contains(item))
+        if (inventory.gameInventoryData._finalProducts.Contains(item))
         {
-            inventoryManager.gameInventoryData._finalProducts.Remove(item);
+            inventory.gameInventoryData._finalProducts.Remove(item);
             totalSales++;
-            inventoryManager.gameInventoryData.AddMoney(Mathf.Max(0, item.sellprice));
+            inventory.AddMoney(Mathf.Max(0, item.sellprice));
 
             UpdateTaskUI();
             UpdateMoneyUI();
@@ -131,7 +124,7 @@ public class GameTracker : MonoBehaviour
         if (moneyText == null)
             return;
 
-        int playerMoney = inventoryManager != null ? inventoryManager.gameInventoryData._playerMoney : 0;
+        int playerMoney = inventory != null ? inventory.gameInventoryDatas._playerMoney : 0;
         moneyText.text = playerMoney.ToString("N0");
     }
 }

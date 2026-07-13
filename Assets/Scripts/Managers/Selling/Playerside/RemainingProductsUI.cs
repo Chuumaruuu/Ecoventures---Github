@@ -1,10 +1,15 @@
 using UnityEngine;
 using TMPro;
 
-public class ProductManager : MonoBehaviour
+public class RemainingProductsUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] NumberOfProductsText;
-    [SerializeField] private GameInventory_Data gameInventoryData;
+    private InventoryManager _inventoryManager;
+
+    private void Awake()
+    {
+        _inventoryManager = InventoryManager.Instance;
+    }
 
     private void Update()
     {
@@ -13,12 +18,12 @@ public class ProductManager : MonoBehaviour
 
     private void UpdateProductCountUI()
     {
-        if (NumberOfProductsText == null || gameInventoryData == null)
+        if (NumberOfProductsText == null || _inventoryManager.gameInventoryData == null)
         {
             return;
         }
 
-        int productCount = gameInventoryData._finalProducts.Count;
+        int productCount = _inventoryManager.gameInventoryData._finalProducts.Count;
 
         foreach (var text in NumberOfProductsText)
         {

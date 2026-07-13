@@ -7,10 +7,6 @@ public class ProductSpawner : MonoBehaviour
     [SerializeField] private Transform[] _spawnPoints = new Transform[3];
     private InventoryManager _inventoryManager;
 
-    private void Awake()
-    {
-        _inventoryManager = InventoryManager.Instance;
-    }
     private void Start()
     {
         SpawnProducts();
@@ -42,15 +38,15 @@ public class ProductSpawner : MonoBehaviour
         {
             Transform spawnPoint = _spawnPoints[i];
             Item_Data itemData = _inventoryManager.randomizerData._allowedItems[i];
-            // int countInInventory = _inventoryManager.gameInventoryData._finalProducts.Count(item => item == itemData);
+            int countInInventory = _inventoryData._finalProducts.Count(item => item == itemData);
 
             if (spawnPoint == null || itemData == null || itemData._productGroupPrefab == null 
-            || itemData.isUnlocked == false)
+            || itemData.isUnlocked == false || countInInventory == 0)
             {
                 // Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
                 Debug.Log("Spawn Point: " + (spawnPoint != null ? spawnPoint.name : "null"));
                 Debug.Log("Item Data: " + (itemData != null ? itemData.name : "null"));
-                // Debug.Log("Count in Inventory: " + countInInventory);
+                Debug.Log("Count in Inventory: " + countInInventory);
                 continue;
             }
 

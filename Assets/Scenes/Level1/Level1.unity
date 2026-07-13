@@ -25490,7 +25490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73402fa6c52a9a47ab190543853e6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTracker
-  inventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+  inventoryManager: {fileID: 0}
   totalSales: 0
   salesGoal: 10
   tasksText: {fileID: 1676225701}
@@ -25654,6 +25654,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 210331293}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1432176015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432176016}
+  - component: {fileID: 1432176017}
+  m_Layer: 0
+  m_Name: Inventory_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432176016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432176015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2018660048}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1432176017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432176015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a804e0b858db094c9f0a96473bf1d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
+  gameInventoryData: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+  randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
 --- !u!1 &1436628832
 GameObject:
   m_ObjectHideFlags: 0
@@ -26290,6 +26336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575607793}
   - component: {fileID: 1575607794}
+  - component: {fileID: 1575607795}
   m_Layer: 0
   m_Name: Product_Manager
   m_TagString: Untagged
@@ -26324,16 +26371,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71041cbb4a25c184fb11f54ecfe92394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProductSpawner
-  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
   _spawnPoints:
   - {fileID: 1963601096}
   - {fileID: 1963601095}
   - {fileID: 1963601094}
-  _inventoryData: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
-  _productCountTexts:
-  - {fileID: 1933169854}
-  - {fileID: 1910630967}
+--- !u!114 &1575607795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575607792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9befded53f7b42b448bfd620043eb01d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemainingProductsUI
+  NumberOfProductsText:
   - {fileID: 592535094}
+  - {fileID: 1910630967}
+  - {fileID: 1933169854}
 --- !u!1 &1587191759
 GameObject:
   m_ObjectHideFlags: 0
@@ -38233,6 +38290,7 @@ Transform:
   - {fileID: 1749659648}
   - {fileID: 1736902537}
   - {fileID: 1575607793}
+  - {fileID: 1432176016}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2018845160
@@ -48002,6 +48060,22 @@ PrefabInstance:
       value: Game_Manager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 136.9851
       objectReference: {fileID: 0}
@@ -48011,11 +48085,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 752
+      value: 702
       objectReference: {fileID: 0}
     - target: {fileID: 5893166197152170368, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 183
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 7055624238018352880, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

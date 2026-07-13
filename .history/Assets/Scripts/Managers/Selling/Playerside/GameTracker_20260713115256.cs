@@ -26,6 +26,8 @@ public class GameTracker : MonoBehaviour
 
     private void Awake()
     {
+        inventory = InventoryManager.Instance;
+        
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
@@ -34,34 +36,27 @@ public class GameTracker : MonoBehaviour
     {
         UpdateTaskUI();
         UpdateMoneyUI();
-        inventoryManager = InventoryManager.Instance;
     }
 
     public void RegisterSale(Item_Data item)
     {
-        if (inventoryManager == null)
-        {
-            Debug.LogWarning("GameTracker has no InventoryManager assigned");
-            return;
-        }
-        
-        if (inventoryManager.gameInventoryData == null)
+        if (inventory.gameInventoryData == null)
         {
             Debug.LogWarning("GameTracker has no inventory assigned");
             return;
         }
 
-        if (inventoryManager.gameInventoryData._finalProducts == null)
+        if (inventory.gameInventoryData._finalProducts == null)
         {
             Debug.LogWarning("Inventory items list is null");
             return;
         }
 
-        if (inventoryManager.gameInventoryData._finalProducts.Contains(item))
+        if (inventory.gameInventoryData._finalProducts.Contains(item))
         {
-            inventoryManager.gameInventoryData._finalProducts.Remove(item);
+            inventory.gameInventoryData._finalProducts.Remove(item);
             totalSales++;
-            inventoryManager.gameInventoryData.AddMoney(Mathf.Max(0, item.sellprice));
+            inventory.gameInventoryData.AddMoney(Mathf.Max(0, item.sellprice));
 
             UpdateTaskUI();
             UpdateMoneyUI();
@@ -131,7 +126,7 @@ public class GameTracker : MonoBehaviour
         if (moneyText == null)
             return;
 
-        int playerMoney = inventoryManager != null ? inventoryManager.gameInventoryData._playerMoney : 0;
+        int playerMoney = inventory != null ? inventory.gameInventoryData._playerMoney : 0;
         moneyText.text = playerMoney.ToString("N0");
     }
 }

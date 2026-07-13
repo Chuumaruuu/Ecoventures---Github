@@ -5,12 +5,8 @@ using TMPro;
 public class ProductSpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] _spawnPoints = new Transform[3];
-    private InventoryManager _inventoryManager;
+    private InventoryManager _inventoryManager = InventoryManager.Instance;
 
-    private void Awake()
-    {
-        _inventoryManager = InventoryManager.Instance;
-    }
     private void Start()
     {
         SpawnProducts();

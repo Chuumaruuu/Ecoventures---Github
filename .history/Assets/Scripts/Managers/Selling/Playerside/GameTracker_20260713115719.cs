@@ -26,6 +26,8 @@ public class GameTracker : MonoBehaviour
 
     private void Awake()
     {
+        inventoryManager = InventoryManager.Instance;
+        
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
@@ -34,7 +36,6 @@ public class GameTracker : MonoBehaviour
     {
         UpdateTaskUI();
         UpdateMoneyUI();
-        inventoryManager = InventoryManager.Instance;
     }
 
     public void RegisterSale(Item_Data item)
