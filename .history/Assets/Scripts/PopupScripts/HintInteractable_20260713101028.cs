@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class HintInteractable : MonoBehaviour, IInteractable
@@ -7,19 +8,32 @@ public class HintInteractable : MonoBehaviour, IInteractable
     [SerializeField] private Hints_Data hintData;
 
     private bool isOpen;
+    private Sprite selectedHintSprite;
+
+    private static readonly Dictionary<Hints_Data, Queue<Sprite>> shuffledSpritePools = new Dictionary<Hints_Data, Queue<Sprite>>();
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetPools()
+    {
+        // Ensures pools don't carry over stale state between play sessions
+        // when domain reload is disabled in the editor.
+        shuffledSpritePools.Clear();
+    }
+
+    private void Awake()
+    {
+        selectedHintSprite = GetNextSprite(hintData);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Player entered hint trigger.");
         if (!other.CompareTag("Player"))
         {
-            Debug.Log("Player outside hint trigger.");
             return;
         }
 
         if (Interaction_Manager.Instance != null)
         {
-            Debug.Log("Setting current interactable to hint object " + gameObject.name);
             Interaction_Manager.Instance.SetCurrentInteractable(this);
         }
     }
@@ -28,7 +42,6 @@ public class HintInteractable : MonoBehaviour, IInteractable
     {
         if (!other.CompareTag("Player"))
         {
-            Debug.Log("Player has not exited hint trigger.");
             return;
         }
 
@@ -36,14 +49,12 @@ public class HintInteractable : MonoBehaviour, IInteractable
 
         if (Interaction_Manager.Instance != null)
         {
-            Debug.Log("Clearing current interactable from hint.");
             Interaction_Manager.Instance.ClearCurrentInteractable(this);
         }
     }
 
     public void Interact(Interaction_Manager interactionManager)
     {
-        Debug.Log("Player interacted with hint.");
         InteractAlternate(interactionManager);
     }
 
@@ -51,36 +62,30 @@ public class HintInteractable : MonoBehaviour, IInteractable
     {
         if (isOpen || UI_Manager.Instance == null)
         {
-            Debug.Log("Hint is already open or UI_Manager instance is missing.");
             return;
         }
 
         if (hintDisplayPanel != null)
         {
-            Debug.Log("Setting up hint display panel with hint data.");
-            hintDisplayPanel.Setup(hintData);
+            hintDisplayPanel.Setup(selectedHintSprite);
         }
 
         GameObject targetPanel = ResolveHintPanel();
         if (targetPanel == null)
         {
-            Debug.Log("No valid hint panel found to open.");
             return;
         }
 
-        Debug.Log("Opening hint panel.");
         UI_Manager.Instance.OpenHint(targetPanel);
         isOpen = true;
     }
 
     public void OnFocusEnter(Interaction_Manager interactionManager)
     {
-        Debug.Log("Player focused on hint.");
     }
 
     public void OnFocusExit(Interaction_Manager interactionManager)
     {
-        Debug.Log("Player lost focus from hint.");
         CloseHint();
     }
 
@@ -88,17 +93,14 @@ public class HintInteractable : MonoBehaviour, IInteractable
     {
         if (!isOpen)
         {
-            Debug.Log("Hint is not open, no need to close.");
             return;
         }
 
         if (UI_Manager.Instance != null)
         {
-            Debug.Log("Closing hint panel.");
-            UI_Manager.Instance.CloseHint();
+            UI_Manager.Instance.EnterExploreMode();
         }
 
-        Debug.Log("Hint closed.");
         isOpen = false;
     }
 
@@ -106,17 +108,44 @@ public class HintInteractable : MonoBehaviour, IInteractable
     {
         if (hintPanelRoot != null)
         {
-            Debug.Log("Using hint panel root as target panel.");
             return hintPanelRoot;
         }
 
         if (hintDisplayPanel != null)
         {
-            Debug.Log("Using hint display panel as target panel.");
             return hintDisplayPanel.gameObject;
         }
 
-        Debug.LogWarning("No hint panel root or display panel assigned for hint interactable.");
         return null;
+    }
+
+    private static Sprite GetNextSprite(Hints_Data data)
+    {
+        if (data == null || data._hintSprites == null || data._hintSprites.Length == 0)
+        {
+            return null;
+        }
+
+        if (!shuffledSpritePools.TryGetValue(data, out Queue<Sprite> pool) || pool.Count == 0)
+        {
+            pool = BuildShuffledQueue(data._hintSprites);
+            shuffledSpritePools[data] = pool;
+        }
+
+        return pool.Dequeue();
+    }
+
+    private static Queue<Sprite> BuildShuffledQueue(Sprite[] sprites)
+    {
+        List<Sprite> list = new List<Sprite>(sprites);
+
+        // Fisher-Yates shuffle
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            (list[i], list[j]) = (list[j], list[i]);
+        }
+
+        return new Queue<Sprite>(list);
     }
 }

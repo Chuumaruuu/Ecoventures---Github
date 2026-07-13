@@ -98,7 +98,7 @@ public class HintInteractable : MonoBehaviour, IInteractable
 
         if (UI_Manager.Instance != null)
         {
-            UI_Manager.Instance.CloseHint();
+            UI_Manager.Instance.EnterExploreMode();
         }
 
         isOpen = false;

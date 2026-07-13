@@ -24,6 +24,7 @@ public class UI_Manager : MonoBehaviour
     [Header("Pause Menu")]
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject MainMenu;
+    [SerializeField] private GameObject PauseBtn;
 
     private Image _activeCorrectAnswerImage;
 
@@ -143,6 +144,7 @@ public class UI_Manager : MonoBehaviour
     private void ShowPauseMenu()
     {
         Game_Manager.Instance.PauseGame();
+        SetActiveSafe(PauseBtn, false);
         SetActiveSafe(pauseMenu, true);
         SetActiveSafe(MainMenu, false);
     }
@@ -150,6 +152,7 @@ public class UI_Manager : MonoBehaviour
     private void HidePauseMenu()
     {
         Game_Manager.Instance.ResumeGame();
+        SetActiveSafe(PauseBtn, true);
         SetActiveSafe(pauseMenu, false);
         SetActiveSafe(MainMenu, true);
     }

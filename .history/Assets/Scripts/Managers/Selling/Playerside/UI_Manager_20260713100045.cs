@@ -21,10 +21,6 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject continuePanel;
     [SerializeField] private GameObject continueButton;
 
-    [Header("Pause Menu")]
-    [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private GameObject MainMenu;
-
     private Image _activeCorrectAnswerImage;
 
     private void Awake()
@@ -138,20 +134,6 @@ public class UI_Manager : MonoBehaviour
     private void SetAllBoothPanels(bool isActive)
     {
         SetActiveSafe(boothPanels, isActive);
-    }
-
-    private void ShowPauseMenu()
-    {
-        Game_Manager.Instance.PauseGame();
-        SetActiveSafe(pauseMenu, true);
-        SetActiveSafe(MainMenu, false);
-    }
-
-    private void HidePauseMenu()
-    {
-        Game_Manager.Instance.ResumeGame();
-        SetActiveSafe(pauseMenu, false);
-        SetActiveSafe(MainMenu, true);
     }
 
     private static void SetActiveSafe(GameObject target, bool isActive)
