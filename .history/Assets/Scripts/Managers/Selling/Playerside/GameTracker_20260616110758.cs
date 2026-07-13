@@ -1,4 +1,3 @@
-using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
@@ -9,13 +8,6 @@ public class GameTracker : MonoBehaviour
     public GameInventory_Data inventory;
     private Item_Data selectedProduct;
     public int totalSales = 0;
-
-    // Fired exactly once, the moment the sales objective is reached.
-    // Unlock_Manager listens to this so any product that "passed" its quiz
-    // while the objective was still incomplete can finally unlock.
-    public event Action OnObjectivesCompleted;
-
-    private bool objectivesCompleted = false;
 
     [Header("Task")]
     [SerializeField] private int salesGoal = 10;
@@ -58,7 +50,6 @@ public class GameTracker : MonoBehaviour
 
             UpdateTaskUI();
             UpdateMoneyUI();
-            CheckObjectiveCompletion();
 
             Debug.Log("Sold: " + item.name + " | Total Sales: " + totalSales);
         }
@@ -66,24 +57,6 @@ public class GameTracker : MonoBehaviour
         {
             Debug.LogWarning("Item not available in inventory!");
         }
-    }
-
-    // True once every current objective (right now: the sales goal) is satisfied.
-    // Add more conditions here (&&) as more objective types get introduced.
-    public bool AreObjectivesMet()
-    {
-        return totalSales >= salesGoal;
-    }
-
-    private void CheckObjectiveCompletion()
-    {
-        if (objectivesCompleted || !AreObjectivesMet())
-        {
-            return;
-        }
-
-        objectivesCompleted = true;
-        OnObjectivesCompleted?.Invoke();
     }
 
     public void SetSelectedProduct(Item_Data item)
