@@ -6,13 +6,18 @@ using UnityEngine.UI;
 public class Dialogue_UI : MonoBehaviour
 {
     public static Dialogue_UI Instance { get; private set; }
+
     public event Action OnDialogueEnd;
     
+
     private Animator _dialogueBoxAnimator;
-    public Image _actorAvatar;
-    public TextMeshProUGUI _actorName;
-    public TextMeshProUGUI _messageText;
-    public GameObject[] _otherUI;
+
+    [SerializeField] private GameObject _dialogueBoxUI;
+    [SerializeField] private GameObject[] _mainUI;
+
+    [SerializeField] private Image _actorAvatar;
+    [SerializeField] private TextMeshProUGUI _actorName;
+    [SerializeField] private TextMeshProUGUI _messageText;
 
     private Dialogue[] _currentMessageArray;
     private Actor[] _currentActorArray;
@@ -34,7 +39,7 @@ public class Dialogue_UI : MonoBehaviour
         _dialogueBoxAnimator = GetComponent<Animator>();
     }
 
-    public void OpenDialogue(Dialogue_Data _dialogueData)
+    public void SetDialogue(Dialogue_Data _dialogueData)
     {
         _currentMessageArray = _dialogueData._messages;
         _currentActorArray = _dialogueData._actors;
@@ -43,21 +48,22 @@ public class Dialogue_UI : MonoBehaviour
         _messageText.text = "";
         _actorName.text = "";
         _actorAvatar.color = new Color(0,0,0,0);
-        foreach (GameObject i in _otherUI)
+        foreach (GameObject i in _mainUI)
         {
             i.SetActive(false);
         }
 
         Debug.Log("Starting Conversation: " + _dialogueData);
-        _dialogueBoxAnimator.SetBool("Active", true);
-
-        
+        DisplayMessage();
+        _dialogueBoxUI.SetActive(true);
     }
 
     public void DisplayMessage()
     {
-        Time.timeScale = 0; //pause
-        _actorAvatar.color = new Color(255,255,255,255);
+        Game_Manager.Instance.PauseGame();//pause
+
+        _actorAvatar.color = new Color(255,255,255,255); 
+
         Dialogue _messageToDisplay = _currentMessageArray[_activeMessage];
         Actor _actorToDisplay = _currentActorArray[_messageToDisplay._actorID];
 
@@ -73,11 +79,13 @@ public class Dialogue_UI : MonoBehaviour
         {
             DisplayMessage();
         }
+
         else
         {
-            Time.timeScale = 1;
-            _dialogueBoxAnimator.SetBool("Active", false);
-            foreach (GameObject i in _otherUI)
+            Game_Manager.Instance.ResumeGame();
+            _dialogueBoxAnimator.SetTrigger("Active");
+            
+            foreach (GameObject i in _mainUI)
             {
                 i.SetActive(true);
             }
@@ -86,6 +94,7 @@ public class Dialogue_UI : MonoBehaviour
 
     public void EndDialogue()
     {
+        _dialogueBoxUI.SetActive(false);
         OnDialogueEnd?.Invoke();
     }
 }

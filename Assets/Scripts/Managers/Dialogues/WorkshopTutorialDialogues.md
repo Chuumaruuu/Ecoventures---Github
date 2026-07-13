@@ -14,4 +14,8 @@ Tammy: This is where you find all your recipes. Click on level 1. [focus on leve
 [focus on money ui] Tammy: see how grabbing an item from the containers cost money? That means you have to be wary of the amount of times you get items. Only get what you need.
 
 ## Interact Tutorial
-[Focus on material cutter.] Now we need to process this. Head to the material cutter. []
+[Focus on material cutter.] Now we need to process this. Head to the material cutter. [] 
+
+
+
+
