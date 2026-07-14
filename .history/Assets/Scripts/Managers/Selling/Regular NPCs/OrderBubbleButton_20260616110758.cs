@@ -22,9 +22,9 @@ public class OrderBubbleButton : MonoBehaviour
     private void OnBubbleClicked()
     {
         Debug.Log("Order bubble clicked for customer: " + (customerOrder != null ? customerOrder.name : "null"));
-        if (SalesTracker.Instance == null)
+        if (GameTracker.Instance == null)
         {
-            Debug.LogWarning("SalesTracker instance missing when tapping order bubble");
+            Debug.LogWarning("GameTracker instance missing when tapping order bubble");
             return;
         }
 
@@ -34,6 +34,6 @@ public class OrderBubbleButton : MonoBehaviour
             return;
         }
 
-        SalesTracker.Instance.TryCompleteSale(customerOrder);
+        GameTracker.Instance.TryCompleteSale(customerOrder);
     }
 }

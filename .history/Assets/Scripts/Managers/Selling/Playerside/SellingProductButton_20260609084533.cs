@@ -28,13 +28,13 @@ public class SellingProductButton : MonoBehaviour
     private void SelectProduct()
     {
         Debug.Log("Product button clicked: " + (product != null ? product.name : "null"));
-        if (SalesTracker.Instance == null)
+        if (GameTracker.Instance == null)
         {
-            Debug.LogWarning("SalesTracker instance missing when selecting a product");
+            Debug.LogWarning("GameTracker instance missing when selecting a product");
             return;
         }
 
-        SalesTracker.Instance.SetSelectedProduct(product);
+        GameTracker.Instance.SetSelectedProduct(product);
     }
 
     // Public API used by UI manager to assign products from randomizer data.

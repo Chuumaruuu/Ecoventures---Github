@@ -6,12 +6,22 @@ public class OrderBubbleButton : MonoBehaviour
 {
     private CustomerOrder customerOrder;
     private Button button;
+    private SalesTracker salesTracker;
 
     private void Awake()
     {
         button = GetComponent<Button>();
         if (button != null)
             button.onClick.AddListener(OnBubbleClicked);
+    }
+
+    private void Start()
+    {
+        salesTracker = SalesTracker.Instance;
+        if (salesTracker == null)
+        {
+            Debug.LogWarning("SalesTracker instance missing in OrderBubbleButton");
+        }
     }
 
     public void SetCustomer(CustomerOrder customer)

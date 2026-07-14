@@ -9322,6 +9322,17 @@ MonoBehaviour:
   hintPanelRoot: {fileID: 9018544449921029951}
   hintDisplayPanel: {fileID: 116611186}
   hintData: {fileID: 11400000, guid: 6e6cf8b4e92988d40b89bea222cd22bf, type: 2}
+--- !u!114 &967911417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 449987923208465429, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
+  m_PrefabInstance: {fileID: 9018544449921029945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &987104056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20060,17 +20071,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!114 &1214844931 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 449987923208465429, guid: 703576d3adcd99b45a5dcbc44a5e096f, type: 3}
-  m_PrefabInstance: {fileID: 9018544449921029945}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1234874228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25472,7 +25472,7 @@ GameObject:
   - component: {fileID: 1395563904}
   - component: {fileID: 1395563906}
   m_Layer: 0
-  m_Name: Game_Tracker
+  m_Name: Objectives_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25490,11 +25490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73402fa6c52a9a47ab190543853e6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTracker
-  inventoryManager: {fileID: 0}
-  totalSales: 0
   salesGoal: 10
   tasksText: {fileID: 1676225701}
-  moneyText: {fileID: 1214844931}
 --- !u!4 &1395563905
 Transform:
   m_ObjectHideFlags: 0
@@ -25508,7 +25505,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2018660048}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1395563906
 MonoBehaviour:
@@ -25519,14 +25516,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1395563903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 229176036d106974a9d2c7f91916001c, type: 3}
+  m_Script: {fileID: 11500000, guid: b0ac9bad4853fba44ae553be52d1eb06, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SellingProductsUIManager
-  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
-  sellingButtons:
-  - {fileID: 522236924}
-  - {fileID: 1621354315}
-  - {fileID: 1292065231}
+  m_EditorClassIdentifier: Assembly-CSharp::SalesTracker
+  totalSales: 0
+  moneyText: {fileID: 967911417}
 --- !u!1 &1414756878
 GameObject:
   m_ObjectHideFlags: 0
@@ -26337,6 +26331,7 @@ GameObject:
   - component: {fileID: 1575607793}
   - component: {fileID: 1575607794}
   - component: {fileID: 1575607795}
+  - component: {fileID: 1575607796}
   m_Layer: 0
   m_Name: Product_Manager
   m_TagString: Untagged
@@ -26391,6 +26386,22 @@ MonoBehaviour:
   - {fileID: 1933169854}
   - {fileID: 1910630967}
   - {fileID: 592535094}
+--- !u!114 &1575607796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575607792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229176036d106974a9d2c7f91916001c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SellingProductsUIManager
+  sellingButtons:
+  - {fileID: 522236924}
+  - {fileID: 1621354315}
+  - {fileID: 1292065231}
 --- !u!1 &1587191759
 GameObject:
   m_ObjectHideFlags: 0
@@ -38284,6 +38295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1395563905}
   - {fileID: 1587191761}
   - {fileID: 258519495}
   - {fileID: 258357499}
@@ -48227,7 +48239,6 @@ SceneRoots:
   - {fileID: 210331293}
   - {fileID: 267853583}
   - {fileID: 22526663}
-  - {fileID: 1395563905}
   - {fileID: 2633150066275502121}
   - {fileID: 25341303}
   - {fileID: 2058099358}

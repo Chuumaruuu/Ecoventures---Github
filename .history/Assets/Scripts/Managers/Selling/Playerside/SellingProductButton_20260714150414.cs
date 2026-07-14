@@ -6,8 +6,18 @@ public class SellingProductButton : MonoBehaviour
 {
     [SerializeField] private Item_Data product;
     [SerializeField] private Image iconImage;
+    private SalesTracker salesTracker;
 
     private Button button;
+
+    private void Start()
+    {
+        salesTracker = SalesTracker.Instance;
+        if (salesTracker == null)
+        {
+            Debug.LogWarning("SalesTracker instance missing in SellingProductButton");
+        }
+    }
 
     private void Awake()
     {

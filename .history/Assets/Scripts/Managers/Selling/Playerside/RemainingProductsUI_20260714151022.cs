@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Linq;
 
 public class RemainingProductsUI : MonoBehaviour
 {
@@ -41,17 +40,14 @@ public class RemainingProductsUI : MonoBehaviour
             return;
         }
 
-        for (int i = 0; i < NumberOfProductsText.Length; i++)
-        {
-            if (i >= _inventoryManager.randomizerData._allowedItems.Count)
-            {
-                NumberOfProductsText[i].text = "0"; // If there are fewer products than text fields, set remaining to 0.
-                continue;
-            }
+        int productCount = _inventoryManager.gameInventoryData._finalProducts.Count;
 
-            Item_Data product = _inventoryManager.randomizerData._allowedItems[i];
-            int productCount = _inventoryManager.gameInventoryData._finalProducts.Count(p => p == product);
-            NumberOfProductsText[i].text = productCount.ToString();
+        foreach (var text in NumberOfProductsText)
+        {
+            if (text != null)
+            {
+                text.text = productCount.ToString();
+            }
         }
     }
 }

@@ -9,8 +9,8 @@ public class ProductSpawner : MonoBehaviour
     
     private void Start()
     {
-        _inventoryManager = InventoryManager.Instance;
         SpawnProducts();
+        _inventoryManager = InventoryManager.Instance;
     }
 
     public void SpawnProducts()
