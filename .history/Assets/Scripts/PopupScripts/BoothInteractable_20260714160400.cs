@@ -46,7 +46,7 @@ public class BoothInteractable : MonoBehaviour, IInteractable
             return;
         }
 
-        // FinalizeUnlockedVisuals();
+        FinalizeUnlockedVisuals();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -141,11 +141,11 @@ public class BoothInteractable : MonoBehaviour, IInteractable
             // job later, once the objective is completed.
             Unlock_Manager.Instance.RequestUnlock(unlockableItemData);
 
-            // if (Unlock_Manager.Instance.IsUnlocked(unlockableItemData))
-            // {
-            //     FinalizeUnlockedVisuals();
-            //     return;
-            // }
+            if (Unlock_Manager.Instance.IsUnlocked(unlockableItemData))
+            {
+                FinalizeUnlockedVisuals();
+                return;
+            }
         }
         gameObject.SetActive(false);
 
@@ -218,10 +218,10 @@ public class BoothInteractable : MonoBehaviour, IInteractable
             UI_Manager.Instance.EnterExploreMode();
         }
 
-        // if (unlockedItemImage != null)
-        // {
-        //     unlockedItemImage.gameObject.SetActive(false);
-        // }
+        if (unlockedItemImage != null)
+        {
+            unlockedItemImage.gameObject.SetActive(false);
+        }
 
         isOpen = false;
     }
