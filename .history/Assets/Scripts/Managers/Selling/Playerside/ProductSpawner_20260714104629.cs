@@ -47,7 +47,7 @@ public class ProductSpawner : MonoBehaviour
                 // Debug.LogWarning($"ProductSpawner cannot spawn item at index {i} due to missing data or locked item.");
                 Debug.Log("Spawn Point: " + (spawnPoint != null ? spawnPoint.name : "null"));
                 Debug.Log("Item Data: " + (itemData != null ? itemData.name : "null"));
-                Debug.Log("Count in Inventory: " + countInInventory);
+                // Debug.Log("Count in Inventory: " + countInInventory);
                 continue;
             }
 
