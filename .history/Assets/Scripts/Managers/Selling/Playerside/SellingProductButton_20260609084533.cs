@@ -1,0 +1,52 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(Button))]
+public class SellingProductButton : MonoBehaviour
+{
+    [SerializeField] private Item_Data product;
+    [SerializeField] private Image iconImage;
+
+    private Button button;
+
+    private void Awake()
+    {
+        button = GetComponent<Button>();
+        if (button != null)
+            button.onClick.AddListener(SelectProduct);
+
+        // Initialize UI using any product assigned in inspector.
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        if (iconImage != null && product != null)
+            iconImage.sprite = product._itemSprite;
+    }
+
+    private void SelectProduct()
+    {
+        Debug.Log("Product button clicked: " + (product != null ? product.name : "null"));
+        if (GameTracker.Instance == null)
+        {
+            Debug.LogWarning("GameTracker instance missing when selecting a product");
+            return;
+        }
+
+        GameTracker.Instance.SetSelectedProduct(product);
+    }
+
+    // Public API used by UI manager to assign products from randomizer data.
+    public void SetProduct(Item_Data newProduct)
+    {
+        product = newProduct;
+        UpdateUI();
+    }
+
+    public void ClearProduct()
+    {
+        product = null;
+        UpdateUI();
+    }
+}

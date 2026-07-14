@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameInventory_Data
   _finalProducts: []
   _recycledProducts: []
-  _playerMoney: 150
+  _playerMoney: 300
