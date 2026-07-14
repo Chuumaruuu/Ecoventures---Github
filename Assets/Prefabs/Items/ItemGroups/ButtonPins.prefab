@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9122489997403122058}
+  - component: {fileID: 775494251628067889}
+  - component: {fileID: 5580678671360468587}
   m_Layer: 0
   m_Name: ButtonPins
   m_TagString: Untagged
@@ -32,6 +34,39 @@ Transform:
   - {fileID: 8797974025636014948}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775494251628067889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5787565421347884722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27804f1af515a5745a47bfcb1101d225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemGroup_Base
+  item_Data: {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
+  itemState:
+  - {fileID: 7755497134817487043}
+  - {fileID: 8143875390271441656}
+  - {fileID: 5651580840341754967}
+  - {fileID: 3674512166079144127}
+  - {fileID: 6819188721775019251}
+  - {fileID: 1873071348575986973}
+  - {fileID: 3005775039546751219}
+--- !u!114 &5580678671360468587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5787565421347884722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b577634eaba374db6438b3b9386759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProductPrefabChanger
 --- !u!1001 &9048320707286043791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,6 +115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5477391536748373800, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
       propertyPath: m_Name
       value: ButtonPinGroup
@@ -89,6 +128,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+--- !u!1 &1873071348575986973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1987094820496217710, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3005775039546751219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3160190175452859268, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3674512166079144127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5723066766824254512, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5651580840341754967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5477391536748373800, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6819188721775019251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6687643424094910340, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7755497134817487043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7623723134691859380, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8143875390271441656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 907136927523948151, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
+  m_PrefabInstance: {fileID: 9048320707286043791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8797974025636014948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f579ccca64c3ce84198e0de0b92b485b, type: 3}
