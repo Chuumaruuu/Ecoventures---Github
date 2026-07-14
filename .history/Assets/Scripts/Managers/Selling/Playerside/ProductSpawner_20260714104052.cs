@@ -6,7 +6,6 @@ public class ProductSpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] _spawnPoints = new Transform[3];
     private InventoryManager _inventoryManager;
-    
     private void Start()
     {
         SpawnProducts();
