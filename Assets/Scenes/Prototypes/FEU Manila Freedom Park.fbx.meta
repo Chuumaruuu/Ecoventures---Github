@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: 5b501e2a07652c547befb78a841f394e
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench_Top_Texture1
+    second: {fileID: 2100000, guid: 78e63e854800ba046916fb9799c6c16c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench_Top_Texture2
+    second: {fileID: 2100000, guid: a1a4ea5fb4b05884c913f0da8c4d6a7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Administration_Texture
+    second: {fileID: 2100000, guid: 5f817e76d61eba44394e3f6582182a58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Admission_Texture
+    second: {fileID: 2100000, guid: fecf6ddf27b75cc4984ae4a3fadc6776, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_FA_Archi_Texture
+    second: {fileID: 2100000, guid: 39e5325dafa012c469628a4a3ac79cbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Ground_Texture
+    second: {fileID: 2100000, guid: f8bb4bf47d2ee12409d1cd2584c9c586, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Chapel
+    second: {fileID: 2100000, guid: bbffa42a7efc0624fba5ff95c3678d01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Roof_Metal_Green
+    second: {fileID: 2100000, guid: 6f54f06fb40f33143897d461feaf0629, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Roof_Sides
+    second: {fileID: 2100000, guid: 5580df574b922c046a1e7b8676fd880f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Roof_White
+    second: {fileID: 2100000, guid: a9325523851ae904d92ad70f55ae419e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Science_Texture
+    second: {fileID: 2100000, guid: 040e5b4aab0a8b142a429f288f92c434, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FEU_Walls
+    second: {fileID: 2100000, guid: 31d22d7ba59e74449b7a7388b8765d68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass
+    second: {fileID: 2100000, guid: f2444ca1d9a6a9c4fada2a949362763d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Parking_Spot_Dirt
+    second: {fileID: 2100000, guid: c4414e7a9cc88a3499b1bc28df3e202c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stage_3_Booth_Name
+    second: {fileID: 2100000, guid: f97e028571c1974429e99dea1051585b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stage_3_Booth_Silver
+    second: {fileID: 2100000, guid: b9ff734e2ecfacb43b36c0db88ca3979, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stage_3_Booth_White
+    second: {fileID: 2100000, guid: 09bf89420c937e94f803a3b89742c823, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stage_3_Bottom_Bench_Texture1
+    second: {fileID: 2100000, guid: 0ea455405c2c63948bf85285b2b8318c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stage_3_Bottom_Bench_Texture2
+    second: {fileID: 2100000, guid: 504f78635dfebd0499e065369c9fb812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__corroded_texture
+    second: {fileID: 2100000, guid: cadf1444fcfa3014cbc58b9eb36a73b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__new_trees1_rocky
+    second: {fileID: 2100000, guid: 803050f06f3d1e04cb8b7a2e2cc4bb61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__new_trees1_standardSurface1
+    second: {fileID: 2100000, guid: 8b1283bfc83e6834dbe1bb03c47357f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__stage3_map_with_bougain_Flagpole_Material
+    second: {fileID: 2100000, guid: 92e1257c9b0e2c34581d81da72c3cba9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__stage3_map_with_bougain_Rusted_Brass_Statue
+    second: {fileID: 2100000, guid: d2f8e127f819c674da427b6a0ca512f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__stage3_map_with_bougain_lambert2
+    second: {fileID: 2100000, guid: 08d3cd62e800ce744be6777716347e80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Updated_UV_Statue_Base_stage_3_textured_updated_again__wip__stage3_map_with_bougain_plaza_bench_white_concrete
+    second: {fileID: 2100000, guid: a9f8362f861173346950767ab7ee981c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 408c6d11bdfb630468648da45fe96362, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: dc5290cd3b65c824b8a28800dccebb4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 65c6866c6b8b9b046af279277ff748ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__black
+    second: {fileID: 2100000, guid: 8ae92d6b275fe624c8d01baa80baf530, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__chess3
+    second: {fileID: 2100000, guid: c6887780eaa8bba4abf18fd3173523de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__corroded_texture
+    second: {fileID: 2100000, guid: 5330dc289d9924048a7a9c0b7ea5c795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__gold_cow
+    second: {fileID: 2100000, guid: d01f5825e5ea54840a5d7b99ff0ee255, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__gray_plant_plot
+    second: {fileID: 2100000, guid: 765e449abd7ec9b469bfc0bfc71c10b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__lambert7
+    second: {fileID: 2100000, guid: ad507f237655f0641bf8fbe63df00025, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__lamp_post
+    second: {fileID: 2100000, guid: 7451bb150a929a74880b6b6dbd4e761f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__new_trees1_standardSurface1
+    second: {fileID: 2100000, guid: 13595b13b1afd1c42bfb13dadd0a0812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__other_trees_1
+    second: {fileID: 2100000, guid: 359528c912633324aa49689408b4d2c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__pasted__torqouise
+    second: {fileID: 2100000, guid: f33c72f721189c74bb60319c2f201e89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__rocks_texture_w_name
+    second: {fileID: 2100000, guid: 67906e75a96a7ab4c922d15f3e2fa887, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__roof_green
+    second: {fileID: 2100000, guid: ab30237871438e6409612568d99617c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__soil
+    second: {fileID: 2100000, guid: 175eb55c65bd1534da2b43e8654ef912, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__stage3_map_with_bougain_Bougainvillea_Tree_attempt_5_low_poly_bougain_pot_tile
+    second: {fileID: 2100000, guid: b9e743174d6c67b41a6be930f42de98d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__stage3_map_with_bougain_dirt
+    second: {fileID: 2100000, guid: 31901181c191c4e4dbecdb05d872093d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__stage3_map_with_bougain_plaza_bench_white_concrete
+    second: {fileID: 2100000, guid: f87ff7f096d1c004bb5d8542aa67953f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__standardSurface2
+    second: {fileID: 2100000, guid: 0122eb6a19ec23840b5664e6bb6d6c93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__torqouise
+    second: {fileID: 2100000, guid: 84f066eb0dfe3024f8a00b988ff4ee77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stage_3_textured_updated_again__wip__white
+    second: {fileID: 2100000, guid: 94ecc1c0e729eb4499ea14e910d0b642, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 7356b01deae1e3f4d87a16225718e72a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface2
+    second: {fileID: 2100000, guid: 906af85cd5f2e0b4aaaa625e08bc502e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface6
+    second: {fileID: 2100000, guid: 1f21d58e65603bf4588053c4bd30a091, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface7
+    second: {fileID: 2100000, guid: 303628f0a4f393440a6ec8d733c09dc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface8
+    second: {fileID: 2100000, guid: 9b06939bb8905c342b59ef34adf339bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface9
+    second: {fileID: 2100000, guid: 056fddcd7007ae9409859c03b79ed142, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: updated_bench_texture2
+    second: {fileID: 2100000, guid: 9cacdc0f1d8206442a208b4af988ff37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: updated_bench_texture3
+    second: {fileID: 2100000, guid: 2a9e9d2c72ae63b438a90043b85de674, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Black_and_white_checkered_pattern
+    second: {fileID: 2800000, guid: b488a57f132a4dc49908588e1eb41f51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Brass Texture Attempt 2
+    second: {fileID: 2800000, guid: bb88c5012924da84f83fb5e7e6858545, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Chess Bench Texture_base_base
+    second: {fileID: 2800000, guid: 91ebb418e15e29343adeecf106821fe0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dirt and Roc
+    second: {fileID: 2800000, guid: 8954d39076bdf47459d044c1e236e09e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Administration_Texture
+    second: {fileID: 2800000, guid: 73b915a75ea7a084b8fd2da9602910c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Admission_Texture
+    second: {fileID: 2800000, guid: 8bf948c456d38cd4f92e6bcfe2652238, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Chapel_Texture
+    second: {fileID: 2800000, guid: 76fc7284555d921439d16bcdd579fdcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Educ2_Texture
+    second: {fileID: 2800000, guid: ffcd1d09137154b4eab9ab3e4038409f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Educ_Texture
+    second: {fileID: 2800000, guid: a7e7651568a249c48ac730c213956793, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_FA&Archi_Texture
+    second: {fileID: 2800000, guid: 5c7b8110fd38b264583b566c1904399b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Ground_Texture
+    second: {fileID: 2800000, guid: 07b3b3be90d941143924ec354325a9ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FEU_Manila_Science_Texture
+    second: {fileID: 2800000, guid: 7ddd3fb7df8f40540abbdb3ec7dc5471, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Statue Base Texture Attempt 1 Billion
+    second: {fileID: 2800000, guid: b074ebbe3c76a3b4db60d200d95ae4b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bougain tree pot_base_updated 3
+    second: {fileID: 2800000, guid: 13b6342b302659f43ae40593b863c6b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: grass03
+    second: {fileID: 2800000, guid: 5f1f78163fc350f4caaa18a1b71af97e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: leaves for other trees 1_base_base
+    second: {fileID: 2800000, guid: 7c535ff33427ea5468b6f799a3d3f068, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rock texture_base
+    second: {fileID: 2800000, guid: 795a9dc5adc660c479f0bcc8ec81f0ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rocky edge texture_base
+    second: {fileID: 2800000, guid: 1e6976bb7878e754a86449a1d2aa381b, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
