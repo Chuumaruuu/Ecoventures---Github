@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8644fbe967202934bb206db2c3a6d8e7
+guid: bbb65e18efd03d744be131624a37d0fc
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FEU_Manila_Trees_Texture
-    second: {fileID: 2100000, guid: 8d46fa691e85a5941b28cca0617abbaa, type: 2}
+      name: FEU_Manila_Bougainvilleas_Texture
+    second: {fileID: 2100000, guid: 3d6d60fe36f63374a8fd2405e776de86, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,7 +38,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 20
+    globalScale: 9
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -96,7 +96,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 20
+    globalScale: 0.089999996
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
