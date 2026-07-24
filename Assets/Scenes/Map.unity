@@ -721,6 +721,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 30271432}
     m_Modifications:
+    - target: {fileID: -8937571996426754396, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8877342791952520734, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1120,9 +1124,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6891303803206840647, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1293001731}
-    - targetCorrespondingSourceObject: {fileID: -8937571996426754396, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 6891303803206840647, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 328077286}
+      addedObject: {fileID: 1293001732}
     - targetCorrespondingSourceObject: {fileID: 5035966614064914597, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1689058280}
@@ -1442,25 +1446,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318505182}
   m_CullTransparentMesh: 1
---- !u!1 &328077284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8937571996426754396, guid: 0b257a0d99c37a54e98f1dc3c868f2de, type: 3}
-  m_PrefabInstance: {fileID: 166189324}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &328077286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328077284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a90420cc49c73418c6796431ec2303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
-  _stageNum: 0
-  _sceneManager: {fileID: 0}
 --- !u!1 &348178988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,7 +3705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a90420cc49c73418c6796431ec2303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Map_Stage
-  _stageNum: 0
+  _stageNum: 5
   _sceneManager: {fileID: 1253243891}
 --- !u!65 &1293001729
 BoxCollider:
@@ -3757,6 +3742,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Map_PopupUI
   _targetUI: {fileID: 1649593303}
   _detectionRadius: 6.68
+--- !u!114 &1293001732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293001726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2fd6bba9c7d3e47840a813ccc4ba0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AllowedProducts_Manager
+  _randomizerData: {fileID: 11400000, guid: 8a5b5ab40f5f0764ab68a07a35c44ad5, type: 2}
+  _allowedItem1:
+  - {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
+  - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  _allowedItem2:
+  - {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
+  - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  _allowedItem3:
+  - {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
+  - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  - {fileID: 11400000, guid: fb4953ef0789716479c4fb88378cd6b7, type: 2}
+  - {fileID: 11400000, guid: 5f8555c54ba4fd349a7a64f8c53d133e, type: 2}
+  - {fileID: 11400000, guid: 6975f566275e9a74b84feee41593cad8, type: 2}
+  - {fileID: 11400000, guid: 99de5f5b878377946947bdb7ad1031a0, type: 2}
+  - {fileID: 11400000, guid: b90aa86a055648b4881c716f91bb834b, type: 2}
+  - {fileID: 11400000, guid: 544013ab15dc5db4e867a2d1f2e7ce1c, type: 2}
+  - {fileID: 11400000, guid: 3de06b15c2a89e747989cc06079ab480, type: 2}
+  _item1: {fileID: 946412545}
+  _item2: {fileID: 32456770}
+  _item3: {fileID: 1346560719}
 --- !u!1 &1346560717
 GameObject:
   m_ObjectHideFlags: 0
