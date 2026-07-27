@@ -9,4 +9,9 @@ public class Item_Data : ScriptableObject
     public string _objectName;
     public bool isUnlocked = false;
     public int sellprice;
+
+    public string GetItemName()
+    {
+        return _objectName;
+    }
 }

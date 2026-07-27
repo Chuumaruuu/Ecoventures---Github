@@ -1,11 +1,10 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Counter_Container : Counter_Base
 {
 
-    public event EventHandler OnPlayerGrabbedObject;
+    public event Action OnPlayerGrabbedObject;
     [SerializeField] private GameInventory_Data _mainData;
     [SerializeField] private Item_Data _itemData;
     [SerializeField] private int _itemPrice;
@@ -18,7 +17,7 @@ public class Counter_Container : Counter_Base
             {
                 if (!this.HasItem()) // counter has no item
                 {  
-                    OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
+                    OnPlayerGrabbedObject?.Invoke();
 
                     if (_mainData.HasRecycledItem(_itemData)) // if there's a recycled base product, no cost to take an item
                     {
@@ -51,5 +50,9 @@ public class Counter_Container : Counter_Base
         }
     }
 
+    public Item_Data GetStorageItem()
+    {
+        return _itemData;
+    }
 
 }

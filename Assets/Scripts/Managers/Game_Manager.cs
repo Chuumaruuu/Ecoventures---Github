@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class Game_Manager : MonoBehaviour
 {
     public static Game_Manager Instance {get; private set;}
     [SerializeField]private bool DEBUG_MODE;
+    
+    public event Action<string> OnAchievement;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -33,4 +36,10 @@ public class Game_Manager : MonoBehaviour
     {
         return DEBUG_MODE == true; 
     }
+
+    public void AchievementAccomplished(string data)
+    {
+        OnAchievement?.Invoke(data);
+    }
+
 }

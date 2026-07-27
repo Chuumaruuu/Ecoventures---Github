@@ -4,27 +4,37 @@ using UnityEngine.UI;
 
 public class Achievement_Manager : MonoBehaviour
 {
+    public static Achievement_Manager Instance {get ; private set;}
     [SerializeField] private List<Achievement_Data> _achievementsList;
     [SerializeField] private Image _achievementBoxImage;
     [SerializeField] private Animator _achievementBoxAnimator;
 
-    public void ShowAchievement(Achievement_Data _achievement)
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this; 
+    }
+
+    private void ShowAchievement(Achievement_Data _achievement)
     {
         _achievementBoxImage.sprite = _achievement._achievementImage;
         _achievementBoxAnimator.SetTrigger("PopUp");
     }
 
-    public Achievement_Data GetAchievement(string _title)
+    public void TriggerAchievement(string _title)
     {
-        foreach (Achievement_Data i in _achievementsList)
+        foreach (Achievement_Data data in _achievementsList)
         {
-            if (_title == i.GetTitle())
+            if (_title == data.GetTitle())
             {
-                return i;
+                ShowAchievement(data);
+                return;
             }
         }
-
         Debug.LogError("Achievement with name " + _title + " does not exist");
-        return null;
     }
 }

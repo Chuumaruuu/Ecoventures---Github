@@ -13,7 +13,7 @@ public class Player_UI : MonoBehaviour
         _player.OnPlayerGrabbedObject += OnPlayerInteract;
     }
 
-    private void OnPlayerInteract(object sender, System.EventArgs e)
+    private void OnPlayerInteract()
     {
         _dropButton.gameObject.SetActive(_player.HasItem());
         _pickupButton.gameObject.SetActive(!_player.HasItem());
