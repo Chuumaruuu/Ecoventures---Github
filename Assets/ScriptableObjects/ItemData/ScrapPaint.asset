@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: ScrapPaint
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 0}
   _itemPrefab: {fileID: 7549471359754358677, guid: 575321e90715dbf47ba34d78a166d0e2, type: 3}
   _itemSprite: {fileID: 21300000, guid: 8fe1a2645da3df348aa98b3db6522095, type: 3}
   _objectName: ScrapPaint
   isUnlocked: 0
-  sellprice: 0
-  useCustomWorldScale: 0
-  customWorldScale: {x: 1, y: 1, z: 1}
+  sellprice: 15

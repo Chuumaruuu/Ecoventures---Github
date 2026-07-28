@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848a0653ab73a604797d2e21bbb77a7b, type: 3}
+  m_Name: Achievement_Progress
+  m_EditorClassIdentifier: Assembly-CSharp::Achievement_Progress
+  CURIOUS_JED: 0
+  ECO_VENTURED: 0
+  FOR_REAL: 0
+  INFINITE_SOLUTIONS: 0
+  QUIZ_RUSH: 0

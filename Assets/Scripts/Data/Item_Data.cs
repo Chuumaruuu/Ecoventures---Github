@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item_Data", menuName = "Scriptable Objects/Item_Data")]
@@ -13,5 +14,10 @@ public class Item_Data : ScriptableObject
     public string GetItemName()
     {
         return _objectName;
+    }
+
+    public Sprite GetItemImage()
+    {
+        return _itemSprite;
     }
 }
