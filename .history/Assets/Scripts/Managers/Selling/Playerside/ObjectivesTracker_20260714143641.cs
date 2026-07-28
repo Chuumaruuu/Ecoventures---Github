@@ -2,21 +2,25 @@ using System;
 using UnityEngine;
 using TMPro;
 
+// Owns "what counts as an objective" for the current stage. Right now that's
+// just the sales goal, tracked by listening to SalesTracker.OnSaleRegistered
+// rather than reading SalesTracker.totalSales directly - keeps this the
+// single source of truth as more objective types get added later.
 public class ObjectivesTracker : MonoBehaviour
 {
     public static ObjectivesTracker Instance;
 
+    // Fired exactly once, the moment all objectives are met.
+    // Unlock_Manager listens to this so any product that "passed" its quiz
+    // while objectives were still incomplete can finally unlock.
     public event Action OnObjectivesCompleted;
 
     private bool objectivesCompleted = false;
     private int currentSales = 0;
-    private int currentSpecialSales = 0;
 
     [Header("Task")]
     [SerializeField] private int salesGoal = 10;
-    [SerializeField] private int specialSalesGoal = 1;
     [SerializeField] private TextMeshProUGUI tasksText;
-    [SerializeField] private TextMeshProUGUI specialTaskText; // optional, can leave unassigned
 
     private void Awake()
     {
@@ -31,7 +35,6 @@ public class ObjectivesTracker : MonoBehaviour
         if (SalesTracker.Instance != null)
         {
             SalesTracker.Instance.OnSaleRegistered += HandleSaleRegistered;
-            SalesTracker.Instance.OnSpecialSaleRegistered += HandleSpecialSaleRegistered;
         }
     }
 
@@ -40,7 +43,6 @@ public class ObjectivesTracker : MonoBehaviour
         if (SalesTracker.Instance != null)
         {
             SalesTracker.Instance.OnSaleRegistered -= HandleSaleRegistered;
-            SalesTracker.Instance.OnSpecialSaleRegistered -= HandleSpecialSaleRegistered;
         }
     }
 
@@ -51,21 +53,9 @@ public class ObjectivesTracker : MonoBehaviour
         CheckObjectiveCompletion();
     }
 
-    private void HandleSpecialSaleRegistered(int totalSpecialSales)
-    {
-        currentSpecialSales = totalSpecialSales;
-        UpdateTaskUI();
-        CheckObjectiveCompletion();
-    }
-
+    // True once every current objective (right now: the sales goal) is satisfied.
+    // Add more conditions here (&&) as more objective types get introduced.
     public bool AreObjectivesMet()
-    {
-        return currentSales >= salesGoal && currentSpecialSales >= specialSalesGoal;
-    }
-
-    // Used by RoamingNPC to know when to start favoring the vendor point
-    // for special customers.
-    public bool IsRegularGoalMet()
     {
         return currentSales >= salesGoal;
     }
@@ -83,16 +73,10 @@ public class ObjectivesTracker : MonoBehaviour
 
     private void UpdateTaskUI()
     {
-        if (tasksText != null)
-        {
-            int current = Mathf.Clamp(currentSales, 0, salesGoal);
-            tasksText.text = "Sell to customers: " + current + " / " + salesGoal;
-        }
+        if (tasksText == null)
+            return;
 
-        if (specialTaskText != null)
-        {
-            int currentSpecial = Mathf.Clamp(currentSpecialSales, 0, specialSalesGoal);
-            specialTaskText.text = "Special orders: " + currentSpecial + " / " + specialSalesGoal;
-        }
+        int current = Mathf.Clamp(currentSales, 0, salesGoal);
+        tasksText.text = "Sell to customers: " + current + " / " + salesGoal;
     }
 }

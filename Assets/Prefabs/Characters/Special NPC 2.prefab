@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2257823886482436764}
   - component: {fileID: 3610845097658918276}
-  - component: {fileID: 6551143867788264322}
   - component: {fileID: 3501203187045782771}
   - component: {fileID: 3541314622043784434}
+  - component: {fileID: 5059360298168560636}
   m_Layer: 0
   m_Name: Special NPC 2
   m_TagString: Untagged
@@ -58,19 +58,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6551143867788264322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7798270890891107125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
-  customerWaitTime: 15
 --- !u!195 &3501203187045782771
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -113,6 +100,22 @@ MonoBehaviour:
   minimumMoveDistance: 0.2
   roamPoints: []
   facingSpeed: 120
+  specialVendorWeightBoost: 8
+--- !u!114 &5059360298168560636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7798270890891107125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0546cf2491a23b04fac4ea8b0ddef911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpecialCustomerOrder
+  customerWaitTime: 30
+  isFacingVendor: 0
+  itemsPerOrder: 3
 --- !u!1001 &2532346744736145949
 PrefabInstance:
   m_ObjectHideFlags: 0

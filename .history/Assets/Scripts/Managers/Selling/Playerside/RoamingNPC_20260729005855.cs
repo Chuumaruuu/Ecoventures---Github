@@ -72,7 +72,6 @@ public class RoamingNPC : MonoBehaviour
     void Start()
     {
         GetComponent<CustomerOrder>().OnCustomerQueued += CustomerWaiting;
-        isSpecialCustomer = GetComponent<SpecialCustomerOrder>() != null;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
@@ -241,52 +240,11 @@ public class RoamingNPC : MonoBehaviour
                 available.Add(i);
         }
 
-        int chosen;
-
-        bool boostVendorChance = isSpecialCustomer
-            && ObjectivesTracker.Instance != null
-            && ObjectivesTracker.Instance.IsRegularGoalMet();
-
-        if (boostVendorChance && available.Count > 0)
-        {
-            chosen = WeightedVendorChoice(available);
-        }
-        else
-        {
-            chosen = available.Count > 0
-                ? available[Random.Range(0, available.Count)]
-                : Random.Range(0, roamPoints.Length);
-        }
+        int chosen = available.Count > 0
+            ? available[Random.Range(0, available.Count)]
+            : Random.Range(0, roamPoints.Length);
 
         SetDestination(chosen);
-    }
-
-    // Weighted pick that favors vendor points (points with a vendorLookTarget)
-// over regular roam points.
-    int WeightedVendorChoice(List<int> available)
-    {
-        List<float> weights = new List<float>(available.Count);
-        float total = 0f;
-
-        foreach (int idx in available)
-        {
-            bool isVendorPoint = roamPoints[idx].vendorLookTarget != null;
-            float w = isVendorPoint ? specialVendorWeightBoost : 1f;
-            weights.Add(w);
-            total += w;
-        }
-
-        float roll = Random.Range(0f, total);
-        float cumulative = 0f;
-
-        for (int i = 0; i < available.Count; i++)
-        {
-            cumulative += weights[i];
-            if (roll <= cumulative)
-                return available[i];
-        }
-
-        return available[available.Count - 1];
     }
 
     public void ResumeRoaming()

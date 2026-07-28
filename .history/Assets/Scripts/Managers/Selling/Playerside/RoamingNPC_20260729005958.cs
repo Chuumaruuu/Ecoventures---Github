@@ -261,34 +261,6 @@ public class RoamingNPC : MonoBehaviour
         SetDestination(chosen);
     }
 
-    // Weighted pick that favors vendor points (points with a vendorLookTarget)
-// over regular roam points.
-    int WeightedVendorChoice(List<int> available)
-    {
-        List<float> weights = new List<float>(available.Count);
-        float total = 0f;
-
-        foreach (int idx in available)
-        {
-            bool isVendorPoint = roamPoints[idx].vendorLookTarget != null;
-            float w = isVendorPoint ? specialVendorWeightBoost : 1f;
-            weights.Add(w);
-            total += w;
-        }
-
-        float roll = Random.Range(0f, total);
-        float cumulative = 0f;
-
-        for (int i = 0; i < available.Count; i++)
-        {
-            cumulative += weights[i];
-            if (roll <= cumulative)
-                return available[i];
-        }
-
-        return available[available.Count - 1];
-    }
-
     public void ResumeRoaming()
     {
         if (agent == null)

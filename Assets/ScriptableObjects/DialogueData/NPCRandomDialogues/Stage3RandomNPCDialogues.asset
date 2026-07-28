@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57786e9d350d324f8c327c4237c5b79, type: 3}
   m_Name: Stage3RandomNPCDialogues
   m_EditorClassIdentifier: Assembly-CSharp::RandomNPCDialogue_Data
-  _stageID: 2
+  _stageID: 3
   _randomDialogues:
   - It's so hot today
   - Sobrang init na naman sa Pinas!
