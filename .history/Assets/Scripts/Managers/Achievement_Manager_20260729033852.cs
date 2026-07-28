@@ -20,7 +20,7 @@ public class Achievement_Manager : MonoBehaviour
     private const string TITLE_FOR_REAL = "ForReal?";
 
     // Constants for achievement conditions
-    private const int TOTAL_ITEMS = 6;
+    private const int TOTAL_ITEMS = 9;
     private const int SALES_TARGET = 50;
     private const int TOTAL_HINTS = 9;
     private const int TOTAL_REGISTERED_PRODUCTS = 5; //palitan mo
@@ -64,17 +64,15 @@ public class Achievement_Manager : MonoBehaviour
     // Each one is safe to call repeatedly/redundantly - it no-ops once earned.
 
     /// <summary>Call whenever an item's isUnlocked flips to true, passing the full item catalog.</summary>
-    public void ReportItemUnlocked(Item_Data itemData)
+    public void ReportItemUnlocked(Item_Data item)
     {
         if (_progress == null || _progress.QUIZ_RUSH) return;
-        if (itemData == null) return;
+        if (item == null) return;
 
-        _unlockedItems.Add(itemData);
-        Debug.Log("Item unlocked: " + itemData.GetItemName() + " | Total unlocked: " + _unlockedItems.Count);
+        _unlockedItems.Add(item);
         if (_unlockedItems.Count >= TOTAL_ITEMS)
         {
             _progress.QUIZ_RUSH = true;
-            Debug.Log("Achievement unlocked: " + TITLE_QUIZ_RUSH);
             TriggerAchievement(TITLE_QUIZ_RUSH);
         }
     }

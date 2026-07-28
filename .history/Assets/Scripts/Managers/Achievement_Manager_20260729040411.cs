@@ -70,11 +70,9 @@ public class Achievement_Manager : MonoBehaviour
         if (itemData == null) return;
 
         _unlockedItems.Add(itemData);
-        Debug.Log("Item unlocked: " + itemData.GetItemName() + " | Total unlocked: " + _unlockedItems.Count);
         if (_unlockedItems.Count >= TOTAL_ITEMS)
         {
             _progress.QUIZ_RUSH = true;
-            Debug.Log("Achievement unlocked: " + TITLE_QUIZ_RUSH);
             TriggerAchievement(TITLE_QUIZ_RUSH);
         }
     }
