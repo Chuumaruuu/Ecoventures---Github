@@ -47,7 +47,6 @@ public class Dialogue_Progress : ScriptableObject
         WORKSHOP_GUIDEBOOK_INTRO7=
         WORKSHOP_MOVEMENT_TUTORIAL=
         WORKSHOP_GRAB_TUTORIAL=
-        STAGE1_INTRO=
 
         false;
     }
