@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4743081493435546450}
   - component: {fileID: 3799810967948990021}
   - component: {fileID: 2597456461643268514}
-  - component: {fileID: 4894681277819088817}
+  - component: {fileID: 7243837535827710546}
   m_Layer: 0
   m_Name: Special NPC 1
   m_TagString: Untagged
@@ -100,7 +100,8 @@ MonoBehaviour:
   minimumMoveDistance: 0.2
   roamPoints: []
   facingSpeed: 120
---- !u!114 &4894681277819088817
+  specialVendorWeightBoost: 8
+--- !u!114 &7243837535827710546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,11 +110,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3942291910540426316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54db74ad508ae704eb3910cfa7233558, type: 3}
+  m_Script: {fileID: 11500000, guid: 0546cf2491a23b04fac4ea8b0ddef911, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerOrder
-  customerWaitTime: 15
+  m_EditorClassIdentifier: Assembly-CSharp::SpecialCustomerOrder
+  customerWaitTime: 30
   isFacingVendor: 0
+  itemsPerOrder: 3
 --- !u!1001 &7094928528866607381
 PrefabInstance:
   m_ObjectHideFlags: 0

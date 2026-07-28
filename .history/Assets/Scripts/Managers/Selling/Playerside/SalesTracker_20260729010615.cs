@@ -10,7 +10,6 @@ public class SalesTracker : MonoBehaviour
     private InventoryManager inventoryManager;
     private Item_Data selectedProduct;
     public int totalSales = 0;
-    public int totalSpecialSales = 0;
 
     public event Action<int> OnSaleRegistered;
     public event Action<int> OnSpecialSaleRegistered;
@@ -88,11 +87,11 @@ public class SalesTracker : MonoBehaviour
         if (inventoryManager != null)
             inventoryManager.gameInventoryData.AddMoney(totalValue);
 
-        totalSpecialSales++;
+        totalSales++;
         UpdateMoneyUI();
-        OnSpecialSaleRegistered?.Invoke(totalSpecialSales);
+        OnSpecialSaleRegistered?.Invoke(totalSales);
 
-        Debug.Log("Special order completed | Total Special Sales: " + totalSpecialSales);
+        Debug.Log("Special order completed | Total Special Sales: " + totalSales);
     }
 
     public void SetSelectedProduct(Item_Data item)
