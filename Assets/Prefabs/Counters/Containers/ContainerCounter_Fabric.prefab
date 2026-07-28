@@ -384,6 +384,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4122847153674736785, guid: 5a7576e7495b7314aa50611150a3d81a, type: 3}
+      propertyPath: _uiPanel
+      value: 
+      objectReference: {fileID: 7876370596276506146}
+    - target: {fileID: 4122847153674736785, guid: 5a7576e7495b7314aa50611150a3d81a, type: 3}
       propertyPath: _uiCanvas
       value: 
       objectReference: {fileID: 7876370596276506146}

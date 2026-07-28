@@ -1,28 +1,25 @@
 using TMPro;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.UI;
 
-public class ContainerCounter_UI : MonoBehaviour
+public class StorageBin_UI : MonoBehaviour
 {
     [SerializeField] private Counter_Base _baseCounter;
-    [SerializeField] private GameObject _uiCanvas;
-    [SerializeField] private TextMeshProUGUI _itemAmountText;
+    [SerializeField] private GameObject _uiPanel;
+    [SerializeField] private Image _itemImage;
     [SerializeField ]private GameInventory_Data _mainInventory;
 
-    private Item_Data _itemData;
 
     void Start()
     {
         Player_Base.Instance.OnSelectedCounterChanged += Player_OnSelectedCounterChanged;
-        _itemData = GetComponent<Counter_Container>().GetStorageItem();
-        Debug.Log(_itemData);
         UpdateContainerUI();
         GameInventory_Data.OnInventoryDataChanged += UpdateContainerUI;
     }
 
     void LateUpdate()
     {
-        _uiCanvas.transform.forward = Camera.main.transform.forward;
+        _uiPanel.transform.forward = Camera.main.transform.forward;
     }
 
     private void Player_OnSelectedCounterChanged(object sender, Player_Base.OnSelectedCounterChangedEventArgs e)
@@ -40,23 +37,32 @@ public class ContainerCounter_UI : MonoBehaviour
 
     public void UpdateContainerUI()
     {
-        if (_mainInventory.GetExtraMaterials().Contains(_itemData))
+        if (_mainInventory._finalProducts.Count == 0)
         {
-            _itemAmountText.text = _mainInventory.GetExtraMaterials().Count(item => item == _itemData).ToString();        
+            NoImage();
         }
         else
         {
-            _itemAmountText.text = "₱" + _itemData.sellprice.ToString();
+            Color color = _itemImage.color;
+            color.a = 1f;
+            _itemImage.sprite = _mainInventory._finalProducts[0].GetItemImage();
         }
+       
     }
 
     private void Show()
     {
-        _uiCanvas.SetActive(true);
+        _uiPanel.SetActive(true);
     }
 
     private void Hide()
     {
-        _uiCanvas.SetActive(false);
+        _uiPanel.SetActive(false);
+    }
+
+    private void NoImage()
+    {
+        Color color = _itemImage.color;
+        color.a = 0f;
     }
 }
