@@ -39,12 +39,15 @@ public class StorageBin_UI : MonoBehaviour
     {
         if (_mainInventory._finalProducts.Count == 0)
         {
+            Debug.Log("NoImage");
             NoImage();
         }
         else
         {
+            Debug.Log("Removing " + _mainInventory._finalProducts[0]);
             Color color = _itemImage.color;
             color.a = 1f;
+            _itemImage.color = color;
             _itemImage.sprite = _mainInventory._finalProducts[0].GetItemImage();
         }
        
@@ -64,5 +67,7 @@ public class StorageBin_UI : MonoBehaviour
     {
         Color color = _itemImage.color;
         color.a = 0f;
+        _itemImage.color = color;
+        Debug.Log("Making Transparent");
     }
 }

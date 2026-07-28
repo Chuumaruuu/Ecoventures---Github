@@ -7,6 +7,7 @@ public class Counter_Disassemble : Counter_Base
 
     [SerializeField] private GameInventory_Data _mainData;
     [SerializeField] private ItemDisassemblyRecipe_Data[] _disassemblyRecipeArray;
+    [SerializeField] private RecyclingTable_UI _recyclingTableUI;
 
 
     public override void Interact(Player_Base _player)
@@ -20,6 +21,7 @@ public class Counter_Disassemble : Counter_Base
             foreach (Item_Data output in _currentRecipe._outputItems)
             {
                 _mainData.AddRecycledMaterials(output);
+                // _recyclingTableUI.NotifyItemAdd(output);
             }
             _player.GiveItem().DestroySelf();
 

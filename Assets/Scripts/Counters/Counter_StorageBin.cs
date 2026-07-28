@@ -5,6 +5,7 @@ public class Counter_StorageBin : Counter_Base
 {
     public event Action OnPlayerGrabbedObject;
     [SerializeField] private GameInventory_Data _mainData;
+    [SerializeField] private StorageBin_UI _storageBinUI;
 
     public override void Interact(Player_Base _player) 
     {
@@ -18,6 +19,7 @@ public class Counter_StorageBin : Counter_Base
                 {
                     Item_Data _item = _mainData._finalProducts[0];
                     _mainData._finalProducts.RemoveAt(0);
+                    _storageBinUI.UpdateContainerUI();
                     Item_Base.SpawnItem(_item,_player);
                 }
                 AudioManager.Instance.PlaySFX(_counterAudio._counterInteractSFX);
