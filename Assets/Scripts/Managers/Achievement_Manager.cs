@@ -23,8 +23,10 @@ public class Achievement_Manager : MonoBehaviour
     private const int TOTAL_ITEMS = 6;
     private const int SALES_TARGET = 50;
     private const int TOTAL_HINTS = 9;
-    private const int TOTAL_REGISTERED_PRODUCTS = 5; //palitan mo
-    private const int TOTAL_GARBAGED = 5; //palitan mo
+    private const int TOTAL_REGISTERED_PRODUCTS = 30; //palitan mo
+    private const int TOTAL_GARBAGED = 20; //palitan mo
+
+    // Achievement Status
 
     // Tracks unique hints viewed this session (Curious Jed needs "view ALL 9", not 9 views total).
     private readonly HashSet<Hints_Data> _viewedHints = new HashSet<Hints_Data>();
@@ -106,26 +108,39 @@ public class Achievement_Manager : MonoBehaviour
     }
 
     /// <summary>Call whenever a product is registered, passing the running total.</summary>
-    public void ReportProductRegistered(int totalRegistered)
+    public void ReportProductRegistered(int amount)
     {
-        if (_progress == null || _progress.INFINITE_SOLUTIONS) return;
+        if (_progress == null || _progress.INFINITE_SOLUTIONS)
+        {
+            return;
+        }
 
-        if (totalRegistered >= TOTAL_REGISTERED_PRODUCTS)
+        if (_progress.CheckItemsCrafted() >= TOTAL_REGISTERED_PRODUCTS)
         {
             _progress.INFINITE_SOLUTIONS = true;
             TriggerAchievement(TITLE_INFINITE_SOLUTIONS);
         }
+        else
+        {
+            _progress.AddItemsCrafted(amount);
+        }
+        
+        
     }
 
     /// <summary>Call whenever a product is garbaged, passing the running total.</summary>
-    public void ReportProductGarbaged(int totalGarbaged)
+    public void ReportProductGarbaged(int amount)
     {
         if (_progress == null || _progress.FOR_REAL) return;
 
-        if (totalGarbaged >= TOTAL_GARBAGED)
+        if (_progress.CheckItemsThrown() >= TOTAL_GARBAGED)
         {
             _progress.FOR_REAL = true;
             TriggerAchievement(TITLE_FOR_REAL);
+        }
+        else
+        {
+            _progress.AddItemsThrown(amount);
         }
     }
 }
