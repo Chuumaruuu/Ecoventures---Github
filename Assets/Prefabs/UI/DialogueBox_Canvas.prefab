@@ -33,6 +33,7 @@ RectTransform:
   - {fileID: 2338320035539012855}
   - {fileID: 3176178236299260390}
   - {fileID: 9003682585970684938}
+  - {fileID: 4834863741240110113}
   m_Father: {fileID: 1505237132206676343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -388,7 +389,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9186782490737997946}
-  - {fileID: 4834863741240110113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -494,7 +494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Manager
   _dialogueBoxUI: {fileID: 624759778945806140}
-  _mainUI: []
   _actorAvatar: {fileID: 423407647155408081}
   _actorName: {fileID: 1107368349705230121}
   _messageText: {fileID: 5336181289894153694}
@@ -667,11 +666,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 302522013760751891}
-  m_Father: {fileID: 1505237132206676343}
+  m_Father: {fileID: 9186782490737997946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.015617, y: -0.00016785}
+  m_AnchoredPosition: {x: 0.015617, y: 221.79984}
   m_SizeDelta: {x: 1466.3, y: 677.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7359036360368872761
@@ -752,7 +751,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 8138882009566223691}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:

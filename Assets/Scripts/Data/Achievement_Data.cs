@@ -6,8 +6,10 @@ public class Achievement_Data : ScriptableObject
     public string _achievementTitle;
     public Sprite _achievementImage;
 
+
     public string GetTitle()
     {
         return _achievementTitle;
     }
+
 }
