@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game_Manager : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class Game_Manager : MonoBehaviour
             return;
         }
         Instance = this; 
+        Time.timeScale = 1f;
     }
-    
+
     public void PauseGame()
     {
         Time.timeScale = 0f;
@@ -24,6 +26,12 @@ public class Game_Manager : MonoBehaviour
     
     public void ResumeGame()
     {
+        Time.timeScale = 1f;
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 
