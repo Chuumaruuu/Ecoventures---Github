@@ -4,68 +4,125 @@ using UnityEngine;
 
 public class WorkshopUI_Manager : MonoBehaviour
 {
+    public static WorkshopUI_Manager Instance {get; private set;}
     //MAIN UI
-    [SerializeField] private GameObject _mainUI;
+    [SerializeField] private GameObject[] _mainUI;
 
+    //TUTORIAL Pointers
+    public List<Pointer> _pointerList;
+    private GameObject _activePointer;
+    public event Action OnGuidebookOpened, OnGuidebookClosed, OnGuidebookItemClicked;
 
-    //TUTORIAL ARROW
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this; 
+    }
+    void Start()
+    {
+        Dialogue_Manager.Instance.OnStartDialogue += ShowPointer;
+        Dialogue_UI.Instance.OnDialogueEnd += HidePointer;
+    }
     
-    public List<Arrow> _arrowList;
-    private GameObject _activeArrow;
+    public void TriggerGuidebookOpen()
+    {
+        OnGuidebookOpened?.Invoke();
+    }
+
+    public void TriggerGuidebookIconClick()
+    {
+        OnGuidebookItemClicked?.Invoke();
+    }
+
+    public void TriggerGuidebookClose()
+    {
+        OnGuidebookClosed?.Invoke();
+    }
 
     public void HideMainUI()
     {
-        _mainUI.SetActive(false);
+        foreach(GameObject i in _mainUI)
+        {
+            Debug.Log("Hiding UI");
+            i.SetActive(false);
+        }
     }
 
     public void ShowMainUI()
     {
-        _mainUI.SetActive(true);
+        foreach(GameObject i in _mainUI)
+        {
+            Debug.Log("Showing UI");
+            i.SetActive(true);
+        }
     }
 
-    public void ShowArrow(string i)
+    public void ShowPointer(string _pointerName)
     {
-        foreach (Arrow a in _arrowList)
+        foreach (Pointer pointer in _pointerList)
         {
-            if (i == a.GetTitle())
+            if (_pointerName == pointer.GetPointerName())
             {
-                _activeArrow = a.GetArrowUI();
-                a.GetArrowUI().SetActive(true);
-            }
-            else
-            {
-                Debug.LogError(i + " arrow does not exist");
+                _activePointer = pointer.GetPointerUI();
+                pointer.ShowPointerGameObjects();
+                pointer.GetPointerUI().SetActive(true);
             }
         }
     }
 
-    public void HideArrow()
+    public void HidePointer(string _pointerName)
     {
-        if (_activeArrow != null)
+        if (_pointerList.Count == 0)
         {
-            _activeArrow.SetActive(false);
-            _activeArrow = null;
+            Dialogue_UI.Instance.OnDialogueEnd -= HidePointer;
         }
         else
         {
-            Debug.Log("No Active arrow");
+            foreach (Pointer pointer in _pointerList)
+            {
+                if (_pointerName == pointer.GetPointerName())
+                {
+                    Destroy(_activePointer);
+                }
+            }
         }
+        
     }
 
     [Serializable]
-    public class Arrow
+    public class Pointer
     {
-        [SerializeField] private string _arrowName;
-        [SerializeField] private GameObject _arrowUI;
+        [SerializeField] private string _pointerName; //must be the same name as the dialogue it corresponds to
+        [SerializeField] private GameObject _pointerUI;
+        [SerializeField] private GameObject[] _activeGameObjects;
 
-        public string GetTitle()
+        public string GetPointerName()
         {
-            return _arrowName;
+            return _pointerName;
         }
 
-        public GameObject GetArrowUI()
+        public GameObject GetPointerUI()
         {
-            return _arrowUI;
+            return _pointerUI;
+        }
+
+        public void ShowPointerGameObjects()
+        {
+            foreach(GameObject i in _activeGameObjects)
+            {
+                if (i != null)
+                {
+                    i.SetActive(true);
+                }
+                else
+                {
+                    return;
+                }
+            }
         }
     }
 

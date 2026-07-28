@@ -1,18 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Timer_UI : MonoBehaviour
 {
     private float _remainingTime;
     private bool _hasTimerEnded;
+    private bool _timerRunning = false;
+
+    private const int MAP_SCENE_INDEX = 2;
 
     [SerializeField] private float _timerMax;
-    [SerializeField] private Image timerImage;
-    [SerializeField] private TextMeshProUGUI timerTxt;
+    [SerializeField] private Image _timerImage;
+    [SerializeField] private TextMeshProUGUI _timerTxt;
     [SerializeField] private Scene_Manager _sceneManager;
-    private int _mapSceneIndex = 2;
+        
 
     public enum TimerState
     {
@@ -23,16 +25,6 @@ public class Timer_UI : MonoBehaviour
 
     private void Start()
     {
-        if (timerImage == null)
-        {
-            timerImage = GetComponent<Image>();
-        }
-
-        if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            _mapSceneIndex = 1;
-        }
-
         _remainingTime = _timerMax;
         UpdateVisuals();
     }
@@ -40,26 +32,49 @@ public class Timer_UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_timerMax <= 0f)
+        if (!_timerRunning)
         {
             return;
         }
-
-        if (!_hasTimerEnded && _remainingTime > 0f)
+        else
         {
-            _remainingTime -= Time.deltaTime;
-            if (_remainingTime < 0f)
+            if (_timerMax <= 0f)
             {
-                _remainingTime = 0f;
+                return;
             }
 
-            if (_remainingTime <= 0f)
+            if (!_hasTimerEnded && _remainingTime > 0f)
             {
-                OnTimerEnded();
+                _remainingTime -= Time.deltaTime;
+                if (_remainingTime < 0f)
+                {
+                    _remainingTime = 0f;
+                }
+
+                if (_remainingTime <= 0f)
+                {
+                    OnTimerEnded();
+                }
             }
+            UpdateVisuals();
         }
+        
+    }
 
-        UpdateVisuals();
+    public void TimerSwitch(int value)
+    {
+        if (value == 1)
+        {
+            _timerRunning = true;
+        }
+        else if (value == 0)
+        {
+            _timerRunning = false;
+        }
+        else
+        {
+            Debug.LogError("Timer switch value not set. Set to 1 or 0");
+        }
     }
 
     private void OnTimerEnded()
@@ -75,23 +90,12 @@ public class Timer_UI : MonoBehaviour
 
     private void TransitionToMapScene()
     {
-        if (_sceneManager == null)
-        {
-            _sceneManager = FindFirstObjectByType<Scene_Manager>();
-        }
-
-        if (_sceneManager == null)
-        {
-            Debug.LogError("Scene_Manager reference is missing. Cannot transition to map scene.");
-            return;
-        }
-
-        _sceneManager.FadeToScene(_mapSceneIndex);
+        _sceneManager.FadeToScene(MAP_SCENE_INDEX);
     }
 
     private void UpdateVisuals()
     {
-        if (timerImage == null)
+        if (_timerImage == null)
         {
             return;
         }
@@ -99,19 +103,19 @@ public class Timer_UI : MonoBehaviour
         float timeRatio = Mathf.Clamp01(_remainingTime / _timerMax);
 
         // For radial fill images, this drives the visible portion from full (1) to empty (0).
-        timerImage.fillAmount = timeRatio;
+        _timerImage.fillAmount = timeRatio;
 
         if (timeRatio > (2f / 3f))
         {
-            timerImage.color = Color.green;
+            _timerImage.color = Color.green;
         }
         else if (timeRatio > (1f / 3f))
         {
-            timerImage.color = Color.yellow;
+            _timerImage.color = Color.yellow;
         }
         else
         {
-            timerImage.color = Color.red;
+            _timerImage.color = Color.red;
         }
 
         UpdateTimerText();
@@ -119,13 +123,13 @@ public class Timer_UI : MonoBehaviour
 
     private void UpdateTimerText()
     {
-        if (timerTxt == null)
+        if (_timerTxt == null)
         {
             return;
         }
 
         int minutes = Mathf.FloorToInt(_remainingTime / 60f);
         int seconds = Mathf.FloorToInt(_remainingTime % 60f);
-        timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        _timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

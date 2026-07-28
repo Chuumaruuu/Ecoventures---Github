@@ -23,4 +23,17 @@ public class MainMenu_IntroCutscene : MonoBehaviour
         _cutsceneCanvas.GetComponent<Canvas>().sortingOrder = 0;
         _cutsceneCanvas.SetActive(false);
     }
+
+    public void SkipCutscene()
+    {
+        // Prevent loopPointReached from firing after stopping.
+        _cutsceneVideoPlayer.loopPointReached -= FadeScreen;
+
+        if (_cutsceneVideoPlayer.isPlaying)
+        {
+            _cutsceneVideoPlayer.Stop();
+        }
+
+        _cutsceneAnimator.SetTrigger("Fade");
+    }
 }

@@ -25,7 +25,7 @@ public class Player_Visuals : MonoBehaviour
        _playerAnimator.SetBool(IS_WALKING, _player.IsWalking());
     }
 
-    private void OnPlayerCarryingObject(object sender, System.EventArgs e)
+    private void OnPlayerCarryingObject()
     {
         _playerAnimator.SetBool(IS_CARRYING, _player.HasItem());
     }

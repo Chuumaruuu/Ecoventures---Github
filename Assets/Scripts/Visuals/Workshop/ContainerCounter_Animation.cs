@@ -18,7 +18,7 @@ public class ContainerCounter_Animation : MonoBehaviour
         _containerCounter.OnPlayerGrabbedObject += ContainerCounterOnPlayerGrabbedObject;
     }
 
-    private void ContainerCounterOnPlayerGrabbedObject(object sender, System.EventArgs e)
+    private void ContainerCounterOnPlayerGrabbedObject()
     {
         _containerAnimator.SetTrigger(INTERACT);
     }

@@ -1,23 +1,11 @@
 using UnityEngine;
+using System;
 
 public class SceneDialogues_Workshop : MonoBehaviour
 {
     public static SceneDialogues_Workshop Instance { get; private set; }
 
-    [SerializeField] private Dialogue_Data[] _workshopDialogues;
     [SerializeField] private Dialogue_Progress _dialogueProgress;
-    [SerializeField] private Tutorial_Progress _tutorialProgress;
-
-    // DIALOGUE TITLES
-    private const string WORKSHOP_INTRO = "WorkshopIntro";
-    private const string TUTORIAL_MOVE = "MoveTutorial";
-    private const string TUTORIAL_GRAB = "GrabTutorial";
-    private const string TUTORIAL_MONEY = "MoneyTutorial";
-    private const string TUTORIAL_GUIDEBOOK = "GuidebookTutorial";
-    private const string TUTORIAL_INTERACT = "InteractTutorial";
-    private const string TUTORIAL_SUBMIT = "SubmitTutorial";
-
-
 
     private void Awake()
     {
@@ -31,13 +19,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
 
     private void Start()
     {
-        Scene_Manager.Instance.OnSceneFadeComplete += IntroDialogue;
-        Dialogue_UI.Instance.OnDialogueEnd += MoveTutorial;
-        Player_Base.Instance.OnContainerCounterSelected += GrabTutorial;
-        Player_Base.Instance.OnPlayerGrabbedObject += MoneyTutorial;
-        Player_Base.Instance.OnObjectDrop += InteractTutorial;
-        //submit
-
+        Scene_Manager.Instance.OnSceneFadeComplete += WorkshopIntro;
 
         if (!Game_Manager.Instance.DebugModeOn())
         {
@@ -45,92 +27,352 @@ public class SceneDialogues_Workshop : MonoBehaviour
         }
     }
 
-    private void IntroDialogue() // trigger WorkshopIntro dialogue when this is the first time loading this scene
+    private void WorkshopIntro() //Workshop Intro
     {
-        if (!_dialogueProgress._workshopIntroDone)
+        if (_dialogueProgress.WORKSHOP_INTRO)
         {
-            Dialogue_Data dialogueData = GetDialogueData(WORKSHOP_INTRO);
+            Scene_Manager.Instance.OnSceneFadeComplete -= WorkshopIntro;
+            return;
+        }
+        else
+        {
+            Debug.Log("Dialogue Code: workshop intro reached");
+            Dialogue_Data dialogueData = GetDialogueData("WorkshopIntro");
             if (dialogueData != null)
             {
-                _dialogueProgress._workshopIntroDone = true;
+                _dialogueProgress.WORKSHOP_INTRO = true;
+
                 CallDialogue(dialogueData);
-                Scene_Manager.Instance.OnSceneFadeComplete -= IntroDialogue;
+                Scene_Manager.Instance.OnSceneFadeComplete -= WorkshopIntro;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro;
+            }
+        }
+    }
+    
+    private void GuidebookIntro(string id) 
+    {
+        Debug.Log("Dialogue Code: point to guidebook reached");
+        if (id == "WorkshopIntro")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro");
+            if(dialogueData != null)
+            {
+                _dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO = true;
+
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro;
             }
         }
     }
 
-    private void MoveTutorial()
+    public void GuidebookIntro2()
     {
-        if (_dialogueProgress._workshopIntroDone && !_tutorialProgress._moveTutorialDone)
+        if (_dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO2)
         {
-            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_MOVE);
-            if (dialogueData != null)
+            return;
+        }
+        else
+        {
+            Debug.Log("Dialogue Code: guidebook button clicked reached");
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro2");
+            if(dialogueData != null)
             {
-                _tutorialProgress._moveTutorialDone = true;
+                _dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO2 = true;
+
                 CallDialogue(dialogueData);
-                Dialogue_UI.Instance.OnDialogueEnd -= MoveTutorial;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro3;
+
+            }
+        }
+        
+    }
+
+    private void GuidebookIntro3(string id)
+    {
+        Debug.Log("Dialogue Code: point to stage 1 tab reached");
+        if (id == "GuidebookIntro2")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro3");
+            if(dialogueData != null)
+            {
+                _dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO3 = true;
+
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro3;
             }
         }
     }
 
-    private void GrabTutorial()
+    public void GuidebookIntro4()
     {
-        if (_dialogueProgress._workshopIntroDone && _tutorialProgress._moveTutorialDone && !_tutorialProgress._grabTutorialDone)
-            {
-                Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_GRAB);
-                if (dialogueData != null)
-                {
-                    _tutorialProgress._grabTutorialDone = true;
-                    CallDialogue(dialogueData);
-                    Player_Base.Instance.OnContainerCounterSelected -= GrabTutorial;
-                }
-            }   
+        Debug.Log("Dialogue Code: stage 1 tab clicked reached");
+        
+        Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro4");
+        if(dialogueData != null)
+        {
+            _dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO4 = true;
+
+            CallDialogue(dialogueData);
+            Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro5;
+        }
     }
 
-    private void MoneyTutorial(object sender, System.EventArgs e)
+    private void GuidebookIntro5(string id)
     {
-        if (!_tutorialProgress._moneyTutorialDone)
+        Debug.Log("Dialogue Code: point to recipe reached");
+        if (id == "GuidebookIntro4")
         {
-            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_MONEY);
-            if (dialogueData != null)
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro5");
+            if(dialogueData != null)
             {
-                _tutorialProgress._moneyTutorialDone = true;
+                _dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO5 = true;
+
                 CallDialogue(dialogueData);
-                Player_Base.Instance.OnPlayerGrabbedObject -= MoneyTutorial;
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro5;
             }
         }
     }
 
-    private void InteractTutorial(object sender, System.EventArgs e)
+    public void GuidebookIntro6()
     {
-        if (!_tutorialProgress._interactTutorialDone)
+        if (_dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO6)
         {
-            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_INTERACT);
-            if (dialogueData != null)
+            return;
+        }
+        else
+        {
+            Debug.Log("Dialogue Code: bracelet recipe clicked reached");
+        
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro6");
+            if(dialogueData != null)
             {
-                _tutorialProgress._interactTutorialDone = true;
+                _dialogueProgress.WORKSHOP_GUIDEBOOK_INTRO6 = true;
+
                 CallDialogue(dialogueData);
-                Player_Base.Instance.OnObjectDrop -= InteractTutorial;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro7;
+            }
+        } 
+    }
+
+    private void GuidebookIntro7(string id)
+    {
+        Debug.Log("Dialogue Code: bracelet recipe intro reached");
+        if (id == "GuidebookIntro6")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro7");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro7;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro8;
             }
         }
     }
 
-    public void GuideBookTutorial()
+    private void GuidebookIntro8(string id)
     {
-        if (!_tutorialProgress._guidebookTutorialDone)
+        Debug.Log("Dialogue Code: point to step 1 reached");
+        if (id == "GuidebookIntro7")
         {
-            Dialogue_Data dialogueData = GetDialogueData(TUTORIAL_GUIDEBOOK);
-            if (dialogueData != null)
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro8");
+            if(dialogueData != null)
             {
-                _tutorialProgress._guidebookTutorialDone = true;
                 CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro8;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro9;
             }
         }
     }
+
+    private void GuidebookIntro9(string id)
+    {
+        Debug.Log("Dialogue Code: point to step 2 reached");
+        if (id == "GuidebookIntro8")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro9");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro9;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro10;
+            }
+        }
+    }
+
+    private void GuidebookIntro10(string id)
+    {
+        Debug.Log("Dialogue Code: point to step 3 reached");
+        if (id == "GuidebookIntro9")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro10");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro10;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro11;
+            }
+        }
+    }
+
+    private void GuidebookIntro11(string id)
+    {
+        Debug.Log("Dialogue Code: point to step 4 reached");
+        if (id == "GuidebookIntro10")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro11");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro11;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro12;
+            }
+        }
+    }
+
+    private void GuidebookIntro12(string id)
+    {
+        Debug.Log("Dialogue Code: point to step 5 reached");
+        if (id == "GuidebookIntro11")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro12");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro12;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookIntro13;
+            }
+        }
+    }
+
+    private void GuidebookIntro13(string id)
+    {
+        Debug.Log("Dialogue Code: point to step 6 reached");
+        if (id == "GuidebookIntro12")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookIntro13");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro13;
+                Dialogue_UI.Instance.OnDialogueEnd += GuidebookClose;
+            }
+        }
+    }
+
+    private void GuidebookClose(string id)
+    {
+        Debug.Log("Dialogue Code: point to close button reached");
+        if (id == "GuidebookIntro13")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GuidebookClose");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GuidebookIntro13;
+            }
+        }
+    }
+
+    public void MovementIntro()
+    {
+        if (_dialogueProgress.WORKSHOP_MOVEMENT_TUTORIAL)
+        {
+            return;
+        }
+        else
+        {
+            Dialogue_Data dialogueData = GetDialogueData("MovementIntro");
+            if (dialogueData != null)
+            {
+                _dialogueProgress.WORKSHOP_MOVEMENT_TUTORIAL = true;
+                
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd += MovementIntro2;
+            }
+        }
+    }
+
+    private void MovementIntro2(string id)
+    {
+        Debug.Log("Dialogue Code: show joystick");
+        if (id == "MovementIntro")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("MovementIntro2");
+            if(dialogueData != null)
+            {
+                CallDialogue(dialogueData);
+
+                Player_Base.Instance.OnContainerCounterSelected += GrabIntro;
+                Dialogue_UI.Instance.OnDialogueEnd -= MovementIntro2;
+            }
+        }
+    }
+
+    private void GrabIntro(Counter_Container counter)
+    {
+        if (counter.GetStorageItem().GetItemName() == "ScrapWood")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GrabIntro");
+            if(dialogueData != null)
+            {
+                // _dialogueProgress.WORKSHOP_GUIDEBOOK = true;
+
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd += GrabIntro2;
+                Player_Base.Instance.OnContainerCounterSelected -= GrabIntro;
+            }
+        }
+    }
+
+    private void GrabIntro2(string id)
+    {
+        Debug.Log("Dialogue Code: show grab button");
+        if (id == "GrabIntro")
+        {
+            Dialogue_Data dialogueData = GetDialogueData("GrabIntro2");
+            if(dialogueData != null)
+            {
+
+                CallDialogue(dialogueData);
+                Dialogue_UI.Instance.OnDialogueEnd -= GrabIntro2;
+                Debug.Log("Registering MoneyIntro");
+                // Player_Base.Instance.OnObjectPickup += MoneyIntro;
+            }
+        }
+    }
+
+    // private void MoneyIntro()
+    // {
+    //     Debug.Log("MoneyIntro called");
+    //     if(Player_Base.Instance.GiveItem().GetItemData()._objectName != "ScrapWood")
+    //     {
+    //         Debug.Log("That's not wood");
+    //         return;
+    //     }
+    //     else
+    //     {
+    //         Debug.Log("Money Intro Starting");
+    //         if (_dialogueProgress.WORKSHOP_GRAB_TUTORIAL)
+    //         {
+    //             return;
+    //         }
+    //         else
+    //         {
+    //             Dialogue_Data dialogueData = GetDialogueData("MoneyIntro");
+    //             if (dialogueData != null)
+    //             {
+    //                 _dialogueProgress.WORKSHOP_GRAB_TUTORIAL = true;
+                    
+    //                 CallDialogue(dialogueData);
+    //                 Player_Base.Instance.OnObjectPickup -= MoneyIntro;
+    //             }
+    //         }
+    //     }
+    // }
 
     public Dialogue_Data GetDialogueData(string title)
     {
-        foreach (Dialogue_Data data in _workshopDialogues)
+        foreach (Dialogue_Data data in Dialogue_Manager.Instance._dialogueList)
         {
             if (data._dialogueTitle == title)
             {
@@ -144,12 +386,11 @@ public class SceneDialogues_Workshop : MonoBehaviour
 
     public void CallDialogue(Dialogue_Data dialogue_Data)
     {
-        Dialogue_Manager.Instance.StartDialogue(dialogue_Data);
+        Dialogue_Manager.Instance.StartDialogue(dialogue_Data.GetTitle());
     }
 
     private void ResetDialogues()
     {
         _dialogueProgress.Reset();
-        _tutorialProgress.Reset();
     }
 }

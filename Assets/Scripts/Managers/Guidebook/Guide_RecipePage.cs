@@ -30,7 +30,6 @@ public class Guide_RecipePage : MonoBehaviour
 
     public void ClearRecipe()
     {
-        Debug.Log("Clearing recipe page.");
         _currentRecipeData = null;
         _currentSpriteIndex = 0;
 

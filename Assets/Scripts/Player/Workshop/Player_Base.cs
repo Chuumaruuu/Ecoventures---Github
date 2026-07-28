@@ -6,10 +6,10 @@ public class Player_Base : MonoBehaviour, IItemParent
     //sex
     public static Player_Base Instance { get; private set; }
     
-    public event EventHandler OnPlayerGrabbedObject;
-    public event EventHandler OnObjectPickup;
-    public event EventHandler OnObjectDrop;
-    public event Action OnContainerCounterSelected;
+    public event Action OnPlayerGrabbedObject;
+    public event Action OnObjectPickup;
+    public event Action OnObjectDrop;
+    public event Action<Counter_Container> OnContainerCounterSelected;
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
     public class OnSelectedCounterChangedEventArgs : EventArgs 
     {
@@ -47,15 +47,15 @@ public class Player_Base : MonoBehaviour, IItemParent
         if (DetectsACounter()) 
         {
             _selectedCounter.Interact(this);
-            OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
+            OnPlayerGrabbedObject?.Invoke();
 
             if (HasItem())
             {
-                OnObjectPickup?.Invoke(this, EventArgs.Empty);
+                OnObjectPickup.Invoke();
             }
             else
             {
-                OnObjectDrop?.Invoke(this, EventArgs.Empty);
+                OnObjectDrop?.Invoke();
             }
         }
     }
@@ -70,11 +70,9 @@ public class Player_Base : MonoBehaviour, IItemParent
         if (DetectsACounter()) 
         {
             _selectedCounter.InteractAlternate(this);
-            OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
+            OnPlayerGrabbedObject?.Invoke();
         }
     }
-
-    
 
     private void Update() 
     {
@@ -108,7 +106,8 @@ public class Player_Base : MonoBehaviour, IItemParent
 
                     if (_baseCounter.GetComponent<Counter_Container>())
                     {
-                        OnContainerCounterSelected?.Invoke();
+
+                        OnContainerCounterSelected?.Invoke(_baseCounter.GetComponent<Counter_Container>());
                     }
                 }
             } 

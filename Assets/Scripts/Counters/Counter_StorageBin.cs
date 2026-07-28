@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Counter_StorageBin : Counter_Base
 {
-    public event EventHandler OnPlayerGrabbedObject;
+    public event Action OnPlayerGrabbedObject;
     [SerializeField] private GameInventory_Data _mainData;
 
     public override void Interact(Player_Base _player) 
@@ -12,7 +12,7 @@ public class Counter_StorageBin : Counter_Base
         {
             if (!this.HasItem()) // counter has no item on top of it
             {  
-                OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
+                OnPlayerGrabbedObject?.Invoke();
 
                 if (_mainData._finalProducts != null && _mainData._finalProducts.Count > 0)
                 {

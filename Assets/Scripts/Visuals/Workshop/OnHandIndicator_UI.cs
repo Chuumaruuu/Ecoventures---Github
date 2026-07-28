@@ -9,11 +9,11 @@ public class OnHandIndicator_UI : MonoBehaviour
     private Item_Data _heldItem;
     void Start()
     {
-        Player_Base.Instance.OnObjectPickup+= SetIndicatorSprite;
-        Player_Base.Instance.OnObjectDrop+= SetIndicatorSprite;
+        Player_Base.Instance.OnObjectPickup += SetIndicatorSprite;
+        Player_Base.Instance.OnObjectDrop += SetIndicatorSprite;
     }
 
-    private void SetIndicatorSprite(object sender, System.EventArgs e)
+    private void SetIndicatorSprite()
     {
         if (Player_Base.Instance.HasItem())
         {
