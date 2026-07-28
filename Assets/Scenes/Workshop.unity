@@ -2622,6 +2622,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4834863741240110113, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -128
+      objectReference: {fileID: 0}
     - target: {fileID: 4968953924577431932, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
       propertyPath: m_Name
       value: DialogueBox_UI
@@ -2632,7 +2636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9186782490737997946, guid: 9bbbfe1f521619947af80f07a70486b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -221.8
+      value: -775
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3677,6 +3681,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 488686528}
     m_Modifications:
+    - target: {fileID: 190377656751623623, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
+      propertyPath: _storageBinUI
+      value: 
+      objectReference: {fileID: 1532749921}
     - target: {fileID: 7395687171527367294, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
       propertyPath: m_Name
       value: ContainerCounter_UnusedProducts
@@ -4364,7 +4372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763416504647cd240a6dbd41b4a1a24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pause_Manager
-  DEBUG_MODE: 0
+  DEBUG_MODE: 1
 --- !u!4 &829335961
 Transform:
   m_ObjectHideFlags: 0
@@ -4913,19 +4921,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4933,16 +4941,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 603319203051638192, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3713293076875017753, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 410240547870279285, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961272990}
   m_SourcePrefab: {fileID: 100100000, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
 --- !u!4 &960767575 stripped
 Transform:
@@ -6107,6 +6122,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 499253373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1367719768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2451556327182020603, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
+  m_PrefabInstance: {fileID: 960133973}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1384660153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6389,6 +6415,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5593974562813128093, guid: a6ea96834afdeca45aa9a10a4ab92826, type: 3}
   m_PrefabInstance: {fileID: 8692551998150796550}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1532749921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1023332953959426519, guid: c7a669fb6dcf990488eb64d213e03854, type: 3}
+  m_PrefabInstance: {fileID: 695890981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d7e58e22510af24f9bdf70333e8eed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StorageBin_UI
 --- !u!114 &1537729234 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 590661291331465700, guid: b7d77c4977aa91e439fe9bcd1ec41757, type: 3}
@@ -7688,6 +7725,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d96ddd33732f2b34e8f6adad038b763a, type: 3}
+--- !u!1 &1961272986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 410240547870279285, guid: 83e48f61ac3b5ee4484384aa52b9a71d, type: 3}
+  m_PrefabInstance: {fileID: 960133973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961272990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961272986}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0cf9bd9e4229a46884bf03b598f9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecyclingTable_UI
+  _mainInventory: {fileID: 11400000, guid: 84c0bd1db35e5c34980355552a1e2b63, type: 2}
+  _itemImage: {fileID: 1367719768}
 --- !u!1 &1977501122
 GameObject:
   m_ObjectHideFlags: 0
