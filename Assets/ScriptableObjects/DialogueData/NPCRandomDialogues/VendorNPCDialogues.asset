@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f57786e9d350d324f8c327c4237c5b79, type: 3}
-  m_Name: Stage1RandomNPCDialogues
+  m_Name: VendorNPCDialogues
   m_EditorClassIdentifier: Assembly-CSharp::RandomNPCDialogue_Data
-  _stageID: 1
+  _stageID: 0
   _randomDialogues:
-  - Wow! FTIC is fun! ^-^
-  - I like it here.
-  - ZWIS, huh? That tracks
-  - I should start recycling...
-  - Zero waste... Infinite Solutions!
-  - Hm...
-  - They should do more events like this.
-  - I can't find my wallet
-  - This was very educational
-  - SDGs? ZWIS? FTIC!!!
+  - Come buy some things here!
+  - I sell stuff! Here!
+  - Where is my helper... :<
+  - Wow, my competitions are good!
+  - The other stalls have cool items!
+  - Try to find my stall in other events as well!
+  - All organic! No waste!
+  - I hope I break even
+  - Not much sales today again...
+  - Come! Come! I have stuff to sell!

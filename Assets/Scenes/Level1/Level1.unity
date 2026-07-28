@@ -7125,7 +7125,7 @@ PrefabInstance:
     - target: {fileID: 5289791787959425062, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: randomNPCDialogueData
       value: 
-      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+      objectReference: {fileID: 11400000, guid: 17ec00ad87be9ec4b99fed779676c063, type: 2}
     - target: {fileID: 5559737416932420111, guid: a165e6a8f522de3439a8c58f70f35206, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -26641,7 +26641,7 @@ PrefabInstance:
     - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: randomNPCDialogueData
       value: 
-      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+      objectReference: {fileID: 11400000, guid: 17ec00ad87be9ec4b99fed779676c063, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (3)
@@ -38755,6 +38755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3008bdefd486b4289439cd7cd21de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_Manager
+  _dialogueList: []
 --- !u!4 &2058099358
 Transform:
   m_ObjectHideFlags: 0
@@ -38797,7 +38798,7 @@ PrefabInstance:
     - target: {fileID: 3127935921740950256, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: randomNPCDialogueData
       value: 
-      objectReference: {fileID: 11400000, guid: b8156a3defe6bc141a715b72435062d0, type: 2}
+      objectReference: {fileID: 11400000, guid: 17ec00ad87be9ec4b99fed779676c063, type: 2}
     - target: {fileID: 4301568073281067999, guid: 5448937d55fd39d42bc04b3ab868b7eb, type: 3}
       propertyPath: m_Name
       value: NPC Female (2)
