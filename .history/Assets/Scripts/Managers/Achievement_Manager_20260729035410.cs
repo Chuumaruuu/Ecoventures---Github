@@ -20,7 +20,7 @@ public class Achievement_Manager : MonoBehaviour
     private const string TITLE_FOR_REAL = "ForReal?";
 
     // Constants for achievement conditions
-    private const int TOTAL_ITEMS = 6;
+    private const int TOTAL_ITEMS = 9;
     private const int SALES_TARGET = 50;
     private const int TOTAL_HINTS = 9;
     private const int TOTAL_REGISTERED_PRODUCTS = 5; //palitan mo
@@ -28,7 +28,7 @@ public class Achievement_Manager : MonoBehaviour
 
     // Tracks unique hints viewed this session (Curious Jed needs "view ALL 9", not 9 views total).
     private readonly HashSet<Hints_Data> _viewedHints = new HashSet<Hints_Data>();
-    private readonly HashSet<Item_Data> _unlockedItems = new HashSet<Item_Data>();
+    private readonly List<Item_Data> _unlockedItems = new List<Item_Data>();
 
     void Awake()
     {
@@ -64,17 +64,29 @@ public class Achievement_Manager : MonoBehaviour
     // Each one is safe to call repeatedly/redundantly - it no-ops once earned.
 
     /// <summary>Call whenever an item's isUnlocked flips to true, passing the full item catalog.</summary>
-    public void ReportItemUnlocked(Item_Data itemData)
+    public void ReportItemUnlocked(Item_Data item)
     {
         if (_progress == null || _progress.QUIZ_RUSH) return;
-        if (itemData == null) return;
+        if (item == null) return;
 
-        _unlockedItems.Add(itemData);
-        Debug.Log("Item unlocked: " + itemData.GetItemName() + " | Total unlocked: " + _unlockedItems.Count);
+        for (int i = 0; i < _unlockedItems.Count; i++)
+        {
+            if (!_unlockedItems[i].isUnlocked)
+            {
+                return; // Found a locked item, so we can't count this one yet.
+            }
+
+            if (_unlockedItems[i] == item)
+            {
+                return; // Already counted this item.
+            }
+
+            _unlockedItems.Add(item); // Add to the end of the list if we didn't find a null or locked item.
+        }
+
         if (_unlockedItems.Count >= TOTAL_ITEMS)
         {
             _progress.QUIZ_RUSH = true;
-            Debug.Log("Achievement unlocked: " + TITLE_QUIZ_RUSH);
             TriggerAchievement(TITLE_QUIZ_RUSH);
         }
     }

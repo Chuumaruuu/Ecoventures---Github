@@ -92,7 +92,6 @@ public class SalesTracker : MonoBehaviour
         totalSpecialSales++;
         UpdateMoneyUI();
         OnSpecialSaleRegistered?.Invoke(totalSpecialSales);
-        Achievement_Manager.Instance?.ReportSaleRegistered(totalSales + totalSpecialSales); // Report the sale to the Achievement_Manager
 
         Debug.Log("Special order completed | Total Special Sales: " + totalSpecialSales);
     }
