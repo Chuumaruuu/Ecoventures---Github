@@ -28,6 +28,7 @@ public class Counter_Submit : Counter_Base
 
             // submit table interact audio oneshot
             Debug.Log($"✅ Added {randomAmount}x {submittedItem._objectName} to inventory.");
+            Achievement_Manager.Instance.ReportProductRegistered(randomAmount);
         }
         else // wrong combination
         {

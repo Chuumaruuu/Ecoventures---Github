@@ -7,7 +7,6 @@ public class Counter_Container : Counter_Base
     public event Action OnPlayerGrabbedObject;
     [SerializeField] private GameInventory_Data _mainData;
     [SerializeField] private Item_Data _itemData;
-    [SerializeField] private int _itemPrice;
 
     public override void Interact(Player_Base _player) 
     {
@@ -25,8 +24,9 @@ public class Counter_Container : Counter_Base
                     }
                     else 
                     {
-                        _mainData.SubtractMoney(_itemPrice);
+                        _mainData.SubtractMoney(_itemData.sellprice);
                     }
+                    GetComponent<ContainerCounter_UI>().UpdateContainerUI();
                     Item_Base.SpawnItem(_itemData, _player);
 
                     AudioManager.Instance.PlaySFX(_counterAudio._counterInteractSFX);

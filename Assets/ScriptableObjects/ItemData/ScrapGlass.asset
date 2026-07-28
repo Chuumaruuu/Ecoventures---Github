@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd4f1ccaaa40f94c85f9e4e4b1bbef5, type: 3}
   m_Name: ScrapGlass
   m_EditorClassIdentifier: 
+  _productGroupPrefab: {fileID: 0}
   _itemPrefab: {fileID: 4589428500890972953, guid: 35142ecbe6a7504408e5306653b40f0a, type: 3}
   _itemSprite: {fileID: 21300000, guid: 4dbd167afc236b44f86928a9fc5cdd78, type: 3}
   _objectName: ScrapGlass
   isUnlocked: 0
-  sellprice: 0
-  useCustomWorldScale: 0
-  customWorldScale: {x: 1, y: 1, z: 1}
+  sellprice: 5

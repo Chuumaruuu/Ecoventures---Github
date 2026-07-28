@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameInventory_Data : ScriptableObject
 {
     public static event Action OnMoneyValueChanged;
+    public static event Action OnInventoryDataChanged;
 
     [Header("Final Products Inventory")]
     public List<Item_Data> _finalProducts = new List<Item_Data>();
@@ -25,21 +26,25 @@ public class GameInventory_Data : ScriptableObject
     public void AddProducts(Item_Data _item)
     {
         _finalProducts.Add(_item);
+        OnInventoryDataChanged?.Invoke();
     }
 
     public void AddRecycledMaterials(Item_Data _item)
     {
         _recycledProducts.Add(_item);
+        OnInventoryDataChanged?.Invoke();
     }
 
     public void RemoveProduct(Item_Data _item)
     {
         _finalProducts.Remove(_item);
+        OnInventoryDataChanged?.Invoke();
     }
 
     public void RemoveRecycledItem(Item_Data _item)
     {
         _recycledProducts.Remove(_item);
+        OnInventoryDataChanged?.Invoke();
     }
 
     public void AddMoney(int _value)
@@ -59,4 +64,8 @@ public class GameInventory_Data : ScriptableObject
         return _recycledProducts.Contains(_item);
     }
 
+    public List<Item_Data> GetExtraMaterials()
+    {
+        return _recycledProducts;
+    }
 }
