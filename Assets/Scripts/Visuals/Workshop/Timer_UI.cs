@@ -26,6 +26,7 @@ public class Timer_UI : MonoBehaviour
     private void Start()
     {
         _remainingTime = _timerMax;
+        _timerRunning = true;
         UpdateVisuals();
     }
 
