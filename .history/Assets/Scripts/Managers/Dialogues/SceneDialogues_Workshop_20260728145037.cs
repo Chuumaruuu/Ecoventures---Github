@@ -21,7 +21,7 @@ public class SceneDialogues_Workshop : MonoBehaviour
     {
         Scene_Manager.Instance.OnSceneFadeComplete += WorkshopIntro;
 
-        if (Game_Manager.Instance.DebugModeOn())
+        if (!Game_Manager.Instance.DebugModeOn())
         {
             ResetDialogues();
         }

@@ -9,7 +9,7 @@ public class SaveAndLoad_Manager : MonoBehaviour
 
     [Header("ScriptableObject References")]
     [SerializeField] private GameInventory_Data gameInventoryData;
-    // [SerializeField] private Tutorial_Progress  tutorialProgress;
+    [SerializeField] private Tutorial_Progress  tutorialProgress;
     [SerializeField] private Dialogue_Progress  dialogueProgress;
     [SerializeField] private List<Item_Data> allItems = new List<Item_Data>();
 
@@ -112,16 +112,16 @@ public class SaveAndLoad_Manager : MonoBehaviour
             }
         }
 
-        // if (tutorialProgress != null)
-        // {
-        //     data.moveTutorialDone      = tutorialProgress._moveTutorialDone;
-        //     data.grabTutorialDone      = tutorialProgress._grabTutorialDone;
-        //     data.moneyTutorialDone     = tutorialProgress._moneyTutorialDone;
-        //     data.guidebookTutorialDone = tutorialProgress._guidebookTutorialDone;
-        //     data.interactTutorialDone  = tutorialProgress._interactTutorialDone;
-        //     data.workshopMapDone       = tutorialProgress._workshopMapDone;
-        //     data.workshopStageDone     = tutorialProgress._workshopStageDone;
-        // }
+        if (tutorialProgress != null)
+        {
+            data.moveTutorialDone      = tutorialProgress._moveTutorialDone;
+            data.grabTutorialDone      = tutorialProgress._grabTutorialDone;
+            data.moneyTutorialDone     = tutorialProgress._moneyTutorialDone;
+            data.guidebookTutorialDone = tutorialProgress._guidebookTutorialDone;
+            data.interactTutorialDone  = tutorialProgress._interactTutorialDone;
+            data.workshopMapDone       = tutorialProgress._workshopMapDone;
+            data.workshopStageDone     = tutorialProgress._workshopStageDone;
+        }
 
         if (dialogueProgress != null)
         {
@@ -179,16 +179,16 @@ public class SaveAndLoad_Manager : MonoBehaviour
             }
         }
 
-        // if (tutorialProgress != null)
-        // {
-        //     tutorialProgress._moveTutorialDone      = data.moveTutorialDone;
-        //     tutorialProgress._grabTutorialDone      = data.grabTutorialDone;
-        //     tutorialProgress._moneyTutorialDone     = data.moneyTutorialDone;
-        //     tutorialProgress._guidebookTutorialDone = data.guidebookTutorialDone;
-        //     tutorialProgress._interactTutorialDone  = data.interactTutorialDone;
-        //     tutorialProgress._workshopMapDone       = data.workshopMapDone;
-        //     tutorialProgress._workshopStageDone     = data.workshopStageDone;
-        // }
+        if (tutorialProgress != null)
+        {
+            tutorialProgress._moveTutorialDone      = data.moveTutorialDone;
+            tutorialProgress._grabTutorialDone      = data.grabTutorialDone;
+            tutorialProgress._moneyTutorialDone     = data.moneyTutorialDone;
+            tutorialProgress._guidebookTutorialDone = data.guidebookTutorialDone;
+            tutorialProgress._interactTutorialDone  = data.interactTutorialDone;
+            tutorialProgress._workshopMapDone       = data.workshopMapDone;
+            tutorialProgress._workshopStageDone     = data.workshopStageDone;
+        }
 
         if (dialogueProgress != null)
         {

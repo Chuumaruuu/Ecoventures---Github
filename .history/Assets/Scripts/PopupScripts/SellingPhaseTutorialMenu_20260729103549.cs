@@ -34,6 +34,7 @@ public class SellingPhaseTutorialMenu : MonoBehaviour
         }
 
         _nextButton.onClick.AddListener(NextTutorialStep);
+        _nextButton.onClick.AddListener(() => Debug.Log("Next button clicked. Current index: " + _currentTutorialIndex));
         _previousButton.onClick.AddListener(PreviousTutorialStep);
         _closeButton.onClick.AddListener(CloseTutorial);
     }

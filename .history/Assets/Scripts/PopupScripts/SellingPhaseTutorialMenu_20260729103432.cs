@@ -53,6 +53,7 @@ public class SellingPhaseTutorialMenu : MonoBehaviour
 
     private bool CanGoNext()
     {
+        Debug.Log("Checking if can go next. Current index: " + _currentTutorialIndex + ", Total steps: " + (_tutorialSteps != null ? _tutorialSteps._recipeSprite.Length : 0));
         return _tutorialSteps != null && _currentTutorialIndex < _tutorialSteps._recipeSprite.Length - 1;
     }
 

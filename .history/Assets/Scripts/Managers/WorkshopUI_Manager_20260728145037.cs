@@ -86,7 +86,6 @@ public class WorkshopUI_Manager : MonoBehaviour
             {
                 if (_pointerName == pointer.GetPointerName())
                 {
-                    _activePointer.SetActive(false);
                     Destroy(_activePointer);
                 }
             }

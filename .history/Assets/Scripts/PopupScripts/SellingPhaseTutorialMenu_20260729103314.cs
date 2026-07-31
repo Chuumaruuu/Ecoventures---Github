@@ -28,6 +28,7 @@ public class SellingPhaseTutorialMenu : MonoBehaviour
         }
         else
         {
+            Debug.Log("Showing tutorial.");
             _mainSellingUI.SetActive(false);
             gameObject.SetActive(true);
             ShowTutorial();
