@@ -14,6 +14,7 @@ public class SellingPhaseTutorialMenu : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Starting SellingPhaseTutorialMenu. Current tutorial index: " + _currentTutorialIndex);
         if (_tutorialSteps == null || _tutorialSteps._recipeSprite == null || _tutorialSteps._recipeSprite.Length == 0)
         {
             Debug.LogWarning("No tutorial steps assigned.");
